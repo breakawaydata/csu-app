@@ -77,6 +77,7 @@ position_card <- function(position) {
     `data-reach` = position$reach,
     `data-balance` = position$balance,
     `data-capacity` = position$capacity,
+    `data-position` = position$positions,
     tags$div(class = "position-name", p(position$position)),
     tags$div(class = "position-desc", position$positions),
     tags$div(class = "stat", position$summary)

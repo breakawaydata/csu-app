@@ -5,7 +5,8 @@ function(input, output, session){
       tags$link(rel = "stylesheet", type = "text/css", href = "css/sass.min.css"),
       tags$script(src = "js/menu.js"),
       tags$script(src = "js/sidebar.js"),
-      tags$script(src = "js/player.js")
+      tags$script(src = "js/player.js"),
+      tags$script(src = "js/main.js")
     ),
     gridPage(
       title = "Gains Group",
