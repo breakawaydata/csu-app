@@ -13,7 +13,7 @@ ui <- function(id) {
     "modules/templates/sidebar.html",
     sidebar_elements = 
       tagList(
-        sidebar_element(item_id = "summary", icon = "summary", text = "SUMMARY", class = "sidebar-active"),
+        sidebar_element(item_id = "summary", icon = "summary", text = "SUMMARY"),
         sidebar_element(item_id = "explosive", icon = "explosive", text = "EXPLOSIVE"),
         sidebar_element(item_id = "reach", icon = "reach", text = "REACH"),
         sidebar_element(item_id = "balance", icon = "balance", text = "BALANCE"),
@@ -33,12 +33,13 @@ server <- function(input, output, session) {
 
   observeEvent(input$stat, {
     session$userData$stat(input$stat)
+    print(isolate(session$userData$stat()))
   }, ignoreInit = TRUE)
 }
 
-sidebar_element <- function(item_id, icon, text, class = "") {
+sidebar_element <- function(item_id, icon, text) {
   tags$a(
-    class = glue::glue("item {class}"),
+    class = "item",
     id = glue::glue("{item_id}"),
     tags$div(
       class = "sidebar-item",

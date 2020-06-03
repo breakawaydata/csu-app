@@ -1,6 +1,4 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
+TODO.txt
+*/__pycache__
+.Rproj.user/
 .DS_Store
-__pychache__

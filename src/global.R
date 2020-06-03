@@ -5,9 +5,11 @@ library(shinyjs)
 library(modules)
 library(config)
 library(sass)
+library(dplyr)
 
 consts <- config::get(file = "constants/constants.yml")
-data <- data.table::fread("data/data.csv", data.table = FALSE)
+data <- data.table::fread("data/data_players.csv", data.table = FALSE)
+position_stats <- data.table::fread("data/data_positions.csv", data.table = FALSE)
 
 sass(
   sass::sass_file(consts$sass$input),

@@ -7,7 +7,6 @@ import("magrittr")
 export("ui", "init_server")
 
 expose("utils/utils.R")
-# referenced to object that lives in the environment that calls module, global.R in this case.
 consts <- modules::use(consts)
 
 ui <- function(id) {
@@ -77,8 +76,13 @@ search_api <- function(data, q) {
   has_matching <- function(field) {
     startsWith(field, q)
   }
-  data %>%
-    dplyr::filter(has_matching(first) | has_matching(last) | has_matching(positions) | has_matching(as.character(number)))
+  players = data %>%
+    dplyr::filter(has_matching(first) | has_matching(last) | has_matching(as.character(number))) %>% 
+    dplyr::mutate(search = "player")
+  positions = data %>% 
+    dplyr::filter(has_matching(positions)) %>% 
+    dplyr::mutate(search = "position")
+  rbind(players, positions)
 }
 
 browser_search <- function(name, search_api_url, default_text = "Search") {
@@ -106,14 +110,22 @@ browser_search_js <- function(name, search_api_url) {
       maxResults: 40,
       cache: false,
       onResults: function(response) {{
-        console.log(response);
-        let ids = response.results.map(entry => entry.player_id);
-        let elements = document.querySelectorAll(ids.map(id => `#${{id}}`).join(', '));
-        $('.player-card').hide();
-        $(elements).show();
+        if (response.results.length > 0) {{
+          let ids_player = response.results.filter(word => word.search == 'player').map(entry => entry.player_id);
+          let ids_position = response.results.filter(word => word.search == 'position').map(entry => entry.position);
+          let ids = ids_player.concat(ids_position);
+          let elements = document.querySelectorAll(ids.map(id => `#${{id}}`).join(', '));
+          $('.player-card').hide();
+          $('.position-card').hide();
+          $(elements).show();
+        }}
       }},
-      onResultsClose: function(results) {{
-        $('.player-card').show();
+      onResultsClose: function() {{
+        let search_value = $('#{name}').search('get value');
+        if (search_value === '') {{
+          $('.player-card').show();
+          $('.position-card').show();
+        }}
       }}
     }})             
   "))

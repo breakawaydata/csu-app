@@ -1,116 +1,116 @@
-player_id,first,last,suffix,position,position_detailed,number,class,picture,positions,explosive,reach,balance,capacity
-CLEM_001,Derion,Kendrick,"",DB,CB,1,JR,https://clemsontigers.com/wp-content/uploads/2018/06/KendrickDerion.jpg,Secondary,72.4132470786572,22.2787740407512,33.3995758322999,64.053344191052
-CLEM_002,Frank,Ladson,Jr.,WR,WR,2,SO,https://clemsontigers.com/wp-content/uploads/2018/12/LadsonJr.Frank_.jpg,Wide Receivers,76.9222819479182,69.5495878113434,44.1185599891469,39.6482621785253
-CLEM_003,Fred,Davis,II,DB,CB,2,FR,https://clemsontigers.com/wp-content/uploads/2020/02/DavisIIFred.jpg,Secondary,96.8377774814144,45.1994491508231,26.1555667268112,3.03605492226779
-CLEM_004,Xavier,Thomas,"",DL,DE,3,JR,https://clemsontigers.com/wp-content/uploads/2018/06/ThomasXavier-2.jpg,Defensive Line,68.1598958559334,28.5032644169405,45.6178952939808,4.86881576944143
-CLEM_005,Amari,Rodgers,"",WR,WR,3,SR,https://clemsontigers.com/wp-content/uploads/2017/03/RodgersAmari.jpg,Wide Receivers,25.6219016388059,44.5426264312118,73.7159721087664,24.0214104298502
-CLEM_006,DJ,Uiagalelei,"",QB,QB,5,FR,https://clemsontigers.com/wp-content/uploads/2020/02/UiagaleleiD.J.jpg,Quarterbacks,3.14973955973983,79.7309955582023,36.2909519812092,60.3840637486428
-CLEM_007,KJ,Henry,"",DL,DE,5,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/HenryK.J.jpg,Defensive Line,73.7265019444749,27.2265978390351,55.6170083349571,97.1402857685462
-CLEM_008,EJ,Williams,"",WR,WR,6,FR,https://clemsontigers.com/wp-content/uploads/2020/02/WilliamsE.J.jpg,Wide Receivers,20.4141207039356,32.522392924875,67.6316631026566,9.48545350693166
-CLEM_009,Mike,Jones,Jr.,LB,LB,6,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/JonesJr.Mike_-2.jpg,Linebackers,9.31611368432641,55.395935755223,3.93824393395335,70.4329035244882
-CLEM_010,Taisun,Phommachanh,"",QB,QB,7,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/PhommachanhTaisun.jpg,Quarterbacks,31.8396235117689,80.9136576252058,38.3989278692752,52.0023479126394
-CLEM_011,Justin,Mascoll,"",DL,DE,7,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/MascollJustin-2.jpg,Defensive Line,72.620301018469,13.2338895695284,52.7549252146855,53.5200608894229
-CLEM_012,Justyn,Ross,"",WR,WR,8,JR,https://clemsontigers.com/wp-content/uploads/2018/06/RossJustyn-2.jpg,Wide Receivers,13.0034248577431,3.84875603485853,93.0705489357933,23.2430055737495
-CLEM_013,RJ,Mickens,"",DB,S,9,FR,https://clemsontigers.com/wp-content/uploads/2020/02/MickensR.J.jpg,Secondary,75.8462233003229,51.5406682854518,1.51066773105413,72.6027065422386
-CLEM_014,Travis,Etienne,"",HB,RB,9,SR,https://clemsontigers.com/wp-content/uploads/2017/03/EtienneTravis.jpg,Halfbacks,41.9038372347131,24.113379814662,25.3138640662655,37.1846230933443
-CLEM_015,Joseph,Ngata,"",WR,WR,10,SO,https://clemsontigers.com/wp-content/uploads/2018/12/NgataJoseph.jpg,Wide Receivers,0.0424975762143731,78.7039955612272,20.2613301109523,41.9939918443561
-CLEM_016,Baylon,Spector,"",LB,LB,10,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/03/SpectorBaylon.jpg,Linebackers,34.192781127058,48.6446684692055,44.3796713137999,97.481725923717
-CLEM_017,Bryan,Breese,"",DL,DL,11,FR,https://clemsontigers.com/wp-content/uploads/2020/02/BreseeBryan.jpg,Defensive Line,5.22695016115904,75.2327609807253,45.0501820072532,10.7257070485502
-CLEM_018,Tyler,Venables,"",DB,S,12,FR,https://clemsontigers.com/wp-content/uploads/2020/02/VenablesTyler.jpg,Secondary,35.4790726443753,83.0101629486308,68.9756681211293,13.3313239552081
-CLEM_019,Brannon,Spector,"",WR,WR,13,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/SpectorBrannon.jpg,Wide Receivers,56.0605425387621,13.4611222194508,34.9544612923637,86.5526313427836
-CLEM_020,Tyler,Davis,"",DL,DT,13,SO,https://clemsontigers.com/wp-content/uploads/2018/12/DavisTyler.jpg,Defensive Line,91.1544553004205,34.8153712926433,38.7973350472748,76.6055887797847
-CLEM_021,Kevin,Swint,"",LB,LB,14,FR,https://clemsontigers.com/wp-content/uploads/2020/02/SwintKevin.jpg,Linebackers,82.2788101620972,71.0970045300201,66.7457562172785,45.074726222083
-CLEM_022,Jake,Venables,"",LB,LB,15,SO (RS),https://clemsontigers.com/wp-content/uploads/2019/04/VenablesJake.jpg,Linebackers,94.2121618660167,0.622660527005792,5.04683521576226,6.7408120026812
-CLEM_023,Patrick,McClure,"",QB,QB,15,JR (RS),https://clemsontigers.com/wp-content/uploads/2018/08/McClurePatrick-1.jpg,Quarterbacks,80.2506904117763,73.8848792621866,35.9465968329459,4.73741269670427
-CLEM_024,Ray,Thornton,III,DB,S,16,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/ThortonIIIRay.jpg,Secondary,66.8893076945096,40.6022678362206,54.2374881217256,52.23560819868
-CLEM_025,Trevor,Lawrence,"",QB,QB,16,JR,https://clemsontigers.com/wp-content/uploads/2018/06/LawrenceTrevor-2.jpg,Quarterbacks,32.474086037837,7.89377104956657,20.140284486115,50.8794730296359
-CLEM_026,Cornell,Powell,"",WR,WR,17,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/PowellCornell.jpg,Wide Receivers,53.0012746341527,83.475209120661,17.7245192695409,21.6374526033178
-CLEM_027,Kane,Patterson,"",LB,LB,17,SO,https://clemsontigers.com/wp-content/uploads/2019/06/PattersonKane.jpg,Linebackers,11.881974292919,88.1817514076829,1.4452792936936,38.913716096431
-CLEM_028,Joseph,Charleston,"",DB,S,18,SO,https://clemsontigers.com/wp-content/uploads/2018/12/CharlestonJoseph.jpg,Secondary,54.8177597578615,15.9091609530151,71.7314794892445,56.4744415692985
-CLEM_029,Demonte,Capehart,"",DL,DL,19,FR,https://clemsontigers.com/wp-content/uploads/2020/02/CapehartDeMonte.jpg,Defensive Line,4.08891136758029,36.7400272982195,40.024809143506,54.1973834158853
-CLEM_030,Michel,Dukes,"",HB,RB,19,SO,https://clemsontigers.com/wp-content/uploads/2019/06/DukesMichel.jpg,Halfbacks,2.95202126726508,13.5662460699677,63.8218931853771,46.3774959323928
-CLEM_031,LeAnthony,Williams,"",DB,CB,20,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/03/WilliamsLeAnthony.jpg,Secondary,19.2031790269539,22.7758946828544,63.7531349668279,88.3441043552011
-CLEM_032,Bryton,Constantin,"",LB,LB,21,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/ConstantinBryton.jpg,Linebackers,13.2366802776232,25.9009512374178,48.0224920669571,50.1238858792931
-CLEM_033,Darien,Rencher,"",HB,RB,21,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/07/RencherDarien.jpg,Halfbacks,43.1890403851867,19.4097095401958,61.3883758429438,56.9483180530369
-CLEM_034,Will,Swinney,"",WR,WR,22,SR,https://clemsontigers.com/wp-content/uploads/2017/07/SwinneyWill.jpg,Wide Receivers,70.2257209923118,94.4726381683722,51.0794100817293,42.5507174804807
-CLEM_035,Trenton,Simpson,"",LB,LB,22,FR,https://clemsontigers.com/wp-content/uploads/2020/02/SimpsonTrenton.jpg,Linebackers,25.1741884276271,78.5095258615911,65.9048554953188,87.9361520987004
-CLEM_036,Andrew,Booth,Jr.,CB,CB,23,SO,https://clemsontigers.com/wp-content/uploads/2019/06/BoothJr.Andrew.jpg,,99.996130168438,7.79894804582,97.4322366528213,65.6272361055017
-CLEM_037,Lyn-J,Dixon,"",HB,RB,23,JR,https://clemsontigers.com/wp-content/uploads/2018/06/DixonLyn-J-2.jpg,Halfbacks,85.8825426083058,31.4373691566288,32.8527522040531,96.5920261107385
-CLEM_038,Nolan,Turner,"",DB,S,24,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/TurnerNolan.jpg,Secondary,89.8034015204758,69.8958221357316,34.5603314461187,27.5321849156171
-CLEM_039,Jayln,Phillips,"",DB,DB,25,SO,https://clemsontigers.com/wp-content/uploads/2019/06/PhillipsJalyn.jpg,Secondary,30.8555538766086,38.8409074861556,67.8097817348316,53.7095712963492
-CLEM_040,JC,Chalk,"",TE,TE,25,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/ChalkJ.C.jpg,Tight Ends,11.9467935757712,39.5999429980293,24.0376205882058,97.8614631574601
-CLEM_041,Sheridan,Jones,"",DB,CB,26,SO,https://clemsontigers.com/wp-content/uploads/2018/12/JonesSheridan.jpg,Secondary,65.2922993293032,53.1390110263601,68.0274222744629,34.2672941274941
-CLEM_042,Jack,McCall,"",DB,CB,26,JR (RS),https://clemsontigers.com/wp-content/uploads/2018/09/McCallJack-1.jpg,Secondary,46.7986895469949,52.6161634828895,82.685730792582,7.61812587734312
-CLEM_043,Carson,Donnelly,"",DB,S,27,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/DonnellyCarson-2.jpg,Secondary,49.7211719164625,96.6055055847391,72.7518491214141,7.91658307425678
-CLEM_044,Chez,Mellusi,"",HB,RB,27,SO,https://clemsontigers.com/wp-content/uploads/2019/06/MellusiChez.jpg,Halfbacks,96.0311861243099,42.4127496778965,61.3387858495116,68.2528902543709
-CLEM_045,Michael,Becker,"",DB,S,29,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/07/BeckerMichael-1.jpg,Secondary,40.1061181910336,46.0456045810133,73.7036336679012,38.1216744892299
-CLEM_046,BT,Potter,"",SP,K,29,JR,https://clemsontigers.com/wp-content/uploads/2018/06/PotterB.T-2.jpg,Specialists,42.8857020335272,2.49228468164802,71.684874757193,38.9245468890294
-CLEM_047,Hampton,Earle,"",WR,WR,29,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/EarleHampton.jpg,Wide Receivers,21.3601608993486,96.5407926123589,77.9409136157483,57.7935940120369
-CLEM_048,Keith,Maguire,"",LB,LB,30,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/MaguireKeith.jpg,Linebackers,1.09510805923492,87.6309817889705,6.22384001035243,92.7518312586471
-CLEM_049,Mario,Goodrich,"",DB,CB,31,JR,https://clemsontigers.com/wp-content/uploads/2018/06/GoodrichMario-2.jpg,Secondary,54.7069445485249,5.37540193181485,86.3658273825422,93.8222316559404
-CLEM_050,Etinosa,Reuben,"",DL,DT,32,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/ReubenEtinosa.jpg,Defensive Line,81.5361358923838,32.9402319388464,28.1689726281911,59.652484790422
-CLEM_051,Sylvester,Mayers,"",HN,RB,32,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/09/MayersSylvester.jpg,,88.0690208170563,59.083317941986,26.2565006036311,34.6077689202502
-CLEM_052,Ruke,Orhorhoro,"",DL,DT,33,SO,https://clemsontigers.com/wp-content/uploads/2018/12/OrhorhoroRuke.jpg,Defensive Line,43.475838098675,15.9440500196069,72.2510079620406,11.9593533221632
-CLEM_053,Ty,Lucas,"",HB,RB,33,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/08/LucasTy-1.jpg,Halfbacks,26.1811628239229,66.222495236434,69.1415964625776,87.3734191292897
-CLEM_054,Ben,Batson,"",DB,S,34,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/BatsonBen-3.jpg,Secondary,50.9445767849684,40.9099285956472,6.95342575199902,72.252631909214
-CLEM_055,Justin,Foster,"",DL,DE,35,SR,https://clemsontigers.com/wp-content/uploads/2017/03/FosterJustin.jpg,Defensive Line,70.3143248101696,57.7228332869709,12.8352396888658,90.2115399716422
-CLEM_056,Lannden,Zanders,"",DB,S,36,SO,https://clemsontigers.com/wp-content/uploads/2018/12/ZandersLannden.jpg,Secondary,20.6656959373504,95.6118503585458,29.92474779021,83.1289421068505
-CLEM_057,Jake,Herbstreit,"",DB,CB,37,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/HerbstreitJake.jpg,Secondary,60.2978600887582,57.4164133751765,24.7339932713658,17.1292622108012
-CLEM_058,Elijah,Turner,"",DB,S,38,GR (RS),https://clemsontigers.com/wp-content/uploads/2018/06/TurnerElijah-2.jpg,Secondary,78.8743752287701,59.5122887287289,69.0564272459596,68.9924796344712
-CLEM_059,Aidan,Swanson,"",SP,K,39,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/SwansonAidan.jpg,Specialists,49.3319020839408,58.9665970299393,73.3908122871071,2.47321664355695
-CLEM_060,Greg,Williams,"",DL,DE,40,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/WilliamsGreg.jpg,Defensive Line,43.628446594812,48.0592767009512,16.2589022191241,8.90311016701162
-CLEM_061,Jonathan,Weitz,"",SP,K,41,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/WeitzJonathan.jpg,Specialists,13.4934657718986,12.6321322284639,70.668156677857,86.046346812509
-CLEM_062,Lavonta,Bentley,"",LB,LB,42,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/BentleyLaVonta.jpg,Linebackers,76.0244039818645,90.8328388351947,11.8074774742126,32.4029736919329
-CLEM_063,Nyles,Pinckney,"",DL,DT,44,GR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/PinckneyNyles.jpg,Defensive Line,63.9601300936192,72.0623222412542,38.2738701766357,74.4880572892726
-CLEM_064,Sergio,Allen,"",LB,LB,45,FR,https://clemsontigers.com/wp-content/uploads/2020/02/AllenSergio.jpg,Linebackers,27.7586757205427,75.1923363422975,12.329601100646,58.8455622317269
-CLEM_065,Josh,Jackson,"",WR,WR,45,SR (RS),https://clemsontigers.com/wp-content/uploads/2017/08/JacksonJosh.jpg,Wide Receivers,21.482327952981,72.6314346538857,51.254816306755,13.3718191646039
-CLEM_066,Matt,McMahan,"",LB,LB,45,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/04/McMahanMatt.jpg,Linebackers,39.0270220581442,65.0639499304816,9.77002934087068,54.4559185625985
-CLEM_067,Jack,Maddox,"",SP,LS,46,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/MaddoxJack.jpg,Specialists,63.4806942660362,67.9304436780512,53.3824304351583,7.67619556281716
-CLEM_068,Peter,Cote,"",DB,S,47,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/09/CotePeter.jpg,Secondary,62.3602557228878,2.11614423897117,44.7761551244184,57.656633364968
-CLEM_069,James,Skalski,"",LB,LB,47,GR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/SkalskiJames.jpg,Linebackers,28.9765548892319,70.9208860062063,30.216490267776,99.3014713283628
-CLEM_070,Will,Spiers,"",SP,P,48,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/SpiersWill.jpg,Specialists,22.0615345984697,93.4647817863151,85.4725626064464,27.6860608719289
-CLEM_071,David,Cote,"",LB,LB,48,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/CoteDavid.jpg,Linebackers,36.6228635888547,67.7314232569188,79.7988332109526,26.7294396646321
-CLEM_072,Matthew,Maloney,"",LB,LB,49,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/MaloneyMatthew.jpg,Linebackers,97.6125328801572,74.6569419745356,1.86006992589682,91.542396415025
-CLEM_073,Kaleb,Boateng,"",OL,OL,50,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/BoatengKaleb.jpg,Offensive Line,31.3745428109542,76.2936829822138,5.03399963490665,99.9682056251913
-CLEM_074,Tayquon,Johnson,"",OL,OL,52,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/JohnsonTayquon.jpg,Offensive Line,38.4616032242775,83.0681032966822,39.7917479276657,94.1643710481003
-CLEM_075,Tyler,Brown,"",SP,LS,52,SR (RS),https://clemsontigers.com/wp-content/uploads/2018/08/BrownTyler.jpg,Specialists,3.67451710626483,28.7683337926865,2.73355660028756,42.4230941338465
-CLEM_076,Regan,Upshaw,"",DL,DE,53,GR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/UpshawRegan.jpg,Defensive Line,8.02548758219928,41.6606758022681,72.8755690390244,19.612220255658
-CLEM_077,Mason,Trotter,"",OL,OL,54,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/TrotterMason.jpg,Offensive Line,0.395831163041294,86.7228315444663,42.1974345576018,99.328890745528
-CLEM_078,Hunter,Rayburn,"",OL,OL,55,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/RayburnHunter.jpg,Offensive Line,16.3850316079333,6.12905104644597,51.522911619395,67.3476399388164
-CLEM_079,Will,Putnam,"",OL,OL,56,SO,https://clemsontigers.com/wp-content/uploads/2018/12/PutnamWill.jpg,Offensive Line,42.280782177113,28.3034770051017,68.2461294578388,33.4289108635858
-CLEM_080,Paul,Tchio,"",OL,OL,57,FR,https://clemsontigers.com/wp-content/uploads/2020/02/TchioPaul.jpg,Offensive Line,73.6982879461721,82.7484205830842,63.3602730929852,55.015679076314
-CLEM_081,Jordan,Williams,"",DL,DT,59,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/03/WilliamsJordan.jpg,Defensive Line,92.1713247895241,92.2416896559298,44.9016824597493,11.2323230830953
-CLEM_082,Mac,Cranford,"",OL,OL,60,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/CranfordMac.jpg,Offensive Line,9.31549174711108,58.1104140495881,31.8835669662803,16.618733224459
-CLEM_083,Cade,Stewart,"",OL,OL,62,GR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/StewartCade.jpg,Offensive Line,87.533159321174,87.0670112548396,31.1101620784029,57.1774454088882
-CLEM_084,Zac,Mcintosh,"",OL,OL,63,JR (RS),https://clemsontigers.com/wp-content/uploads/2019/08/1-1-660x1024.jpg,Offensive Line,29.4797188602388,69.6879926836118,83.3341347286478,65.0140690850094
-CLEM_085,Matt,Bockhorst,"",OL,OL,65,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/03/BockhorstMatt.jpg,Offensive Line,71.0138806141913,87.1423973003402,71.7041860800237,67.7335871849209
-CLEM_086,Will,Edwards,"",OL,OL,67,SO (RS),https://clemsontigers.com/wp-content/uploads/2019/09/EdwardsWill-661x1024.jpg,Offensive Line,52.3236823966727,82.4426149949431,15.6555664492771,90.939348237589
-CLEM_087,Jacob,Edwards,"",OL,OL,69,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/EdwardsJacob.jpg,Offensive Line,3.43097504228354,19.427472865209,56.4308061264455,32.8358685830608
-CLEM_088,Jordan,McFadden,"",OL,OL,71,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/McFaddenJordan-2.jpg,Offensive Line,87.5257727690041,20.2917040092871,23.2217750977725,17.2482339898124
-CLEM_089,Blake,Vinson,"",OL,OL,72,SO (RS),https://clemsontigers.com/wp-content/uploads/2017/03/VinsonBlake.jpg,Offensive Line,73.9063204498962,9.21954337973148,30.5590205360204,34.9641538457945
-CLEM_090,Bryn,Tucker,"",OL,OL,73,FR,https://clemsontigers.com/wp-content/uploads/2020/02/TuckerBryn.jpg,Offensive Line,96.9078706111759,0.946020195260644,85.1041618967429,61.5333060501143
-CLEM_091,Mitchell,Mayes,"",OL,OL,77,FR,https://clemsontigers.com/wp-content/uploads/2020/02/MayesMitchell.jpg,Offensive Line,84.0230548754334,20.5381585517898,41.0476697143167,51.4369665412232
-CLEM_092,Jackson,Carman,"",OL,OL,79,JR,https://clemsontigers.com/wp-content/uploads/2018/06/CarmanJackson-2.jpg,Offensive Line,27.7834936976433,91.6752505348995,20.0876576360315,67.4694433575496
-CLEM_093,Luke,Price,"",TE,TE,80,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/PriceLuke.jpg,Tight Ends,60.7583428965882,71.9863439211622,23.3749014558271,46.3376279221848
-CLEM_094,Drew,Swinney,"",WR,WR,81,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/SwinneyDrew-2.jpg,Wide Receivers,64.0977813396603,27.9377396218479,55.4066608892754,55.8345378609374
-CLEM_095,Will,Brown,"",WR,WR,82,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/BrownWill.jpg,Wide Receivers,56.7317665787414,31.9494876544923,21.8213737709448,30.9702498139814
-CLEM_096,Davis,Allen,"",TE,TE,84,SO,https://clemsontigers.com/wp-content/uploads/2019/06/AllenDavis.jpg,Tight Ends,73.6488944618031,93.0639389203861,37.8805311629549,3.48654373083264
-CLEM_097,Jaelyn,Lay,"",TE,TE,85,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/07/LayJaelyn.jpg,Tight Ends,48.5818824032322,10.880680126138,5.91895247343928,71.1766240885481
-CLEM_098,Tye,Herbstreit,"",WR,WR,86,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/HerbstreitTye.jpg,Wide Receivers,25.2398139098659,85.2077579824254,70.099682896398,70.1167811639607
-CLEM_099,Hamp,Greene,"",WR,WR,87,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/GreeneHamp.jpg,Wide Receivers,23.3553573256359,42.0523341279477,44.5284593384713,3.75631360802799
-CLEM_100,Sage,Ennis,"",TE,TE,87,FR,https://clemsontigers.com/wp-content/uploads/2020/02/EnnisSage.jpg,Tight Ends,48.9712663926184,62.0440315688029,73.7965579144657,29.6438289340585
-CLEM_101,Braden,Galloway,"",TE,TE,88,JR,https://clemsontigers.com/wp-content/uploads/2018/06/GallowayBraden-1.jpg,Tight Ends,71.3599626207724,30.8378989109769,36.5933733992279,45.91481059324
-CLEM_102,Max,May,"",WR,WR,89,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/07/MayMax-1.jpg,Wide Receivers,17.1291576698422,94.7517648106441,10.4010358452797,76.4457036042586
-CLEM_103,Darnell,Jefferies,"",DL,DT,90,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/JefferiesDarnell-2.jpg,Defensive Line,89.771662815474,56.5188117092475,49.9835656490177,26.4652124373242
-CLEM_104,Nick,Eddis,"",DL,DT,91,JR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/EddisNick.jpg,Defensive Line,55.2476858953014,11.4403185900301,88.7172118993476,66.8212729040533
-CLEM_105,Klayton,Randolph,"",DL,DE,92,SO (RS),https://clemsontigers.com/wp-content/uploads/2019/04/RandolphKlayton.jpg,Defensive Line,54.9622577615082,38.5593683691695,24.3378006620333,47.2890885313973
-CLEM_106,James,Edwards,"",DL,DT,95,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/EdwardsJames.jpg,Defensive Line,26.635977672413,55.4546055849642,32.7816075645387,40.8661290071905
-CLEM_107,Myles,Murphy,"",DL,DE,98,FR,https://clemsontigers.com/wp-content/uploads/2020/02/MurphyMyles.jpg,Defensive Line,63.8377995928749,66.9357211794704,91.7512505082414,39.9475119076669
-CLEM_108,Ajou,Ajou,"",WR,WR,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Ajou-Ajou-710x1024.jpg,Wide Receivers,15.8058504806831,24.5857757283375,65.5461781658232,30.3872618125752
-CLEM_109,Demarkcus,Bowman,"",HB,RB,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Demarkcus-Bowman-768x1024.jpg,Halfbacks,48.8529211841524,61.2232912098989,34.4229105627164,16.394570027478
-CLEM_110,Malcolm,Greene,"",DB,CB,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Malcolm-Greene-819x1024.jpg,Secondary,55.1628384739161,67.8869610419497,16.6938753798604,48.7967235967517
-CLEM_111,Trent,Howard,"",OL,OL,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Trent-Howard-scaled-e1576679705671-888x1024.jpg,Offensive Line,15.5782799003646,37.4104264192283,47.1691609360278,69.0539483446628
-CLEM_112,Walker,Parks,"",OL,OL,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Walker-Parks-864x1024.jpg,Offensive Line,8.73668643180281,37.3787749325857,83.3378565264866,94.9463467113674
-CLEM_113,Kobe,Pryor,"",HB,RB,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Kobe-Pryor-720x1024.jpg,Halfbacks,23.4066377626732,73.6080601345748,28.0498242005706,64.1770087881014
-CLEM_114,John,Williams,"",OL,OL,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/John-Williams-scaled-e1576645956527-759x1024.jpg,Offensive Line,20.8655571797863,76.8284718040377,23.649147967808,22.0488418824971
-CLEM_115,Tre,Williams,"",DL,DL,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Tre-Williams-scaled-e1576646097169-829x1024.jpg,Defensive Line,49.1248230915517,66.2086686585099,57.8383562620729,32.3267958126962
+player_id,first,last,suffix,position,position_detailed,number,class,picture,positions,explosive,reach,balance,capacity,summary
+CLEM_001,Derion,Kendrick,"",DB,CB,1,JR,https://clemsontigers.com/wp-content/uploads/2018/06/KendrickDerion.jpg,Secondary,30,61,25,29,36
+CLEM_002,Frank,Ladson,Jr.,WR,WR,2,SO,https://clemsontigers.com/wp-content/uploads/2018/12/LadsonJr.Frank_.jpg,Wide Receivers,48,53,84,6,48
+CLEM_003,Fred,Davis,II,DB,CB,2,FR,https://clemsontigers.com/wp-content/uploads/2020/02/DavisIIFred.jpg,Secondary,54,1,69,95,55
+CLEM_004,Xavier,Thomas,"",DL,DE,3,JR,https://clemsontigers.com/wp-content/uploads/2018/06/ThomasXavier-2.jpg,Defensive Line,34,46,64,49,48
+CLEM_005,Amari,Rodgers,"",WR,WR,3,SR,https://clemsontigers.com/wp-content/uploads/2017/03/RodgersAmari.jpg,Wide Receivers,59,95,33,79,66
+CLEM_006,DJ,Uiagalelei,"",QB,QB,5,FR,https://clemsontigers.com/wp-content/uploads/2020/02/UiagaleleiD.J.jpg,Quarterbacks,14,35,96,23,42
+CLEM_007,KJ,Henry,"",DL,DE,5,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/HenryK.J.jpg,Defensive Line,18,99,59,41,54
+CLEM_008,EJ,Williams,"",WR,WR,6,FR,https://clemsontigers.com/wp-content/uploads/2020/02/WilliamsE.J.jpg,Wide Receivers,83,31,36,80,58
+CLEM_009,Mike,Jones,Jr.,LB,LB,6,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/JonesJr.Mike_-2.jpg,Linebackers,56,75,70,48,62
+CLEM_010,Taisun,Phommachanh,"",QB,QB,7,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/PhommachanhTaisun.jpg,Quarterbacks,29,28,21,32,28
+CLEM_011,Justin,Mascoll,"",DL,DE,7,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/MascollJustin-2.jpg,Defensive Line,4,9,19,1,8
+CLEM_012,Justyn,Ross,"",WR,WR,8,JR,https://clemsontigers.com/wp-content/uploads/2018/06/RossJustyn-2.jpg,Wide Receivers,12,44,8,96,40
+CLEM_013,RJ,Mickens,"",DB,S,9,FR,https://clemsontigers.com/wp-content/uploads/2020/02/MickensR.J.jpg,Secondary,65,65,89,55,68
+CLEM_014,Travis,Etienne,"",HB,RB,9,SR,https://clemsontigers.com/wp-content/uploads/2017/03/EtienneTravis.jpg,Halfbacks,29,61,46,69,51
+CLEM_015,Joseph,Ngata,"",WR,WR,10,SO,https://clemsontigers.com/wp-content/uploads/2018/12/NgataJoseph.jpg,Wide Receivers,4,11,29,53,24
+CLEM_016,Baylon,Spector,"",LB,LB,10,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/03/SpectorBaylon.jpg,Linebackers,1,74,68,47,48
+CLEM_017,Bryan,Breese,"",DL,DL,11,FR,https://clemsontigers.com/wp-content/uploads/2020/02/BreseeBryan.jpg,Defensive Line,88,72,11,66,59
+CLEM_018,Tyler,Venables,"",DB,S,12,FR,https://clemsontigers.com/wp-content/uploads/2020/02/VenablesTyler.jpg,Secondary,70,92,75,82,80
+CLEM_019,Brannon,Spector,"",WR,WR,13,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/SpectorBrannon.jpg,Wide Receivers,74,50,76,48,62
+CLEM_020,Tyler,Davis,"",DL,DT,13,SO,https://clemsontigers.com/wp-content/uploads/2018/12/DavisTyler.jpg,Defensive Line,47,17,37,87,47
+CLEM_021,Kevin,Swint,"",LB,LB,14,FR,https://clemsontigers.com/wp-content/uploads/2020/02/SwintKevin.jpg,Linebackers,90,39,80,34,61
+CLEM_022,Jake,Venables,"",LB,LB,15,SO (RS),https://clemsontigers.com/wp-content/uploads/2019/04/VenablesJake.jpg,Linebackers,55,8,15,80,40
+CLEM_023,Patrick,McClure,"",QB,QB,15,JR (RS),https://clemsontigers.com/wp-content/uploads/2018/08/McClurePatrick-1.jpg,Quarterbacks,83,85,52,23,61
+CLEM_024,Ray,Thornton,III,DB,S,16,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/ThortonIIIRay.jpg,Secondary,55,87,35,53,58
+CLEM_025,Trevor,Lawrence,"",QB,QB,16,JR,https://clemsontigers.com/wp-content/uploads/2018/06/LawrenceTrevor-2.jpg,Quarterbacks,33,85,63,30,53
+CLEM_026,Cornell,Powell,"",WR,WR,17,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/PowellCornell.jpg,Wide Receivers,33,82,37,2,38
+CLEM_027,Kane,Patterson,"",LB,LB,17,SO,https://clemsontigers.com/wp-content/uploads/2019/06/PattersonKane.jpg,Linebackers,7,77,58,22,41
+CLEM_028,Joseph,Charleston,"",DB,S,18,SO,https://clemsontigers.com/wp-content/uploads/2018/12/CharlestonJoseph.jpg,Secondary,32,44,86,64,56
+CLEM_029,Demonte,Capehart,"",DL,DL,19,FR,https://clemsontigers.com/wp-content/uploads/2020/02/CapehartDeMonte.jpg,Defensive Line,94,2,16,67,45
+CLEM_030,Michel,Dukes,"",HB,RB,19,SO,https://clemsontigers.com/wp-content/uploads/2019/06/DukesMichel.jpg,Halfbacks,64,44,49,67,56
+CLEM_031,LeAnthony,Williams,"",DB,CB,20,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/03/WilliamsLeAnthony.jpg,Secondary,67,86,41,1,49
+CLEM_032,Bryton,Constantin,"",LB,LB,21,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/ConstantinBryton.jpg,Linebackers,36,29,95,29,47
+CLEM_033,Darien,Rencher,"",HB,RB,21,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/07/RencherDarien.jpg,Halfbacks,79,66,59,37,60
+CLEM_034,Will,Swinney,"",WR,WR,22,SR,https://clemsontigers.com/wp-content/uploads/2017/07/SwinneyWill.jpg,Wide Receivers,85,63,38,42,57
+CLEM_035,Trenton,Simpson,"",LB,LB,22,FR,https://clemsontigers.com/wp-content/uploads/2020/02/SimpsonTrenton.jpg,Linebackers,14,67,15,77,43
+CLEM_036,Andrew,Booth,Jr.,CB,CB,23,SO,https://clemsontigers.com/wp-content/uploads/2019/06/BoothJr.Andrew.jpg,,55,85,63,30,58
+CLEM_037,Lyn-J,Dixon,"",HB,RB,23,JR,https://clemsontigers.com/wp-content/uploads/2018/06/DixonLyn-J-2.jpg,Halfbacks,88,91,49,59,72
+CLEM_038,Nolan,Turner,"",DB,S,24,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/TurnerNolan.jpg,Secondary,45,80,19,94,60
+CLEM_039,Jayln,Phillips,"",DB,DB,25,SO,https://clemsontigers.com/wp-content/uploads/2019/06/PhillipsJalyn.jpg,Secondary,39,46,16,10,28
+CLEM_040,JC,Chalk,"",TE,TE,25,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/ChalkJ.C.jpg,Tight Ends,51,59,10,31,38
+CLEM_041,Sheridan,Jones,"",DB,CB,26,SO,https://clemsontigers.com/wp-content/uploads/2018/12/JonesSheridan.jpg,Secondary,80,19,25,73,49
+CLEM_042,Jack,McCall,"",DB,CB,26,JR (RS),https://clemsontigers.com/wp-content/uploads/2018/09/McCallJack-1.jpg,Secondary,74,52,76,50,63
+CLEM_043,Carson,Donnelly,"",DB,S,27,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/DonnellyCarson-2.jpg,Secondary,66,24,43,29,40
+CLEM_044,Chez,Mellusi,"",HB,RB,27,SO,https://clemsontigers.com/wp-content/uploads/2019/06/MellusiChez.jpg,Halfbacks,68,47,46,59,55
+CLEM_045,Michael,Becker,"",DB,S,29,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/07/BeckerMichael-1.jpg,Secondary,52,93,28,11,46
+CLEM_046,BT,Potter,"",SP,K,29,JR,https://clemsontigers.com/wp-content/uploads/2018/06/PotterB.T-2.jpg,Specialists,72,24,89,29,54
+CLEM_047,Hampton,Earle,"",WR,WR,29,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/EarleHampton.jpg,Wide Receivers,91,39,29,68,57
+CLEM_048,Keith,Maguire,"",LB,LB,30,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/MaguireKeith.jpg,Linebackers,38,22,98,8,42
+CLEM_049,Mario,Goodrich,"",DB,CB,31,JR,https://clemsontigers.com/wp-content/uploads/2018/06/GoodrichMario-2.jpg,Secondary,28,91,70,73,66
+CLEM_050,Etinosa,Reuben,"",DL,DT,32,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/ReubenEtinosa.jpg,Defensive Line,2,42,50,52,36
+CLEM_051,Sylvester,Mayers,"",HN,RB,32,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/09/MayersSylvester.jpg,,29,55,30,88,50
+CLEM_052,Ruke,Orhorhoro,"",DL,DT,33,SO,https://clemsontigers.com/wp-content/uploads/2018/12/OrhorhoroRuke.jpg,Defensive Line,95,80,79,44,74
+CLEM_053,Ty,Lucas,"",HB,RB,33,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/08/LucasTy-1.jpg,Halfbacks,67,50,15,61,48
+CLEM_054,Ben,Batson,"",DB,S,34,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/BatsonBen-3.jpg,Secondary,94,11,72,66,61
+CLEM_055,Justin,Foster,"",DL,DE,35,SR,https://clemsontigers.com/wp-content/uploads/2017/03/FosterJustin.jpg,Defensive Line,57,42,26,3,32
+CLEM_056,Lannden,Zanders,"",DB,S,36,SO,https://clemsontigers.com/wp-content/uploads/2018/12/ZandersLannden.jpg,Secondary,72,7,71,29,45
+CLEM_057,Jake,Herbstreit,"",DB,CB,37,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/HerbstreitJake.jpg,Secondary,5,32,9,29,19
+CLEM_058,Elijah,Turner,"",DB,S,38,GR (RS),https://clemsontigers.com/wp-content/uploads/2018/06/TurnerElijah-2.jpg,Secondary,59,45,64,71,60
+CLEM_059,Aidan,Swanson,"",SP,K,39,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/SwansonAidan.jpg,Specialists,97,41,4,57,50
+CLEM_060,Greg,Williams,"",DL,DE,40,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/WilliamsGreg.jpg,Defensive Line,89,90,29,86,74
+CLEM_061,Jonathan,Weitz,"",SP,K,41,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/WeitzJonathan.jpg,Specialists,5,73,82,81,60
+CLEM_062,Lavonta,Bentley,"",LB,LB,42,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/BentleyLaVonta.jpg,Linebackers,7,32,39,60,34
+CLEM_063,Nyles,Pinckney,"",DL,DT,44,GR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/PinckneyNyles.jpg,Defensive Line,40,18,51,84,48
+CLEM_064,Sergio,Allen,"",LB,LB,45,FR,https://clemsontigers.com/wp-content/uploads/2020/02/AllenSergio.jpg,Linebackers,93,14,9,16,33
+CLEM_065,Josh,Jackson,"",WR,WR,45,SR (RS),https://clemsontigers.com/wp-content/uploads/2017/08/JacksonJosh.jpg,Wide Receivers,94,92,78,97,90
+CLEM_066,Matt,McMahan,"",LB,LB,45,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/04/McMahanMatt.jpg,Linebackers,92,21,32,55,50
+CLEM_067,Jack,Maddox,"",SP,LS,46,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/MaddoxJack.jpg,Specialists,90,87,56,98,83
+CLEM_068,Peter,Cote,"",DB,S,47,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/09/CotePeter.jpg,Secondary,74,1,38,47,40
+CLEM_069,James,Skalski,"",LB,LB,47,GR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/SkalskiJames.jpg,Linebackers,11,43,60,25,35
+CLEM_070,Will,Spiers,"",SP,P,48,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/SpiersWill.jpg,Specialists,46,6,12,76,35
+CLEM_071,David,Cote,"",LB,LB,48,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/CoteDavid.jpg,Linebackers,36,43,62,4,36
+CLEM_072,Matthew,Maloney,"",LB,LB,49,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/MaloneyMatthew.jpg,Linebackers,82,7,3,9,25
+CLEM_073,Kaleb,Boateng,"",OL,OL,50,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/BoatengKaleb.jpg,Offensive Line,74,95,81,2,63
+CLEM_074,Tayquon,Johnson,"",OL,OL,52,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/JohnsonTayquon.jpg,Offensive Line,21,16,68,97,50
+CLEM_075,Tyler,Brown,"",SP,LS,52,SR (RS),https://clemsontigers.com/wp-content/uploads/2018/08/BrownTyler.jpg,Specialists,31,94,76,16,54
+CLEM_076,Regan,Upshaw,"",DL,DE,53,GR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/UpshawRegan.jpg,Defensive Line,41,82,86,35,61
+CLEM_077,Mason,Trotter,"",OL,OL,54,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/TrotterMason.jpg,Offensive Line,85,45,98,30,64
+CLEM_078,Hunter,Rayburn,"",OL,OL,55,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/RayburnHunter.jpg,Offensive Line,99,75,5,80,65
+CLEM_079,Will,Putnam,"",OL,OL,56,SO,https://clemsontigers.com/wp-content/uploads/2018/12/PutnamWill.jpg,Offensive Line,31,70,65,78,61
+CLEM_080,Paul,Tchio,"",OL,OL,57,FR,https://clemsontigers.com/wp-content/uploads/2020/02/TchioPaul.jpg,Offensive Line,23,2,54,63,36
+CLEM_081,Jordan,Williams,"",DL,DT,59,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/03/WilliamsJordan.jpg,Defensive Line,28,74,56,32,48
+CLEM_082,Mac,Cranford,"",OL,OL,60,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/CranfordMac.jpg,Offensive Line,82,100,2,98,70
+CLEM_083,Cade,Stewart,"",OL,OL,62,GR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/StewartCade.jpg,Offensive Line,37,78,22,16,38
+CLEM_084,Zac,Mcintosh,"",OL,OL,63,JR (RS),https://clemsontigers.com/wp-content/uploads/2019/08/1-1-660x1024.jpg,Offensive Line,44,38,22,60,41
+CLEM_085,Matt,Bockhorst,"",OL,OL,65,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/03/BockhorstMatt.jpg,Offensive Line,15,65,22,41,36
+CLEM_086,Will,Edwards,"",OL,OL,67,SO (RS),https://clemsontigers.com/wp-content/uploads/2019/09/EdwardsWill-661x1024.jpg,Offensive Line,73,40,34,91,60
+CLEM_087,Jacob,Edwards,"",OL,OL,69,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/EdwardsJacob.jpg,Offensive Line,84,9,54,22,42
+CLEM_088,Jordan,McFadden,"",OL,OL,71,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/McFaddenJordan-2.jpg,Offensive Line,13,64,57,22,39
+CLEM_089,Blake,Vinson,"",OL,OL,72,SO (RS),https://clemsontigers.com/wp-content/uploads/2017/03/VinsonBlake.jpg,Offensive Line,42,93,8,0,36
+CLEM_090,Bryn,Tucker,"",OL,OL,73,FR,https://clemsontigers.com/wp-content/uploads/2020/02/TuckerBryn.jpg,Offensive Line,66,37,28,84,54
+CLEM_091,Mitchell,Mayes,"",OL,OL,77,FR,https://clemsontigers.com/wp-content/uploads/2020/02/MayesMitchell.jpg,Offensive Line,68,78,89,90,81
+CLEM_092,Jackson,Carman,"",OL,OL,79,JR,https://clemsontigers.com/wp-content/uploads/2018/06/CarmanJackson-2.jpg,Offensive Line,26,44,24,82,44
+CLEM_093,Luke,Price,"",TE,TE,80,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/PriceLuke.jpg,Tight Ends,22,1,18,70,28
+CLEM_094,Drew,Swinney,"",WR,WR,81,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/SwinneyDrew-2.jpg,Wide Receivers,7,25,18,62,28
+CLEM_095,Will,Brown,"",WR,WR,82,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/BrownWill.jpg,Wide Receivers,51,60,31,53,49
+CLEM_096,Davis,Allen,"",TE,TE,84,SO,https://clemsontigers.com/wp-content/uploads/2019/06/AllenDavis.jpg,Tight Ends,3,93,39,48,46
+CLEM_097,Jaelyn,Lay,"",TE,TE,85,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/07/LayJaelyn.jpg,Tight Ends,19,37,85,5,36
+CLEM_098,Tye,Herbstreit,"",WR,WR,86,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/HerbstreitTye.jpg,Wide Receivers,30,44,100,40,54
+CLEM_099,Hamp,Greene,"",WR,WR,87,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/GreeneHamp.jpg,Wide Receivers,63,51,41,31,46
+CLEM_100,Sage,Ennis,"",TE,TE,87,FR,https://clemsontigers.com/wp-content/uploads/2020/02/EnnisSage.jpg,Tight Ends,17,3,14,12,12
+CLEM_101,Braden,Galloway,"",TE,TE,88,JR,https://clemsontigers.com/wp-content/uploads/2018/06/GallowayBraden-1.jpg,Tight Ends,57,11,8,47,31
+CLEM_102,Max,May,"",WR,WR,89,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/07/MayMax-1.jpg,Wide Receivers,98,32,16,62,52
+CLEM_103,Darnell,Jefferies,"",DL,DT,90,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/JefferiesDarnell-2.jpg,Defensive Line,37,66,37,100,60
+CLEM_104,Nick,Eddis,"",DL,DT,91,JR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/EddisNick.jpg,Defensive Line,53,64,29,75,55
+CLEM_105,Klayton,Randolph,"",DL,DE,92,SO (RS),https://clemsontigers.com/wp-content/uploads/2019/04/RandolphKlayton.jpg,Defensive Line,76,24,17,67,46
+CLEM_106,James,Edwards,"",DL,DT,95,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/EdwardsJames.jpg,Defensive Line,17,22,11,57,27
+CLEM_107,Myles,Murphy,"",DL,DE,98,FR,https://clemsontigers.com/wp-content/uploads/2020/02/MurphyMyles.jpg,Defensive Line,47,88,48,12,49
+CLEM_108,Ajou,Ajou,"",WR,WR,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Ajou-Ajou-710x1024.jpg,Wide Receivers,48,98,39,19,51
+CLEM_109,Demarkcus,Bowman,"",HB,RB,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Demarkcus-Bowman-768x1024.jpg,Halfbacks,61,63,31,68,56
+CLEM_110,Malcolm,Greene,"",DB,CB,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Malcolm-Greene-819x1024.jpg,Secondary,99,99,56,40,74
+CLEM_111,Trent,Howard,"",OL,OL,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Trent-Howard-scaled-e1576679705671-888x1024.jpg,Offensive Line,75,24,1,35,34
+CLEM_112,Walker,Parks,"",OL,OL,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Walker-Parks-864x1024.jpg,Offensive Line,43,96,13,8,40
+CLEM_113,Kobe,Pryor,"",HB,RB,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Kobe-Pryor-720x1024.jpg,Halfbacks,89,98,24,53,66
+CLEM_114,John,Williams,"",OL,OL,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/John-Williams-scaled-e1576645956527-759x1024.jpg,Offensive Line,40,31,4,64,35
+CLEM_115,Tre,Williams,"",DL,DL,,FR,https://clemsontigers.com/wp-content/uploads/2019/12/Tre-Williams-scaled-e1576646097169-829x1024.jpg,Defensive Line,99,49,69,15,58
