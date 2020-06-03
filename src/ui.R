@@ -4,7 +4,8 @@ function(input, output, session){
       suppressDependencies("bootstrap"),
       tags$link(rel = "stylesheet", type = "text/css", href = "css/sass.min.css"),
       tags$script(src = "js/menu.js"),
-      tags$script(src = "js/sidebar.js")
+      tags$script(src = "js/sidebar.js"),
+      tags$script(src = "js/player.js")
     ),
     gridPage(
       title = "Gains Group",
@@ -31,7 +32,7 @@ function(input, output, session){
         ),
         div(
           class = "main",
-          main$ui("module_id", data, position_stats)
+          main$ui("main", data, position_stats)
         )
       )
     )
