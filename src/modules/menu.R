@@ -77,7 +77,7 @@ filters <- function(ns) {
 
 search_api <- function(data, q) {
   has_matching <- function(field) {
-    startsWith(field, q)
+    startsWith(toupper(field), toupper(q))
   }
   players = data %>%
     dplyr::filter(has_matching(first) | has_matching(last) | has_matching(positions) | has_matching(as.character(number))) %>% 
