@@ -1,0 +1,72 @@
+@import '../modules/themes.scss';
+
+$card-size: 100px;
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-card {
+  width: $card-size;
+  height: $card-size + $card-size;
+  float: left;
+  margin: 5px;
+  
+  .player-image {
+    height: $card-size;
+    background-size: cover;
+    border-radius: $card-size/2;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .first-name {
+    text-align: center;
+    font-size: 10px;
+    height: 12px;
+  }
+  
+  .last-name {
+    text-align: center;
+    font-weight: bold;
+    height: 16px;
+  }
+  
+  .player-number {
+    text-align: center;
+    font-size: 10px;
+    height: 12px;
+    color: #9da3ab;
+  }
+}
+
+.stat {
+  height: 30px;
+  background-color: #9da3ab;
+  width: 30px;
+  font-size: 18px;
+  border-radius: 50%;
+  @extend .centered-content
+}
+
+.position-card {
+  width: $card-size;
+  height: $card-size + $card-size;
+  float: left;
+  margin: 5px;
+  .position-name {
+    height: $card-size;
+    font-size: $card-size/2;
+    color: $main-team-color;
+    p {
+      @extend .centered-content;
+    }
+  }
+  .position-desc {
+    text-align: center;
+    font-weight: bold;
+    height: 16px;
+  }
+}

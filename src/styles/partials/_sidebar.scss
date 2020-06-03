@@ -1,6 +1,6 @@
 @import '../modules/themes.scss';
 
-.centered-content {
+.left-centered-content {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -17,7 +17,7 @@
 
 .sidebar-item {
   height: $sidebar-item-size;
-  @extend .centered-content;
+  @extend .left-centered-content;
 }
 
 .sidebar-active {
