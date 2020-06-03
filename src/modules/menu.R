@@ -41,13 +41,16 @@ server <- function(input, output, session, data) {
   session$userData$level <- reactiveVal("all")
   search_api_url <- register_search(session, data, search_api)
   
+  output$logo_card <- renderUI({
+    
+  })
+  
   output$search_field <- renderUI({
     browser_search("players", search_api_url, "")
   })
   
   observeEvent(input$level, {
     session$userData$level(input$level)
-    print(isolate(session$userData$level()))
   }, ignoreInit = TRUE)
 
 }
