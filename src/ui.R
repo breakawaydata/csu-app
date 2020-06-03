@@ -31,7 +31,7 @@ function(input, output, session){
         ),
         div(
           class = "main",
-          main$ui("module_id", data)
+          main$ui("module_id", data, position_stats)
         )
       )
     )
