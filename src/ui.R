@@ -15,10 +15,7 @@ function(input, output, session){
         "header",
         "body"
       ),
-      gridPanel(
-        class = "header",
-        menu$ui("menu")
-      ),
+      menu$ui("menu"),
       gridPanel(
         class = "body",
         columns = "15% 85%",

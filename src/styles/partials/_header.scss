@@ -1,0 +1,26 @@
+@import '../modules/themes.scss';
+
+.left-centered-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ui.vertical.menu {
+  width: 100% !important
+}
+
+.sidebar-item > .icon {
+  width: $sidebar-icon-size;
+  margin-right: $sidebar-icon-size/2;
+}
+
+.sidebar-item {
+  height: $sidebar-item-size;
+  @extend .left-centered-content;
+}
+
+.sidebar-active {
+  color: $active-text !important;
+  background-color: $main-team-color !important;
+}

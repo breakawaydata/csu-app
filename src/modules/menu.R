@@ -24,7 +24,7 @@ ui <- function(id) {
       horizontal_card(
         "Clemson Football",
         "All Players",
-        "assets/clemson.png"
+        "assets/card_logo.png"
       )
     ),
     filters(ns),
@@ -41,12 +41,8 @@ server <- function(input, output, session, data) {
   session$userData$level <- reactiveVal("all")
   search_api_url <- register_search(session, data, search_api)
   
-  output$logo_card <- renderUI({
-    
-  })
-  
   output$search_field <- renderUI({
-    browser_search("players", search_api_url, "")
+    browser_search("players", search_api_url, ".player-card", ".position-card")
   })
   
   observeEvent(input$level, {
@@ -67,7 +63,7 @@ filters <- function(ns) {
     class = "filters",
     rows = "50% 25% 25%",
     areas = c("logo", "search-container", "levels"),
-    div(class = "logo", tags$img(class = "ui centered tiny image", src = "assets/ball.png")),
+    div(class = "logo", tags$img(class = "ui centered tiny image", src = "assets/logo.png")),
     div(class = "search-container", uiOutput(ns("search_field"))),
     div(class = "levels", style = "text-align: center;", 
       htmlTemplate("modules/templates/breadcrumb.html")    
@@ -88,50 +84,14 @@ search_api <- function(data, q) {
   rbind(players, positions)
 }
 
-browser_search <- function(name, search_api_url, default_text = "Search") {
-  shiny::tagList(
-    div(class = "ui search", id = name,
-        div(class = "ui icon fluid input",
-            tags$input(class = "prompt search field",
-                       type = "text",
-                       placeholder = default_text,
-                       oninput = "null"),
-            uiicon("search")
-        ),
-        div(class = "results")
-    ),
-    tags$script(browser_search_js(name, search_api_url))
+browser_search <- function(id, search_api_url, player_card_class, position_card_class) {
+  htmltools::htmlTemplate(
+    "modules/templates/search.html",
+    id = id, 
+    search_api_url = search_api_url, 
+    player_card_class = player_card_class, 
+    position_card_class = position_card_class
   )
-}
-
-browser_search_js <- function(name, search_api_url) {
-  HTML(glue::glue("
-    $('#{name}').search({{
-      apiSettings: {{
-        url: '{search_api_url}&q={{query}}'
-      }},
-      maxResults: 40,
-      cache: false,
-      onResults: function(response) {{
-        if (response.results.length > 0) {{
-          let ids_player = response.results.filter(word => word.search == 'player').map(entry => entry.player_id);
-          let ids_position = response.results.filter(word => word.search == 'position').map(entry => entry.position);
-          let ids = ids_player.concat(ids_position);
-          let elements = document.querySelectorAll(ids.map(id => `#${{id}}`).join(', '));
-          $('.player-card').hide();
-          $('.position-card').hide();
-          $(elements).show();
-        }}
-      }},
-      onResultsClose: function() {{
-        let search_value = $('#{name}').search('get value');
-        if (search_value === '') {{
-          $('.player-card').show();
-          $('.position-card').show();
-        }}
-      }}
-    }})             
-  "))
 }
 
 user_tools <- function() {
