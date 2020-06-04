@@ -47,7 +47,7 @@ server <- function(input, output, session, data) {
           paste(player_data$first, player_data$last),
           player_data$positions, 
           glue::glue("url('{player_data$picture}')")
-        ) %>% list() # hack - case_when doesn;tt allow returning tag.lists
+        ) %>% list() # hack - case_when doesn't allow returning tag.lists
       },
       chosen_menu_level == consts$dom$all_level_id ~ {
         horizontal_card(
@@ -78,14 +78,14 @@ server <- function(input, output, session, data) {
 }
 
 horizontal_card <- function(header, sub_header, img_path, description = NULL) {
-  htmlTemplate(
+  htmltools::htmlTemplate(
     "modules/templates/horizontal-card.html", 
     header = header, sub_header = sub_header, img_path = img_path, description = description
   )
 }
 
 menu_navigation <- function(id) {
-  htmlTemplate(
+  htmltools::htmlTemplate(
     "modules/templates/breadcrumb.html",
     id = id, 
     all_level_id = consts$dom$all_level_id,

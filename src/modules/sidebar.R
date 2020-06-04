@@ -9,7 +9,7 @@ consts <- modules::use(consts)
 
 ui <- function(id) {
   ns <- NS(id)
-  htmlTemplate(
+  htmltools::htmlTemplate(
     "modules/templates/sidebar.html",
     sidebar_elements = 
       tagList(
