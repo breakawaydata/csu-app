@@ -1,10 +1,10 @@
 position,positions,explosive,reach,balance,capacity,summary
-DB,Secondary,53,41,47,45,47
-DL,Defensive Line,51,53,58,55,54
-HB,Halfbacks,47,62,48,41,50
-LB,Linebackers,49,54,52,57,53
-OL,Offensive Line,51,45,47,49,48
-QB,Quarterbacks,68,69,40,31,52
-SP,Specialists,33,61,41,45,45
-TE,Tight Ends,24,56,50,40,43
-WR,Wide Receivers,48,57,55,43,51
+HB,Halfbacks,41,47,60,59,52
+WR,Wide Receivers,60,47,54,47,52
+QB,Quarterbacks,28,36,78,61,51
+OL,Offensive Line,52,50,57,40,50
+TE,Tight Ends,53,59,60,27,50
+DL,Defensive Line,43,44,59,48,48
+LB,Linebackers,49,47,43,55,48
+SP,Specialists,48,43,49,52,48
+DB,Secondary,37,52,55,40,46

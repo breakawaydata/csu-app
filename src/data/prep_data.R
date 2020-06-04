@@ -17,11 +17,13 @@ generate_stats <- function(data, stats_names = c("explosive", "reach", "balance"
   cbind(data, stats)
 }
 
-data <- generate_stats(data)
+data <- generate_stats(data) %>% 
+  dplyr::arrange(desc(summary))
 position_stats <- data %>% 
   dplyr::group_by(position, positions) %>% 
   summarise_at(vars(explosive, reach, balance, capacity, summary), mean) %>% 
-  dplyr::mutate_if(is.numeric, round, digits = 0)
+  dplyr::mutate_if(is.numeric, round, digits = 0) %>% 
+  dplyr::arrange(desc(summary))
 
 fwrite(data, "data/data_players.csv")
 fwrite(position_stats, "data/data_positions.csv")
