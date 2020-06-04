@@ -6,6 +6,7 @@ $logo-size: 200px;
 
 .ui.card {
   height: $logo-size;
+  width: 100% !important;
   padding: 20px;
   box-shadow: none !important;
   border: none !important;
@@ -23,9 +24,12 @@ $logo-size: 200px;
     border: none !important;
     .header {
       color: $active-text !important;
+      font-size: 30px !important;
     }
     .meta {
       color: $active-text !important;
+      font-size: 18px !important;
+      padding-top: 10px !important;
     }
   }
 }

@@ -13,7 +13,7 @@ ui <- function(id) {
   ns <- NS(id)
   gridPanel(
     class = "header",
-    columns = "25% 50% 25%",
+    columns = "33% 34% 33%",
     areas = "card filters user",
     gap = list(
       default = "20px",
