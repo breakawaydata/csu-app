@@ -1,0 +1,35 @@
+#grid-page-wrapper > .header {
+  background-color: $main-team-color;  
+}
+
+$logo-size: 200px;
+
+.ui.card {
+  height: $logo-size;
+  padding: 20px;
+  box-shadow: none !important;
+  border: none !important;
+  background-color: $main-team-color !important;
+  &:first-child {
+    border-radius: 0;
+  }
+  .image {
+    border-radius: 20px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  .content {
+    border: none !important;
+    .header {
+      color: $active-text !important;
+    }
+    .meta {
+      color: $active-text !important;
+    }
+  }
+}
+
+.ui.breadcrumb a.section {
+    color: $active-text;
+}

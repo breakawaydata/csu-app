@@ -1,7 +1,8 @@
 default:
   global:
     team_name: "Clemson Football"
-    team_logo: "assets/clemson.png"
+    team_logo: "icons/casl_logo.png"
+    team_logo_small: "icons/white_clemson_paw.png"
   sass:
     input: "styles/main.scss"
     style: "compressed"
