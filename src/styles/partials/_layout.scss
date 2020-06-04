@@ -1,5 +1,13 @@
 @import '../modules/themes.scss';
 
+body {
+  background-color: $background-color;
+}
+
+#grid-page-wrapper > .header {
+  background-color: $main-team-color;  
+}
+
 .main {
   padding: 0 15px;
   .player-content {

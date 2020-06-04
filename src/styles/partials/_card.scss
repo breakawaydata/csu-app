@@ -10,7 +10,7 @@ $card-size: 100px;
 
 .player-card {
   width: $card-size;
-  height: $card-size + $card-size;
+  height: $card-size + $card-size/2;
   float: left;
   margin: 5px;
   
@@ -20,6 +20,10 @@ $card-size: 100px;
     border-radius: $card-size/2;
     background-position: center;
     background-repeat: no-repeat;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 5px 1px $text-light-color;
+    }
   }
   
   .first-name {
@@ -38,24 +42,31 @@ $card-size: 100px;
     text-align: center;
     font-size: 10px;
     height: 12px;
-    color: #9da3ab;
+    color: $text-light-color;
   }
 }
 
 .stat {
-  height: 30px;
-  background-color: #9da3ab;
-  width: 30px;
-  font-size: 18px;
+  height: $card-size*0.4;
+  background-color: $stat-background;
+  width: $card-size*0.4;
+  font-size: $card-size*0.2;
   border-radius: 50%;
-  @extend .centered-content
+  float: right;
+  margin-top: $card-size*0.6;
+  color: $text-main-color;
+  font-weight: bold;
+  @extend .centered-content;
 }
 
 .position-card {
   width: $card-size;
-  height: $card-size + $card-size;
+  height: $card-size + $card-size/2;
   float: left;
   margin: 5px;
+  &:hover {
+    cursor: pointer;
+  }
   .position-name {
     height: $card-size;
     font-size: $card-size/2;
