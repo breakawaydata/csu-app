@@ -22,7 +22,7 @@ players %>%
   ) %>% 
   verify(description = "number is integer", has_class("number", class = "integer")) %>% 
   assert(description = "No NA's inside all columns", not_na, player_id, first, last, position, number, picture, skip_chain_opts = TRUE,
-         error_fun = warning_append) %>%
+         error_fun = warning_append, success_fun = success_append) %>%
   assert(description = "Player ID is unique", is_uniq, player_id) %>% 
   chain_end(error_fun = error_append) %>%
   add_results(validator)
@@ -35,7 +35,7 @@ positions %>%
     obligatory = TRUE
   ) %>% 
   assert(description = "No NA's inside all existing columns", not_na, positions, abbreviation, skip_chain_opts = TRUE,
-         error_fun = warning_append) %>%
+         error_fun = warning_append, success_fun = success_append) %>%
   assert(description = "Abbreviation is unique", is_uniq, abbreviation) %>% 
   chain_end(error_fun = error_append) %>%
   add_results(validator)
