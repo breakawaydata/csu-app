@@ -1,4 +1,5 @@
-@import '../modules/themes.scss';
+$sidebar-item-size: 60px;
+$sidebar-icon-size: 50px;
 
 .left-centered-content {
   display: flex;
@@ -15,18 +16,30 @@
     &:before {
       width: 0;
     }
+    &:hover {
+      background-color: $background-color !important;
+    }
     .sidebar-item {
       height: $sidebar-item-size;
       @extend .overwrite-semantic-card;
-      @extend .left-centered-content;
-      .icon {
-        width: $sidebar-icon-size;
-        margin-right: $sidebar-icon-size/2;
+      .sidebar-image {
+        @extend .left-centered-content;
+        width: $sidebar-item-size;
+        height: $sidebar-item-size;
+        background-color: $background-color;
+        border-radius: 0% 50% 50% 0%;
+        .icon {
+          width: $sidebar-icon-size;
+          margin-right: $sidebar-icon-size/2;
+        }
       }
     }
   }
   .sidebar-active {
-    color: $active-text !important;
-    background-color: $main-team-color !important;
+    .sidebar-item {
+      color: $active-text !important;
+      border-radius: 100px 20px 20px 100px !important;
+      background-color: $main-team-color !important;
+    }
   }
 }
