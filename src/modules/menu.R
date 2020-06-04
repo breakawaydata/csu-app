@@ -42,7 +42,7 @@ server <- function(input, output, session, data) {
   search_api_url <- register_search(session, data, search_api)
   
   output$search_field <- renderUI({
-    browser_search("players", search_api_url, ".player-card", ".position-card")
+    browser_search("players", search_api_url, "player-card", "position-card")
   })
   
   observeEvent(input$level, {

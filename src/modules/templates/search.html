@@ -20,22 +20,22 @@
         let ids_position = positions.map(entry => entry.position);
         let ids = ids_player.concat(ids_position);
         let elements = document.querySelectorAll(ids.map(id => `#${id}`).join(', '));
-        $('{{ player_card_class }}').hide();
-        $('{{ position_card_class }}').hide();
+        $('.{{ player_card_class }}').hide();
+        $('.{{ position_card_class }}').hide();
         $(elements).show();
       } 
       if (players.length == 0) {
-        $('{{ player_card_class }}').hide();
+        $('.{{ player_card_class }}').hide();
       }
       if (players.length == 0) {
-        $('{{ position_card_class }}').hide();
+        $('.{{ position_card_class }}').hide();
       }
     },
     onResultsClose: function() {
       let search_value = $('#{{ id }}').search('get value');
       if (search_value === '') {
-        $('{{ player_card_class }}').show();
-        $('{{ position_card_class }}').show();
+        $('.{{ player_card_class }}').show();
+        $('.{{ position_card_class }}').show();
       }
     }
   })             
