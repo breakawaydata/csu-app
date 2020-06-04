@@ -46,6 +46,7 @@ results <- get_results(validator)
 if (any(results$type == "error")) {
   save_report(validator, output_dir = "data")
   rstudioapi::viewer("data/validation_report.html")
+  message("Data was not update due to validation violations")
 } else {
   if (any(results$type == "warning")) {
     save_report(validator, output_dir = "data")
@@ -76,4 +77,5 @@ if (any(results$type == "error")) {
   
   fwrite(data, "data/data_players.csv")
   fwrite(position_stats, "data/data_positions.csv")  
+  message("Data successfuly updated")
 }
