@@ -7,3 +7,5 @@ TODO.txt
 .Rproj.user/
 .DS_Store
 __pychache__
+src/data/validation_report.html
+
