@@ -13,7 +13,7 @@ ui <- function(id) {
   ns <- NS(id)
   gridPanel(
     class = "header",
-    columns = "25% 50% 25%",
+    columns = "33% 34% 33%",
     areas = "card filters user",
     gap = list(
       default = "20px",
@@ -99,7 +99,7 @@ filters <- function(ns) {
     class = "filters",
     rows = "50% 25% 25%",
     areas = c("logo", "search-container", "levels"),
-    div(class = "logo", tags$img(class = "ui centered tiny image", src = "assets/logo.png")),
+    div(class = "logo", tags$img(class = "ui centered tiny image", src = consts$global$team_logo_small)),
     div(class = "search-container", uiOutput(ns("search_field"))),
     div(class = "levels", style = "text-align: center;", 
       menu_navigation(consts$dom$menu_navigation_id)
@@ -116,7 +116,7 @@ search_api <- function(data, q) {
     dplyr::mutate(search = consts$search$player_search_type)
   positions = data %>% 
     dplyr::filter(has_matching(positions)) %>% 
-    dplyr::mutate(search = consts$search$player_search_type)
+    dplyr::mutate(search = consts$search$position_search_type)
   rbind(players, positions)
 }
 
