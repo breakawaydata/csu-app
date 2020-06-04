@@ -42,10 +42,13 @@ sidebar_element <- function(item_id, icon, text, class = "") {
     id = glue::glue("{item_id}"),
     tags$div(
       class = "sidebar-item",
-      tags$img(
-        class = "icon",
-        src = glue::glue("icons/{icon}.png"),
-        text
+      tags$div(
+        class = "sidebar-image",
+        tags$img(
+          class = "icon",
+          src = glue::glue("icons/{icon}.png"),
+          text
+        )
       )
     )
   )

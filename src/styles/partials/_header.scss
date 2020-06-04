@@ -1,0 +1,43 @@
+#grid-page-wrapper > .header {
+  background-color: $main-team-color;  
+}
+
+$logo-size: 200px;
+
+.overwrite-semantic-card {
+  box-shadow: none !important;
+  border: none !important;
+  &:first-child {
+    border-radius: 0;
+  }
+}
+
+.ui.card {
+  height: $logo-size;
+  width: 100% !important;
+  padding: 20px;
+  background-color: $main-team-color !important;
+  @extend .overwrite-semantic-card;
+  .image {
+    border-radius: 20px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  .content {
+    border: none !important;
+    .header {
+      color: $active-text !important;
+      font-size: 30px !important;
+    }
+    .meta {
+      color: $active-text !important;
+      font-size: 18px !important;
+      padding-top: 10px !important;
+    }
+  }
+}
+
+.ui.breadcrumb a.section {
+    color: $active-text;
+}

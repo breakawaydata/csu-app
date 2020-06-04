@@ -1,4 +1,5 @@
-@import '../modules/themes.scss';
+$sidebar-item-size: 60px;
+$sidebar-icon-size: 50px;
 
 .left-centered-content {
   display: flex;
@@ -9,19 +10,36 @@
 .ui.vertical.menu {
   width: 100% !important;
   background-color: $background-color;
-}
-
-.sidebar-item > .icon {
-  width: $sidebar-icon-size;
-  margin-right: $sidebar-icon-size/2;
-}
-
-.sidebar-item {
-  height: $sidebar-item-size;
-  @extend .left-centered-content;
-}
-
-.sidebar-active {
-  color: $active-text !important;
-  background-color: $main-team-color !important;
+  @extend .overwrite-semantic-card;
+  .item {
+    @extend .overwrite-semantic-card;
+    &:before {
+      width: 0;
+    }
+    &:hover {
+      background-color: $background-color !important;
+    }
+    .sidebar-item {
+      height: $sidebar-item-size;
+      @extend .overwrite-semantic-card;
+      .sidebar-image {
+        @extend .left-centered-content;
+        width: $sidebar-item-size;
+        height: $sidebar-item-size;
+        background-color: $background-color;
+        border-radius: 0% 50% 50% 0%;
+        .icon {
+          width: $sidebar-icon-size;
+          margin-right: $sidebar-icon-size/2;
+        }
+      }
+    }
+  }
+  .sidebar-active {
+    .sidebar-item {
+      color: $active-text !important;
+      border-radius: 100px 20px 20px 100px !important;
+      background-color: $main-team-color !important;
+    }
+  }
 }
