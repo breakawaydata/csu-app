@@ -21,11 +21,7 @@ ui <- function(id) {
     ),
     div(
       class = "card",
-      horizontal_card(
-        "Clemson Football",
-        "All Players",
-        "assets/clemson.png"
-      )
+      uiOutput(ns("logo_card"))
     ),
     filters(ns),
     user_tools()
@@ -42,7 +38,26 @@ server <- function(input, output, session, data) {
   search_api_url <- register_search(session, data, search_api)
   
   output$logo_card <- renderUI({
-    
+    if(session$userData$level() == "player") {
+      player_data <- data[data$player_id == session$userData$player(), ]
+      horizontal_card(
+        paste(player_data$first, player_data$last),
+        player_data$positions, 
+        glue::glue("url('{player_data$picture}')")
+      )
+    } else if(session$userData$level() == "all") {
+      horizontal_card(
+        consts$global$team_name,
+        "All Players",
+        glue::glue("url('{consts$global$team_logo}')")
+      )
+    } else if(session$userData$level() == "position") {
+      horizontal_card(
+        consts$global$team_name,
+        "Positions",
+        glue::glue("url('{consts$global$team_logo}')")
+      )
+    }
   })
   
   output$search_field <- renderUI({
