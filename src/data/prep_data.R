@@ -1,9 +1,13 @@
 library(magrittr)
 library(dplyr)
 library(data.table)
+library(assertr)
+library(data.validator)
 
 players <- fread("data/players.csv", data.table = FALSE)
 positions <- fread("data/positions.csv", data.table = FALSE)
+
+
 
 data <- players %>% 
   left_join(positions, by = c("position" = "abbreviation"))
