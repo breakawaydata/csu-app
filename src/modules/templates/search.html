@@ -13,8 +13,8 @@
     maxResults: 40,
     cache: false,
     onResults: function(response) {
-      let players = response.results.filter(entry => entry.search == 'player')
-      let positions = response.results.filter(entry => entry.search == 'position')
+      let players = response.results.filter(entry => entry.search == '{{ player_search_type }}')
+      let positions = response.results.filter(entry => entry.search == '{{ position_search_type }}')
       if (response.results.length > 0) {
         let ids_player = players.map(entry => entry.player_id);
         let ids_position = positions.map(entry => entry.position);
@@ -27,7 +27,7 @@
       if (players.length == 0) {
         $('.{{ player_card_class }}').hide();
       }
-      if (players.length == 0) {
+      if (positions.length == 0) {
         $('.{{ position_card_class }}').hide();
       }
     },

@@ -1,10 +1,27 @@
 default:
   global:
-    counter_start_position: 0
+    team_name: "Clemson Football"
+    team_logo: "assets/card_logo.png"
+  dom:
+    all_level_id: "all"
+    body_container_all_id: "all-container"
+    position_level_id: "position"
+    body_container_position_id: "position-container"
+    player_level_id: "player"
+    body_container_player_id: "player-container"
+    body_container_class: "body-container"
+    player_card_class: "player-card"
+    position_card_class: "position-card"
+    menu_navigation_id: "menu"
+    sidebar_navigation_id: "sidebar"
+    body_class: "main"
+    sidebar_class: "sidebar"
+    menu_class: "header"
+  search:
+    id: "search_field"
+    player_search_type: "player"
+    position_search_type: "position"
   sass:
     input: "styles/main.scss"
     style: "compressed"
     output: "www/css/sass.min.css"
-  texts:
-    button_label: "Click me"
-    clicked_info: "You clicked me %.0f times!"

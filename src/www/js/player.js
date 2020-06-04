@@ -1,8 +1,8 @@
 $( document ).ready(function() {
-  $(document).on('click','.main .player-card', function(){
+  $(document).on('click','.' + consts.dom.player_card_class, function(){
     
     Shiny.setInputValue('main-player', $(this).attr("id"));
-    // click player section
-    $(".levels > div > a")[2].click();
+    $('#' + consts.dom.menu_navigation_id).find('.section')[2].click();
+    window.scrollTo(0, 0);
   });
 });

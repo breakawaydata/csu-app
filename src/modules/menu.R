@@ -21,11 +21,7 @@ ui <- function(id) {
     ),
     div(
       class = "card",
-      horizontal_card(
-        "Clemson Football",
-        "All Players",
-        "assets/card_logo.png"
-      )
+      uiOutput(ns("logo_card"))
     ),
     filters(ns),
     user_tools()
@@ -41,8 +37,38 @@ server <- function(input, output, session, data) {
   session$userData$level <- reactiveVal("all")
   search_api_url <- register_search(session, data, search_api)
   
+  output$logo_card <- renderUI({
+    chosen_player <- session$userData$player()
+    chosen_menu_level <- session$userData$level()
+    card_content <- dplyr::case_when(
+      chosen_menu_level == consts$dom$player_level_id ~ {
+        player_data <- data[data$player_id == chosen_player, ]
+        horizontal_card(
+          paste(player_data$first, player_data$last),
+          player_data$positions, 
+          glue::glue("url('{player_data$picture}')")
+        ) %>% list() # hack - case_when doesn;tt allow returning tag.lists
+      },
+      chosen_menu_level == consts$dom$all_level_id ~ {
+        horizontal_card(
+          consts$global$team_name,
+          "All Players",
+          glue::glue("url('{consts$global$team_logo}')")
+        ) %>% list()
+      },
+      chosen_menu_level == consts$dom$position_level_id ~ {
+        horizontal_card(
+          consts$global$team_name,
+          "Positions",
+          glue::glue("url('{consts$global$team_logo}')")
+        ) %>% list()
+      }
+    )
+    card_content[[1]]
+  })
+  
   output$search_field <- renderUI({
-    browser_search("players", search_api_url, "player-card", "position-card")
+    browser_search(consts$search$id, search_api_url)
   })
   
   observeEvent(input$level, {
@@ -58,6 +84,16 @@ horizontal_card <- function(header, sub_header, img_path, description = NULL) {
   )
 }
 
+menu_navigation <- function(id) {
+  htmlTemplate(
+    "modules/templates/breadcrumb.html",
+    id = id, 
+    all_level_id = consts$dom$all_level_id,
+    position_level_id = consts$dom$position_level_id,
+    player_level_id = consts$dom$player_level_id
+  )
+}
+
 filters <- function(ns) {
   gridPanel(
     class = "filters",
@@ -66,7 +102,7 @@ filters <- function(ns) {
     div(class = "logo", tags$img(class = "ui centered tiny image", src = "assets/logo.png")),
     div(class = "search-container", uiOutput(ns("search_field"))),
     div(class = "levels", style = "text-align: center;", 
-      htmlTemplate("modules/templates/breadcrumb.html")    
+      menu_navigation(consts$dom$menu_navigation_id)
     )
   )
 }
@@ -77,20 +113,22 @@ search_api <- function(data, q) {
   }
   players = data %>%
     dplyr::filter(has_matching(first) | has_matching(last) | has_matching(positions) | has_matching(as.character(number))) %>% 
-    dplyr::mutate(search = "player")
+    dplyr::mutate(search = consts$search$player_search_type)
   positions = data %>% 
     dplyr::filter(has_matching(positions)) %>% 
-    dplyr::mutate(search = "position")
+    dplyr::mutate(search = consts$search$player_search_type)
   rbind(players, positions)
 }
 
-browser_search <- function(id, search_api_url, player_card_class, position_card_class) {
+browser_search <- function(id, search_api_url) {
   htmltools::htmlTemplate(
     "modules/templates/search.html",
     id = id, 
     search_api_url = search_api_url, 
-    player_card_class = player_card_class, 
-    position_card_class = position_card_class
+    player_card_class = consts$dom$player_card_class, 
+    position_card_class = consts$dom$position_card_class,
+    player_search_type = consts$search$player_search_type,
+    position_search_type = consts$search$position_search_type
   )
 }
 
