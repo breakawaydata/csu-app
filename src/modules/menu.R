@@ -41,8 +41,8 @@ server <- function(input, output, session, data) {
     if(session$userData$level() == "player") {
       player_data <- data[data$player_id == session$userData$player(), ]
       horizontal_card(
-        consts$global$team_name,
-        paste(player_data$first, player_data$last), 
+        paste(player_data$first, player_data$last),
+        player_data$positions, 
         glue::glue("url('{player_data$picture}')")
       )
     } else if(session$userData$level() == "all") {

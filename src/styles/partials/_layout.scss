@@ -2,4 +2,9 @@
 
 .main {
   padding: 0 15px;
+  .player-content {
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
 }

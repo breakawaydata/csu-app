@@ -11,7 +11,6 @@ consts <- modules::use(consts)
 ui <- function(id, data, positions) {
   ns <- NS(id)
   tagList(
-    uiOutput(ns("active")),
     div(id = "all-container", class = "body-container",
       1:nrow(data) %>% purrr::map(
         ~ player_card(data[.x, ])
@@ -42,11 +41,10 @@ server <- function(input, output, session) {
   }, ignoreInit = TRUE)
   
   output$player <- renderUI({
-    session$userData$player()
-  })
-
-  output$active <- renderUI({
-    paste(session$userData$stat(), "+", session$userData$level())
+    tags$div(
+      class = "player-content",
+      style = glue::glue("background-image: url('assets/{session$userData$stat()}.png'); height: 100vh;")
+    )
   })
 }
 
