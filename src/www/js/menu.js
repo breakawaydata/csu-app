@@ -20,6 +20,15 @@ $( document ).ready(function() {
     ;
     
     let button_id = $(this).attr('data-value');
+    
+    $('#' + consts.dom.logo_card_id + ' div.header')[0]
+      .innerHTML = consts.global.team_name;
+    $('#' + consts.dom.logo_card_id + ' div.image')
+      .css('background-image', 'url("' + consts.global.team_logo + '")');
+    let meta_text = (button_id == consts.dom.all_level_id) ? "All players" : "Positions";
+    $('#' + consts.dom.logo_card_id + ' div.meta > span')[0]
+      .innerHTML = meta_text;
+    
     changeView(button_id);
     
     Shiny.setInputValue('menu-level', button_id);
