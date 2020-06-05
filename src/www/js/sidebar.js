@@ -3,7 +3,7 @@ function replaceContent(selector, data_attribute) {
     let new_value = Math.round(+$(this).attr('data-' + data_attribute));
     let stat_element = $(this).find('.stat');
     stat_element.text(new_value);
-  })
+  });
 }
 
 $( document ).ready(function() {
