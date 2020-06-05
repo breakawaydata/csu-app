@@ -47,6 +47,7 @@ server <- function(input, output, session) {
       style = glue::glue("background-image: url('assets/{session$userData$stat()}.png'); height: 100vh;")
     )
   })
+  outputOptions(output, "player", suspendWhenHidden = FALSE)
 }
 
 player_card <- function(player) {
