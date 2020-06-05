@@ -10,6 +10,7 @@ default:
     body_container_position_id: "position-container"
     player_level_id: "player"
     body_container_player_id: "player-container"
+    logo_card_id: "logo-card"
     body_container_class: "body-container"
     player_card_class: "player-card"
     position_card_class: "position-card"
