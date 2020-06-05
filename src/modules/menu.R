@@ -20,7 +20,7 @@ ui <- function(id) {
       xs = "5px"
     ),
     div(
-      id = "logocard",
+      id = consts$dom$logo_card_id,
       class = "card",
       horizontal_card(
         consts$global$team_name,

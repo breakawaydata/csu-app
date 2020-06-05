@@ -1,9 +1,12 @@
 $( document ).ready(function() {
   $(document).on('click','.' + consts.dom.player_card_class, function(){
     
-    $('#logocard > div > div.content > div.header')[0].innerHTML = $(this).attr("data-name");
-    $('#logocard > div > div.image').css('background-image', 'url("' + $(this).attr("data-picture") + '")');
-    $('#logocard > div > div.content > div.meta > span')[0].innerHTML = $(this).attr("data-position");
+    $('#' + consts.dom.logo_card_id + ' div.header')[0]
+      .innerHTML = $(this).attr("data-name");
+    $('#' + consts.dom.logo_card_id + ' div.image')
+      .css('background-image', 'url("' + $(this).attr("data-picture") + '")');
+    $('#' + consts.dom.logo_card_id + ' div.meta > span')[0]
+      .innerHTML = $(this).attr("data-position");
     
     Shiny.setInputValue('main-player', $(this).attr("id"));
     Shiny.setInputValue('menu-level', 'player');
