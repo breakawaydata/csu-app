@@ -3,6 +3,7 @@ function(input, output, session){
     tags$head(
       suppressDependencies("bootstrap"),
       tags$link(rel = "stylesheet", type = "text/css", href = "css/sass.min.css"),
+      tags$script(glue::glue("var consts = {jsonlite::toJSON(consts, auto_unbox = TRUE)}")),
       tags$script(src = "js/menu.js"),
       tags$script(src = "js/sidebar.js"),
       tags$script(src = "js/player.js"),
@@ -15,10 +16,7 @@ function(input, output, session){
         "header",
         "body"
       ),
-      gridPanel(
-        class = "header",
-        menu$ui("menu")
-      ),
+      menu$ui("menu"),
       gridPanel(
         class = "body",
         columns = "15% 85%",

@@ -11,17 +11,17 @@ consts <- modules::use(consts)
 ui <- function(id, data, positions) {
   ns <- NS(id)
   tagList(
-    div(id = "all-container", class = "body-container",
+    div(id = consts$dom$body_container_all_id, class = consts$dom$body_container_class,
       1:nrow(data) %>% purrr::map(
         ~ player_card(data[.x, ])
       )
     ),
-    div(id = "position-container", class = "body-container", style = "display: none",
+    div(id = consts$dom$body_container_position_id, class = consts$dom$body_container_class, style = "display: none",
         1:nrow(positions) %>% purrr::map(
           ~ position_card(positions[.x, ])
         )
     ),
-    div(id = "player-container", class = "body-container", style = "display: none",
+    div(id = consts$dom$body_container_player_id, class = consts$dom$body_container_class, style = "display: none",
         uiOutput(ns("player"))
     )
   )
@@ -52,7 +52,7 @@ server <- function(input, output, session) {
 player_card <- function(player) {
   tags$div(
     id = player$player_id,
-    class = "player-card", 
+    class = consts$dom$player_card_class, 
     `data-summary` = player$summary,
     `data-explosive` = player$explosive,
     `data-reach` = player$reach,
@@ -70,7 +70,7 @@ player_card <- function(player) {
 position_card <- function(position) {
   tags$div(
     id = position$position,
-    class = "position-card", 
+    class = consts$dom$position_card_class, 
     `data-summary` = position$summary,
     `data-explosive` = position$explosive,
     `data-reach` = position$reach,

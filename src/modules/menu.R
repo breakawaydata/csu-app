@@ -38,30 +38,37 @@ server <- function(input, output, session, data) {
   search_api_url <- register_search(session, data, search_api)
   
   output$logo_card <- renderUI({
-    if(session$userData$level() == "player") {
-      player_data <- data[data$player_id == session$userData$player(), ]
-      horizontal_card(
-        paste(player_data$first, player_data$last),
-        player_data$positions, 
-        glue::glue("url('{player_data$picture}')")
-      )
-    } else if(session$userData$level() == "all") {
-      horizontal_card(
-        consts$global$team_name,
-        "All Players",
-        glue::glue("url('{consts$global$team_logo}')")
-      )
-    } else if(session$userData$level() == "position") {
-      horizontal_card(
-        consts$global$team_name,
-        "Positions",
-        glue::glue("url('{consts$global$team_logo}')")
-      )
-    }
+    chosen_player <- session$userData$player()
+    chosen_menu_level <- session$userData$level()
+    card_content <- dplyr::case_when(
+      chosen_menu_level == consts$dom$player_level_id ~ {
+        player_data <- data[data$player_id == chosen_player, ]
+        horizontal_card(
+          paste(player_data$first, player_data$last),
+          player_data$positions, 
+          glue::glue("url('{player_data$picture}')")
+        ) %>% list() # hack - case_when doesn't allow returning tag.lists
+      },
+      chosen_menu_level == consts$dom$all_level_id ~ {
+        horizontal_card(
+          consts$global$team_name,
+          "All Players",
+          glue::glue("url('{consts$global$team_logo}')")
+        ) %>% list()
+      },
+      chosen_menu_level == consts$dom$position_level_id ~ {
+        horizontal_card(
+          consts$global$team_name,
+          "Positions",
+          glue::glue("url('{consts$global$team_logo}')")
+        ) %>% list()
+      }
+    )
+    card_content[[1]]
   })
   
   output$search_field <- renderUI({
-    browser_search("players", search_api_url, "")
+    browser_search(consts$search$id, search_api_url)
   })
   
   observeEvent(input$level, {
@@ -71,9 +78,19 @@ server <- function(input, output, session, data) {
 }
 
 horizontal_card <- function(header, sub_header, img_path, description = NULL) {
-  htmlTemplate(
+  htmltools::htmlTemplate(
     "modules/templates/horizontal-card.html", 
     header = header, sub_header = sub_header, img_path = img_path, description = description
+  )
+}
+
+menu_navigation <- function(id) {
+  htmltools::htmlTemplate(
+    "modules/templates/breadcrumb.html",
+    id = id, 
+    all_level_id = consts$dom$all_level_id,
+    position_level_id = consts$dom$position_level_id,
+    player_level_id = consts$dom$player_level_id
   )
 }
 
@@ -85,7 +102,7 @@ filters <- function(ns) {
     div(class = "logo", tags$img(class = "ui centered tiny image", src = consts$global$team_logo_small)),
     div(class = "search-container", uiOutput(ns("search_field"))),
     div(class = "levels", style = "text-align: center;", 
-      htmlTemplate("modules/templates/breadcrumb.html")    
+      menu_navigation(consts$dom$menu_navigation_id)
     )
   )
 }
@@ -96,57 +113,23 @@ search_api <- function(data, q) {
   }
   players = data %>%
     dplyr::filter(has_matching(first) | has_matching(last) | has_matching(positions) | has_matching(as.character(number))) %>% 
-    dplyr::mutate(search = "player")
+    dplyr::mutate(search = consts$search$player_search_type)
   positions = data %>% 
     dplyr::filter(has_matching(positions)) %>% 
-    dplyr::mutate(search = "position")
+    dplyr::mutate(search = consts$search$position_search_type)
   rbind(players, positions)
 }
 
-browser_search <- function(name, search_api_url, default_text = "Search") {
-  shiny::tagList(
-    div(class = "ui search", id = name,
-        div(class = "ui icon fluid input",
-            tags$input(class = "prompt search field",
-                       type = "text",
-                       placeholder = default_text,
-                       oninput = "null"),
-            uiicon("search")
-        ),
-        div(class = "results")
-    ),
-    tags$script(browser_search_js(name, search_api_url))
+browser_search <- function(id, search_api_url) {
+  htmltools::htmlTemplate(
+    "modules/templates/search.html",
+    id = id, 
+    search_api_url = search_api_url, 
+    player_card_class = consts$dom$player_card_class, 
+    position_card_class = consts$dom$position_card_class,
+    player_search_type = consts$search$player_search_type,
+    position_search_type = consts$search$position_search_type
   )
-}
-
-browser_search_js <- function(name, search_api_url) {
-  HTML(glue::glue("
-    $('#{name}').search({{
-      apiSettings: {{
-        url: '{search_api_url}&q={{query}}'
-      }},
-      maxResults: 40,
-      cache: false,
-      onResults: function(response) {{
-        if (response.results.length > 0) {{
-          let ids_player = response.results.filter(word => word.search == 'player').map(entry => entry.player_id);
-          let ids_position = response.results.filter(word => word.search == 'position').map(entry => entry.position);
-          let ids = ids_player.concat(ids_position);
-          let elements = document.querySelectorAll(ids.map(id => `#${{id}}`).join(', '));
-          $('.player-card').hide();
-          $('.position-card').hide();
-          $(elements).show();
-        }}
-      }},
-      onResultsClose: function() {{
-        let search_value = $('#{name}').search('get value');
-        if (search_value === '') {{
-          $('.player-card').show();
-          $('.position-card').show();
-        }}
-      }}
-    }})             
-  "))
 }
 
 user_tools <- function() {

@@ -1,9 +1,9 @@
 $( document ).ready(function() {
-  $('.position-card').click(function(){
+  $('.' + consts.dom.position_card_class).click(function(){
 
     let position = $(this).attr('data-position');
-    $('#players').search('set value', position).search('search remote', position);
-    $('.ui.breadcrumb').find('.section')[0].click();
+    $('#' + consts.search.id).search('set value', position).search('search remote', position);
+    $('#' + consts.dom.menu_navigation_id).find('.section')[0].click();
 
   });
 });
