@@ -20,7 +20,6 @@ $( document ).ready(function() {
     ;
     
     let button_id = $(this).attr('data-value');
-    changeView(button_id);
     
     $("#logocard > div > div.content > div.header")[0].innerHTML = consts.global.team_name;
     $('#logocard > div > div.image').css('background-image', 'url("' + consts.global.team_logo + '")');
@@ -29,6 +28,8 @@ $( document ).ready(function() {
     } else {
       $("#logocard > div > div.content > div.meta > span")[0].innerHTML = "Positions";
     }
+    
+    changeView(button_id);
     
     Shiny.setInputValue('menu-level', button_id);
 
