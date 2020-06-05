@@ -10,6 +10,8 @@ $sidebar-icon-size: 50px;
 .ui.vertical.menu {
   width: 100% !important;
   background-color: $background-color;
+  position: sticky;
+  top: 200px;
   @extend .overwrite-semantic-card;
   .item {
     @extend .overwrite-semantic-card;
@@ -22,6 +24,9 @@ $sidebar-icon-size: 50px;
     .sidebar-item {
       height: $sidebar-item-size;
       @extend .overwrite-semantic-card;
+      &:hover {
+        background-color: $text-lighter-color;
+      }
       .sidebar-image {
         @extend .left-centered-content;
         width: $sidebar-item-size;
