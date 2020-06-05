@@ -56,6 +56,7 @@ if (any(results$type == "error")) {
     left_join(positions, by = c("position" = "abbreviation"))
   
   generate_stats <- function(data, stats_names = c("explosive", "reach", "balance", "capacity")) {
+    set.seed(1234)
     stats <- split(round(runif(length(stats_names) * nrow(data), max = 100), 0),
                    rep(1:length(stats_names), each = nrow(data))) %>% 
       as.data.frame() %>% 
