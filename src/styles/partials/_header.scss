@@ -1,5 +1,8 @@
 #grid-page-wrapper > .header {
-  background-color: $main-team-color;  
+  background-color: $main-team-color;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 $logo-size: 200px;
