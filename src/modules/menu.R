@@ -20,8 +20,13 @@ ui <- function(id) {
       xs = "5px"
     ),
     div(
+      id = "logocard",
       class = "card",
-      uiOutput(ns("logo_card"))
+      horizontal_card(
+        consts$global$team_name,
+        "All Players",
+        glue::glue("url('{consts$global$team_logo}')")
+      )
     ),
     filters(ns),
     user_tools()
@@ -36,37 +41,7 @@ server <- function(input, output, session, data) {
   ns <- session$ns
   session$userData$level <- reactiveVal("all")
   search_api_url <- register_search(session, data, search_api)
-  
-  output$logo_card <- renderUI({
-    chosen_player <- session$userData$player()
-    chosen_menu_level <- session$userData$level()
-    card_content <- dplyr::case_when(
-      chosen_menu_level == consts$dom$player_level_id ~ {
-        player_data <- data[data$player_id == chosen_player, ]
-        horizontal_card(
-          paste(player_data$first, player_data$last),
-          player_data$positions, 
-          glue::glue("url('{player_data$picture}')")
-        ) %>% list() # hack - case_when doesn't allow returning tag.lists
-      },
-      chosen_menu_level == consts$dom$all_level_id ~ {
-        horizontal_card(
-          consts$global$team_name,
-          "All Players",
-          glue::glue("url('{consts$global$team_logo}')")
-        ) %>% list()
-      },
-      chosen_menu_level == consts$dom$position_level_id ~ {
-        horizontal_card(
-          consts$global$team_name,
-          "Positions",
-          glue::glue("url('{consts$global$team_logo}')")
-        ) %>% list()
-      }
-    )
-    card_content[[1]]
-  })
-  
+
   output$search_field <- renderUI({
     browser_search(consts$search$id, search_api_url)
   })
