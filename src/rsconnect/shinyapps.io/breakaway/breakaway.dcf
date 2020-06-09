@@ -1,0 +1,10 @@
+name: breakaway
+title:
+username:
+account: breakaway
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2429939
+bundleId: 3246309
+url: https://breakaway.shinyapps.io/breakaway/
+when: 1591688903.03534

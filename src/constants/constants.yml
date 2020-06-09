@@ -3,6 +3,7 @@ default:
     team_name: "Clemson Football"
     team_logo: "icons/casl_logo.png"
     team_logo_small: "icons/white_clemson_paw.png"
+    gravatar_url: "https://www.gravatar.com/avatar/"
   dom:
     all_level_id: "all"
     body_container_all_id: "all-container"
@@ -19,6 +20,7 @@ default:
     body_class: "main"
     sidebar_class: "sidebar"
     menu_class: "header"
+    user_card_class: "user-card"
   search:
     id: "search_field"
     player_search_type: "player"
