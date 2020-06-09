@@ -5,7 +5,7 @@ function changeView(container_id) {
       .hide();
   $('#' + container_id + '-container')
     .show();
-  try_ga('click', 'menu', 'navigation', container_id);
+  try_ga('click', 'page', container_id);
 }
 
 $( document ).ready(function() {

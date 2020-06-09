@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   $(document).on('click','.' + consts.dom.player_card_class, function(){
     
-    try_ga('click', 'body', 'player', $(this).attr("id"));
+    try_ga('click', 'player', $(this).attr("id"));
     
     $('#' + consts.dom.logo_card_id + ' div.header')[0]
       .innerHTML = $(this).attr("data-name");

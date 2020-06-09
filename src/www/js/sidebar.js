@@ -20,7 +20,7 @@ $( document ).ready(function() {
     ;
     
     let stat_id = $(this).attr('id');
-    try_ga('click', 'sidebar', 'statistic', stat_id);
+    try_ga('click', 'statistic', stat_id);
     
     replaceContent('.' + consts.dom.player_card_class, stat_id);
     var $all_container = $('#' + consts.dom.body_container_all_id);

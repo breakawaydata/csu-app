@@ -4,11 +4,17 @@ gtag('js', new Date());
 
 gtag('config', 'UA-168940826-1');
 
-function try_ga(category, action, label, value) {
+function try_ga(action, category, label) {
   try { // ad blockers can stop tracking the event
-    gtag('event', action, {'event_category' : category, 'event_label' : label, 'value' : value});
+    gtag('event', action, {'event_category' : category, 'event_label' : label});
   }
   catch (e) {
     console.error(e);
   }
 }
+
+function try_ga_message(message) {
+  try_ga(message.action, message.category, message.label);
+}
+
+Shiny.addCustomMessageHandler('trackEvent', try_ga_message);
