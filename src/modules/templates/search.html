@@ -14,7 +14,7 @@
     cache: false,
     onResults: function(response) {
       let search_value = $('#{{ id }}').search('get value');
-      try_ga('input', 'search' 'player_or_positon', search_value);
+      try_ga('input', 'search', 'player_or_positon', search_value);
       let players = response.results.filter(entry => entry.search == '{{ player_search_type }}')
       let positions = response.results.filter(entry => entry.search == '{{ position_search_type }}')
       if (response.results.length > 0) {
