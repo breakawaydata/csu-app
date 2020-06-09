@@ -2,8 +2,10 @@ function(input, output, session) {
   semanticPage(
     tags$head(
       suppressDependencies("bootstrap"),
-      tags$link(rel = "stylesheet", type = "text/css", href = "css/sass.min.css"),
       tags$script(glue::glue("var consts = {jsonlite::toJSON(consts, auto_unbox = TRUE)}")),
+      tags$script(async = NA, src = "https://www.googletagmanager.com/gtag/js?id=UA-168940826-1"),
+      tags$script(src = "js/google-analytics.js"),
+      tags$link(rel = "stylesheet", type = "text/css", href = "css/sass.min.css"),
       tags$script(src = "js/md5.min.js"),
       tags$script(src = "js/menu.js"),
       tags$script(src = "js/sidebar.js"),
