@@ -6,7 +6,7 @@ gtag('config', 'UA-168940826-1');
 
 function try_ga(category, action, label, value) {
   try { // ad blockers can stop tracking the event
-    ga('send', 'event', category, action, label, value);
+    gtag('event', action, {'event_category' : category, 'event_label' : label, 'value' : value});
   }
   catch (e) {
     console.error(e);
