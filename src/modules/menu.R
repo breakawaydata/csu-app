@@ -37,14 +37,26 @@ init_server <- function(id, data) {
   callModule(server, id, data)
 }
 
+get_username <- function(session) {
+  shinyapp_user <- isolate(session$user)
+  if (is.null(shinyapp_user)) {
+    return(Sys.getenv("username"))
+  }
+  return(shinyapp_user)
+}
+
 server <- function(input, output, session, data) {
   ns <- session$ns
+  
+  session$sendCustomMessage("update_user_data", list(username = get_username(session)))
+  
   session$userData$level <- reactiveVal("all")
   search_api_url <- register_search(session, data, search_api)
 
   output$search_field <- renderUI({
     browser_search(consts$search$id, search_api_url)
   })
+  
   
   observeEvent(input$level, {
     session$userData$level(input$level)
@@ -108,5 +120,5 @@ browser_search <- function(id, search_api_url) {
 }
 
 user_tools <- function() {
-  div(class = "user")
+  div(class = "user", htmltools::htmlTemplate("modules/templates/user.html"))
 }
