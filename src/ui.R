@@ -3,7 +3,7 @@ function(input, output, session) {
     tags$head(
       suppressDependencies("bootstrap"),
       tags$script(glue::glue("var consts = {jsonlite::toJSON(consts, auto_unbox = TRUE)}")),
-      tags$script(async = NA, src = "https://www.googletagmanager.com/gtag/js?id=UA-168940826-1"),
+      tags$script(async = NA, src = glue::glue("https://www.googletagmanager.com/gtag/js?id={consts$ga$config}")),
       tags$script(src = "js/google-analytics.js"),
       tags$link(rel = "stylesheet", type = "text/css", href = "css/sass.min.css"),
       tags$script(src = "js/md5.min.js"),

@@ -2,7 +2,7 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
-gtag('config', 'UA-168940826-1');
+gtag('config', consts.ga.config);
 
 function try_ga(action, category, label) {
   try { // ad blockers can stop tracking the event

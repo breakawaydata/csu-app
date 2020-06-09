@@ -29,3 +29,5 @@ default:
     input: "styles/main.scss"
     style: "compressed"
     output: "www/css/sass.min.css"
+  ga:
+    config: "UA-168940826-1"
