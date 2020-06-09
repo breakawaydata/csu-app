@@ -1,6 +1,31 @@
-# Breakaway Application !
+# Breakaway Application!
+
+## Deployment
+
+1. Make sure all the packages from `src/.renv.lock` file are included in your local environment.
+   In order to install them run `renv::restore("src/.renv.lock")`.
+2. Copy `credentials` file to `deployment/`.
+3. Make sure your working directory is set inside `src/` folder.
+4. Run `deployment/deploy.R` file.
+
+## Inviting new users
+
+Log in to [Shinyapps](https://www.shinyapps.io/) dashboard.
+
+Navigate to `Applications -> breakaway -> Users`.
+Press `Invite User` and provide suitable user e-mail address.
 
 ## Development workflow
+
+### Development user confoguration
+
+Before you start put .Renviron file with the below content:
+```
+username=<your-testing-username>
+```
+inside `src/` folder.
+
+### Working with dockerized workflow
 
 Tasks are defined in `environment/tasks.py`
 
