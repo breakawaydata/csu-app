@@ -13,31 +13,33 @@ $card-size: 100px;
   height: $card-size + $card-size/2;
   float: left;
   margin: 5px;
-  
+
   .player-image {
     height: $card-size;
     background-size: cover;
     border-radius: $card-size/2;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 0px 0px 1px 0px;
+
     &:hover {
       cursor: pointer;
-      box-shadow: 0px 0px 5px 1px $text-light-color;
+      box-shadow: 0px 0px 0px 3px $main-team-color;
     }
   }
-  
+
   .first-name {
     text-align: center;
     font-size: 10px;
     height: 12px;
   }
-  
+
   .last-name {
     text-align: center;
     font-weight: bold;
     height: 16px;
   }
-  
+
   .player-number {
     text-align: center;
     font-size: 10px;
@@ -57,6 +59,7 @@ $card-size: 100px;
   color: $text-main-color;
   font-weight: bold;
   @extend .centered-content;
+  box-shadow: 0px 0px 1px 0px;
 }
 
 .position-card {
@@ -64,8 +67,14 @@ $card-size: 100px;
   height: $card-size + $card-size/2;
   float: left;
   margin: 5px;
+  position: relative;
+
   &:hover {
     cursor: pointer;
+
+    .position-name p {
+      box-shadow: 0px 0px 0px 3px $main-team-color;
+    }
   }
   .position-name {
     height: $card-size;
@@ -73,11 +82,23 @@ $card-size: 100px;
     color: $main-team-color;
     p {
       @extend .centered-content;
+      margin: 0;
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      align-items: flex-start;
+      border-radius: 100px;
+      line-height: 100px;
+      z-index: -1;
+      font-size: 80%;
+      box-shadow: 0px 0px 2px 0px;
+      background: $stat-background;
     }
   }
   .position-desc {
     text-align: center;
     font-weight: bold;
-    height: 16px;
+    height: 24px;
+    line-height: 24px;
   }
 }

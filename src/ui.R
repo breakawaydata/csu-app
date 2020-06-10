@@ -14,7 +14,7 @@ function(input, output, session) {
     ),
     gridPage(
       title = "Gains Group",
-      rows = "200px 100%",
+      rows = "200px 1fr",
       areas = c(
         "header",
         "body"
@@ -22,7 +22,7 @@ function(input, output, session) {
       menu$ui("menu"),
       gridPanel(
         class = "body",
-        columns = "15% 85%",
+        columns = "minmax(200px, 15%) 1fr",
         areas = "sidebar main",
         gap = list(
           default = "20px",
