@@ -1,5 +1,5 @@
-$sidebar-item-size: 60px;
-$sidebar-icon-size: 50px;
+$sidebar-item-size: 45px;
+$sidebar-icon-size: 35px;
 
 .left-centered-content {
   display: flex;
@@ -24,6 +24,7 @@ $sidebar-icon-size: 50px;
     .sidebar-item {
       height: $sidebar-item-size;
       @extend .overwrite-semantic-card;
+
       &:hover {
         background-color: $text-lighter-color;
       }
@@ -43,7 +44,7 @@ $sidebar-icon-size: 50px;
   .sidebar-active {
     .sidebar-item {
       color: $active-text !important;
-      border-radius: 100px 20px 20px 100px !important;
+      border-radius: 100px 30px 30px 100px !important;
       background-color: $main-team-color !important;
     }
   }

@@ -1,5 +1,9 @@
 @import '../modules/themes.scss';
 
+html, body {
+  min-width: 1100px;
+}
+
 body {
   background-color: $background-color;
 }
