@@ -1,3 +1,11 @@
+function switchToAllView() {
+    $("#" + consts.dom.menu_navigation_id + " > .section").removeClass('active');
+    $("#" + consts.dom.menu_navigation_id + " > .section:first").addClass('active');
+    changeView(consts.dom.all_level_id);
+    changeLogoCard(consts.dom.all_level_id);
+    Shiny.setInputValue('menu-level', consts.dom.all_level_id);
+}
+
 function changeView(container_id) {
   $('.' + consts.dom.body_class)
       .find('.' + consts.dom.body_container_class)
@@ -32,6 +40,14 @@ function setMenuItemActive(element, navigation) {
         .not(element)
         .removeClass('active');
 }
+
+$( document ).ready(function() {
+  $(document).on('click', '.logo > img', function(){
+    switchToAllView();
+    resetFilter();
+    $('#' + consts.dom.sidebar_navigation_id + ' > .item:first').click();
+  });
+});
 
 $( document ).ready(function() {
   let navigation_selector = "#" + consts.dom.menu_navigation_id;
