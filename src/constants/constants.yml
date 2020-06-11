@@ -30,4 +30,4 @@ default:
     style: "compressed"
     output: "www/css/sass.min.css"
   ga:
-    config: "UA-168940826-1"
+    config: "UA-168459205-1"
