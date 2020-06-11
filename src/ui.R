@@ -1,9 +1,12 @@
-function(input, output, session){
+function(input, output, session) {
   semanticPage(
     tags$head(
       suppressDependencies("bootstrap"),
-      tags$link(rel = "stylesheet", type = "text/css", href = "css/sass.min.css"),
       tags$script(glue::glue("var consts = {jsonlite::toJSON(consts, auto_unbox = TRUE)}")),
+      tags$script(async = NA, src = glue::glue("https://www.googletagmanager.com/gtag/js?id={consts$ga$config}")),
+      tags$script(src = "js/google-analytics.js"),
+      tags$link(rel = "stylesheet", type = "text/css", href = "css/sass.min.css"),
+      tags$script(src = "js/md5.min.js"),
       tags$script(src = "js/menu.js"),
       tags$script(src = "js/sidebar.js"),
       tags$script(src = "js/player.js"),
@@ -11,7 +14,7 @@ function(input, output, session){
     ),
     gridPage(
       title = "Gains Group",
-      rows = "200px 100%",
+      rows = "200px 1fr",
       areas = c(
         "header",
         "body"
@@ -19,7 +22,7 @@ function(input, output, session){
       menu$ui("menu"),
       gridPanel(
         class = "body",
-        columns = "15% 85%",
+        columns = "minmax(200px, 15%) 1fr",
         areas = "sidebar main",
         gap = list(
           default = "20px",

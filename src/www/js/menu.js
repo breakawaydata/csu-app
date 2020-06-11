@@ -5,6 +5,7 @@ function changeView(container_id) {
       .hide();
   $('#' + container_id + '-container')
     .show();
+  try_ga('click', 'page', container_id);
 }
 
 $( document ).ready(function() {
@@ -35,3 +36,11 @@ $( document ).ready(function() {
 
   });
 });
+
+function updateUserCard(message) {
+  let avatar_link = consts.global.gravatar_url + md5(message.username) + '?s=80&d=mm'
+  $('.' + consts.dom.user_card_class + ' img').attr('src', avatar_link);
+  $('.' + consts.dom.user_card_class + ' .sub.header').html(message.username);
+}
+
+Shiny.addCustomMessageHandler("update_user_data", updateUserCard);

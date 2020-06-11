@@ -44,3 +44,74 @@ $logo-size: 200px;
 .ui.breadcrumb a.section {
     color: $active-text;
 }
+
+.user-card {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+.header {
+  #logo-card {
+    .content {
+      padding: 0 20px;
+
+      .header {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #menu {
+      .icon {
+        color: $stat-background;
+      }
+
+      .section {
+        padding: 3px 7px 1px 7px;
+        border-radius: 10px;
+        line-height: 1.4;
+
+        &.active {
+          background: $active-background;
+        }
+      }
+    }
+
+    .logo img {
+      width: auto;
+      height: 65px;
+    }
+  }
+
+  .user {
+    .user-card {
+      padding: 10px;
+
+      .sub.header {
+        background: $stat-background;
+        padding: 3px 13px;
+        font-weight: bold;
+        color: $main-team-color;
+        border-radius: 2px;
+      }
+
+      .button {
+        border: 2px solid $stat-background;
+        padding: 5px 15px;
+        color: $stat-background;
+        font-weight: bolder;
+        border-radius: 10px;
+
+        &:hover {
+          color: $main-team-color;
+        }
+      }
+    }
+  }
+}

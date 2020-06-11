@@ -8,4 +8,5 @@ TODO.txt
 .DS_Store
 __pychache__
 src/data/validation_report.html
-
+deployment/credentials
+src/.Renviron
