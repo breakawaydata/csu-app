@@ -115,3 +115,11 @@ $logo-size: 200px;
     }
   }
 }
+
+.logo {
+  img {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
