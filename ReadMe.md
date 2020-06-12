@@ -25,9 +25,14 @@ username=<your-testing-username>
 ```
 inside `src/` folder.
 
+### Working with local workflow
+
+Application can be run on the local R Studio for development.
+There is a [renv](https://rstudio.github.io/renv/articles/renv.html) initialised, so in order to restore the environment run `renv::restore()` in the R console.
+
 ### Working with dockerized workflow
 
-Tasks are defined in `environment/tasks.py`
+In order to use dockerized environment use the following manual:
 
 Run `./workflow init` to install required dependencies like pyyaml or docker-compose.
 Workflow dependencies are defined in `environment/bootstrap.sh`.
@@ -39,14 +44,10 @@ Available tasks:
 ./workflow rstudio.build --tag={tag}     # Build project image based on environment/Dockerfile
 ./workflow rstudio.snapshot --tag={tag}  # Save project image based on the current state of a container
 ./workflow rstudio.down                  # Bring down the development environment
-./workflow rstudio.prune                 # This will remove:
 ./workflow rstudio.ps                    # List running docker-compose services
 ./workflow rstudio.push                  # Push created images to docker registry
 ./workflow rstudio.r                     # Execute R shell in the rstudio container
 ./workflow rstudio.bash                  # Execute shell in the rstudio container
-./workflow rstudio.lint                  # TODO: needs to be implemented
-./workflow rstudio.styler                # TODO: needs to be implemented
-./workflow rstudio.test                  # TODO: needs to be implemented
 ```
 
 #### Build your development docker image
@@ -72,10 +73,3 @@ There are 2 ways of updating your image with R packages. One is quick, using `./
 
 1. Push your image to the registry: `./workflow rstudio.push`
 1. Commit your changes in git
-# Shiny pattern
-
-Project files for Shiny app.
-
-## Usage
-
-Define your custom tasks in `src/tasks.py`
