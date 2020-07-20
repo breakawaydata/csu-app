@@ -1,0 +1,32 @@
+.stats_progress_widget {
+  .chart_total {
+    position: absolute;
+    left: 0;
+    top: -60px;
+    font-weight: bolder;
+    font-size: 25px;
+    background: #286aaf;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    left: 0;
+    z-index: 10000;
+    transition: 1s all ease;
+    border-radius: 3px;
+    transform: rotate(90deg);
+
+    &:after {
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-left: 15px solid #2969af;
+      border-bottom: 20px solid transparent;
+      content: "";
+      position: absolute;
+      left: calc(100% - 1px);
+    }
+  }
+}

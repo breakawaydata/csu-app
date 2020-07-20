@@ -188,16 +188,22 @@ server <- function(input, output, session, data, active_player) {
   observeEvent(active_player$assessements, {
     active_assessement <- active_player$assessements[1, ]
 
-    strenght_bars$state$values <- c(
-      active_assessement$strength_upper,
-      active_assessement$power_core,
-      active_assessement$power_lower
+    strenght_bars$state$values <- list(
+      total = active_assessement$strength_score,
+      bars = c(
+        active_assessement$strength_upper,
+        active_assessement$power_core,
+        active_assessement$power_lower
+      )
     )
 
-    power_bars$state$values <- c(
-      active_assessement$power_upper,
-      active_assessement$power_core,
-      active_assessement$power_lower
+    power_bars$state$values <- list(
+      total = active_assessement$power_score,
+      bars = c(
+        active_assessement$power_upper,
+        active_assessement$power_core,
+        active_assessement$power_lower
+      )
     )
 
     # TODO replace with R6
