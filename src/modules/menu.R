@@ -81,6 +81,13 @@ menu_navigation <- function(id) {
   )
 }
 
+menu_ordering <- function() {
+  htmltools::htmlTemplate(
+    "modules/templates/ordering.html",
+    id = "ordering"
+  )
+}
+
 filters <- function(ns) {
   gridPanel(
     class = "filters",
@@ -89,6 +96,7 @@ filters <- function(ns) {
     div(class = "logo", tags$img(class = "ui centered tiny image", src = consts$global$team_logo_small)),
     div(class = "search-container", uiOutput(ns("search_field"))),
     div(class = "levels", style = "text-align: center;",
+      menu_ordering(),
       menu_navigation(consts$dom$menu_navigation_id)
     )
   )

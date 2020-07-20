@@ -123,3 +123,32 @@ $logo-size: 200px;
     }
   }
 }
+
+.levels {
+  #ordering {
+    float: left;
+
+    .sort.icon {
+      color: #fff;
+      font-size: 120%;
+    }
+
+    .reorder-list {
+      text-transform: capitalize;
+      padding: 3px 7px 1px 7px !important;
+      border-radius: 10px;
+      line-height: 1.4;
+
+      &.hidden {
+        display: none !important;
+      }
+      &.active {
+        background: $active-background;
+      }
+    }    
+  }
+
+  #menu {
+    float: right;
+  }
+}
