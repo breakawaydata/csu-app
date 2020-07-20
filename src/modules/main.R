@@ -22,30 +22,43 @@ ui <- function(id, data, positions) {
         )
     ),
     div(id = consts$dom$body_container_player_id, class = consts$dom$body_container_class, style = "display: none",
-        uiOutput(ns("player"))
+      uiOutput(ns("player"))
     )
   )
 }
 
-init_server <- function(id) {
-  callModule(server, id)
+init_server <- function(id, pages) {
+  callModule(server, id, pages)
 }
 
-server <- function(input, output, session) {
+server <- function(input, output, session, pages) {
   ns <- session$ns
-  
+
   session$userData$player <- reactiveVal()
-  
+
   observeEvent(input$player, {
     session$userData$player(input$player)
   }, ignoreInit = TRUE)
-  
+
   output$player <- renderUI({
     req(!is.null(session$userData$player()))
-    tags$div(
+
+    content <- tags$div(
       class = "player-content",
-      style = glue::glue("background-image: url('assets/{session$userData$stat()}.png'); height: 100vh;")
+      style = glue::glue("background-image: url('assets/{session$userData$stat()}.png'); height: 100vh;"),
     )
+
+    if (session$userData$stat() == "explosive") {
+
+      pages$explosion$active_player$id <- input$player
+
+      content <- tags$div(
+        class = "player-content",
+        pages$explosion$ui
+      )
+    }
+
+    content
   })
   outputOptions(output, "player", suspendWhenHidden = FALSE)
 }
@@ -53,7 +66,7 @@ server <- function(input, output, session) {
 player_card <- function(player) {
   tags$div(
     id = player$player_id,
-    class = consts$dom$player_card_class, 
+    class = consts$dom$player_card_class,
     `data-summary` = player$summary,
     `data-explosive` = player$explosive,
     `data-reach` = player$reach,
@@ -74,7 +87,7 @@ player_card <- function(player) {
 position_card <- function(position) {
   tags$div(
     id = position$position,
-    class = consts$dom$position_card_class, 
+    class = consts$dom$position_card_class,
     `data-summary` = position$summary,
     `data-explosive` = position$explosive,
     `data-reach` = position$reach,
@@ -85,4 +98,4 @@ position_card <- function(position) {
     tags$div(class = "position-name", p(position$position)),
     tags$div(class = "position-desc", position$positions)
   )
-} 
+}

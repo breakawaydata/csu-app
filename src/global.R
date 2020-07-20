@@ -6,10 +6,18 @@ library(modules)
 library(config)
 library(sass)
 library(dplyr)
+library(dplyr)
+library(shinyBody)
 
 consts <- config::get(file = "constants/constants.yml")
 data <- data.table::fread("data/data_players.csv", data.table = FALSE)
 position_stats <- data.table::fread("data/data_positions.csv", data.table = FALSE)
+
+explosion_data <- data.table::fread("data/explosion_data.csv", data.table = FALSE)
+
+pages <- list(
+  explosion = use("modules/pages/explosive_page.R")$explosivePage("explosivePage", explosion_data)
+)
 
 sass(
   sass::sass_file(consts$sass$input),
