@@ -25,12 +25,16 @@ ui <- function(id, options) {
     id = id,
     class = "stats_progress_widget",
 
-    div( class = "chart_title", uiOutput(ns("title"))),
+    div( class = "chart_title", options$title),
     div( class = "chart_icon", tags$img( class = "icon", src = glue::glue("icons/{options$icon}.png"))),
     div(
+      id = ns("bar_list"),
       class = "chart_wrapper",
       tags$style(glue::glue('#{id} .progress {{ background: {options$background} }}')),
+      tags$style(glue::glue('#{id} .progress.selected_bar {{ background: {options$active_background} }}')),
+
       tags$style(glue::glue('#{id} .bar {{ background: {options$color} }}')),
+      tags$style(glue::glue('#{id} .progress.selected_bar .bar {{ background: {options$active_color} }}')),
 
       div(class = "chart_container",
         div( id = ns("total_wrapper"), class = "chart_total", uiOutput(ns("total_score"))),
@@ -43,31 +47,34 @@ ui <- function(id, options) {
             div(
               id = paste0(id, "-", index),
               class = "ui indicating progress",
+              `data-index` = index,
               `data-value` = 1,
               `data-total` = options$bar_total,
               div(class = "bar")
             )
           })
-        )
+        ),
+        tags$script(glue::glue('
+          $("#{id}").on("click", "[data-index]", function() {{
+            Shiny.setInputValue("{id}-bar_selected", $(this).data("index"), {{priority : "event"}});
+          }})
+        '))
       )
     ),
-    uiOutput(ns("update_bars"))
+    uiOutput(ns("update_bars_script")),
+    uiOutput(ns("active_bars_script"))
   )
 }
 
 server <- function(input, output, session, state) {
   ns <- session$ns
 
-  output$title <- renderUI({
-    state$options$title
-  })
-
   observeEvent(state$values, {
     output$total_score <- renderUI({
       span(state$values$total)
     })
 
-    output$update_bars <- renderUI({
+    output$update_bars_script <- renderUI({
       total_wrapper <- ns("total_wrapper")
 
       tagList(
@@ -79,6 +86,29 @@ server <- function(input, output, session, state) {
         })
       )
     })
+  })
+
+  observeEvent(state$active, {
+    output$active_bars_script <- renderUI({
+      bar_wrapper <- ns("bar_list")
+
+      tagList(
+        tags$script(glue::glue('
+          $("#{bar_wrapper} .progress").removeClass("selected_bar");
+        ')),
+        if (length(state$active) > 0) {
+          lapply(1:length(state$active), function(index) {
+            tags$script(glue::glue('
+              $("#{ns(state$active[index])}").addClass("selected_bar")
+            '))
+          })
+        }
+      )
+    })
+  })
+
+  observeEvent(input$bar_selected, {
+    state$active <- c(input$bar_selected)
   })
 }
 
@@ -103,7 +133,8 @@ statChart <- R6Class("statChart",
       values = list(
         total = 0,
         bars = c()
-      )
+      ),
+      active = c()
     ),
 
     initialize = function(id, title, icon, bar_number, options = NULL, values = NULL) {

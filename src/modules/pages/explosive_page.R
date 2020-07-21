@@ -82,66 +82,13 @@ ui <- function(id) {
       gap = "20px",
 
       uiOutput(ns("strenght_bars")) %>%
-        tagAppendAttributes(
-          class = "strength_chart",
-          style = "height: 100%; width: 100%;"
-      ),
+        tagAppendAttributes(class = "strength_chart"),
 
-      gridPanel(
-        class = "body_chart",
-        areas = c(
-          "... ...       ...   ...   ...  ...         ...",
-          "... ...       ...   title ...  ...         ...",
-          "... ...       ...   ...   ...  ...         ...",
-          "... str_upper body  body  body power_upper ...",
-          "... ...       body  body  body ...         ...",
-          "... str_code  body  body  body power_core  ...",
-          "... ...       body  body  body ...         ...",
-          "... str_lower body  body  body power_lower ...",
-          "... ...       body  body  body ...         ..."
-        ),
-        rows = "25px 50px 0.5fr 50px 1fr 50px 2fr 50px 1fr",
-
-        div(
-          class = "body background_body",
-          uiOutput(ns("body"))
-        ),
-
-        div(class = "explosion_value title", uiOutput(ns("explosion_score"))),
-        div(`data-target`= "#explosivePage-strength_chart-1", class = "stat_value body_stat stat_upper stat_left str_upper", uiOutput(ns("strength_upper"))),
-        div(`data-target`= "#explosivePage-strength_chart-2", class = "stat_value body_stat stat_center stat_left str_code", uiOutput(ns("strength_core"))),
-        div(`data-target`= "#explosivePage-strength_chart-3", class = "stat_value body_stat stat_lower stat_left str_lower", uiOutput(ns("strength_lower"))),
-        div(`data-target`= "#explosivePage-power_chart-1", class = "stat_value body_stat stat_upper stat_right power_upper", uiOutput(ns("power_upper"))),
-        div(`data-target`= "#explosivePage-power_chart-2", class = "stat_value body_stat stat_center stat_right power_core", uiOutput(ns("power_core"))),
-        div(`data-target`= "#explosivePage-power_chart-3", class = "stat_value body_stat stat_lower stat_right power_lower", uiOutput(ns("power_lower"))),
-
-        tags$script(glue::glue("
-          $('.stat_value').hover(
-            function(){{
-              $('.progress').removeClass('stat_focus');
-              $(this).addClass('stat_focus');
-              $($(this).data('target')).addClass('stat_focus');
-            }}, function(){{
-              $(this).removeClass('stat_focus');
-              $('.progress').removeClass('stat_focus');
-            }}
-          )
-          $('.stat_value').click(
-            function(){{
-              $('.progress').removeClass('stat_active');
-              $('.stat_value').removeClass('stat_active');
-              $(this).toggleClass('stat_active');
-              $($(this).data('target')).toggleClass('stat_active', $(this).hasClass('stat_active'));
-            }}
-          )
-        "))
-      ),
+      uiOutput(ns("body_chart")) %>%
+        tagAppendAttributes(class = "body_chart"),
 
       uiOutput(ns("power_bars")) %>%
-        tagAppendAttributes(
-          class = "power_chart",
-          style = "height: 100%; width: 100%;"
-        )
+        tagAppendAttributes(class = "power_chart")
     )
   )
 }
@@ -152,8 +99,8 @@ server <- function(input, output, session, data, active_player) {
   chart_options <- list(
     color = "#286BAF",
     background = "#9ED3F6",
-    active_color = "#286BAF",
-    active_background = "#B94A12"
+    active_color = "#F66733",
+    active_background = "#9ED3F6"
   )
 
   strenght_bars <- use("modules/components/stat_chart.R")$statChart(
@@ -166,14 +113,39 @@ server <- function(input, output, session, data, active_player) {
     "explosive", 3, chart_options
   )
 
+  body_chart <- use("modules/components/body_chart.R")$bodyChart(
+    "body_chart",
+    list(
+      labels = list(
+        left = list(
+          top = "Upper Strength",
+          middle = "Core Strength",
+          bottom = "Lower Strength"
+        ),
+        right = list(
+          top = "Upper Power",
+          middle = "Core Power",
+          bottom = "Lower Power"
+        )
+      )
+    )
+  )
+
   strenght_bars$server()
   power_bars$server()
+  body_chart$server()
 
   output$strenght_bars <- renderUI({ strenght_bars$ui(ns("strength_chart")) })
   output$power_bars <- renderUI({ power_bars$ui(ns("power_chart")) })
+  output$body_chart <- renderUI({ body_chart$ui(ns("body_chart")) })
 
-  output$body <- renderUI({
-    bodyInput(ns("human"), color = c("#B4C2D1"))
+  observeEvent(strenght_bars$state$active, {
+    if (length(strenght_bars$state$active) > 0)
+      power_bars$state$active <- c()
+  })
+  observeEvent(power_bars$state$active, {
+    if (length(power_bars$state$active) > 0)
+      strenght_bars$state$active <- c()
   })
 
   observeEvent(input$human, {
@@ -192,8 +164,8 @@ server <- function(input, output, session, data, active_player) {
       total = active_assessement$strength_score,
       bars = c(
         active_assessement$strength_upper,
-        active_assessement$power_core,
-        active_assessement$power_lower
+        active_assessement$strength_core,
+        active_assessement$strength_lower
       )
     )
 
@@ -206,14 +178,41 @@ server <- function(input, output, session, data, active_player) {
       )
     )
 
-    # TODO replace with R6
-    output$explosion_score <- renderUI({ span(active_assessement$explosion_score) })
-    output$strength_upper <- renderUI({ span(active_assessement$strength_upper) })
-    output$strength_core <- renderUI({ span(active_assessement$strength_core) })
-    output$strength_lower <- renderUI({ span(active_assessement$strength_lower) })
-    output$power_upper <- renderUI({ span(active_assessement$power_upper) })
-    output$power_core <- renderUI({ span(active_assessement$power_core) })
-    output$power_lower <- renderUI({ span(active_assessement$power_lower) })
+    body_chart$state$values <- list(
+      total = active_assessement$power_score,
+      left = list(
+        top = active_assessement$strength_upper,
+        middle = active_assessement$strength_core,
+        bottom = active_assessement$strength_lower
+      ),
+      right = list(
+        top = active_assessement$power_upper,
+        middle = active_assessement$power_core,
+        bottom = active_assessement$power_lower
+      )
+    )
+  })
+
+  power_mapping <- c("right_arm", "bottom_right_torso", "right_leg")
+  strength_mapping <- c("left_arm", "bottom_left_torso", "left_leg")
+
+  observeEvent(power_bars$state$active, {
+    strenght_bars$state$active <- c()
+    body_chart$state$active <- c(power_mapping[power_bars$state$active])
+  })
+  observeEvent(strenght_bars$state$active, {
+    power_bars$state$active <- c()
+    body_chart$state$active <- c(strength_mapping[strenght_bars$state$active])
+  })
+  observeEvent(body_chart$state$active, {
+    if (!is.na(which(power_mapping == body_chart$state$active, arr.ind = TRUE)[1])) {
+      strenght_bars$state$active <- c()
+      power_bars$state$active <- c(which(power_mapping == body_chart$state$active, arr.ind = TRUE)[1])
+    }
+    if (!is.na(which(strength_mapping == body_chart$state$active, arr.ind = TRUE)[1])) {
+      power_bars$state$active <- c()
+      strenght_bars$state$active <- c(which(strength_mapping == body_chart$state$active, arr.ind = TRUE)[1])
+    }
   })
 }
 
