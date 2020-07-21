@@ -7,7 +7,6 @@ library(config)
 library(sass)
 library(dplyr)
 library(dplyr)
-library(shinyBody)
 
 consts <- config::get(file = "constants/constants.yml")
 data <- data.table::fread("data/data_players.csv", data.table = FALSE)
