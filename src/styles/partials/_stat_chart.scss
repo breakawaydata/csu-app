@@ -1,6 +1,10 @@
 .stats_progress_widget {
   overflow: hidden;
 
+  .ui.progress .bar {
+      height: 2.35em;
+  }
+
   .chart_title {
     color: #2E3D49;
     font-size: 20px;
