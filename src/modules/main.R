@@ -33,13 +33,13 @@ init_server <- function(id) {
 
 server <- function(input, output, session) {
   ns <- session$ns
-  
+
   session$userData$player <- reactiveVal()
-  
+
   observeEvent(input$player, {
     session$userData$player(input$player)
   }, ignoreInit = TRUE)
-  
+
   output$player <- renderUI({
     req(!is.null(session$userData$player()))
     tags$div(
@@ -53,7 +53,7 @@ server <- function(input, output, session) {
 player_card <- function(player) {
   tags$div(
     id = player$player_id,
-    class = consts$dom$player_card_class, 
+    class = consts$dom$player_card_class,
     `data-summary` = player$summary,
     `data-explosive` = player$explosive,
     `data-reach` = player$reach,
@@ -62,6 +62,7 @@ player_card <- function(player) {
     `data-picture` = player$picture,
     `data-position` = player$positions,
     `data-name` = paste(player$first, player$last),
+    `data-sorting-name` = paste0(player$last, player$first),
     tags$div(class = "stat", player$summary),
     tags$div(class = "player-image",
              style = glue::glue("background-image: url({player$picture});")),
@@ -74,7 +75,7 @@ player_card <- function(player) {
 position_card <- function(position) {
   tags$div(
     id = position$position,
-    class = consts$dom$position_card_class, 
+    class = consts$dom$position_card_class,
     `data-summary` = position$summary,
     `data-explosive` = position$explosive,
     `data-reach` = position$reach,
@@ -85,4 +86,4 @@ position_card <- function(position) {
     tags$div(class = "position-name", p(position$position)),
     tags$div(class = "position-desc", position$positions)
   )
-} 
+}
