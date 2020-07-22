@@ -32,7 +32,11 @@ ui <- function(id) {
         tagAppendAttributes(class = "body_chart"),
 
       uiOutput(ns("power_bars")) %>%
-        tagAppendAttributes(class = "power_chart")
+        tagAppendAttributes(class = "power_chart"),
+
+      uiOutput(ns("strength_card")),
+      uiOutput(ns("details_card")),
+      uiOutput(ns("power_card"))
     )
   )
 }
@@ -54,6 +58,7 @@ server <- function(input, output, session, data, active_player) {
     active_color = "#F66733",
     active_background = "#9ED3F6"
   )
+
 
   strenght_bars <- use("modules/components/stat_chart.R")$statChart(
     "strength_chart", "Strength",
@@ -85,6 +90,11 @@ server <- function(input, output, session, data, active_player) {
     )
   )
 
+  text_card <- use("modules/components/text_card.R")$text_card
+  # strength_card <- text_card("Header1", "Text1")
+  # details_card <- text_card("Header2", "Text2")
+  # power_card <- text_card("Header3", "Text3")
+
   strenght_bars$server()
   power_bars$server()
   body_chart$server()
@@ -92,6 +102,27 @@ server <- function(input, output, session, data, active_player) {
   output$strenght_bars <- renderUI({ strenght_bars$ui(ns("strength_chart")) })
   output$power_bars <- renderUI({ power_bars$ui(ns("power_chart")) })
   output$body_chart <- renderUI({ body_chart$ui(ns("body_chart")) })
+  
+  output$strength_card <- renderUI({ text_card(
+    "Strength",
+    active_player$assessements[1, ]$strength_score,
+    "Strength Card Test Description Strength Card Test Description Strength Card
+    Test Description Strength Card Test Description Strength Card Test Description"
+  )})
+  
+  output$details_card <- renderUI({ text_card(
+    "Details",
+    "",
+    "Details Card Test Description Details Card Test Description Details Card
+    Test Description Details Card Test Description Details Card Test Description"
+  )})
+  
+  output$power_card <- renderUI({ text_card(
+    "Power",
+    active_player$assessements[1, ]$power_score,
+    "Power Card Test Description Power Card Test Description Power Card
+    Test Description Power Card Test Description Power Card Test Description"
+  )})
 
   observeEvent(active_player$id, {
     active_player$assessements <- data$dataset[which(data$dataset == active_player$id), ]
@@ -99,7 +130,9 @@ server <- function(input, output, session, data, active_player) {
 
   # Update the widget values when a new player is picked
   observeEvent(active_player$assessements, {
+    browser
     active_assessement <- active_player$assessements[1, ]
+    print(active_assessement)
 
     strenght_bars$state$values <- list(
       total = active_assessement$strength_score,

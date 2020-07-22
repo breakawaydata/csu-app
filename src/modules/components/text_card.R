@@ -15,9 +15,9 @@ export("text_card")
 #' @param description Card's description
 #'
 #' @return shiny.semantic uicard element
-text_card <- function(header, description) {  
+text_card <- function(category, score, description) {  
   uicard(
-    div(class = "header", paste(header)),
+    div(class = "header", glue::glue("{category}: {score}")),
     div(class = "description", paste(description)),
     class = "text-card"
   )
