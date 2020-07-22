@@ -28,3 +28,5 @@ sass(
 main <- use("modules/main.R")
 menu <- use("modules/menu.R")
 sidebar <- use("modules/sidebar.R")
+
+source("utils/utils.R")
