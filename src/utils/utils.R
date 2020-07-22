@@ -2,11 +2,11 @@ add_one <- function(value) {
   value + 1
 }
 
-text_card <- function(header, content) {
+text_card <- function(header, description) {
   
-  uicard(div(
-    class = "content",
+  uicard(
     div(class = "header", paste(header)),
-    div(class = "description", paste(content))
-  ), class = "text-card")
+    div(class = "description", paste(description)),
+    class = "text-card"
+  )
 }

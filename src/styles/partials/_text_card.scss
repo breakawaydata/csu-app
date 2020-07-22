@@ -1,0 +1,25 @@
+.ui.card.text-card {
+  background-color: $text-card-background !important;
+  border-radius: 8px;
+  height: auto;
+  max-width: 500px;
+  padding: 20px;
+  width: 100%;
+
+  .header {
+    border-bottom: 1px solid $text-main-color;
+    color: $text-main-color;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  .description {
+    color: $text-main-color;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+}
