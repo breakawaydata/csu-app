@@ -6,21 +6,21 @@ import("htmltools")
 import("shiny")
 import("datasets")
 
-export("pdfDownloader")
+export("fileDownloader")
 
 ui <- function(id, options) {
   ns <- NS(id)
 
   div(
     id = id,
-    class = "pdf-downloader",
+    class = "file-downloader",
     downloadLink(
       ns("downloadData"),
       div(
         class = "button-content",
         span(class = "title", "Export"),
         span(class = "subtitle", "Current View"),
-        span(class = "name", uiOutput(ns("state"))),
+        span(class = "name", uiOutput(ns("currentView"))),
         tags$img(class = "icon", src = "icons/pdf_download.svg")
       ),
       class = "export-view-button"
@@ -33,31 +33,46 @@ server <- function(input, output, session, state) {
 
   output$downloadData <- downloadHandler(
     filename = function() {
-
-      browser()
-
-      paste("data-", Sys.Date(), ".csv", sep="")
+      paste("data-", paste(state$stat, state$level, state$target_id, sep = "_"), ".txt", sep="")
     },
     content = function(file) {
+      content <- paste(paste(state$stat, state$level, state$target_id, sep = " "), collapse = ", ")
 
-      browser()
-
-      pdf(data, file)
+      writeLines(content, file)
     }
   )
 
-  output$state <- renderUI({
-    span("something")
+  observeEvent(session$userData$stat(), {
+    state$stat <- session$userData$stat()
+  })
+
+  observeEvent(session$userData$level(), {
+    state$level <- session$userData$level()
+
+    if(session$userData$level()[1] == "all")
+      state$target_id <- NULL
+  })
+
+  observeEvent(session$userData$player(), {
+    state$target_id <- session$userData$player()
+  })
+
+  output$currentView <- renderUI({
+    span(paste(state$stat, state$level, state$target_id, sep = " "))
   })
 }
 
-pdfDownloader <- R6Class("pdfDownloader",
+fileDownloader <- R6Class("fileDownloader",
   public = list(
     ui = NULL,
     server = NULL,
 
     state = reactiveValues(
       id = NULL,
+
+      stat = NULL,
+      level = NULL,
+      target_id = NULL,
 
       options = list()
     ),
@@ -78,4 +93,4 @@ pdfDownloader <- R6Class("pdfDownloader",
     }
   )
 )
-pdfDownloader <- pdfDownloader$new
+fileDownloader <- fileDownloader$new

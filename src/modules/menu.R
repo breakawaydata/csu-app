@@ -9,7 +9,7 @@ export("ui", "init_server")
 expose("utils/utils.R")
 consts <- modules::use(consts)
 
-ui <- function(id, pdf_downloader) {
+ui <- function(id, file_downloader) {
   ns <- NS(id)
   gridPanel(
     class = "header",
@@ -29,7 +29,7 @@ ui <- function(id, pdf_downloader) {
       )
     ),
     filters(ns),
-    user_tools(pdf_downloader)
+    user_tools(file_downloader)
   )
 }
 
@@ -127,9 +127,9 @@ browser_search <- function(id, search_api_url) {
   )
 }
 
-user_tools <- function(pdf_downloader) {
+user_tools <- function(file_downloader) {
   div(class = "user",
     htmltools::htmlTemplate("modules/templates/user.html"),
-    pdf_downloader$ui()
+    file_downloader$ui()
   )
 }

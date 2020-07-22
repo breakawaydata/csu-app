@@ -49,7 +49,6 @@ server <- function(input, output, session, pages) {
     )
 
     if (session$userData$stat() == "explosive") {
-
       pages$explosion$active_player$id <- input$player
 
       content <- tags$div(

@@ -1,8 +1,8 @@
-.pdf-downloader {
+.file-downloader {
   position: absolute;
   bottom: 0;
   right: 20px;
-  padding: 10px;
+  margin: 10px;
 
   .export-view-button {
     font-size: 10px;
@@ -14,13 +14,18 @@
     display: block;
     position: relative;
 
+    &:hover {
+      background: $active-background;
+    }
+
     .button-content {
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      min-width: 150px;
+      min-width: 170px;
       border-left-color: transparent;
+
 
       .title {
         font-size: 10px;
@@ -36,6 +41,7 @@
         color: #313c4c;
         margin-top: 5px;
         border-radius: 0 5px 5px 0;
+        text-transform: uppercase;
       }
 
       .icon {
