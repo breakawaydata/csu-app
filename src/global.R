@@ -18,6 +18,8 @@ pages <- list(
   explosion = use("modules/pages/explosive_page.R")$explosivePage("explosivePage", explosion_data)
 )
 
+text_card <- use("modules/components/text_card.R")$text_card
+
 sass(
   sass::sass_file(consts$sass$input),
   cache_options = sass_cache_options(FALSE),
@@ -28,5 +30,3 @@ sass(
 main <- use("modules/main.R")
 menu <- use("modules/menu.R")
 sidebar <- use("modules/sidebar.R")
-
-source("utils/utils.R")
