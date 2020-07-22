@@ -75,6 +75,7 @@ player_card <- function(player) {
     `data-picture` = player$picture,
     `data-position` = player$positions,
     `data-name` = paste(player$first, player$last),
+    `data-sorting-name` = paste0(player$last, player$first),
     tags$div(class = "stat", player$summary),
     tags$div(class = "player-image",
              style = glue::glue("background-image: url({player$picture});")),

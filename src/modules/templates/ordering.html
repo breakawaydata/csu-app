@@ -33,8 +33,8 @@
 
       if ($(target).data("target") == "name") {
         sort_function = ($(target).data("value") == "asc")
-          ? (a, b) => (String.prototype.localeCompare.call($(a).data('name').toLowerCase(), $(b).data('name').toLowerCase()))
-          : (a, b) => (String.prototype.localeCompare.call($(b).data('name').toLowerCase(), $(a).data('name').toLowerCase()))
+          ? (a, b) => (String.prototype.localeCompare.call($(a).data('sorting-name').toLowerCase(), $(b).data('sorting-name').toLowerCase()))
+          : (a, b) => (String.prototype.localeCompare.call($(b).data('sorting-name').toLowerCase(), $(a).data('sorting-name').toLowerCase()))
       }
 
       $(".player-card")
