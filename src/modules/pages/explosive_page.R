@@ -8,67 +8,6 @@ import("shiny.grid")
 
 export("explosivePage")
 
-stat_value <- function(value, class = "") {
-  div(
-    class = glue::glue("stat_value {class}"),
-    value
-  )
-}
-
-chart_widget <- function(id,
-                         title = "Bars",
-                         icon = "explosive",
-                         color = "#286BAF",
-                         background = "#9ED3F6",
-                         active_color = "#286BAF",
-                         active_background = "#B94A12",
-                         bar_number = 1
-                        ) {
-  gridPanel(
-    areas = c(
-      "chart_title",
-      "chart_icon",
-      "stats_progress_widget"
-    ),
-    rows = "50px 50px 1fr",
-    columns = "repeat(1, minmax(300px, 1fr))",
-
-    id = id,
-    class = "stats_progress_widget",
-
-    div( class = "chart_title", title),
-    div( class = "chart_icon", tags$img( class = "icon", src = glue::glue("icons/{icon}.png"))),
-    div(
-      class = "chart_wrapper",
-      tags$style(glue::glue('#{id} .progress {{ background: {background} }}')),
-      tags$style(glue::glue('#{id} .bar {{ background: {color} }}')),
-      div(class = "chart_container",
-        div(
-          class = "steps",
-          lapply(1:25, function(index) { div(class = "bar_step") })
-        ),
-        tagList(
-          lapply(1:bar_number, function(index){
-            div(
-              id = paste0(id, "_", index),
-              class = "ui indicating progress",
-              `data-value` = 1,
-              `data-total` = 100,
-              div(class = "bar")
-            )
-          })
-        )
-      )
-    )
-  )
-}
-
-update_chart_bar <- function(id, bar, value) {
-  tags$script(glue::glue('
-    $("#{id}_{bar}").progress({{value: {value}}});
-  '))
-}
-
 ui <- function(id) {
   ns <- NS(id)
 
@@ -114,6 +53,8 @@ server <- function(input, output, session, data, active_player) {
   body_chart <- use("modules/components/body_chart.R")$bodyChart(
     "body_chart",
     list(
+      color = "#C4C4C4",
+      active_color = "#F66733",
       labels = list(
         left = list(
           top = "Upper Strength",
@@ -228,7 +169,6 @@ explosivePage <- R6Class("explosivePage",
 
     data = reactiveValues(
       widget_id = NULL,
-
       dataset = NULL
     ),
 
