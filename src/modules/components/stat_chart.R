@@ -1,13 +1,22 @@
 import("R6")
 import("utils")
+import("shiny")
 import("glue")
 import("dplyr")
 import("htmltools")
-import("shiny")
 import("shiny.grid")
 
 export("statChart")
 
+#' Creates the UI for the stat widget.
+#'
+#' @description Used by the statChart class to generate the corresponding
+#'   widget ui.
+#'
+#' @param id widget id.
+#' @param options Ui settings for initializing the widget ui.
+#'
+#' @return A UI definition that can be passed to the [shinyUI] function.
 ui <- function(id, options) {
   ns <- NS(id)
 
@@ -64,6 +73,14 @@ ui <- function(id, options) {
   )
 }
 
+#' Creates the Server for the stat chart widget.
+#'
+#' @description Internal module under the widget id namespace. Run internal
+#'   widget updates and state changes that are widget specific. Responsible
+#'   for updating the widget data and ui elements.
+#'
+#' @return A server module that can be initialized from the application
+#'   server function.
 server <- function(input, output, session, state) {
   ns <- session$ns
 
@@ -110,11 +127,27 @@ server <- function(input, output, session, state) {
   })
 }
 
+#' Class representing a vertical multi bar chart.
+#'
+#' A statChart object contains a ui and server definition that must be called after instancing.
+#' Multiple independent instances can be created.
+#' The name space of each instance will be based on the ID provided.
 statChart <- R6Class("statChart",
   public = list(
+    #' @field ui UI definition of the chart.
     ui = NULL,
+
+    #' @field server Module running a namespaced version specific to each R6 instance.
     server = NULL,
 
+    #' @field state Internal state of the R6 instance. updating iner values from
+    #'   outside the instance will trigger internal observers to update specific parts of the widget.
+    #'   They can also be observed externally to trigger other functions when the instance state changes.
+    #'   options Includes all values that are used for initializing the widget.
+    #'   Values Can be set or updated directly to update the values displayed by the chart bars. Expects a
+    #'     vector for integer values, with length equal to options$bar_number
+    #'   active Vector of indexes of currently active bars. Can be updated directly to update the currently
+    #'     active bar.
     state = reactiveValues(
       id = NULL,
       options = list(
@@ -128,13 +161,21 @@ statChart <- R6Class("statChart",
         active_color = "lightgray",
         active_background = "gray"
       ),
-      values = list(
-        total = 0,
-        bars = c()
-      ),
+      values = list(total = 0, bars = c()),
       active = c()
     ),
 
+    #' @description
+    #' Create a new statChart object.
+    #' @param id Unique ID for the widget instance. Also used for namespacing the server module.
+    #' @param title Title to be displayed on the widget.
+    #' @param icon Icon to be displayed on the widget.
+    #' @param bar_number Number of bars to be created.
+    #' @param options A named list of options that will overwrite the default state$options.
+    #'   Partial named lists will result in only some options being overwritten while
+    #'   non named ones stay with the default values.
+    #' @param values Optional initial values to use for the bars and widget side label.
+    #' @return A new `statChart` object.
     initialize = function(id, title, icon, bar_number, options = NULL, values = NULL) {
       isolate({
         self$state$id <- id
@@ -147,9 +188,19 @@ statChart <- R6Class("statChart",
         self$state$options$bar_number <- bar_number
       })
 
+      #' @description
+      #' Calls the ui for the widget instance.
+      #' @param id Namespaced id. When calling UI for inside a diferent module,
+      #'   sometimes the namespace will not be passed correctly. PAssing the namespaced ID where will solve this.
+      #' @examples
+      #' test_chart <- use("stat_chart.R")$statChart("test")
+      #' test_chart$ui(ns("test"))
       self$ui = function(id) {
         ui(id, isolate(self$state$options))
       }
+
+      #' @description
+      #' Calls the server module for the widget instance.
       self$server = function() {
         callModule(server, id, self$state)
       }
