@@ -8,7 +8,15 @@ import("datasets")
 
 export("fileDownloader")
 
-ui <- function(id, options) {
+#' Creates the UI for the fileDownloader widget.
+#'
+#' @description Used by the fileDownloader class to generate the corresponding
+#'   widget ui.
+#'
+#' @param id widget id.
+#'
+#' @return A UI definition that can be passed to the [shinyUI] function.
+ui <- function(id) {
   ns <- NS(id)
 
   div(
@@ -28,6 +36,14 @@ ui <- function(id, options) {
   )
 }
 
+#' Creates the Server for the fileDownloader widget.
+#'
+#' @description Internal module under the widget id namespace. Run internal
+#'   widget updates and state changes that are widget specific. Responsible
+#'   for updating the widget data and ui elements.
+#'
+#' @return A server module that can be initialized from the application
+#'   server function.
 server <- function(input, output, session, state) {
   ns <- session$ns
 
@@ -62,26 +78,40 @@ server <- function(input, output, session, state) {
   })
 }
 
+#' Class representing a file downloader.
+#'
+#' A fileDownloader object contains a ui and server definition that must be called after instancing.
+#' Multiple independent instances can be created.
+#' The name space of each instance will be based on the ID provided.
 fileDownloader <- R6Class("fileDownloader",
   public = list(
+    #' @description
+    #' Calls the ui for the widget instance.
+    #' @param id Namespaced id. When calling UI for inside a diferent module,
+    #'   sometimes the namespace will not be passed correctly. PAssing the namespaced ID where will solve this.
     ui = NULL,
+
+    #' @description
+    #' Calls the server module for the widget instance.
     server = NULL,
 
+    #' @field state Internal state of the R6 instance. updating iner values from
+    #'   outside the instance will trigger internal observers to update specific parts of the widget.
     state = reactiveValues(
       id = NULL,
 
       stat = NULL,
       level = NULL,
-      target_id = NULL,
-
-      options = list()
+      target_id = NULL
     ),
 
-    initialize = function(id, options = NULL) {
+    #' @description
+    #' Create a new fileDownloader object.
+    #' @param id Unique ID for the widget instance. Also used for namespacing the server module.
+    #' @return A new `fileDownloader` object.
+    initialize = function(id) {
       isolate({
         self$state$id <- id
-
-        if(!is.null(options)) self$state$options <- options$style <- modifyList(self$state$options, options)
       })
 
       self$ui = function() {
