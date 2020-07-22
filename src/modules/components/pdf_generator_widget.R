@@ -4,20 +4,50 @@ import("glue")
 import("dplyr")
 import("htmltools")
 import("shiny")
+import("datasets")
 
 export("pdfDownloader")
 
 ui <- function(id, options) {
   ns <- NS(id)
 
-  div(id = id, class = "pdf-downloader", uiOutput(ns("test")))
+  div(
+    id = id,
+    class = "pdf-downloader",
+    downloadLink(
+      ns("downloadData"),
+      div(
+        class = "button-content",
+        span(class = "title", "Export"),
+        span(class = "subtitle", "Current View"),
+        span(class = "name", uiOutput(ns("state"))),
+        tags$img(class = "icon", src = "icons/pdf_download.svg")
+      ),
+      class = "export-view-button"
+    )
+  )
 }
 
 server <- function(input, output, session, state) {
   ns <- session$ns
 
-  output$test <- renderUI({
-    span("test")
+  output$downloadData <- downloadHandler(
+    filename = function() {
+
+      browser()
+
+      paste("data-", Sys.Date(), ".csv", sep="")
+    },
+    content = function(file) {
+
+      browser()
+
+      pdf(data, file)
+    }
+  )
+
+  output$state <- renderUI({
+    span("something")
   })
 }
 

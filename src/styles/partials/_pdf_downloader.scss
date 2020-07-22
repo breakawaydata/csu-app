@@ -3,4 +3,47 @@
   bottom: 0;
   right: 20px;
   padding: 10px;
+
+  .export-view-button {
+    font-size: 10px;
+    border: 2px solid #fff;
+    padding: 5px;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 0 10px 10px 0;
+    display: block;
+    position: relative;
+
+    .button-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      min-width: 150px;
+      border-left-color: transparent;
+
+      .title {
+        font-size: 10px;
+        line-height: 10px;
+      }
+
+      .subtitle {
+        line-height: 10px;
+      }
+
+      .name {
+        background: #c5c5c5;
+        color: #313c4c;
+        margin-top: 5px;
+        border-radius: 0 5px 5px 0;
+      }
+
+      .icon {
+        position: absolute;
+        height: 80%;
+        right: calc(100% + 5px);
+        top: 10%;
+      }
+    }
+  }
 }
