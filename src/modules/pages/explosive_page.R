@@ -8,6 +8,13 @@ import("shiny.grid")
 
 export("explosivePage")
 
+#' Creates the UI for the explosive page.
+#'
+#' @description Used by the explosivePage class to generate the corresponding ui.
+#'
+#' @param id widget id.
+#'
+#' @return A UI definition that can be passed to the [shinyUI] function.
 ui <- function(id) {
   ns <- NS(id)
 
@@ -30,6 +37,14 @@ ui <- function(id) {
   )
 }
 
+#' Creates the Server for the explosive page.
+#'
+#' @description Internal module under the widget id namespace. Run internal
+#'   widget updates and state changes that are widget specific. Responsible
+#'   for updating the widget data and ui elements.
+#'
+#' @return A server module that can be initialized from the application
+#'   server function.
 server <- function(input, output, session, data, active_player) {
   ns <- session$ns
 
@@ -78,24 +93,11 @@ server <- function(input, output, session, data, active_player) {
   output$power_bars <- renderUI({ power_bars$ui(ns("power_chart")) })
   output$body_chart <- renderUI({ body_chart$ui(ns("body_chart")) })
 
-  observeEvent(strenght_bars$state$active, {
-    if (length(strenght_bars$state$active) > 0)
-      power_bars$state$active <- c()
-  })
-  observeEvent(power_bars$state$active, {
-    if (length(power_bars$state$active) > 0)
-      strenght_bars$state$active <- c()
-  })
-
-  observeEvent(input$human, {
-    print(input$human)
-    print(active_player$id)
-  })
-
   observeEvent(active_player$id, {
     active_player$assessements <- data$dataset[which(data$dataset == active_player$id), ]
   })
 
+  # Update the widget values when a new player is picked
   observeEvent(active_player$assessements, {
     active_assessement <- active_player$assessements[1, ]
 
@@ -132,17 +134,22 @@ server <- function(input, output, session, data, active_player) {
     )
   })
 
+  # Widget to widget mapping of what body sections correspont to which stat bar
   power_mapping <- c("right_arm", "bottom_right_torso", "right_leg")
   strength_mapping <- c("left_arm", "bottom_left_torso", "left_leg")
 
+  # Inter widget biddings. State changes on one widget
+  # will cascade to the other widgets.
   observeEvent(power_bars$state$active, {
     strenght_bars$state$active <- c()
     body_chart$state$active <- c(power_mapping[power_bars$state$active])
   })
+
   observeEvent(strenght_bars$state$active, {
     power_bars$state$active <- c()
     body_chart$state$active <- c(strength_mapping[strenght_bars$state$active])
   })
+
   observeEvent(body_chart$state$active, {
     if (!is.na(which(power_mapping == body_chart$state$active, arr.ind = TRUE)[1])) {
       strenght_bars$state$active <- c()
@@ -155,30 +162,37 @@ server <- function(input, output, session, data, active_player) {
   })
 }
 
-
+#' Class representing the explosive page.
+#'
+#' The object contains a ui and server definition that must be called after instancing.
+#' The namespace will be based on the ID provided.
 explosivePage <- R6Class("explosivePage",
   public = list(
+    #' @field ui UI definition of the chart.
     ui = NULL,
+
+    #' @field server Module running a namespaced version specific to each R6 instance.
     server = NULL,
 
-    options = reactiveValues(
-      style = list(
-        main_color = "red"
-      )
-    ),
-
+    #' @field data Page data that can be updated to trigger ui and server updates
     data = reactiveValues(
       widget_id = NULL,
       dataset = NULL
     ),
 
+    #' @field active_player Current active played and corresponding assessements.
     active_player = reactiveValues(
       id = NULL,
       assessements = NULL
     ),
 
-    initialize = function(id, dataset = NULL, style = NULL) {
-      if(!is.null(style)) self$options$style <- style
+    #' @description
+    #' Create a new explosivePage object.
+    #' @param id Unique ID for the page. Also used for namespacing the server module.
+    #' @param dataset Title Initial data to be passed to the page.
+    #'
+    #' @return A new `explosivePage` object.
+    initialize = function(id, dataset = NULL) {
       if(!is.null(dataset)) self$data$dataset <- dataset
 
       self$ui = ui(id)
