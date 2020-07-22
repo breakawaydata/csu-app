@@ -8,6 +8,17 @@ import("shiny.grid")
 
 export("explosivePage")
 
+cards_descriptions <- list(
+  strength_card = "Strength Card Test Description Strength Card Test Description
+  Strength Card Test Description Strength Card Test Description Strength Card
+  Test Description",
+  details_card = "Details Card Test Description Details Card Test Description
+  Details Card Test Description Details Card Test Description Details Card Test
+  Description",
+  power_card = "Power Card Test Description Power Card Test Description Power
+  Card Test Description Power Card Test Description Power Card Test Description"
+)
+
 #' Creates the UI for the explosive page.
 #'
 #' @description Used by the explosivePage class to generate the corresponding ui.
@@ -90,11 +101,6 @@ server <- function(input, output, session, data, active_player) {
     )
   )
 
-  text_card <- use("modules/components/text_card.R")$text_card
-  # strength_card <- text_card("Header1", "Text1")
-  # details_card <- text_card("Header2", "Text2")
-  # power_card <- text_card("Header3", "Text3")
-
   strenght_bars$server()
   power_bars$server()
   body_chart$server()
@@ -103,25 +109,43 @@ server <- function(input, output, session, data, active_player) {
   output$power_bars <- renderUI({ power_bars$ui(ns("power_chart")) })
   output$body_chart <- renderUI({ body_chart$ui(ns("body_chart")) })
   
+  # Text cards with the information about overall strength, overall power and
+  # detailed information about selected part of the body
+
+  text_card <- use("modules/components/text_card.R")$text_card
   output$strength_card <- renderUI({ text_card(
     "Strength",
-    active_player$assessements[1, ]$strength_score,
-    "Strength Card Test Description Strength Card Test Description Strength Card
-    Test Description Strength Card Test Description Strength Card Test Description"
+    strenght_bars$state$values$total,
+    cards_descriptions$strength_card,
+    class = "test1",
+    colors = list(
+      background = "lightgreen",
+      border = "blue",
+      header = "violet",
+      score = "yellow",
+      description = "green"
+    )
   )})
   
   output$details_card <- renderUI({ text_card(
     "Details",
     "",
-    "Details Card Test Description Details Card Test Description Details Card
-    Test Description Details Card Test Description Details Card Test Description"
+    cards_descriptions$details_card,
+    class = "test2"
   )})
   
   output$power_card <- renderUI({ text_card(
     "Power",
-    active_player$assessements[1, ]$power_score,
-    "Power Card Test Description Power Card Test Description Power Card
-    Test Description Power Card Test Description Power Card Test Description"
+    power_bars$state$values$total,
+    cards_descriptions$power_card,
+    class = "test3",
+    colors = list(
+      background = "lightgreen",
+      border = "blue",
+      header = "violet",
+      score = "yellow",
+      description = "green"
+    )
   )})
 
   observeEvent(active_player$id, {
@@ -130,9 +154,7 @@ server <- function(input, output, session, data, active_player) {
 
   # Update the widget values when a new player is picked
   observeEvent(active_player$assessements, {
-    browser
     active_assessement <- active_player$assessements[1, ]
-    print(active_assessement)
 
     strenght_bars$state$values <- list(
       total = active_assessement$strength_score,

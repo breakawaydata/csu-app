@@ -10,3 +10,4 @@ __pychache__
 src/data/validation_report.html
 deployment/credentials
 src/.Renviron
+.vscode
