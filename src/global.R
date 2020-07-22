@@ -14,6 +14,8 @@ position_stats <- data.table::fread("data/data_positions.csv", data.table = FALS
 
 explosion_data <- data.table::fread("data/explosion_data.csv", data.table = FALSE)
 
+pdf_downloader <- use("modules/components/pdf_generator_widget.R")$pdfDownloader("pdfDownloader")
+
 pages <- list(
   explosion = use("modules/pages/explosive_page.R")$explosivePage("explosivePage", explosion_data)
 )

@@ -10,11 +10,15 @@ export("pdfDownloader")
 ui <- function(id, options) {
   ns <- NS(id)
 
-  div()
+  div(id = id, class = "pdf-downloader", uiOutput(ns("test")))
 }
 
 server <- function(input, output, session, state) {
   ns <- session$ns
+
+  output$test <- renderUI({
+    span("test")
+  })
 }
 
 pdfDownloader <- R6Class("pdfDownloader",

@@ -19,7 +19,7 @@ function(input, output, session) {
         "header",
         "body"
       ),
-      menu$ui("menu"),
+      menu$ui("menu", pdf_downloader),
       gridPanel(
         class = "body",
         columns = "minmax(200px, 15%) 1fr",
