@@ -8,6 +8,19 @@ import("shiny.grid")
 
 export("bodyChart")
 
+#' Creates the UI for a stat box.
+#'
+#' @description Used by the bodyChart class to generate ui.
+#'
+#' @param group Corresponding Body section.
+#' @param position_h Horizontal position in the widget, possible values are:
+#'  left, right
+#' @param position_v Vertical position in the widget, possible values are:
+#'  top, middle, bottom
+#' @param value Value to be displayed in the box.
+#' @param label Text to be shown when the box is active.
+#'
+#' @return A UI definition.
 stat_wrapper <- function(group, position_h, position_v, value, label) {
   div(
     `data-group` = group,
@@ -17,6 +30,14 @@ stat_wrapper <- function(group, position_h, position_v, value, label) {
   )
 }
 
+#' Creates the css styles for the default body parts acording to the provided options.
+#'
+#' @description Used by the bodyChart class ui.
+#'
+#' @param id The widget ID.
+#' @param color The default body part color.
+#'
+#' @return A style tag.
 default_body_style <- function(id, color) {
   tags$style(glue::glue('
     #{id} [data-part="section"],
@@ -26,6 +47,14 @@ default_body_style <- function(id, color) {
   '))
 }
 
+#' Creates the css styles for the active body parts acording to the provided options.
+#'
+#' @description Used by the bodyChart class ui.
+#'
+#' @param ns The widget namespace function.
+#' @param state The widget state.
+#'
+#' @return A group of style tags.
 active_body_style <- function(ns, state) {
   tagList(
     lapply(1:length(state$active), function(index) {
@@ -51,6 +80,13 @@ active_body_style <- function(ns, state) {
   )
 }
 
+#' Creates the javascript event functions for the stat boxes and body parts.
+#'
+#' @description Used by the bodyChart class ui.
+#'
+#' @param id The widget ID.
+#'
+#' @return A script tag.
 selectionCallbacks <- function(id) {
   tags$script(glue::glue('
     $("#{id}").on("click", "[data-part]", function() {{
@@ -62,6 +98,15 @@ selectionCallbacks <- function(id) {
   '))
 }
 
+#' Creates the UI for the body widget.
+#'
+#' @description Used by the statChart class to generate the corresponding
+#'   widget ui.
+#'
+#' @param id widget id.
+#' @param options Ui settings for initializing the widget ui.
+#'
+#' @return A UI definition that can be passed to the [shinyUI] function.
 ui <- function(id, options) {
   ns <- NS(id)
 
@@ -106,15 +151,20 @@ ui <- function(id, options) {
   )
 }
 
+
+#' Creates the Server for the body chart widget.
+#'
+#' @description Internal module under the widget id namespace. Run internal
+#'   widget updates and state changes that are widget specific. Responsible
+#'   for updating the widget data and ui elements.
+#'
+#' @return A server module that can be initialized from the application
+#'   server function.
 server <- function(input, output, session, state) {
   ns <- session$ns
 
   output$title <- renderUI({
     state$options$title
-  })
-
-  output$body <- renderUI({
-    bodyInput(ns("human"), color = c("#B4C2D1"))
   })
 
   observeEvent(state$values, {
@@ -148,33 +198,17 @@ bodyChart <- R6Class("bodyChart",
       id = NULL,
       options = list(
         title = "Explosive Score",
-        color = "#C4C4C4",
-        active_color = "#F66733",
+        color = "black",
+        active_color = "lightslategray",
         labels = list(
-          left = list(
-            top = "Upper Left",
-            middle = "Center Left",
-            bottom = "Lower Left"
-          ),
-          right = list(
-            top = "Upper Right",
-            middle = "Center Right",
-            bottom = "Lower Right"
-          )
+          left = list(top = "Upper Left", middle = "Center Left", bottom = "Lower Left"),
+          right = list(top = "Upper Right", middle = "Center Right", bottom = "Lower Right")
         )
       ),
       values = list(
         total = 0,
-        left = list(
-          top = 0,
-          middle = 0,
-          bottom = 0
-        ),
-        right = list(
-          top = 0,
-          middle = 0,
-          bottom = 0
-        )
+        left = list(top = 0, middle = 0, bottom = 0),
+        right = list(top = 0, middle = 0, bottom = 0)
       ),
       active = c()
     ),
