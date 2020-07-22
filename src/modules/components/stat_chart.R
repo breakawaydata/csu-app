@@ -33,7 +33,7 @@ ui <- function(id, options) {
     class = "stats_progress_widget",
 
     div( class = "chart_title", options$title),
-    div( class = "chart_icon", tags$img( class = "icon", src = glue::glue("icons/{options$icon}.png"))),
+    div( class = "chart_icon", tags$img( class = "icon", src = glue::glue("{options$icon}"))),
     div(
       id = ns("bar_list"),
       class = "chart_wrapper",

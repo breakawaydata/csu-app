@@ -57,12 +57,12 @@ server <- function(input, output, session, data, active_player) {
 
   strenght_bars <- use("modules/components/stat_chart.R")$statChart(
     "strength_chart", "Strength",
-    "summary", 3, chart_options
+    "icons/BA_Strength.svg", 3, chart_options
   )
 
   power_bars <- use("modules/components/stat_chart.R")$statChart(
     "power_chart", "Power",
-    "explosive", 3, chart_options
+    "icons/BA_Power.svg", 3, chart_options
   )
 
   body_chart <- use("modules/components/body_chart.R")$bodyChart(
