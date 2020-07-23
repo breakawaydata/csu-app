@@ -8,35 +8,35 @@ import("shiny.grid")
 
 export("explosivePage")
 
-#' Creates the styling for an active assessement_report menu item.
+#' Creates the styling for an active assessment_report menu item.
 #'
 #' @description Used by the explosivePage class to generate ui.
 #'
 #' @param ns The page namespace.
-#' @param index the index of the active assessement_report.
+#' @param index the index of the active assessment_report.
 #'
 #' @return A style tag.
-active_assessement_report_style <- function(ns, index) {
+active_assessment_report_style <- function(ns, index) {
   tags$style(glue::glue('
-    #{ns("assessement_report_actions")} [data-index="{index}"] {{
+    #{ns("assessment_report_actions")} [data-index="{index}"] {{
       text-decoration: underline;
       font-weight: bolder;
     }}
   '))
 }
 
-#' Creates the bindings for triggering assessement report view changes.
+#' Creates the bindings for triggering assessment report view changes.
 #'
 #' @description Used by the explosivePage class to generate ui.
 #'
 #' @param ns The page namespace.
 #'
 #' @return A script tag.
-assessement_report_bindings_script <- function(ns) {
+assessment_report_bindings_script <- function(ns) {
   tags$script(glue::glue('
-    Shiny.setInputValue("{ns("assessement_report_selected")}", 1, {{priority : "event"}});
-    $("#{ns("assessement_report_actions")}").on("click", "[data-index]", function() {{
-      Shiny.setInputValue("{ns("assessement_report_selected")}", $(this).data("index"), {{priority : "event"}});
+    Shiny.setInputValue("{ns("assessment_report_selected")}", 1, {{priority : "event"}});
+    $("#{ns("assessment_report_actions")}").on("click", "[data-index]", function() {{
+      Shiny.setInputValue("{ns("assessment_report_selected")}", $(this).data("index"), {{priority : "event"}});
     }})
   '))
 }
@@ -52,7 +52,7 @@ ui <- function(id) {
   ns <- NS(id)
 
   div(
-    uiOutput(ns("assessement_report_toggle")),
+    uiOutput(ns("assessment_report_toggle")),
     gridPanel(
       class = "explosive_page_wrapper",
       areas = c("strength_chart body_chart power_chart"),
@@ -128,72 +128,72 @@ server <- function(input, output, session, data, active_player) {
   output$body_chart <- renderUI({ body_chart$ui(ns("body_chart")) })
 
   observeEvent(active_player$id, {
-    active_player$assessements <- data$dataset[which(data$dataset == active_player$id), ]
+    active_player$assessments <- data$dataset[which(data$dataset == active_player$id), ]
   })
 
   # Update the widget values when a new player is picked
-  observeEvent(active_player$assessements, {
-    active_player$active_assessement <- active_player$assessements[1, ]
+  observeEvent(active_player$assessments, {
+    active_player$active_assessment <- active_player$assessments[1, ]
 
-    output$assessement_report_toggle <- renderUI({
+    output$assessment_report_toggle <- renderUI({
       div(
-        class = "assessement_reports-container",
-        id = ns("assessement_report_actions"),
+        class = "assessment_reports-container",
+        id = ns("assessment_report_actions"),
         tagList(
-          lapply(1:nrow(active_player$assessements), function(index) {
+          lapply(1:nrow(active_player$assessments), function(index) {
             div(
               `data-index` = index,
-              class = "assessement_report-toggler",
-              active_player$assessements[index, ]$assessment_date
+              class = "assessment_report-toggler",
+              active_player$assessments[index, ]$assessment_date
             )
           })
         ),
-        uiOutput(ns("selected_assessement_report_style")),
-        assessement_report_bindings_script(ns)
+        uiOutput(ns("selected_assessment_report_style")),
+        assessment_report_bindings_script(ns)
       )
     })
   })
 
-  observeEvent(input$assessement_report_selected, {
-    active_player$active_assessement <- active_player$assessements[input$assessement_report_selected, ]
+  observeEvent(input$assessment_report_selected, {
+    active_player$active_assessment <- active_player$assessments[input$assessment_report_selected, ]
   })
 
-  observeEvent(active_player$active_assessement, {
-    active_assessement <- active_player$active_assessement
+  observeEvent(active_player$active_assessment, {
+    active_assessment <- active_player$active_assessment
 
-    output$selected_assessement_report_style <- renderUI({
-      active_assessement_report_style(ns, input$assessement_report_selected)
+    output$selected_assessment_report_style <- renderUI({
+      active_assessment_report_style(ns, input$assessment_report_selected)
     })
 
     strenght_bars$state$values <- list(
-      total = active_assessement$strength_score,
+      total = active_assessment$strength_score,
       bars = c(
-        active_assessement$strength_upper,
-        active_assessement$strength_core,
-        active_assessement$strength_lower
+        active_assessment$strength_upper,
+        active_assessment$strength_core,
+        active_assessment$strength_lower
       )
     )
 
     power_bars$state$values <- list(
-      total = active_assessement$power_score,
+      total = active_assessment$power_score,
       bars = c(
-        active_assessement$power_upper,
-        active_assessement$power_core,
-        active_assessement$power_lower
+        active_assessment$power_upper,
+        active_assessment$power_core,
+        active_assessment$power_lower
       )
     )
 
     body_chart$state$values <- list(
-      total = active_assessement$power_score,
+      total = active_assessment$power_score,
       left = list(
-        top = active_assessement$strength_upper,
-        middle = active_assessement$strength_core,
-        bottom = active_assessement$strength_lower
+        top = active_assessment$strength_upper,
+        middle = active_assessment$strength_core,
+        bottom = active_assessment$strength_lower
       ),
       right = list(
-        top = active_assessement$power_upper,
-        middle = active_assessement$power_core,
-        bottom = active_assessement$power_lower
+        top = active_assessment$power_upper,
+        middle = active_assessment$power_core,
+        bottom = active_assessment$power_lower
       )
     )
   })
@@ -244,11 +244,11 @@ explosivePage <- R6Class("explosivePage",
       dataset = NULL
     ),
 
-    #' @field active_player Current active played and corresponding assessements.
+    #' @field active_player Current active played and corresponding assessments.
     active_player = reactiveValues(
       id = NULL,
-      assessements = NULL,
-      active_assessement = NULL
+      assessments = NULL,
+      active_assessment = NULL
     ),
 
     #' @description

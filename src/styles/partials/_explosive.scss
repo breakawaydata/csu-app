@@ -6,12 +6,12 @@
 }
 
 .player-content {
-  .assessement_reports-container {
+  .assessment_reports-container {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
 
-    .assessement_report-toggler {
+    .assessment_report-toggler {
       padding: 0 15px;
       cursor: pointer;
       border-right: 2px solid black;
