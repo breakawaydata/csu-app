@@ -113,6 +113,10 @@ server <- function(input, output, session, data, active_player) {
   # detailed information about selected part of the body
 
   text_card <- use("modules/components/text_card.R")$text_card
+
+  body_part_side <- reactive({ body_part_coordinates()[1] })
+  body_part_level <- reactive({ body_part_coordinates()[2] })
+
   output$strength_card <- renderUI({ text_card(
     "Strength",
     strenght_bars$state$values$total,
@@ -120,9 +124,9 @@ server <- function(input, output, session, data, active_player) {
     class = "text-card--strength"
   )})
   
-  output$details_card <- renderUI({ text_card(    
-    body_chart$state$values[[body_part_coordinates()[1]]][[body_part_coordinates()[2]]],
-    "",
+  output$details_card <- renderUI({ text_card(
+    body_chart$state$options$labels[[body_part_side()]][[body_part_level()]],
+    body_chart$state$values[[body_part_side()]][[body_part_level()]],
     cards_descriptions$details_card,
     class = "text-card--details"
   )})
@@ -190,6 +194,14 @@ server <- function(input, output, session, data, active_player) {
   observeEvent(strenght_bars$state$active, {
     power_bars$state$active <- c()
     body_chart$state$active <- c(strength_mapping[strenght_bars$state$active])
+  })
+
+  body_part_coordinates <- reactive({
+    if(!is.null(strenght_bars$state$active)) {
+      c("left", body_levels[[strenght_bars$state$active]])
+    } else if(!is.null(power_bars$state$active)) {
+      c("right", body_levels[[power_bars$state$active]])
+    }
   })
 
   observeEvent(body_chart$state$active, {
