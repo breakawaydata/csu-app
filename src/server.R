@@ -6,4 +6,5 @@ server <- function(input, output, session) {
   main$init_server("main", pages)
 
   pages$explosion$server()
+  file_downloader$server()
 }

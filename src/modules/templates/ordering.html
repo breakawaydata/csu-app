@@ -25,6 +25,14 @@
       $(`[data-target=${$(target).data("target")}]`).addClass("hidden");
       $(target).removeClass("hidden");
 
+      // Reset all cards to base alphabetical order before reordering
+      $(".player-card")
+        .sort((a, b) => (String.prototype.localeCompare.call(
+          $(a).data('sorting-name').toLowerCase(),
+          $(b).data('sorting-name').toLowerCase())
+        ))
+        .appendTo('#all-container');
+
       if ($(target).data("target") == "stat") {
         let sort_order = ($(target).data("value") == "asc") ? 1 : -1;
         let active_stat = $('.sidebar-active').attr("id");

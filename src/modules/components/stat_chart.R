@@ -134,10 +134,17 @@ server <- function(input, output, session, state) {
 #' The name space of each instance will be based on the ID provided.
 statChart <- R6Class("statChart",
   public = list(
-    #' @field ui UI definition of the chart.
+    #' @description
+    #' Calls the ui for the widget instance.
+    #' @param id Namespaced id. When calling UI for inside a diferent module,
+    #'   sometimes the namespace will not be passed correctly. PAssing the namespaced ID where will solve this.
+    #' @examples
+    #' test_chart <- use("stat_chart.R")$statChart("test")
+    #' test_chart$ui(ns("test"))
     ui = NULL,
 
-    #' @field server Module running a namespaced version specific to each R6 instance.
+    #' @description
+    #' Calls the server module for the widget instance.
     server = NULL,
 
     #' @field state Internal state of the R6 instance. updating iner values from
@@ -187,20 +194,11 @@ statChart <- R6Class("statChart",
         self$state$options$icon <- icon
         self$state$options$bar_number <- bar_number
       })
-
-      #' @description
-      #' Calls the ui for the widget instance.
-      #' @param id Namespaced id. When calling UI for inside a diferent module,
-      #'   sometimes the namespace will not be passed correctly. PAssing the namespaced ID where will solve this.
-      #' @examples
-      #' test_chart <- use("stat_chart.R")$statChart("test")
-      #' test_chart$ui(ns("test"))
+      
       self$ui = function(id) {
         ui(id, isolate(self$state$options))
       }
 
-      #' @description
-      #' Calls the server module for the widget instance.
       self$server = function() {
         callModule(server, id, self$state)
       }
