@@ -70,7 +70,6 @@ server <- function(input, output, session, data, active_player) {
     active_background = "#9ED3F6"
   )
 
-
   strenght_bars <- use("modules/components/stat_chart.R")$statChart(
     "strength_chart", "Strength",
     "icons/BA_Strength.svg", 3, chart_options
@@ -201,6 +200,7 @@ server <- function(input, output, session, data, active_player) {
     body_chart$state$active <- c(strength_mapping[strenght_bars$state$active])
   })
 
+  # Vector of coordinates regarding selected body part, e.g. c("left", "top")
   body_part_coordinates <- reactive({
     if(!is.null(strenght_bars$state$active)) {
       c("left", body_levels[[strenght_bars$state$active]])
