@@ -6,7 +6,6 @@ library(modules)
 library(config)
 library(sass)
 library(dplyr)
-library(dplyr)
 
 consts <- config::get(file = "constants/constants.yml")
 data <- data.table::fread("data/data_players.csv", data.table = FALSE)
