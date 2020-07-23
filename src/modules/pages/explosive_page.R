@@ -117,35 +117,21 @@ server <- function(input, output, session, data, active_player) {
     "Strength",
     strenght_bars$state$values$total,
     cards_descriptions$strength_card,
-    class = "test1",
-    colors = list(
-      background = "lightgreen",
-      border = "blue",
-      header = "violet",
-      score = "yellow",
-      description = "green"
-    )
+    class = "text-card--strength"
   )})
   
-  output$details_card <- renderUI({ text_card(
-    "Details",
+  output$details_card <- renderUI({ text_card(    
+    body_chart$state$values[[body_part_coordinates()[1]]][[body_part_coordinates()[2]]],
     "",
     cards_descriptions$details_card,
-    class = "test2"
+    class = "text-card--details"
   )})
   
   output$power_card <- renderUI({ text_card(
     "Power",
     power_bars$state$values$total,
     cards_descriptions$power_card,
-    class = "test3",
-    colors = list(
-      background = "lightgreen",
-      border = "blue",
-      header = "violet",
-      score = "yellow",
-      description = "green"
-    )
+    class = "text-card--power"
   )})
 
   observeEvent(active_player$id, {
@@ -192,8 +178,9 @@ server <- function(input, output, session, data, active_player) {
   # Widget to widget mapping of what body sections correspont to which stat bar
   power_mapping <- c("right_arm", "bottom_right_torso", "right_leg")
   strength_mapping <- c("left_arm", "bottom_left_torso", "left_leg")
+  body_levels <- c("top", "middle", "bottom")
 
-  # Inter widget biddings. State changes on one widget
+  # Inter widget bindings. State changes on one widget
   # will cascade to the other widgets.
   observeEvent(power_bars$state$active, {
     strenght_bars$state$active <- c()

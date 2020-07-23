@@ -1,5 +1,4 @@
 .ui.card.text-card {
-  background-color: $text-card-background;
   border: 1px solid transparent !important;
   border-radius: 8px;
   height: 100%;
@@ -8,7 +7,7 @@
 
   .header {
     border-bottom: 1px solid $text-main-color;
-    color: $text-main-color;
+    color: $main-team-color;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -16,7 +15,10 @@
     text-transform: uppercase;
 
     &--score {
-      color: $main-team-color;
+      border-left: 1px solid $text-main-color;
+      color: $indicator-blue;
+      margin-left: 10px;
+      padding-left: 10px;
     }
   }
 
