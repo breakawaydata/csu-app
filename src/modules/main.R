@@ -22,16 +22,16 @@ ui <- function(id, data, positions) {
         )
     ),
     div(id = consts$dom$body_container_player_id, class = consts$dom$body_container_class, style = "display: none",
-        uiOutput(ns("player"))
+      uiOutput(ns("player"))
     )
   )
 }
 
-init_server <- function(id) {
-  callModule(server, id)
+init_server <- function(id, pages) {
+  callModule(server, id, pages)
 }
 
-server <- function(input, output, session) {
+server <- function(input, output, session, pages) {
   ns <- session$ns
 
   session$userData$player <- reactiveVal()
@@ -42,10 +42,21 @@ server <- function(input, output, session) {
 
   output$player <- renderUI({
     req(!is.null(session$userData$player()))
-    tags$div(
+
+    content <- tags$div(
       class = "player-content",
       style = glue::glue("background-image: url('assets/{session$userData$stat()}.png'); height: 100vh;")
     )
+
+    if (session$userData$stat() == "explosive") {
+      pages$explosion$active_player$id <- input$player
+      content <- tags$div(
+        class = "player-content",
+        pages$explosion$ui
+      )
+    }
+    
+    content
   })
   outputOptions(output, "player", suspendWhenHidden = FALSE)
 }
