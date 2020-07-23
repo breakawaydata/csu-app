@@ -120,7 +120,7 @@ server <- function(input, output, session, data, active_player) {
     )
 
     body_chart$state$values <- list(
-      total = active_assessement$power_score,
+      total = active_assessement$explosion_score,
       left = list(
         top = active_assessement$strength_upper,
         middle = active_assessement$strength_core,

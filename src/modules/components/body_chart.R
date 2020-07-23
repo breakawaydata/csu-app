@@ -189,9 +189,25 @@ server <- function(input, output, session, state) {
   })
 }
 
+#' Class representing a body shape chart.
+#'
+#' A bodyChart object contains a ui and server definition that must be called after instancing.
+#' Multiple independent instances can be created.
+#' The name space of each instance will be based on the ID provided.
 bodyChart <- R6Class("bodyChart",
   public = list(
+
+    #' @description
+    #' Calls the ui for the widget instance.
+    #' @param id Namespaced id. When calling UI for inside a diferent module,
+    #'   sometimes the namespace will not be passed correctly. PAssing the namespaced ID where will solve this.
+    #' @examples
+    #' test_chart <- use("body_chart.R")$bodyChart("test")
+    #' test_chart$ui(ns("test"))
     ui = NULL,
+
+    #' @description
+    #' Calls the server module for the widget instance.
     server = NULL,
 
     state = reactiveValues(
@@ -213,6 +229,14 @@ bodyChart <- R6Class("bodyChart",
       active = c()
     ),
 
+    #' @description
+    #' Create a new bodyChart object.
+    #' @param id Unique ID for the widget instance. Also used for namespacing the server module.
+    #' @param options A named list of options that will overwrite the default state$options.
+    #'   Partial named lists will result in only some options being overwritten while
+    #'   non named ones stay with the default values.
+    #' @param values Optional initial values to use for the bars and widget side label.
+    #' @return A new `bodyChart` object.
     initialize = function(id, options = NULL, values = NULL) {
       isolate({
         self$state$id <- id
