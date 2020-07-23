@@ -45,19 +45,17 @@ server <- function(input, output, session, pages) {
 
     content <- tags$div(
       class = "player-content",
-      style = glue::glue("background-image: url('assets/{session$userData$stat()}.png'); height: 100vh;"),
+      style = glue::glue("background-image: url('assets/{session$userData$stat()}.png'); height: 100vh;")
     )
 
     if (session$userData$stat() == "explosive") {
-
       pages$explosion$active_player$id <- input$player
-
       content <- tags$div(
         class = "player-content",
         pages$explosion$ui
       )
     }
-
+    
     content
   })
   outputOptions(output, "player", suspendWhenHidden = FALSE)
