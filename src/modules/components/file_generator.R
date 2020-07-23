@@ -14,9 +14,10 @@ export("fileDownloader")
 #'   widget ui.
 #'
 #' @param id widget id.
+#' @param id widget instance options.
 #'
 #' @return A UI definition that can be passed to the [shinyUI] function.
-ui <- function(id) {
+ui <- function(id, options) {
   ns <- NS(id)
 
   div(
@@ -26,10 +27,10 @@ ui <- function(id) {
       ns("downloadData"),
       div(
         class = "button-content",
-        span(class = "title", "Export"),
-        span(class = "subtitle", "Current View"),
+        span(class = "title", options$title),
+        span(class = "subtitle", options$subtitle),
         span(class = "name", uiOutput(ns("currentView"))),
-        tags$img(class = "icon", src = "icons/pdf_download.svg")
+        tags$img(class = "icon", src = options$icon)
       ),
       class = "export-view-button"
     )
@@ -105,17 +106,28 @@ fileDownloader <- R6Class("fileDownloader",
       target_id = NULL
     ),
 
+    #' @field options Initialization UI options
+    options = list(
+      title = "Export",
+      subtitle = "Current View",
+      icon = "icons/BA_PDF_icon.svg"
+    ),
+
     #' @description
     #' Create a new fileDownloader object.
     #' @param id Unique ID for the widget instance. Also used for namespacing the server module.
+    #' @param options Named list with optional UI options. Same structure as self$options.
+    #'  Only values that overwrite self$options need to be passed.
     #' @return A new `fileDownloader` object.
-    initialize = function(id) {
+    initialize = function(id, options = NULL) {
       isolate({
         self$state$id <- id
+
+        if(!is.null(options)) self$options <- modifyList(self$options, options)
       })
 
       self$ui = function() {
-        ui(id)
+        ui(id, self$options)
       }
       self$server = function() {
         callModule(server, id, self$state)

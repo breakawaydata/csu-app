@@ -13,6 +13,7 @@
     border-radius: 0 10px 10px 0;
     display: block;
     position: relative;
+    border-left: none;
 
     &:hover {
       background: $active-background;
@@ -25,7 +26,6 @@
       text-align: center;
       min-width: 170px;
       border-left-color: transparent;
-
 
       .title {
         font-size: 10px;
@@ -46,9 +46,9 @@
 
       .icon {
         position: absolute;
-        height: 80%;
-        right: calc(100% + 5px);
-        top: 10%;
+        height: calc(100% + 10px);
+        right: calc(100% + 0px);
+        top: -5px;
       }
     }
   }
