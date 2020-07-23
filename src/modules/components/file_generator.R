@@ -50,9 +50,13 @@ server <- function(input, output, session, state) {
 
   output$downloadData <- downloadHandler(
     filename = function() {
+      # Function resposible for naming the downloaded file.
+      # Dinamicaly called whenever the button is triggered.
       paste("data-", paste(state$stat, state$level, state$target_id, sep = "_"), ".txt", sep="")
     },
     content = function(file) {
+      # Function resposible for creating the downloaded file content.
+      # Dinamicaly called whenever the button is triggered.
       content <- paste(paste(state$stat, state$level, state$target_id, sep = " "), collapse = ", ")
 
       writeLines(content, file)
