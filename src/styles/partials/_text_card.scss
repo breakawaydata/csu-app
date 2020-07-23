@@ -29,3 +29,15 @@
     line-height: 1.4;
   }
 }
+
+.strength_card {
+  grid-area: "strength_card";
+}
+
+.details_card {
+  grid-area: "details_card";
+}
+
+.power_card {
+  grid-area: "power_card";
+}

@@ -1,5 +1,4 @@
 import("R6")
-import("utils")
 import("glue")
 import("dplyr")
 import("htmltools")
@@ -43,11 +42,22 @@ ui <- function(id) {
         tagAppendAttributes(class = "body_chart"),
 
       uiOutput(ns("power_bars")) %>%
-        tagAppendAttributes(class = "power_chart"),
+        tagAppendAttributes(class = "power_chart")
+    ),
+    gridPanel(
+      class = "explosive_page_wrapper",
+      areas = c("strength_card details_card power_card"),
+      columns = "1fr minmax(500px, 2fr) 1fr",
+      gap = "20px",
 
-      uiOutput(ns("strength_card")),
-      uiOutput(ns("details_card")),
-      uiOutput(ns("power_card"))
+      uiOutput(ns("strength_card")) %>%
+        tagAppendAttributes(class = "strength_card"),
+
+      uiOutput(ns("details_card")) %>%
+        tagAppendAttributes(class = "details_card"),
+
+      uiOutput(ns("power_card")) %>%
+        tagAppendAttributes(class = "power_card")
     )
   )
 }
