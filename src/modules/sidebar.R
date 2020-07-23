@@ -11,13 +11,14 @@ ui <- function(id) {
   ns <- NS(id)
   htmltools::htmlTemplate(
     "modules/templates/sidebar.html",
-    sidebar_elements = 
+    sidebar_elements =
       tagList(
         sidebar_element(item_id = "summary", icon = "summary", text = "SUMMARY", class = "sidebar-active"),
         sidebar_element(item_id = "explosive", icon = "explosive", text = "EXPLOSIVE"),
         sidebar_element(item_id = "reach", icon = "reach", text = "REACH"),
         sidebar_element(item_id = "balance", icon = "balance", text = "BALANCE"),
         sidebar_element(item_id = "capacity", icon = "capacity", text = "CAPACITY"),
+        sidebar_element(item_id = "summary", icon = "analytics_bars", text = "GAME")
       ),
     id = consts$dom$sidebar_navigation_id
   )
@@ -29,7 +30,7 @@ init_server <- function(id) {
 
 server <- function(input, output, session) {
   ns <- session$ns
-  
+
   session$userData$stat <- reactiveVal("summary")
 
   observeEvent(input$stat, {
