@@ -8,6 +8,39 @@ import("shiny.grid")
 
 export("explosivePage")
 
+#' Creates the styling for an active assessement_report menu item.
+#'
+#' @description Used by the explosivePage class to generate ui.
+#'
+#' @param ns The page namespace.
+#' @param index the index of the active assessement_report.
+#'
+#' @return A style tag.
+active_assessement_report_style <- function(ns, index) {
+  tags$style(glue::glue('
+    #{ns("assessement_report_actions")} [data-index="{index}"] {{
+      text-decoration: underline;
+      font-weight: bolder;
+    }}
+  '))
+}
+
+#' Creates the bindings for triggering assessement report view changes.
+#'
+#' @description Used by the explosivePage class to generate ui.
+#'
+#' @param ns The page namespace.
+#'
+#' @return A script tag.
+assessement_report_bindings_script <- function(ns) {
+  tags$script(glue::glue('
+    Shiny.setInputValue("{ns("assessement_report_selected")}", 1, {{priority : "event"}});
+    $("#{ns("assessement_report_actions")}").on("click", "[data-index]", function() {{
+      Shiny.setInputValue("{ns("assessement_report_selected")}", $(this).data("index"), {{priority : "event"}});
+    }})
+  '))
+}
+
 #' Creates the UI for the explosive page.
 #'
 #' @description Used by the explosivePage class to generate the corresponding ui.
@@ -19,6 +52,7 @@ ui <- function(id) {
   ns <- NS(id)
 
   div(
+    uiOutput(ns("assessement_report_toggle")),
     gridPanel(
       class = "explosive_page_wrapper",
       areas = c("strength_chart body_chart power_chart"),
@@ -99,7 +133,37 @@ server <- function(input, output, session, data, active_player) {
 
   # Update the widget values when a new player is picked
   observeEvent(active_player$assessements, {
-    active_assessement <- active_player$assessements[1, ]
+    active_player$active_assessement <- active_player$assessements[1, ]
+
+    output$assessement_report_toggle <- renderUI({
+      div(
+        class = "assessement_reports-container",
+        id = ns("assessement_report_actions"),
+        tagList(
+          lapply(1:nrow(active_player$assessements), function(index) {
+            div(
+              `data-index` = index,
+              class = "assessement_report-toggler",
+              active_player$assessements[index, ]$assessment_date
+            )
+          })
+        ),
+        uiOutput(ns("selected_assessement_report_style")),
+        assessement_report_bindings_script(ns)
+      )
+    })
+  })
+
+  observeEvent(input$assessement_report_selected, {
+    active_player$active_assessement <- active_player$assessements[input$assessement_report_selected, ]
+  })
+
+  observeEvent(active_player$active_assessement, {
+    active_assessement <- active_player$active_assessement
+
+    output$selected_assessement_report_style <- renderUI({
+      active_assessement_report_style(ns, input$assessement_report_selected)
+    })
 
     strenght_bars$state$values <- list(
       total = active_assessement$strength_score,
@@ -183,7 +247,8 @@ explosivePage <- R6Class("explosivePage",
     #' @field active_player Current active played and corresponding assessements.
     active_player = reactiveValues(
       id = NULL,
-      assessements = NULL
+      assessements = NULL,
+      active_assessement = NULL
     ),
 
     #' @description
