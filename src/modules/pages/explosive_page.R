@@ -1,5 +1,4 @@
 import("R6")
-import("utils")
 import("glue")
 import("dplyr")
 import("htmltools")
@@ -8,6 +7,16 @@ import("shiny.grid")
 
 export("explosivePage")
 
+cards_descriptions <- list(
+  strength_card = "Strength Card Test Description Strength Card Test Description
+  Strength Card Test Description Strength Card Test Description Strength Card
+  Test Description",
+  details_card = "Details Card Test Description Details Card Test Description
+  Details Card Test Description Details Card Test Description Details Card Test
+  Description",
+  power_card = "Power Card Test Description Power Card Test Description Power
+  Card Test Description Power Card Test Description Power Card Test Description"
+)
 #' Creates the styling for an active assessment_report menu item.
 #'
 #' @description Used by the explosivePage class to generate ui.
@@ -67,6 +76,21 @@ ui <- function(id) {
 
       uiOutput(ns("power_bars")) %>%
         tagAppendAttributes(class = "power_chart")
+    ),
+    gridPanel(
+      class = "explosive_page_wrapper",
+      areas = c("strength_card details_card power_card"),
+      columns = "1fr minmax(500px, 2fr) 1fr",
+      gap = "20px",
+
+      uiOutput(ns("strength_card")) %>%
+        tagAppendAttributes(class = "strength_card"),
+
+      uiOutput(ns("details_card")) %>%
+        tagAppendAttributes(class = "details_card"),
+
+      uiOutput(ns("power_card")) %>%
+        tagAppendAttributes(class = "power_card")
     )
   )
 }
@@ -126,6 +150,40 @@ server <- function(input, output, session, data, active_player) {
   output$strenght_bars <- renderUI({ strenght_bars$ui(ns("strength_chart")) })
   output$power_bars <- renderUI({ power_bars$ui(ns("power_chart")) })
   output$body_chart <- renderUI({ body_chart$ui(ns("body_chart")) })
+  
+  # Text cards with the information about overall strength, overall power and
+  # detailed information about selected part of the body
+  text_card <- use("modules/components/text_card.R")$text_card
+  body_part_side <- reactive({ body_part_coordinates()[1] })
+  body_part_level <- reactive({ body_part_coordinates()[2] })
+
+  # UI of strength card on the left side
+  output$strength_card <- renderUI({ text_card(
+    "Strength",
+    strenght_bars$state$values$total,
+    cards_descriptions$strength_card,
+    class = "custom-class"
+  )})
+  
+  # UI of details card in the middle
+  output$details_card <- renderUI({
+    if(!is.null(body_part_side()) & !is.null(body_part_level())) {
+      text_card(
+        body_chart$state$options$labels[[body_part_side()]][[body_part_level()]],
+        body_chart$state$values[[body_part_side()]][[body_part_level()]],
+        cards_descriptions$details_card,
+        class = "custom-class"
+      )
+    }
+  })
+  
+  # UI of power card on the right side
+  output$power_card <- renderUI({ text_card(
+    "Power",
+    power_bars$state$values$total,
+    cards_descriptions$power_card,
+    class = "custom-class"
+  )})
 
   observeEvent(active_player$id, {
     active_player$assessments <- data$dataset[which(data$dataset == active_player$id), ]
@@ -201,8 +259,9 @@ server <- function(input, output, session, data, active_player) {
   # Widget to widget mapping of what body sections correspont to which stat bar
   power_mapping <- c("right_arm", "bottom_right_torso", "right_leg")
   strength_mapping <- c("left_arm", "bottom_left_torso", "left_leg")
+  body_levels <- c("top", "middle", "bottom")
 
-  # Inter widget biddings. State changes on one widget
+  # Inter widget bindings. State changes on one widget
   # will cascade to the other widgets.
   observeEvent(power_bars$state$active, {
     strenght_bars$state$active <- c()
@@ -212,6 +271,15 @@ server <- function(input, output, session, data, active_player) {
   observeEvent(strenght_bars$state$active, {
     power_bars$state$active <- c()
     body_chart$state$active <- c(strength_mapping[strenght_bars$state$active])
+  })
+
+  # Vector of coordinates regarding selected body part, e.g. c("left", "top")
+  body_part_coordinates <- reactive({
+    if(!is.null(strenght_bars$state$active)) {
+      c("left", body_levels[[strenght_bars$state$active]])
+    } else if(!is.null(power_bars$state$active)) {
+      c("right", body_levels[[power_bars$state$active]])
+    }
   })
 
   observeEvent(body_chart$state$active, {
