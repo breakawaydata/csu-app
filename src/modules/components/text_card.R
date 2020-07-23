@@ -18,6 +18,7 @@ export("text_card")
 text_card <- function(category,
                       score,
                       description,
+                      area,
                       class,
                       background_color = "#d6d6d6",
                       border_color = "",

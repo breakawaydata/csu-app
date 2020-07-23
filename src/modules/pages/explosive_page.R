@@ -111,31 +111,36 @@ server <- function(input, output, session, data, active_player) {
   
   # Text cards with the information about overall strength, overall power and
   # detailed information about selected part of the body
-
   text_card <- use("modules/components/text_card.R")$text_card
-
   body_part_side <- reactive({ body_part_coordinates()[1] })
   body_part_level <- reactive({ body_part_coordinates()[2] })
 
+  # UI of strength card on the left side
   output$strength_card <- renderUI({ text_card(
     "Strength",
     strenght_bars$state$values$total,
     cards_descriptions$strength_card,
-    class = "text-card--strength"
+    class = "custom-class"
   )})
   
-  output$details_card <- renderUI({ text_card(
-    body_chart$state$options$labels[[body_part_side()]][[body_part_level()]],
-    body_chart$state$values[[body_part_side()]][[body_part_level()]],
-    cards_descriptions$details_card,
-    class = "text-card--details"
-  )})
+  # UI of details card in the middle
+  output$details_card <- renderUI({
+    if(!is.null(body_part_side()) & !is.null(body_part_level())) {
+      text_card(
+        body_chart$state$options$labels[[body_part_side()]][[body_part_level()]],
+        body_chart$state$values[[body_part_side()]][[body_part_level()]],
+        cards_descriptions$details_card,
+        class = "custom-class"
+      )
+    }
+  })
   
+  # UI of power card on the right side
   output$power_card <- renderUI({ text_card(
     "Power",
     power_bars$state$values$total,
     cards_descriptions$power_card,
-    class = "text-card--power"
+    class = "custom-class"
   )})
 
   observeEvent(active_player$id, {
