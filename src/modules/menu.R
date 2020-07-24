@@ -104,10 +104,18 @@ filters <- function(ns) {
 
 search_api <- function(data, q) {
   has_matching <- function(field) {
-    startsWith(toupper(field), toupper(q))
+    grepl(toupper(q), toupper(field), fixed = TRUE)
   }
+  data <- data %>%
+    dplyr::mutate(first_last = paste(first, last)) %>%
+    dplyr::mutate(last_first = paste(last, first))
+
   players = data %>%
-    dplyr::filter(has_matching(first) | has_matching(last) | has_matching(positions) | has_matching(as.character(number))) %>%
+    dplyr::filter(
+      has_matching(last_first) | has_matching(first_last) |
+      has_matching(first) | has_matching(last) |
+      has_matching(positions) | has_matching(as.character(number))
+    ) %>%
     dplyr::mutate(search = consts$search$player_search_type)
   positions = data %>%
     dplyr::filter(has_matching(positions)) %>%

@@ -52,12 +52,12 @@ server <- function(input, output, session, state) {
     filename = function() {
       # Function resposible for naming the downloaded file.
       # Dinamicaly called whenever the button is triggered.
-      paste("data-", paste(state$stat, state$level, state$target_id, sep = "_"), ".txt", sep="")
+      paste("data-", paste(state$page, state$level, state$target_id, sep = "_"), ".txt", sep="")
     },
     content = function(file) {
       # Function resposible for creating the downloaded file content.
       # Dinamicaly called whenever the button is triggered.
-      content <- paste(paste(state$stat, state$level, state$target_id, sep = " "), collapse = ", ")
+      content <- paste(paste(state$page, state$level, state$target_id, sep = " "), collapse = ", ")
 
       writeLines(content, file)
     }
@@ -65,6 +65,10 @@ server <- function(input, output, session, state) {
 
   observeEvent(session$userData$stat(), {
     state$stat <- session$userData$stat()
+  })
+
+  observeEvent(session$userData$page(), {
+    state$page <- session$userData$page()
   })
 
   observeEvent(session$userData$level(), {
@@ -79,7 +83,7 @@ server <- function(input, output, session, state) {
   })
 
   output$currentView <- renderUI({
-    span(paste(state$stat, state$level, state$target_id, sep = " "))
+    span(paste(state$page, state$level, state$target_id, sep = " "))
   })
 }
 

@@ -9,14 +9,13 @@
   .assessment_reports-container {
     display: flex;
     justify-content: center;
-    flex-direction: row-reverse;
 
     .assessment_report-toggler {
       padding: 0 15px;
       cursor: pointer;
       border-right: 2px solid black;
 
-      &:first-of-type {
+      &:last-of-type {
         border-right: none;
       }
     }
