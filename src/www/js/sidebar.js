@@ -10,6 +10,7 @@ $( document ).ready(function() {
   $(document).on('click','#' + consts.dom.sidebar_navigation_id + ' > .item', function(){
 
     Shiny.setInputValue('sidebar-stat', $(this).attr("id"));
+    Shiny.setInputValue('sidebar-page', $(this).data("page-id"));
 
     $("#reorder-stat-asc").text(`${$(this).attr("id")} ▲`);
     $("#reorder-stat-desc").text(`${$(this).attr("id")} ▼`);
