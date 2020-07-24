@@ -5,7 +5,6 @@ import("magrittr")
 
 export("ui", "init_server")
 
-expose("utils/utils.R")
 consts <- modules::use(consts)
 
 ui <- function(id, data, positions) {
@@ -55,7 +54,7 @@ server <- function(input, output, session, pages) {
         pages$explosion$ui
       )
     }
-    
+
     content
   })
   outputOptions(output, "player", suspendWhenHidden = FALSE)

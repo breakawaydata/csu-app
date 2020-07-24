@@ -4,7 +4,6 @@ import("shiny.semantic")
 
 export("ui", "init_server")
 
-expose("utils/utils.R")
 consts <- modules::use(consts)
 
 ui <- function(id) {
