@@ -11,7 +11,7 @@ option_list <- list(
   make_option(
     c("-v", "--verbose"),
     action = "store_true",
-    default = FALSE,
+    default = TRUE,
     help = "Print lints output [default %default]"
   ),
   make_option(
