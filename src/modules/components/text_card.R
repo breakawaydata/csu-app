@@ -14,7 +14,7 @@ export("text_card")
 #' @param header_color Custom font color of card's header
 #' @param score_color Custom font color of score value in card's header
 #' @param description_color Custom font color of description text
-#' 
+#'
 #' @examples
 #' text_card(
 #'   "Example title",
@@ -27,9 +27,9 @@ export("text_card")
 #'   score_color = "black",
 #'   description_color = "white"
 #' )
-#' 
+#'
 #' @return shiny.semantic uicard element
-#' 
+#'
 text_card <- function(category,
                       score,
                       description,
