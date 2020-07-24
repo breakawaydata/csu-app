@@ -65,11 +65,11 @@ linters_config <- lintr::with_defaults(
   open_curly_linter = lintr::open_curly_linter(allow_single_line = TRUE),
   closed_curly_linter = lintr::closed_curly_linter(allow_single_line = TRUE),
   line_length_linter = lintr::line_length_linter(140),
-  object_length_linter = lintr::object_length_linter(40)
+  object_length_linter = lintr::object_length_linter(40),
   # Enabled linters with defaults (we leave them here for future reference):
-  # object_name_linter = NULL,
+  object_name_linter = NULL,
   # absolute_paths_linter = NULL,
-  # assignment_linter = NULL,
+  assignment_linter = NULL
   # commas_linter = NULL,
   # trailing_blank_lines_linter = NULL,
   # trailing_whitespace_linter = NULL,

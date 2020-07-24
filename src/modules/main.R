@@ -11,12 +11,12 @@ ui <- function(id, data, positions) {
   ns <- NS(id)
   tagList(
     div(id = consts$dom$body_container_all_id, class = consts$dom$body_container_class,
-      1:nrow(data) %>% purrr::map(
+      seq_len(nrow(data)) %>% purrr::map(
         ~ player_card(data[.x, ])
       )
     ),
     div(id = consts$dom$body_container_position_id, class = consts$dom$body_container_class, style = "display: none",
-        1:nrow(positions) %>% purrr::map(
+        seq_len(nrow(positions)) %>% purrr::map(
           ~ position_card(positions[.x, ])
         )
     ),

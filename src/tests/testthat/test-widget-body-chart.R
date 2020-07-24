@@ -40,7 +40,7 @@ test_that("Widget state", {
 context("Property value checks")
 number_of_test_cases <- 10
 
-lapply(1:number_of_test_cases, function(index) {
+lapply(seq_len(number_of_test_cases), function(index) {
   id <- stringi::stri_rand_strings(1, sample(5:15, 1))
   widget <- module$bodyChart(id)
   ui <- as.character(widget$ui(id))

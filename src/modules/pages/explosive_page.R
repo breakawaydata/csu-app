@@ -205,7 +205,7 @@ server <- function(input, output, session, data, active_player) {
           class = "assessment_reports-container",
           id = ns("assessment_report_actions"),
           tagList(
-            lapply(1:nrow(active_player$assessments), function(index) {
+            lapply(seq_len(nrow(active_player$assessments)), function(index) {
               div(
                 `data-index` = index,
                 class = "assessment_report-toggler",

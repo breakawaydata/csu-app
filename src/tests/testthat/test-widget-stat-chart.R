@@ -36,7 +36,7 @@ test_that("Widget UI", {
   expect_match(ui, glue::glue('id="{id}-bar_list"'))
   expect_equal(lengths(regmatches(ui, gregexpr('progress-bar', ui))), number_of_bars)
 
-  lapply(1:number_of_bars, function(index) {
+  lapply(seq_len(number_of_bars), function(index) {
     expect_match(ui, glue::glue('id="{id}-{index}"'))
   })
 })
@@ -52,7 +52,7 @@ test_that("Widget state", {
 context("Property value checks")
 number_of_test_cases <- 10
 
-lapply(1:number_of_test_cases, function(index) {
+lapply(seq_len(number_of_test_cases), function(index) {
   id <- stringi::stri_rand_strings(1, sample(5:15, 1))
   widget <- module$statChart(id, "test-title", "test-icon", 5)
   ui <- as.character(widget$ui(id))
@@ -64,7 +64,7 @@ lapply(1:number_of_test_cases, function(index) {
   })
 })
 
-lapply(1:number_of_test_cases, function(index) {
+lapply(seq_len(number_of_test_cases), function(index) {
   title <- stringi::stri_rand_strings(1, sample(5:15, 1))
   widget <- module$statChart("test-id", title, "test-icon", 5)
   ui <- as.character(widget$ui("test-id"))
@@ -76,7 +76,7 @@ lapply(1:number_of_test_cases, function(index) {
   })
 })
 
-lapply(1:number_of_test_cases, function(index) {
+lapply(seq_len(number_of_test_cases), function(index) {
   icon <- stringi::stri_rand_strings(1, sample(5:15, 1))
   widget <- module$statChart("test-id", "test-title", icon, 5)
   ui <- as.character(widget$ui("test-id"))
@@ -88,8 +88,8 @@ lapply(1:number_of_test_cases, function(index) {
   })
 })
 
-lapply(1:number_of_test_cases, function(index) {
-  number_of_bars <- sample(1:15, 1)
+lapply(seq_len(number_of_test_cases), function(index) {
+  number_of_bars <- sample(seq_len(15), 1)
   widget <- module$statChart("test-id", "test-title", "test-icon", number_of_bars)
   ui <- as.character(widget$ui("test-id"))
 
@@ -100,11 +100,11 @@ lapply(1:number_of_test_cases, function(index) {
   })
 })
 
-lapply(1:number_of_test_cases, function(index) {
+lapply(seq_len(number_of_test_cases), function(index) {
   id <- stringi::stri_rand_strings(1, sample(5:15, 1))
   title <- stringi::stri_rand_strings(1, sample(5:15, 1))
   icon <- stringi::stri_rand_strings(1, sample(5:15, 1))
-  number_of_bars <- sample(1:15, 1)
+  number_of_bars <- sample(seq_len(15), 1)
 
   widget <- module$statChart(id, title, icon, number_of_bars)
 
