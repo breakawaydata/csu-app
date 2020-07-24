@@ -24,13 +24,13 @@ ui <- function(id, options) {
     areas = c(
       "chart_title",
       "chart_icon",
-      "stats_progress_widget"
+      "stats-progress-widget"
     ),
     rows = "50px 50px 1fr",
     columns = "repeat(1, minmax(300px, 1fr))",
 
     id = id,
-    class = "stats_progress_widget",
+    class = "stats-progress-widget",
 
     div( class = "chart_title", options$title),
     div( class = "chart_icon", tags$img( class = "icon", src = glue::glue("{options$icon}"))),
@@ -53,7 +53,7 @@ ui <- function(id, options) {
           lapply(1:options$bar_number, function(index){
             div(
               id = paste0(id, "-", index),
-              class = "ui indicating progress",
+              class = "ui indicating progress progress-bar",
               `data-index` = index,
               `data-value` = 1,
               `data-total` = options$bar_total,
@@ -194,7 +194,7 @@ statChart <- R6Class("statChart",
         self$state$options$icon <- icon
         self$state$options$bar_number <- bar_number
       })
-      
+
       self$ui = function(id) {
         ui(id, isolate(self$state$options))
       }
