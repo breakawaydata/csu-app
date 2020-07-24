@@ -41,9 +41,9 @@ active_assessment_report_style <- function(ns, index) {
 #' @param ns The page namespace.
 #'
 #' @return A script tag.
-assessment_report_bindings_script <- function(ns) {
+assessment_report_bindings_script <- function(ns, nrow) {
   tags$script(glue::glue('
-    Shiny.setInputValue("{ns("assessment_report_selected")}", 1, {{priority : "event"}});
+    Shiny.setInputValue("{ns("assessment_report_selected")}", {nrow}, {{priority : "event"}});
     $("#{ns("assessment_report_actions")}").on("click", "[data-index]", function() {{
       Shiny.setInputValue("{ns("assessment_report_selected")}", $(this).data("index"), {{priority : "event"}});
     }})
