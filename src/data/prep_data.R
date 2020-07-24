@@ -58,7 +58,7 @@ if (any(results$type == "error")) {
   generate_stats <- function(data, stats_names = c("explosive", "reach", "balance", "capacity")) {
     set.seed(1234)
     stats <- split(round(runif(length(stats_names) * nrow(data), max = 100), 0),
-                   rep(seq_len(length(stats_names)), each = nrow(data))) %>% 
+                   rep(seq_len(length(stats_names)), each = nrow(data))) %>%
       as.data.frame() %>%
       setNames(stats_names) %>%
       dplyr::mutate(summary = round(rowSums(.)/length(stats_names), 0))

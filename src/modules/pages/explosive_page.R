@@ -158,12 +158,14 @@ server <- function(input, output, session, data, active_player) {
   body_part_level <- reactive({ body_part_coordinates()[2] })
 
   # UI of strength card on the left side
-  output$strength_card <- renderUI({ text_card(
-    "Strength",
-    strenght_bars$state$values$total,
-    cards_descriptions$strength_card,
-    class = "custom-class"
-  )})
+  output$strength_card <- renderUI({
+    text_card(
+      "Strength",
+      strenght_bars$state$values$total,
+      cards_descriptions$strength_card,
+      class = "custom-class"
+    )
+  })
 
   # UI of details card in the middle
   output$details_card <- renderUI({
@@ -178,12 +180,14 @@ server <- function(input, output, session, data, active_player) {
   })
 
   # UI of power card on the right side
-  output$power_card <- renderUI({ text_card(
-    "Power",
-    power_bars$state$values$total,
-    cards_descriptions$power_card,
-    class = "custom-class"
-  )})
+  output$power_card <- renderUI({
+    text_card(
+      "Power",
+      power_bars$state$values$total,
+      cards_descriptions$power_card,
+      class = "custom-class"
+    )
+  })
 
   observeEvent(active_player$id, {
     player_assessments <- data$dataset[which(data$dataset == active_player$id), ]

@@ -32,8 +32,8 @@ ui <- function(id, options) {
     id = id,
     class = "stats-progress-widget",
 
-    div( class = "chart_title", options$title),
-    div( class = "chart_icon", tags$img( class = "icon", src = glue::glue("{options$icon}"))),
+    div(class = "chart_title", options$title),
+    div(class = "chart_icon", tags$img(class = "icon", src = glue::glue("{options$icon}"))),
     div(
       id = ns("bar_list"),
       class = "chart_wrapper",
@@ -44,13 +44,13 @@ ui <- function(id, options) {
       tags$style(glue::glue('#{id} .progress.selected_bar .bar {{ background: {options$active_color} }}')),
 
       div(class = "chart_container",
-        div( id = ns("total_wrapper"), class = "chart_total", uiOutput(ns("total_score"))),
+        div(id = ns("total_wrapper"), class = "chart_total", uiOutput(ns("total_score"))),
         div(
           class = "steps",
           lapply(seq_len(options$steps), function(index) { div(class = "bar_step") })
         ),
         tagList(
-          lapply(seq_len(options$bar_number), function(index){
+          lapply(seq_len(options$bar_number), function(index) {
             div(
               id = paste0(id, "-", index),
               class = "ui indicating progress progress-bar",
