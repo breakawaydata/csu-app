@@ -17,7 +17,7 @@ Press `Invite User` and provide suitable user e-mail address.
 
 ## Development workflow
 
-### Development user confoguration
+### Development user configuration
 
 Before you start put .Renviron file with the below content:
 ```
@@ -28,7 +28,7 @@ inside `src/` folder.
 ### Working with local workflow
 
 Application can be run on the local R Studio for development.
-There is a [renv](https://rstudio.github.io/renv/articles/renv.html) initialised, so in order to restore the environment run `renv::restore()` in the R console.
+There is a [renv](https://rstudio.github.io/renv/articles/renv.html) initialized, so in order to restore the environment run `renv::restore()` in the R console.
 
 ### Working with dockerized workflow
 
@@ -48,6 +48,10 @@ Available tasks:
 ./workflow rstudio.push                  # Push created images to docker registry
 ./workflow rstudio.r                     # Execute R shell in the rstudio container
 ./workflow rstudio.bash                  # Execute shell in the rstudio container
+./workflow unit-tests.run                # Runs a component test battery
+./workflow lint.r-local-dependencies     # Installs linting packages for local linting
+./workflow lint.r-local                  # Runs the R code lintr locally
+./workflow lint.r-docker                 # Runs the R code lintr using docker
 ```
 
 #### Build your development docker image

@@ -57,7 +57,7 @@ default_body_style <- function(id, color) {
 #' @return A group of style tags.
 active_body_style <- function(ns, state) {
   tagList(
-    lapply(1:length(state$active), function(index) {
+    lapply(seq_len(length(state$active)), function(index) {
       tags$style(glue::glue('
         .{ns("grid")} .body_stat[data-group="{state$active[index]}"]
           {{

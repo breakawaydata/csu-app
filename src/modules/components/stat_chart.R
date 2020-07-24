@@ -24,16 +24,16 @@ ui <- function(id, options) {
     areas = c(
       "chart_title",
       "chart_icon",
-      "stats_progress_widget"
+      "stats-progress-widget"
     ),
     rows = "50px 50px 1fr",
     columns = "repeat(1, minmax(300px, 1fr))",
 
     id = id,
-    class = "stats_progress_widget",
+    class = "stats-progress-widget",
 
-    div( class = "chart_title", options$title),
-    div( class = "chart_icon", tags$img( class = "icon", src = glue::glue("{options$icon}"))),
+    div(class = "chart_title", options$title),
+    div(class = "chart_icon", tags$img(class = "icon", src = glue::glue("{options$icon}"))),
     div(
       id = ns("bar_list"),
       class = "chart_wrapper",
@@ -44,16 +44,16 @@ ui <- function(id, options) {
       tags$style(glue::glue('#{id} .progress.selected_bar .bar {{ background: {options$active_color} }}')),
 
       div(class = "chart_container",
-        div( id = ns("total_wrapper"), class = "chart_total", uiOutput(ns("total_score"))),
+        div(id = ns("total_wrapper"), class = "chart_total", uiOutput(ns("total_score"))),
         div(
           class = "steps",
-          lapply(1:options$steps, function(index) { div(class = "bar_step") })
+          lapply(seq_len(options$steps), function(index) { div(class = "bar_step") })
         ),
         tagList(
-          lapply(1:options$bar_number, function(index){
+          lapply(seq_len(options$bar_number), function(index) {
             div(
               id = paste0(id, "-", index),
-              class = "ui indicating progress",
+              class = "ui indicating progress progress-bar",
               `data-index` = index,
               `data-value` = 1,
               `data-total` = options$bar_total,
@@ -93,7 +93,7 @@ server <- function(input, output, session, state) {
       total_wrapper <- ns("total_wrapper")
 
       tagList(
-        lapply(1:length(state$values$bars), function(index) {
+        lapply(seq_len(length(state$values$bars)), function(index) {
           tags$script(glue::glue('
             $("#{ns(index)}").progress({{value: {state$values$bars[index]}}});
             $("#{total_wrapper}").css("left", "calc({state$values$total}% - 20px)");
@@ -112,7 +112,7 @@ server <- function(input, output, session, state) {
           $("#{bar_wrapper} .progress").removeClass("selected_bar");
         ')),
         if (length(state$active) > 0) {
-          lapply(1:length(state$active), function(index) {
+          lapply(seq_len(length(state$active)), function(index) {
             tags$script(glue::glue('
               $("#{ns(state$active[index])}").addClass("selected_bar")
             '))
@@ -194,7 +194,7 @@ statChart <- R6Class("statChart",
         self$state$options$icon <- icon
         self$state$options$bar_number <- bar_number
       })
-      
+
       self$ui = function(id) {
         ui(id, isolate(self$state$options))
       }

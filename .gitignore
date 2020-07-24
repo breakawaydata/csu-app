@@ -11,3 +11,5 @@ src/data/validation_report.html
 deployment/credentials
 src/.Renviron
 .vscode
+src/tests/__pycache__
+src/lint/__pycache__

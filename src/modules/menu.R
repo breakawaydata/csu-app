@@ -6,7 +6,6 @@ import("magrittr")
 
 export("ui", "init_server")
 
-expose("utils/utils.R")
 consts <- modules::use(consts)
 
 ui <- function(id, file_downloader) {
