@@ -104,7 +104,7 @@ filters <- function(ns) {
 
 search_api <- function(data, q) {
   has_matching <- function(field) {
-    startsWith(toupper(field), toupper(q))
+    grepl(toupper(q), toupper(field), fixed = TRUE)
   }
   data <- data %>%
     dplyr::mutate(first_last = paste(first, last)) %>%
