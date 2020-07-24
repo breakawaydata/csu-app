@@ -150,7 +150,7 @@ server <- function(input, output, session, data, active_player) {
   output$strenght_bars <- renderUI({ strenght_bars$ui(ns("strength_chart")) })
   output$power_bars <- renderUI({ power_bars$ui(ns("power_chart")) })
   output$body_chart <- renderUI({ body_chart$ui(ns("body_chart")) })
-  
+
   # Text cards with the information about overall strength, overall power and
   # detailed information about selected part of the body
   text_card <- use("modules/components/text_card.R")$text_card
@@ -164,7 +164,7 @@ server <- function(input, output, session, data, active_player) {
     cards_descriptions$strength_card,
     class = "custom-class"
   )})
-  
+
   # UI of details card in the middle
   output$details_card <- renderUI({
     if(!is.null(body_part_side()) & !is.null(body_part_level())) {
@@ -176,7 +176,7 @@ server <- function(input, output, session, data, active_player) {
       )
     }
   })
-  
+
   # UI of power card on the right side
   output$power_card <- renderUI({ text_card(
     "Power",
@@ -186,28 +186,35 @@ server <- function(input, output, session, data, active_player) {
   )})
 
   observeEvent(active_player$id, {
-    active_player$assessments <- data$dataset[which(data$dataset == active_player$id), ]
+    player_assessments <- data$dataset[which(data$dataset == active_player$id), ]
+    sorted_assessments <- player_assessments[order(
+      as.Date(player_assessments$assessment_date, format="%d/%m/%Y")
+    ), ]
+
+    active_player$assessments <- sorted_assessments
   })
 
   # Update the widget values when a new player is picked
   observeEvent(active_player$assessments, {
-    active_player$active_assessment <- active_player$assessments[1, ]
+    active_player$active_assessment <- active_player$assessments[nrow(active_player$assessments), ]
 
     output$assessment_report_toggle <- renderUI({
-      div(
-        class = "assessment_reports-container",
-        id = ns("assessment_report_actions"),
-        tagList(
-          lapply(1:nrow(active_player$assessments), function(index) {
-            div(
-              `data-index` = index,
-              class = "assessment_report-toggler",
-              active_player$assessments[index, ]$assessment_date
-            )
-          })
-        ),
+      tagList(
         uiOutput(ns("selected_assessment_report_style")),
-        assessment_report_bindings_script(ns)
+        div(
+          class = "assessment_reports-container",
+          id = ns("assessment_report_actions"),
+          tagList(
+            lapply(1:nrow(active_player$assessments), function(index) {
+              div(
+                `data-index` = index,
+                class = "assessment_report-toggler",
+                active_player$assessments[index, ]$assessment_date
+              )
+            })
+          )
+        ),
+        assessment_report_bindings_script(ns, nrow(active_player$assessments))
       )
     })
   })
