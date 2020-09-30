@@ -283,9 +283,6 @@ server <- function(input, output, session, data, active_player) {
     power_bars$state$active <- c()
     body_chart$state$active <- c(strength_mapping[strenght_bars$state$active])
     
-    print(paste0("You have chosen: ", strenght_bars$state$active))
-    print(paste0("You have chosen: ", body_chart$state$active))
-    
   })
 
   # Vector of coordinates regarding selected body part, e.g. c("left", "top")
