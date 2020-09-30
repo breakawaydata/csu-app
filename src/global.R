@@ -11,12 +11,15 @@ consts <- config::get(file = "constants/constants.yml")
 data <- data.table::fread("data/data_players.csv", data.table = FALSE)
 position_stats <- data.table::fread("data/data_positions.csv", data.table = FALSE)
 
+
 explosion_data <- data.table::fread("data/explosion_data.csv", data.table = FALSE)
+reach_data <- data.table::fread("data/reach_data.csv", data.table = FALSE)
 
 file_downloader <- use("modules/components/file_generator.R")$fileDownloader("fileDownloader")
 
 pages <- list(
-  explosion = use("modules/pages/explosive_page.R")$explosivePage("explosivePage", explosion_data)
+  explosion = use("modules/pages/explosive_page.R")$explosivePage("explosivePage", explosion_data),
+  reach = use("modules/pages/reach_page.R")$reachPage("reachPage", reach_data)
 )
 
 sass(

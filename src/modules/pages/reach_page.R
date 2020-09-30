@@ -5,21 +5,21 @@ import("htmltools")
 import("shiny")
 import("shiny.grid")
 
-export("explosivePage")
+export("reachPage")
 
 cards_descriptions <- list(
-  strength_card = "Strength Card Test Description Strength Card Test Description
-  Strength Card Test Description Strength Card Test Description Strength Card
+  speed_card = "Speed Card Test Description Speed Card Test Description
+  Speed Card Test Description Speed Card Test Description Speed Card
   Test Description",
   details_card = "Details Card Test Description Details Card Test Description
   Details Card Test Description Details Card Test Description Details Card Test
   Description",
-  power_card = "Power Card Test Description Power Card Test Description Power
-  Card Test Description Power Card Test Description Power Card Test Description"
+  agility_card = "Agility Card Test Description Agility Card Test Description Agility
+  Card Test Description Agility Card Test Description Agility Card Test Description"
 )
 #' Creates the styling for an active assessment_report menu item.
 #'
-#' @description Used by the explosivePage class to generate ui.
+#' @description Used by the speedPage class to generate ui.
 #'
 #' @param ns The page namespace.
 #' @param index the index of the active assessment_report.
@@ -36,7 +36,7 @@ active_assessment_report_style <- function(ns, index) {
 
 #' Creates the bindings for triggering assessment report view changes.
 #'
-#' @description Used by the explosivePage class to generate ui.
+#' @description Used by the speedPage class to generate ui.
 #'
 #' @param ns The page namespace.
 #'
@@ -50,9 +50,9 @@ assessment_report_bindings_script <- function(ns, nrow) {
   '))
 }
 
-#' Creates the UI for the explosive page.
+#' Creates the UI for the speed page.
 #'
-#' @description Used by the explosivePage class to generate the corresponding ui.
+#' @description Used by the speedPage class to generate the corresponding ui.
 #'
 #' @param id widget id.
 #'
@@ -63,34 +63,34 @@ ui <- function(id) {
   div(
     uiOutput(ns("assessment_report_toggle")),
     gridPanel(
-      class = "explosive_page_wrapper",
-      areas = c("strength_chart body_chart power_chart"),
-      columns = "1fr minmax(500px, 2fr) 1fr",
+      class = "reach_page_wrapper",
+      areas = c("speed_chart speed_agility_chart agility_chart"),
+      columns = "1fr minmax(500px, 2.7fr) 1fr",
       gap = "20px",
 
-      uiOutput(ns("strenght_bars")) %>%
-        tagAppendAttributes(class = "strength_chart"),
+      uiOutput(ns("speed_bars")) %>%
+        tagAppendAttributes(class = "speed_chart"),
 
-      uiOutput(ns("body_chart")) %>%
-        tagAppendAttributes(class = "body_chart"),
+      uiOutput(ns("speed_agility_chart")) %>%
+        tagAppendAttributes(class = "speed_agility_chart"),
 
-      uiOutput(ns("power_bars")) %>%
-        tagAppendAttributes(class = "power_chart")
+      uiOutput(ns("agility_bars")) %>%
+        tagAppendAttributes(class = "agility_chart")
     ),
     gridPanel(
-      class = "explosive_page_wrapper",
-      areas = c("strength_card details_card power_card"),
+      class = "reach_page_wrapper",
+      areas = c("speed_card details_card agility_card"),
       columns = "1fr minmax(500px, 2fr) 1fr",
       gap = "20px",
 
-      uiOutput(ns("strength_card")) %>%
-        tagAppendAttributes(class = "strength_card"),
+      uiOutput(ns("speed_card")) %>%
+        tagAppendAttributes(class = "speed_card"),
 
       uiOutput(ns("details_card")) %>%
         tagAppendAttributes(class = "details_card"),
 
-      uiOutput(ns("power_card")) %>%
-        tagAppendAttributes(class = "power_card")
+      uiOutput(ns("agility_card")) %>%
+        tagAppendAttributes(class = "agility_card")
     )
   )
 }
@@ -107,84 +107,89 @@ server <- function(input, output, session, data, active_player) {
   ns <- session$ns
 
   chart_options <- list(
-    color = "#286BAF",
-    background = "#9ED3F6",
+    color = "#C4CB38",
+    background = "#FCF9B9",
     active_color = "#F66733",
-    active_background = "#9ED3F6"
+    active_background = "#FCF9B9"
   )
 
-  strenght_bars <- use("modules/components/stat_chart.R")$statChart(
-    "strength_chart", "Strength",
-    "icons/BA_Strength.svg", 3, chart_options
+  speed_bars <- use("modules/components/stat_chart.R")$statChart(
+    "speed_chart", "Speed",
+    "icons/BA_Speed.svg", 4, chart_options
   )
 
-  power_bars <- use("modules/components/stat_chart.R")$statChart(
-    "power_chart", "Power",
-    "icons/BA_Power.svg", 3, chart_options
+  agility_bars <- use("modules/components/stat_chart.R")$statChart(
+    "agility_chart", "Agility",
+    "icons/BA_Agility.svg", 3, chart_options
   )
 
-  body_chart <- use("modules/components/body_chart.R")$bodyChart(
-    "body_chart",
+  speed_agility_chart <- use("modules/components/forty_agility_chart.R")$speedagilityChart(
+    "speed_agility_chart",
     list(
       color = "#C4C4C4",
       active_color = "#F66733",
       labels = list(
         left = list(
-          top = "Upper Strength",
-          middle = "Core Strength",
-          bottom = "Lower Strength"
+          top = "Forty", 
+          middle = "Twenty", 
+          lower = "Ten", 
+          lowest = "Five"
         ),
         right = list(
-          top = "Upper Power",
-          middle = "Core Power",
-          bottom = "Lower Power"
+          top = "In & Out",
+          middle = "CoD",
+          lower = "Initial Burst"
         )
       )
     )
   )
+  
 
-  strenght_bars$server()
-  power_bars$server()
-  body_chart$server()
 
-  output$strenght_bars <- renderUI({ strenght_bars$ui(ns("strength_chart")) })
-  output$power_bars <- renderUI({ power_bars$ui(ns("power_chart")) })
-  output$body_chart <- renderUI({ body_chart$ui(ns("body_chart")) })
+  speed_bars$server()
+  agility_bars$server()
+  speed_agility_chart$server()
+
+  output$speed_bars <- renderUI({ speed_bars$ui(ns("speed_chart")) })
+  output$agility_bars <- renderUI({ agility_bars$ui(ns("agility_chart")) })
+  output$speed_agility_chart <- renderUI({ speed_agility_chart$ui(ns("speed_agility_chart")) })
+
 
   # Text cards with the information about overall strength, overall power and
   # detailed information about selected part of the body
   text_card <- use("modules/components/text_card.R")$text_card
-  body_part_side <- reactive({ body_part_coordinates()[1] })
-  body_part_level <- reactive({ body_part_coordinates()[2] })
-
+  speed_agility_side <- reactive({ speed_agility_chart_coordinates()[1] })
+  speed_agility_level <- reactive({ speed_agility_chart_coordinates()[2] })
+  
   # UI of strength card on the left side
-  output$strength_card <- renderUI({
+  output$speed_card <- renderUI({
     text_card(
-      "Strength",
-      strenght_bars$state$values$total,
-      cards_descriptions$strength_card,
+      "Speed",
+      speed_bars$state$values$total,
+      cards_descriptions$speed_card,
       class = "custom-class"
     )
   })
 
   # UI of details card in the middle
   output$details_card <- renderUI({
-    if(!is.null(body_part_side()) & !is.null(body_part_level())) {
+    if(!is.null(speed_agility_side()) & !is.null(speed_agility_side())) {
       text_card(
-        body_chart$state$options$labels[[body_part_side()]][[body_part_level()]],
-        body_chart$state$values[[body_part_side()]][[body_part_level()]],
+        speed_agility_chart$state$options$labels[[speed_agility_side()]][[speed_agility_level()]],
+        speed_agility_chart$state$values[[speed_agility_side()]][[speed_agility_level()]],
         cards_descriptions$details_card,
         class = "custom-class"
       )
     }
+    
   })
 
   # UI of power card on the right side
-  output$power_card <- renderUI({
+  output$agility_card <- renderUI({
     text_card(
-      "Power",
-      power_bars$state$values$total,
-      cards_descriptions$power_card,
+      "Agility",
+      agility_bars$state$values$total,
+      cards_descriptions$agility_card,
       class = "custom-class"
     )
   })
@@ -234,74 +239,83 @@ server <- function(input, output, session, data, active_player) {
       active_assessment_report_style(ns, input$assessment_report_selected)
     })
 
-    strenght_bars$state$values <- list(
-      total = active_assessment$strength_score,
+    speed_bars$state$values <- list(
+      total = active_assessment$speed_score,
       bars = c(
-        active_assessment$strength_upper,
-        active_assessment$strength_core,
-        active_assessment$strength_lower
+        active_assessment$speed_upper,
+        active_assessment$speed_core,
+        active_assessment$speed_lower,
+        active_assessment$speed_lower
       )
     )
 
-    power_bars$state$values <- list(
-      total = active_assessment$power_score,
+    agility_bars$state$values <- list(
+      total = active_assessment$agility_score,
       bars = c(
-        active_assessment$power_upper,
-        active_assessment$power_core,
-        active_assessment$power_lower
+        active_assessment$agility_upper,
+        active_assessment$agility_core,
+        active_assessment$agility_lower
       )
     )
 
-    body_chart$state$values <- list(
-      total = active_assessment$explosion_score,
+    speed_agility_chart$state$values <- list(
+      total = active_assessment$reach_score,
       left = list(
-        top = active_assessment$strength_upper,
-        middle = active_assessment$strength_core,
-        bottom = active_assessment$strength_lower
+        top = active_assessment$speed_upper,
+        middle = active_assessment$speed_core,
+        lower = active_assessment$speed_lower,
+        lowest = active_assessment$speed_lower
       ),
       right = list(
-        top = active_assessment$power_upper,
-        middle = active_assessment$power_core,
-        bottom = active_assessment$power_lower
+        top = active_assessment$agility_upper,
+        middle = active_assessment$agility_core,
+        lower = active_assessment$agility_lower
       )
     )
-  })
 
-  # Widget to widget mapping of what body sections correspont to which stat bar
-  power_mapping <- c("right_arm", "bottom_right_torso", "right_leg")
-  strength_mapping <- c("left_arm", "bottom_left_torso", "left_leg")
-  body_levels <- c("top", "middle", "bottom")
-
-  # Inter widget bindings. State changes on one widget
-  # will cascade to the other widgets.
-  observeEvent(power_bars$state$active, {
-    strenght_bars$state$active <- c()
-    body_chart$state$active <- c(power_mapping[power_bars$state$active])
-  })
-
-  observeEvent(strenght_bars$state$active, {
-    power_bars$state$active <- c()
-    body_chart$state$active <- c(strength_mapping[strenght_bars$state$active])
     
   })
 
-  # Vector of coordinates regarding selected body part, e.g. c("left", "top")
-  body_part_coordinates <- reactive({
-    if(!is.null(strenght_bars$state$active)) {
-      c("left", body_levels[[strenght_bars$state$active]])
-    } else if(!is.null(power_bars$state$active)) {
-      c("right", body_levels[[power_bars$state$active]])
-    }
+  # Widget to widget mapping of what body sections correspond to which stat bar
+  agility_mapping <- c("in_out", "cod","initial_burst")
+  agility_levels <- c("top", "middle", "lower")
+  
+  speed_mapping <- c("forty", "twenty", "ten", "five")
+  speed_levels <- c("top", "middle", "lower", "lowest")
+
+  # Inter widget bindings. State changes on one widget
+  # will cascade to the other widgets.
+  observeEvent(agility_bars$state$active, {
+    speed_bars$state$active <- c()
+    speed_agility_chart$state$active <- c(agility_mapping[agility_bars$state$active])  
   })
 
-  observeEvent(body_chart$state$active, {
-    if (!is.na(which(power_mapping == body_chart$state$active, arr.ind = TRUE)[1])) {
-      strenght_bars$state$active <- c()
-      power_bars$state$active <- c(which(power_mapping == body_chart$state$active, arr.ind = TRUE)[1])
+  observeEvent(speed_bars$state$active, {
+    agility_bars$state$active <- c()
+    speed_agility_chart$state$active <- c(speed_mapping[speed_bars$state$active])
+  })
+
+  # Vector of coordinates regarding selected body part, e.g. c("left", "top")
+  speed_agility_chart_coordinates <- reactive({
+    if(!is.null(speed_bars$state$active)) {
+      c("left", speed_levels[[speed_bars$state$active]])
+    } else if(!is.null(agility_bars$state$active)) {
+      c("right", agility_levels[[agility_bars$state$active]])
+    }  
+  })
+  
+
+  observeEvent(speed_agility_chart$state$active, {
+    if (!is.na(which(speed_mapping == speed_agility_chart$state$active, arr.ind = TRUE)[1])) {
+      agility_bars$state$active <- c()
+      speed_bars$state$active <- c(which(speed_mapping == speed_agility_chart$state$active, arr.ind = TRUE)[1])
     }
-    if (!is.na(which(strength_mapping == body_chart$state$active, arr.ind = TRUE)[1])) {
-      power_bars$state$active <- c()
-      strenght_bars$state$active <- c(which(strength_mapping == body_chart$state$active, arr.ind = TRUE)[1])
+  })
+  
+  observeEvent(speed_agility_chart$state$active, {
+    if (!is.na(which(agility_mapping == speed_agility_chart$state$active, arr.ind = TRUE)[1])) {
+      speed_bars$state$active <- c()
+      agility_bars$state$active <- c(which(agility_mapping == speed_agility_chart$state$active, arr.ind = TRUE)[1])
     }
   })
 }
@@ -310,7 +324,7 @@ server <- function(input, output, session, data, active_player) {
 #'
 #' The object contains a ui and server definition that must be called after instancing.
 #' The namespace will be based on the ID provided.
-explosivePage <- R6Class("explosivePage",
+reachPage <- R6Class("reachPage",
   public = list(
     #' @field ui UI definition of the chart.
     ui = NULL,
@@ -347,4 +361,4 @@ explosivePage <- R6Class("explosivePage",
     }
   )
 )
-explosivePage <- explosivePage$new
+reachPage <- reachPage$new

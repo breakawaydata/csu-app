@@ -55,6 +55,14 @@ server <- function(input, output, session, pages) {
       )
     }
 
+    if (session$userData$stat() == "reach") {
+      pages$reach$active_player$id <- input$player
+      content <- tags$div(
+        class = "player-content",
+        pages$reach$ui
+      )
+    }
+
     content
   })
   outputOptions(output, "player", suspendWhenHidden = FALSE)
