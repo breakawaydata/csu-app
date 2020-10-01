@@ -13,7 +13,7 @@ ui <- function(id) {
     sidebar_elements =
       tagList(
         sidebar_element(page_id = "summary", item_id = "summary", icon = "summary", text = "SUMMARY", class = "sidebar-active"),
-        sidebar_element(page_id = "explosive", item_id = "explosive", icon = "explosive", text = "EXPLOSIVE"),
+        sidebar_element(page_id = "explosive", item_id = "explosive", icon = "explosive", text = "EXPLOSION"),
         sidebar_element(page_id = "reach", item_id = "reach", icon = "reach", text = "REACH"),
         sidebar_element(page_id = "balance", item_id = "balance", icon = "balance", text = "BALANCE"),
         sidebar_element(page_id = "capacity", item_id = "capacity", icon = "capacity", text = "CAPACITY"),
