@@ -66,7 +66,7 @@ server <- function(input, output, session, pages) {
     if (session$userData$page() == "game") {
     content <- tags$div(
       class = "player-content",
-      style = glue::glue("background-image: url('assets/balance.png'); height: 100vh;")
+      style = glue::glue("background-image: url('assets/live.gif'); height: 100vh;")
      )
     }
 

@@ -5,6 +5,6 @@ account: breakaway
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2429939
-bundleId: 3689790
+bundleId: 3893565
 url: https://breakaway.shinyapps.io/breakaway/
-when: 1601514564.27371
+when: 1606109716.95828
