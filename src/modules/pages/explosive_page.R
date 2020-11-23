@@ -8,14 +8,12 @@ import("shiny.grid")
 export("explosivePage")
 
 cards_descriptions <- list(
-  strength_card = "Strength Card Test Description Strength Card Test Description
-  Strength Card Test Description Strength Card Test Description Strength Card
-  Test Description",
-  details_card = "Details Card Test Description Details Card Test Description
-  Details Card Test Description Details Card Test Description Details Card Test
-  Description",
-  power_card = "Power Card Test Description Power Card Test Description Power
-  Card Test Description Power Card Test Description Power Card Test Description"
+  strength_card = "Strength is an athlete's ability to produce force - it is a
+  raw measure of the ability to be forceful.",
+  details_card = "To increase his explosion, focus on driving more force through
+  the hips, as this will allow his power to shine and unlock leg strength.",
+  power_card = "Power is an athlete's ability to produce force quickly - over
+  a short period of time."
 )
 #' Creates the styling for an active assessment_report menu item.
 #'
@@ -282,7 +280,7 @@ server <- function(input, output, session, data, active_player) {
   observeEvent(strenght_bars$state$active, {
     power_bars$state$active <- c()
     body_chart$state$active <- c(strength_mapping[strenght_bars$state$active])
-    
+
   })
 
   # Vector of coordinates regarding selected body part, e.g. c("left", "top")

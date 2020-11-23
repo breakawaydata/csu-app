@@ -8,14 +8,12 @@ import("shiny.grid")
 export("reachPage")
 
 cards_descriptions <- list(
-  speed_card = "Speed Card Test Description Speed Card Test Description
-  Speed Card Test Description Speed Card Test Description Speed Card
-  Test Description",
-  details_card = "Details Card Test Description Details Card Test Description
-  Details Card Test Description Details Card Test Description Details Card Test
-  Description",
-  agility_card = "Agility Card Test Description Agility Card Test Description Agility
-  Card Test Description Agility Card Test Description Agility Card Test Description"
+  speed_card = "Speed is the ability for an athlete to get from A to B
+  as fast as possible.",
+  details_card = "To improve reach, focus on quick twitch muscles as this will
+  allow him to break off the line faster and close quicker.",
+  agility_card = "Agility is how quickly an athlete can get from A to B to C in
+  response to an external stimulus."
 )
 #' Creates the styling for an active assessment_report menu item.
 #'
@@ -130,9 +128,9 @@ server <- function(input, output, session, data, active_player) {
       active_color = "#F66733",
       labels = list(
         left = list(
-          top = "Forty", 
-          middle = "Twenty", 
-          lower = "Ten", 
+          top = "Forty",
+          middle = "Twenty",
+          lower = "Ten",
           lowest = "Five"
         ),
         right = list(
@@ -143,7 +141,7 @@ server <- function(input, output, session, data, active_player) {
       )
     )
   )
-  
+
 
 
   speed_bars$server()
@@ -160,7 +158,7 @@ server <- function(input, output, session, data, active_player) {
   text_card <- use("modules/components/text_card.R")$text_card
   speed_agility_side <- reactive({ speed_agility_chart_coordinates()[1] })
   speed_agility_level <- reactive({ speed_agility_chart_coordinates()[2] })
-  
+
   # UI of strength card on the left side
   output$speed_card <- renderUI({
     text_card(
@@ -181,7 +179,7 @@ server <- function(input, output, session, data, active_player) {
         class = "custom-class"
       )
     }
-    
+
   })
 
   # UI of power card on the right side
@@ -273,13 +271,13 @@ server <- function(input, output, session, data, active_player) {
       )
     )
 
-    
+
   })
 
   # Widget to widget mapping of what body sections correspond to which stat bar
   agility_mapping <- c("in_out", "cod","initial_burst")
   agility_levels <- c("top", "middle", "lower")
-  
+
   speed_mapping <- c("forty", "twenty", "ten", "five")
   speed_levels <- c("top", "middle", "lower", "lowest")
 
@@ -287,7 +285,7 @@ server <- function(input, output, session, data, active_player) {
   # will cascade to the other widgets.
   observeEvent(agility_bars$state$active, {
     speed_bars$state$active <- c()
-    speed_agility_chart$state$active <- c(agility_mapping[agility_bars$state$active])  
+    speed_agility_chart$state$active <- c(agility_mapping[agility_bars$state$active])
   })
 
   observeEvent(speed_bars$state$active, {
@@ -301,9 +299,9 @@ server <- function(input, output, session, data, active_player) {
       c("left", speed_levels[[speed_bars$state$active]])
     } else if(!is.null(agility_bars$state$active)) {
       c("right", agility_levels[[agility_bars$state$active]])
-    }  
+    }
   })
-  
+
 
   observeEvent(speed_agility_chart$state$active, {
     if (!is.na(which(speed_mapping == speed_agility_chart$state$active, arr.ind = TRUE)[1])) {
@@ -311,7 +309,7 @@ server <- function(input, output, session, data, active_player) {
       speed_bars$state$active <- c(which(speed_mapping == speed_agility_chart$state$active, arr.ind = TRUE)[1])
     }
   })
-  
+
   observeEvent(speed_agility_chart$state$active, {
     if (!is.na(which(agility_mapping == speed_agility_chart$state$active, arr.ind = TRUE)[1])) {
       speed_bars$state$active <- c()
