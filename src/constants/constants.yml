@@ -1,8 +1,8 @@
 default:
   global:
-    team_name: "Clemson Football"
-    team_logo: "icons/casl_logo.png"
-    team_logo_small: "icons/white_clemson_paw.png"
+    team_name: "Utah Football"
+    team_logo: "icons/square_utah_logo.svg"
+    team_logo_small: "icons/small_utah_logo.png"
     gravatar_url: "https://www.gravatar.com/avatar/"
   dom:
     all_level_id: "all"
