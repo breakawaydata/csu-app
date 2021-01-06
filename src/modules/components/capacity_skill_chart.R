@@ -43,8 +43,11 @@ default_body_style <- function(id, color) {
     #{id} [data-part="section"],
     #{id} [data-part="section"] path,
     #{id} [data-part="section"] polygon,
+    #{id} [data-part="section"] line,
     #{id} [data-part="section"] rect
-    {{ fill: {color}; }}
+    {{ fill : {color};
+       stroke : {color}  
+    }}
   '))
 }
 
@@ -73,7 +76,9 @@ active_body_style <- function(ns, state) {
         #{ns("capacity_wrapper")} [data-part="section"][data-group="{state$active[index]}"] polygon,
         #{ns("capacity_wrapper")} [data-part="section"][data-group="{state$active[index]}"] line,
         #{ns("capacity_wrapper")} [data-part="section"][data-group="{state$active[index]}"] rect
-        {{ fill: {state$options$active_color} }}
+        {{ fill: {state$options$active_color};
+           stroke: {state$options$active_color}
+        }}
       '))
     })
   )
@@ -121,10 +126,9 @@ ui <- function(id, options) {
       "left_middle body  body  body  body  body right_middle",
       "...         body  body  body  body  body ...",
       "left_bottom body  body  body  body  body right_bottom",
-      "...         body  body  body  body  body ...",
-      "...         body  body  body  body  body ..."
+      "...         ...   ...   ...   ...   ...  ..."
     ),
-    rows = "25px 50px 0.2fr 50px 75px 50px 35px 50px 25px 50px",
+    rows = "25px 50px 0.5fr 50px .5fr 50px .5fr 50px .5fr",
 
     div(
       id = ns("capacity_wrapper"),
@@ -221,12 +225,12 @@ capacityskillChart <- R6Class("capacityskillChart",
         active_color = "lightslategray",
         labels = list(
           left = list(top = "Long Distance", middle = "Medium Distance", bottom = "Short Distance"),  ### here is where we dynamically change label
-          right = list(top = "Skill One", middle = "Skill One", bottom = "Skill One")
+          right = list(top = "Skill One", middle = "Skill Two", bottom = "Skill Three")
         )
       ),
       values = list(
         total = 0,
-        left = list(top = 0, middle = 0, bottom = 0, lowest = 0),
+        left = list(top = 0, middle = 0, bottom = 0),
         right = list(top =0, middle = 0, bottom = 0)
       ),
       active = c()

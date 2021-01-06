@@ -106,9 +106,9 @@ server <- function(input, output, session, data, active_player) {
 
   chart_options <- list(
     color = "#B46E47",
-    background = "#B08B6F",
+    background = "#E0BBA2",
     active_color = "#F66733",
-    active_background = "#B08B6F"
+    active_background = "#E0BBA2"
   )
 
   fitness_bars <- use("modules/components/stat_chart.R")$statChart(
@@ -130,12 +130,12 @@ server <- function(input, output, session, data, active_player) {
         left = list(
           top = "Long Distance",
           middle = "Medium Distance",
-          lower = "Short Distance"
+          bottom = "Short Distance"
         ),
         right = list(
           top = "Skill One",
           middle = "Skill Two",
-          lower = "Skill Three"
+          bottom = "Skill Three"
         )
       )
     )
@@ -193,18 +193,18 @@ server <- function(input, output, session, data, active_player) {
 
   observeEvent(active_player$id, {
     print(active_player$id)
-    
+
     player_assessments <- data$dataset[which(data$dataset == active_player$id), ]
     sorted_assessments <- player_assessments[order(
       as.Date(player_assessments$assessment_date, format="%d/%m/%Y")
     ), ]
-    
-    
+
+
 
     active_player$assessments <- sorted_assessments
 
-    
-    
+
+
   })
 
 
@@ -269,12 +269,12 @@ server <- function(input, output, session, data, active_player) {
       left = list(
         top = active_assessment$fitness_upper,
         middle = active_assessment$fitness_core,
-        lower = active_assessment$fitness_lower
+        bottom = active_assessment$fitness_lower
       ),
       right = list(
         top = active_assessment$skill_upper,
         middle = active_assessment$skill_core,
-        lower = active_assessment$skill_lower
+        bottom = active_assessment$skill_lower
       )
     )
 
@@ -283,10 +283,10 @@ server <- function(input, output, session, data, active_player) {
 
   # Widget to widget mapping of what body sections correspond to which stat bar
   skill_mapping <- c("skill-one", "skill-two","skill-three")
-  skill_levels <- c("top", "middle", "lower")
+  skill_levels <- c("top", "middle", "bottom")
 
   fitness_mapping <- c("long-distance", "medium-distance", "short-distance")
-  fitness_levels <- c("top", "middle", "lower")
+  fitness_levels <- c("top", "middle", "bottom")
 
   # Inter widget bindings. State changes on one widget
   # will cascade to the other widgets.
