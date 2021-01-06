@@ -14,12 +14,15 @@ position_stats <- data.table::fread("data/data_positions.csv", data.table = FALS
 
 explosion_data <- data.table::fread("data/explosion_data.csv", data.table = FALSE)
 reach_data <- data.table::fread("data/reach_data.csv", data.table = FALSE)
+capacity_data <- data.table::fread("data/capacity_data.csv", data.table = FALSE)
 
 file_downloader <- use("modules/components/file_generator.R")$fileDownloader("fileDownloader")
 
 pages <- list(
   explosion = use("modules/pages/explosive_page.R")$explosivePage("explosivePage", explosion_data),
-  reach = use("modules/pages/reach_page.R")$reachPage("reachPage", reach_data)
+  reach = use("modules/pages/reach_page.R")$reachPage("reachPage", reach_data),
+  capacity = use("modules/pages/capacity_page.R")$capacityPage("capacityPage", capacity_data)
+
 )
 
 sass(

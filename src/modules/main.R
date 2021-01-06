@@ -62,6 +62,14 @@ server <- function(input, output, session, pages) {
         pages$reach$ui
       )
     }
+    
+    if (session$userData$stat() == "capacity") {
+      pages$capacity$active_player$id <- input$player
+      content <- tags$div(
+        class = "player-content",
+        pages$capacity$ui
+      )
+    }
 
     if (session$userData$page() == "game") {
     content <- tags$div(
