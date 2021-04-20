@@ -1,108 +1,121 @@
 player_id,first,last,suffix,position,position_detailed,number,class,picture,positions,explosive,reach,balance,capacity,summary
-CLEM_050,Etinosa,Reuben,,DL,DT,32,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/ReubenEtinosa.jpg,Defensive Line,85,96,48,89,80
-CLEM_103,Darnell,Jefferies,,DL,DT,90,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/JefferiesDarnell-2.jpg,Defensive Line,75,99,37,92,76
-CLEM_072,Matthew,Maloney,,LB,LB,49,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/MaloneyMatthew.jpg,Linebackers,86,64,75,74,75
-CLEM_055,Justin,Foster,,DL,DE,35,SR,https://clemsontigers.com/wp-content/uploads/2017/03/FosterJustin.jpg,Defensive Line,98,64,32,100,74
-CLEM_020,Tyler,Davis,,DL,DT,13,SO,https://clemsontigers.com/wp-content/uploads/2018/12/DavisTyler.jpg,Defensive Line,90,34,79,89,73
-CLEM_059,Aidan,Swanson,,SP,K,39,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/SwansonAidan.jpg,Specialists,84,78,78,53,73
-CLEM_092,Jackson,Carman,,OL,OL,79,JR,https://clemsontigers.com/wp-content/uploads/2018/06/CarmanJackson-2.jpg,Offensive Line,47,55,99,90,73
-CLEM_037,Lyn-J,Dixon,,HB,RB,23,JR,https://clemsontigers.com/wp-content/uploads/2018/06/DixonLyn-J-2.jpg,Halfbacks,65,71,72,74,70
-CLEM_084,Zac,Mcintosh,,OL,OL,63,JR (RS),https://clemsontigers.com/wp-content/uploads/2019/08/1-1-660x1024.jpg,Offensive Line,97,78,72,35,70
-CLEM_106,James,Edwards,,DL,DT,95,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/EdwardsJames.jpg,Defensive Line,97,52,58,72,70
-CLEM_038,Nolan,Turner,,DB,S,24,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/TurnerNolan.jpg,Secondary,85,68,25,95,68
-CLEM_039,Jayln,Phillips,,DB,DB,25,SO,https://clemsontigers.com/wp-content/uploads/2019/06/PhillipsJalyn.jpg,Secondary,96,69,17,90,68
-CLEM_041,Sheridan,Jones,,DB,CB,26,SO,https://clemsontigers.com/wp-content/uploads/2018/12/JonesSheridan.jpg,Secondary,32,100,97,44,68
-CLEM_051,Sylvester,Mayers,,HB,RB,32,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/09/MayersSylvester.jpg,Halfbacks,88,48,66,66,67
-CLEM_095,Will,Brown,,WR,WR,82,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/BrownWill.jpg,Wide Receivers,95,34,39,96,66
-CLEM_105,Klayton,Randolph,,DL,DE,92,SO (RS),https://clemsontigers.com/wp-content/uploads/2019/04/RandolphKlayton.jpg,Defensive Line,80,58,89,36,66
-CLEM_028,Joseph,Charleston,,DB,S,18,SO,https://clemsontigers.com/wp-content/uploads/2018/12/CharlestonJoseph.jpg,Secondary,33,72,87,69,65
-CLEM_046,BT,Potter,,SP,K,29,JR,https://clemsontigers.com/wp-content/uploads/2018/06/PotterB.T-2.jpg,Specialists,64,22,92,83,65
-CLEM_063,Nyles,Pinckney,,DL,DT,44,GR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/PinckneyNyles.jpg,Defensive Line,39,55,85,79,64
-CLEM_014,Travis,Etienne,,HB,RB,9,SR,https://clemsontigers.com/wp-content/uploads/2017/03/EtienneTravis.jpg,Halfbacks,40,98,72,43,63
-CLEM_016,Baylon,Spector,,LB,LB,10,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/03/SpectorBaylon.jpg,Linebackers,32,30,98,91,63
-CLEM_066,Matt,McMahan,,LB,LB,45,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/04/McMahanMatt.jpg,Linebackers,20,79,70,83,63
-CLEM_011,Justin,Mascoll,,DL,DE,7,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/MascollJustin-2.jpg,Defensive Line,44,81,25,97,62
-CLEM_054,Ben,Batson,,DB,S,34,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/BatsonBen-3.jpg,Secondary,45,42,94,67,62
-CLEM_070,Will,Spiers,,SP,P,48,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/SpiersWill.jpg,Specialists,70,78,86,15,62
-CLEM_077,Mason,Trotter,,OL,OL,54,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/TrotterMason.jpg,Offensive Line,82,63,89,9,61
-CLEM_030,Michel,Dukes,,HB,RB,19,SO,https://clemsontigers.com/wp-content/uploads/2019/06/DukesMichel.jpg,Halfbacks,87,43,61,49,60
-CLEM_058,Elijah,Turner,,DB,S,38,GR (RS),https://clemsontigers.com/wp-content/uploads/2018/06/TurnerElijah-2.jpg,Secondary,62,44,35,96,59
-CLEM_022,Jake,Venables,,LB,LB,15,SO (RS),https://clemsontigers.com/wp-content/uploads/2019/04/VenablesJake.jpg,Linebackers,49,83,50,51,58
-CLEM_060,Greg,Williams,,DL,DE,40,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/WilliamsGreg.jpg,Defensive Line,87,11,83,46,57
-CLEM_062,Lavonta,Bentley,,LB,LB,42,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/BentleyLaVonta.jpg,Linebackers,54,27,95,52,57
-CLEM_069,James,Skalski,,LB,LB,47,GR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/SkalskiJames.jpg,Linebackers,88,3,95,43,57
-CLEM_021,Kevin,Swint,,LB,LB,14,FR,https://clemsontigers.com/wp-content/uploads/2020/02/SwintKevin.jpg,Linebackers,84,42,41,55,56
-CLEM_027,Kane,Patterson,,LB,LB,17,SO,https://clemsontigers.com/wp-content/uploads/2019/06/PattersonKane.jpg,Linebackers,80,21,80,40,55
-CLEM_044,Chez,Mellusi,,HB,RB,27,SO,https://clemsontigers.com/wp-content/uploads/2019/06/MellusiChez.jpg,Halfbacks,17,98,7,98,55
-CLEM_088,Jordan,McFadden,,OL,OL,71,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/McFaddenJordan-2.jpg,Offensive Line,77,48,23,71,55
-CLEM_048,Keith,Maguire,,LB,LB,30,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/MaguireKeith.jpg,Linebackers,16,60,65,75,54
-CLEM_079,Will,Putnam,,OL,OL,56,SO,https://clemsontigers.com/wp-content/uploads/2018/12/PutnamWill.jpg,Offensive Line,73,55,72,12,53
-CLEM_003,Fred,Davis,II,DB,CB,2,FR,https://clemsontigers.com/wp-content/uploads/2020/02/DavisIIFred.jpg,Secondary,30,66,88,26,52
-CLEM_008,EJ,Williams,,WR,WR,6,FR,https://clemsontigers.com/wp-content/uploads/2020/02/WilliamsE.J.jpg,Wide Receivers,31,55,26,98,52
-CLEM_025,Trevor,Lawrence,,QB,QB,16,JR,https://clemsontigers.com/wp-content/uploads/2018/06/LawrenceTrevor-2.jpg,Quarterbacks,91,83,4,30,52
-CLEM_036,Andrew,Booth,Jr.,DB,CB,23,SO,https://clemsontigers.com/wp-content/uploads/2019/06/BoothJr.Andrew.jpg,Secondary,70,53,49,38,52
-CLEM_080,Paul,Tchio,,OL,OL,57,FR,https://clemsontigers.com/wp-content/uploads/2020/02/TchioPaul.jpg,Offensive Line,76,53,46,35,52
-CLEM_056,Lannden,Zanders,,DB,S,36,SO,https://clemsontigers.com/wp-content/uploads/2018/12/ZandersLannden.jpg,Secondary,30,69,98,7,51
-CLEM_107,Myles,Murphy,,DL,DE,98,FR,https://clemsontigers.com/wp-content/uploads/2020/02/MurphyMyles.jpg,Defensive Line,1,42,82,78,51
-CLEM_031,LeAnthony,Williams,,DB,CB,20,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/03/WilliamsLeAnthony.jpg,Secondary,41,49,98,10,50
-CLEM_034,Will,Swinney,,WR,WR,22,SR,https://clemsontigers.com/wp-content/uploads/2017/07/SwinneyWill.jpg,Wide Receivers,61,13,55,72,50
-CLEM_083,Cade,Stewart,,OL,OL,62,GR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/StewartCade.jpg,Offensive Line,5,96,83,14,50
-CLEM_019,Brannon,Spector,,WR,WR,13,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/SpectorBrannon.jpg,Wide Receivers,90,22,57,28,49
-CLEM_035,Trenton,Simpson,,LB,LB,22,FR,https://clemsontigers.com/wp-content/uploads/2020/02/SimpsonTrenton.jpg,Linebackers,29,5,69,94,49
-CLEM_052,Ruke,Orhorhoro,,DL,DT,33,SO,https://clemsontigers.com/wp-content/uploads/2018/12/OrhorhoroRuke.jpg,Defensive Line,63,9,87,38,49
-CLEM_061,Jonathan,Weitz,,SP,K,41,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/WeitzJonathan.jpg,Specialists,54,31,96,15,49
-CLEM_071,David,Cote,,LB,LB,48,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/CoteDavid.jpg,Linebackers,99,26,63,8,49
-CLEM_001,Derion,Kendrick,,DB,CB,1,JR,https://clemsontigers.com/wp-content/uploads/2018/06/KendrickDerion.jpg,Secondary,94,91,89,95,93
-CLEM_010,Taisun,Phommachanh,,QB,QB,7,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/PhommachanhTaisun.jpg,Quarterbacks,86,88,15,2,48
-CLEM_017,Bryan,Breese,,DL,DL,11,FR,https://clemsontigers.com/wp-content/uploads/2020/02/BreseeBryan.jpg,Defensive Line,52,84,8,47,48
-CLEM_026,Cornell,Powell,,WR,WR,17,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/PowellCornell.jpg,Wide Receivers,25,28,93,46,48
-CLEM_032,Bryton,Constantin,,LB,LB,21,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/ConstantinBryton.jpg,Linebackers,51,47,2,90,48
-CLEM_097,Jaelyn,Lay,,TE,TE,85,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/07/LayJaelyn.jpg,Tight Ends,0,79,30,84,48
-CLEM_002,Frank,Ladson,Jr.,WR,WR,2,SO,https://clemsontigers.com/wp-content/uploads/2018/12/LadsonJr.Frank_.jpg,Wide Receivers,67,19,84,18,47
-CLEM_045,Michael,Becker,,DB,S,29,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/07/BeckerMichael-1.jpg,Secondary,53,59,61,12,46
-CLEM_067,Jack,Maddox,,SP,LS,46,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/MaddoxJack.jpg,Specialists,30,13,51,91,46
-CLEM_074,Tayquon,Johnson,,OL,OL,52,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/JohnsonTayquon.jpg,Offensive Line,59,47,42,35,46
-CLEM_078,Hunter,Rayburn,,OL,OL,55,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/RayburnHunter.jpg,Offensive Line,21,68,76,21,46
-CLEM_029,Demonte,Capehart,,DL,DL,19,FR,https://clemsontigers.com/wp-content/uploads/2020/02/CapehartDeMonte.jpg,Defensive Line,58,15,88,20,45
-CLEM_007,KJ,Henry,,DL,DE,5,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/HenryK.J.jpg,Defensive Line,76,12,22,68,44
-CLEM_024,Ray,Thornton,III,DB,S,16,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/ThortonIIIRay.jpg,Secondary,25,98,44,7,44
-CLEM_033,Darien,Rencher,,HB,RB,21,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/07/RencherDarien.jpg,Halfbacks,20,47,60,49,44
-CLEM_075,Tyler,Brown,,SP,LS,52,SR (RS),https://clemsontigers.com/wp-content/uploads/2018/08/BrownTyler.jpg,Specialists,22,99,27,30,44
-CLEM_085,Matt,Bockhorst,,OL,OL,65,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/03/BockhorstMatt.jpg,Offensive Line,8,71,69,27,44
-CLEM_104,Nick,Eddis,,DL,DT,91,JR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/EddisNick.jpg,Defensive Line,41,30,58,45,44
-CLEM_009,Mike,Jones,Jr.,LB,LB,6,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/JonesJr.Mike_-2.jpg,Linebackers,74,52,22,23,43
-CLEM_012,Justyn,Ross,,WR,WR,8,JR,https://clemsontigers.com/wp-content/uploads/2018/06/RossJustyn-2.jpg,Wide Receivers,59,76,1,34,42
-CLEM_015,Joseph,Ngata,,WR,WR,10,SO,https://clemsontigers.com/wp-content/uploads/2018/12/NgataJoseph.jpg,Wide Receivers,23,3,51,90,42
-CLEM_057,Jake,Herbstreit,,DB,CB,37,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/HerbstreitJake.jpg,Secondary,3,12,97,54,42
-CLEM_100,Sage,Ennis,,TE,TE,87,FR,https://clemsontigers.com/wp-content/uploads/2020/02/EnnisSage.jpg,Tight Ends,79,56,12,19,42
-CLEM_065,Josh,Jackson,,WR,WR,45,SR (RS),https://clemsontigers.com/wp-content/uploads/2017/08/JacksonJosh.jpg,Wide Receivers,29,38,63,33,41
-CLEM_090,Bryn,Tucker,,OL,OL,73,FR,https://clemsontigers.com/wp-content/uploads/2020/02/TuckerBryn.jpg,Offensive Line,27,73,15,48,41
-CLEM_005,Amari,Rodgers,,WR,WR,3,SR,https://clemsontigers.com/wp-content/uploads/2017/03/RodgersAmari.jpg,Wide Receivers,23,27,86,25,40
-CLEM_023,Patrick,McClure,,QB,QB,15,JR (RS),https://clemsontigers.com/wp-content/uploads/2018/08/McClurePatrick-1.jpg,Quarterbacks,39,86,12,21,40
-CLEM_049,Mario,Goodrich,,DB,CB,31,JR,https://clemsontigers.com/wp-content/uploads/2018/06/GoodrichMario-2.jpg,Secondary,66,47,28,21,40
-CLEM_076,Regan,Upshaw,,DL,DE,53,GR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/UpshawRegan.jpg,Defensive Line,47,77,10,25,40
-CLEM_094,Drew,Swinney,,WR,WR,81,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/SwinneyDrew-2.jpg,Wide Receivers,83,74,1,2,40
-CLEM_042,Jack,McCall,,DB,CB,26,JR (RS),https://clemsontigers.com/wp-content/uploads/2018/09/McCallJack-1.jpg,Secondary,21,47,56,26,38
-CLEM_081,Jordan,Williams,,DL,DT,59,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/03/WilliamsJordan.jpg,Defensive Line,54,59,34,5,38
-CLEM_004,Xavier,Thomas,,DL,DE,3,JR,https://clemsontigers.com/wp-content/uploads/2018/06/ThomasXavier-2.jpg,Defensive Line,41,62,44,2,37
-CLEM_040,JC,Chalk,,TE,TE,25,SR (RS),https://clemsontigers.com/wp-content/uploads/2016/06/ChalkJ.C.jpg,Tight Ends,21,30,84,12,37
-CLEM_006,DJ,Uiagalelei,,QB,QB,5,FR,https://clemsontigers.com/wp-content/uploads/2020/02/UiagaleleiD.J.jpg,Quarterbacks,7,0,80,59,36
-CLEM_082,Mac,Cranford,,OL,OL,60,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/CranfordMac.jpg,Offensive Line,66,29,16,28,35
-CLEM_087,Jacob,Edwards,,OL,OL,69,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/EdwardsJacob.jpg,Offensive Line,15,64,34,26,35
-CLEM_064,Sergio,Allen,,LB,LB,45,FR,https://clemsontigers.com/wp-content/uploads/2020/02/AllenSergio.jpg,Linebackers,30,44,33,28,34
-CLEM_098,Tye,Herbstreit,,WR,WR,86,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/HerbstreitTye.jpg,Wide Receivers,48,6,15,67,34
-CLEM_091,Mitchell,Mayes,,OL,OL,77,FR,https://clemsontigers.com/wp-content/uploads/2020/02/MayesMitchell.jpg,Offensive Line,22,21,20,70,33
-CLEM_102,Max,May,,WR,WR,89,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/07/MayMax-1.jpg,Wide Receivers,24,21,76,4,31
-CLEM_089,Blake,Vinson,,OL,OL,72,SO (RS),https://clemsontigers.com/wp-content/uploads/2017/03/VinsonBlake.jpg,Offensive Line,14,56,33,19,30
-CLEM_018,Tyler,Venables,,DB,S,12,FR,https://clemsontigers.com/wp-content/uploads/2020/02/VenablesTyler.jpg,Secondary,6,1,35,73,29
-CLEM_096,Davis,Allen,,TE,TE,84,SO,https://clemsontigers.com/wp-content/uploads/2019/06/AllenDavis.jpg,Tight Ends,13,6,93,5,29
-CLEM_053,Ty,Lucas,,HB,RB,33,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/08/LucasTy-1.jpg,Halfbacks,68,1,5,35,27
-CLEM_013,RJ,Mickens,,DB,S,9,FR,https://clemsontigers.com/wp-content/uploads/2020/02/MickensR.J.jpg,Secondary,11,69,3,21,26
-CLEM_047,Hampton,Earle,,WR,WR,29,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/EarleHampton.jpg,Wide Receivers,30,14,57,2,26
-CLEM_068,Peter,Cote,,DB,S,47,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/09/CotePeter.jpg,Secondary,19,12,8,62,25
-CLEM_086,Will,Edwards,,OL,OL,67,SO (RS),https://clemsontigers.com/wp-content/uploads/2019/09/EdwardsWill-661x1024.jpg,Offensive Line,4,80,2,10,24
-CLEM_101,Braden,Galloway,,TE,TE,88,JR,https://clemsontigers.com/wp-content/uploads/2018/06/GallowayBraden-1.jpg,Tight Ends,22,20,12,35,22
-CLEM_093,Luke,Price,,TE,TE,80,JR (RS),https://clemsontigers.com/wp-content/uploads/2017/07/PriceLuke.jpg,Tight Ends,0,47,36,1,21
-CLEM_043,Carson,Donnelly,,DB,S,27,SO (RS),https://clemsontigers.com/wp-content/uploads/2018/06/DonnellyCarson-2.jpg,Secondary,20,36,19,5,20
-CLEM_073,Kaleb,Boateng,,OL,OL,50,FR (RS),https://clemsontigers.com/wp-content/uploads/2018/12/BoatengKaleb.jpg,Offensive Line,12,4,29,37,20
-CLEM_099,Hamp,Greene,,WR,WR,87,FR (RS),https://clemsontigers.com/wp-content/uploads/2019/06/GreeneHamp.jpg,Wide Receivers,54,2,8,8,18
+UCLA_053,Christian,Grubb,,HB,RB,32,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Grubb_Christian_02Cropped.jpg?width=300,Halfbacks,72,71,95,97,84
+UCLA_072,Joquarri,Price,,LB,LB,48,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Price_Joquarri_002Cropped.jpg?width=300,Linebackers,89,99,68,78,84
+UCLA_036,Obi,Eboh,,DB,DB,22,GR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Eboh_Obi_007Cropped.jpg?width=300,Secondary,76,99,51,92,80
+UCLA_005,Kyle,Philips,,WR,WR,2,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Philips_Kyle_04Cropped.jpg?width=300,Wide Receivers,86,49,98,84,79
+UCLA_011,Martell,Irby,,HB,RB,6,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Irby_Martell_05Cropped.jpg?width=300,Halfbacks,69,96,53,98,79
+UCLA_065,Jelani,Warren,,DB,DB,41,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/warren_Jelani_02Cropped.jpg?width=300,Secondary,24,96,95,93,77
+UCLA_116,Sitiveni,Kaufusi,,LB,LB,95,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Kaufusi_Stiiveni_02Cropped.jpg?width=300,Linebackers,91,21,94,98,76
+UCLA_074,Jonny,Garnett,,LB,LB,49,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Garnett_Jonny_04Cropped.jpg?width=300,Linebackers,78,88,41,93,75
+UCLA_009,Blake,Kirshner,,QB,S,4,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Kirshner_Blake_06Cropped.jpg?width=300,Quarterbacks,67,50,97,82,74
+UCLA_029,Deavyn,Woullard,,DB,DB,18,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Woullard_Deavyn_12Cropped.jpg?width=300,Secondary,83,98,5,98,71
+UCLA_090,Beau,Gardner,,SP,LS,60,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Gardner_Beau_006Cropped.jpg?width=300,Specialists,90,99,92,3,71
+UCLA_092,Duke,Clemens,,OL,OL,62,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Clemens_Duke_05Cropped.jpg?width=300,Offensive Line,90,28,88,78,71
+UCLA_034,Michael,Ezeike,,WR,WR,21,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Ezeike_Michael_05Cropped.jpg?width=300,Wide Receivers,51,85,80,65,70
+UCLA_117,Ari,Libenson,,SP,K,96,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Libenson_Ari_001Cropped.jpg?width=300,Specialists,95,75,59,51,70
+UCLA_027,Logan,Loya,,WR,WR,17,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Loya_Logan_05Cropped.jpg?width=300,Wide Receivers,53,74,75,69,68
+UCLA_080,Luke,Young,,OL,OL,53,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Young_Luke_03Cropped.jpg?width=300,Offensive Line,67,64,83,59,68
+UCLA_082,John,Ward,,LB,LB,54,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Ward_John_09Cropped.jpg?width=300,Linebackers,47,53,86,88,68
+UCLA_120,Luke,Akers,,SP,K,99,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Akers_Luke_011Cropped.jpg?width=300,Specialists,80,99,77,14,68
+UCLA_081,Josh,Carlin,,OL,OL,54,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Carlin_Josh_08Cropped.jpg?width=300,Offensive Line,93,66,20,81,65
+UCLA_114,RJ,Lopez,,SP,K,93,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Lopez_RJ_001Cropped.jpg?width=300,Specialists,12,81,71,96,65
+UCLA_004,Nicholas,Barr-Mira,,SP,K,2,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Barr_Mira_Nichloas_03Cropped.jpg?width=300,Specialists,62,94,69,33,64
+UCLA_068,Mitchell,Agude,,LB,LB,45,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Agude_Mitchell_006Cropped.jpg?width=300,Linebackers,51,63,99,43,64
+UCLA_086,Atonio,Mafi,,OL,OL,56,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Mafi_Atonio_05Cropped.jpg?width=300,Offensive Line,90,73,37,56,64
+UCLA_096,Alec,Anderson,,OL,OL,70,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Anderson_Alec_08Cropped.jpg?width=300,Offensive Line,51,93,39,68,63
+UCLA_109,Mike,Martinez,,TE,TE,88,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Martinez_Mike_03Cropped.jpg?width=300,Tight Ends,44,51,92,63,62
+UCLA_056,Jahmon,McClendon,,HB,RB,33,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/McClendon_Jahmon_02Cropped.jpg?width=300,Halfbacks,50,76,76,42,61
+UCLA_006,Chase,Artopoeus,,QB,QB,3,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Artopoeus_Chase_02Cropped.jpg?width=300,Quarterbacks,64,28,48,98,60
+UCLA_043,Ashton,Authement,,WR,WR,26,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Authement_Ashton_03Cropped.jpg?width=300,Wide Receivers,31,43,92,76,60
+UCLA_044,Leni,Toailoa,,LB,LB,26,SR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/8/8/Toailoa_Leni_003Cropped.jpg?width=300,Linebackers,62,22,78,78,60
+UCLA_079,Winston,Polite,,DL,DL,53,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Polite_Winston_03Cropped.jpg?width=300,Defensive Line,32,98,35,74,60
+UCLA_010,John,Humphrey,,DB,CB,6,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Humphrey_John_009Cropped.jpg?width=300,Secondary,51,32,80,72,59
+UCLA_049,Adam,Cohen,,LB,LB,29,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Cohen_Adam_02Cropped.jpg?width=300,Linebackers,24,80,70,62,59
+UCLA_061,Quentin,Lake,,DB,DB,37,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Lake_Quentin_04Cropped.jpg?width=300,Secondary,86,48,35,66,59
+UCLA_070,Erich,Osteen,,LB,LB,47,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Osteen_Erich_04Cropped.jpg?width=300,Linebackers,56,74,77,28,59
+UCLA_002,Jay,Shaw,,DB,CB,1,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Shaw_Jay_03Cropped.jpg?width=300,Secondary,62,92,24,56,58
+UCLA_030,Kazmeir,Allen,,HB,RB,19,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Allen_Kazmeir_07Cropped.jpg?width=300,Halfbacks,5,58,75,95,58
+UCLA_038,Chase,Cota,,WR,WR,23,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Cota_Chase_02Cropped.jpg?width=300,Wide Receivers,26,100,54,54,58
+UCLA_047,Kenny,Churchwell III,,DB,DB,28,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Churchwell_Kenny_06Cropped.jpg?width=300,Secondary,68,43,46,76,58
+UCLA_050,Delon,Hurt,,WR,WR,29,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Hurt_Delon_06Cropped.jpg?width=300,Wide Receivers,77,33,82,42,58
+UCLA_071,Shea,Pitts,,LB,LB,47,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Pitts_Shea_03Cropped.jpg?width=300,Linebackers,12,64,91,66,58
+UCLA_003,Dorian,Thompson-Robinson,,QB,QB,1,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Thompson_Robinson_Dorian_05Cropped.jpg?width=300,Quarterbacks,61,99,22,46,57
+UCLA_016,Demetric,Felton,,HB,RB,10,SR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Felton_Demetric_05Cropped.jpg?width=300,Halfbacks,84,47,56,40,57
+UCLA_020,Elijah,Gates,,DB,DB,12,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Gates_Elijah_05Cropped.jpg?width=300,Secondary,23,87,52,66,57
+UCLA_051,Elisha,Guidry,,DB,DB,30,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Guidry_Elisha_07Cropped.jpg?width=300,Secondary,7,76,66,78,57
+UCLA_062,Cole,Kinder,,HB,RB,39,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Kinder_Cole_05Cropped.jpg?width=300,Halfbacks,4,34,98,91,57
+UCLA_093,Brad,Whitworth,,OL,OL,63,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Whitworth_Brad_03Cropped.jpg?width=300,Offensive Line,13,19,95,100,57
+UCLA_099,Bruno,Fina,,OL,OL,75,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Fina_Bruno_40Cropped.jpg?width=300,Offensive Line,31,48,93,57,57
+UCLA_017,Joshua,Swift,,DB,DB,10,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Swift_Joshua_005Cropped.jpg?width=300,Secondary,29,91,26,76,56
+UCLA_058,Carl,Jones,,LB,LB,35,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/8/8/Jones_Carl_007Cropped.jpg?width=300,Linebackers,75,56,12,77,55
+UCLA_076,Jack,Landherr IV,,LS,LS,51,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Landherr_Jack_02Cropped.jpg?width=300,,52,82,20,66,55
+UCLA_115,Dovid,Magna,,DL,DL,94,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Magna_Dovid_006Cropped.jpg?width=300,Defensive Line,22,57,100,40,55
+UCLA_037,Keegan,Jones,,HB,RB,22,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Jones_Keegan_08Cropped.jpg?width=300,Halfbacks,20,60,82,56,54
+UCLA_078,Jeremiah,Trojan,,LB,LB,52,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Trojan_Jeremiah_006Cropped.jpg?width=300,Linebackers,7,73,41,94,54
+UCLA_014,Choé,Bryant-Strother,,LB,LB,9,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Bryant_Strother_Choe_003Cropped.jpg?width=300,Linebackers,92,42,28,49,53
+UCLA_052,Ioholani,Raass,,LB,LB,31,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Raass_Ioholani_005Cropped.jpg?width=300,Linebackers,31,58,41,81,53
+UCLA_057,Devanti,Dillard,,WR,WR,35,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Dillard_Devanti_005Cropped.jpg?width=300,Wide Receivers,49,42,69,51,53
+UCLA_040,Qwuantrezz,Knight,,DB,DB,24,GR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Knight_Qwuantrezz_005Cropped.jpg?width=300,Secondary,81,56,34,37,52
+UCLA_042,Myles,Jackson,,LB,LB,25,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Jackson_Myles_003Cropped.jpg?width=300,Linebackers,65,58,43,42,52
+UCLA_085,Kobey,Fitzgerald,,LB,LB,56,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Fitzgerald_Kobey_005Cropped.jpg?width=300,Linebackers,20,53,34,99,52
+UCLA_012,Mo,Osling III,,DB,DB,7,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Osling_Mo_05Cropped.jpg?width=300,Secondary,54,63,60,27,51
+UCLA_041,Brian,Kowall,,HB,RB,24,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Kowall_Brian_005Cropped.jpg?width=300,Halfbacks,55,43,37,69,51
+UCLA_094,Sam,Marrazzo,,OL,OL,64,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Marrazzo_Sam_04Cropped.jpg?width=300,Offensive Line,13,76,19,96,51
+UCLA_100,Patrick,Selna,,OL,OL,76,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Selna_Patrick_004Cropped.jpg?width=300,Offensive Line,74,85,41,5,51
+UCLA_104,Evidence,Njoku,,TE,TE,82,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Njoku_Evidence_006Cropped.jpg?width=300,Tight Ends,20,33,98,52,51
+UCLA_032,Grady,Liddell,,DB,DB,20,FR,https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/uclabruins.com/images/responsive/main_logo.svg,Secondary,27,23,76,74,50
+UCLA_087,Jon,Gaines II,,OL,OL,57,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Gaines_Jon_03Cropped.jpg?width=300,Offensive Line,39,31,43,88,50
+UCLA_021,Matt,Sykes,,WR,WR,12,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Sykes_Matt_004Cropped.jpg?width=300,Wide Receivers,32,50,84,30,49
+UCLA_031,Alex,Johnson,,DB,DB,19,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Johnson_Alex_04Cropped.jpg?width=300,Secondary,46,44,36,69,49
+UCLA_055,Bo,Calvert,,LB,LB,33,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Calvert_Bo_07Cropped.jpg?width=300,Linebackers,15,34,61,87,49
+UCLA_084,Steven,Mason,,DL,DL,55,SR,https://d3kmx57qvxfvw9.cloudfront.net/images/2018/7/27/MASON_Steven_55_18FB2Cropped.jpg?width=300,Defensive Line,54,77,15,50,49
+UCLA_095,Justin,Williams,,OL,OL,65,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Williams_Justin_009Cropped.jpg?width=300,Offensive Line,11,57,47,75,48
+UCLA_060,Lucas,Egurbide,,TE,TE,37,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Egurbide_Lucas_003Cropped.jpg?width=300,Tight Ends,85,30,31,41,47
+UCLA_019,Kenny,Mestidor,,LB,LB,11,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Mestidor_Kenny_08Cropped.jpg?width=300,Linebackers,19,63,59,42,46
+UCLA_111,Anthony,Waller,,SP,K,90,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Waller_Anthony_005Cropped.jpg?width=300,Specialists,71,80,20,14,46
+UCLA_119,Jaymax,Jacobsen,,LB,LB,98,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Jacobsen_Jaymax_006Cropped.jpg?width=300,Linebackers,12,49,49,72,46
+UCLA_063,Kaleb,Tuliau,,DB,DB,39,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Tuliau_Kaleb_03Cropped.jpg?width=300,Secondary,32,60,54,34,45
+UCLA_101,Beau,Taylor,,OL,OL,77,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Taylor_Beau_07Cropped.jpg?width=300,Offensive Line,4,42,96,37,45
+UCLA_118,Odua,Isibor,,DL,DL,97,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Isibor_Odua_06Cropped.jpg?width=300,Defensive Line,28,31,73,47,45
+UCLA_077,Ethan,Matus,,DL,DL,51,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Matus_Ethan_04Cropped.jpg?width=300,Defensive Line,38,83,19,38,44
+UCLA_102,Lucas,Gramlick,,OL,OL,78,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Gramlick_Lucas_06Cropped.jpg?width=300,Offensive Line,57,3,27,89,44
+UCLA_045,Patrick,"Jolly, Jr.",,DB,DB,27,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Jolly_Jr_Patrick_06Cropped.jpg?width=300,Secondary,33,8,74,57,43
+UCLA_091,Carson,Drake,,DL,DL,61,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Drake_Carson_04Cropped.jpg?width=300,Defensive Line,17,57,73,25,43
+UCLA_007,Rayshad,Williams,,DB,CB,3,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Williams_Rayshad_05Cropped.jpg?width=300,Secondary,1,25,77,66,42
+UCLA_026,Parker,Hogan,,DB,DB,17,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Hogan_Parker_003Cropped.jpg?width=300,Secondary,81,63,10,12,42
+UCLA_028,Charles,Njoku,,WR,WR,18,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Njoku_Charles_04Cropped.jpg?width=300,Wide Receivers,91,57,2,19,42
+UCLA_039,Shamar,Martin,,DB,DB,23,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Martin_Sharmar_03Cropped.jpg?width=300,Secondary,99,38,27,2,42
+UCLA_112,Otito,Ogbonnia,,DL,DL,91,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Ogbonnia_Osa_03Cropped.jpg?width=300,Defensive Line,10,57,74,29,42
+UCLA_089,Siale,Liku,,OL,OL,59,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Liku_Siale_03Cropped.jpg?width=300,Offensive Line,16,20,66,61,41
+UCLA_015,Parker,McQuarrie,,QB,QB,9,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/McQuarrie_Parker_006Cropped.jpg?width=300,Quarterbacks,29,91,7,31,40
+UCLA_046,Brittain,Brown,,HB,RB,28,GR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Brown_Brittain_006Cropped.jpg?width=300,Halfbacks,50,64,28,19,40
+UCLA_083,Paul,Grattan,,OL,OL,55,GR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Grattan_Paul_36Cropped.jpg?width=300,Offensive Line,14,32,40,75,40
+UCLA_013,Colson,Yankoff,,WR,WR,7,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Yankoff_Colson_06Cropped.jpg?width=300,Wide Receivers,28,13,26,88,39
+UCLA_097,Baraka,Beckett,,OL,OL,71,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Beckett_Baraka_04Cropped.jpg?width=300,Offensive Line,30,64,37,25,39
+UCLA_008,Stephan,Blaylock,,DB,S,4,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Blaylock_Stephen_02Cropped.jpg?width=300,Secondary,23,50,57,23,38
+UCLA_022,Josiah,Norwood,,WR,WR,14,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Norwood_Josiah_03Cropped.jpg?width=300,Wide Receivers,30,98,3,21,38
+UCLA_088,Datona,Jackson,,DL,DL,58,SR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Jackson_Datona_03Cropped.jpg?width=300,Defensive Line,31,40,19,63,38
+UCLA_107,Bradley,Schlom,,WR,WR,86,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Schlom_Bradley_002Cropped.jpg?width=300,Wide Receivers,16,80,3,55,38
+UCLA_108,Grant,Norberg,,TE,TE,87,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Norberg_Grant_005Cropped.jpg?width=300,Tight Ends,13,34,67,39,38
+UCLA_033,Kain,Medrano,,LB,LB,20,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Medrano_Kain_07Cropped.jpg?width=300,Linebackers,30,8,38,73,37
+UCLA_103,Hudson,Habermehl,,WR,WR,81,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Habermehl_Hudson_05Cropped.jpg?width=300,Wide Receivers,28,26,52,39,36
+UCLA_054,William,"Nimmo, Jr.",,DB,DB,32,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Nimmo_William_06Cropped.jpg?width=300,Secondary,50,43,24,22,35
+UCLA_067,Martin,"Andrus, Jr.",,DL,DL,44,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Andrus_Jr_Martin_03Cropped.jpg?width=300,Defensive Line,31,84,19,5,35
+UCLA_066,James,Dinneen,,LB,LB,43,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Dinneen_James_05Cropped.jpg?width=300,Linebackers,71,2,45,20,34
+UCLA_098,Sean,Rhyan,,OL,OL,74,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Rhyan_Sean_03Cropped.jpg?width=300,Offensive Line,3,70,3,61,34
+UCLA_075,Tyler,Manoa,,DL,DL,50,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Manoa_Tyler_04Cropped.jpg?width=300,Defensive Line,9,81,15,27,33
+UCLA_106,Greg,Dulcich,,TE,TE,85,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Dulcich_Greg_03Cropped.jpg?width=300,Tight Ends,33,50,31,19,33
+UCLA_001,Damian,Sellers,,LB,LB,0,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Sellers_Damian_004Cropped.jpg?width=300,Linebackers,11,74,42,0,32
+UCLA_069,Hayden,Harris,,LB,LB,46,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Harris_Hayden_05Cropped.jpg?width=300,Linebackers,5,31,55,34,31
+UCLA_113,Osa,Odighizuwa,,DL,DL,92,SR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Odighizuwa_Osa_06Cropped.jpg?width=300,Defensive Line,95,11,13,0,30
+UCLA_110,Michael,Churich,,TE,TE,89,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Churich_Michael_05Cropped.jpg?width=300,Tight Ends,4,49,4,57,28
+UCLA_023,DJ,Warnell,,DB,DB,14,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Warnell_DJ_004Cropped.jpg?width=300,Secondary,16,32,60,0,27
+UCLA_059,Ethan,Fernea,,WR,WR,36,SR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Fernea_Ethan_03Cropped.jpg?width=300,Wide Receivers,17,12,64,13,26
+UCLA_073,Collin,Flintoft,,SP,P,49,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Flintoft_Collin_03Cropped.jpg?width=300,Specialists,1,13,41,44,25
+UCLA_018,Chase,Griffin,,QB,QB,11,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Griffin_Chase_05Cropped.jpg?width=300,Quarterbacks,27,60,0,10,24
+UCLA_025,Jake,Newman,,DB,DB,15,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Newman_Jake_001Cropped.jpg?width=300,Secondary,22,36,12,21,23
+UCLA_048,Evan,Thomas,,DB,DB,28,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Thomas_Evan_003Cropped.jpg?width=300,Secondary,48,7,29,9,23
+UCLA_024,Jaylen,Erwin,,WR,WR,15,SR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Erwin_Jaylen_02Cropped.jpg?width=300,Wide Receivers,4,48,27,11,22
+UCLA_105,David,Priebe,,TE,TE,83,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Priebe_David_03Cropped.jpg?width=300,Tight Ends,13,13,37,18,20
+UCLA_064,Caleb,Johnson,,LB,LB,40,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Johnson_Caleb_004Cropped.jpg?width=300,Linebackers,1,8,44,11,16
+UCLA_035,JonJon,Vaughns,,DB,DB,21,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Vaughns_JonJon_04Cropped.jpg?width=300,Secondary,18,23,3,17,15

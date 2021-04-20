@@ -1,8 +1,8 @@
 default:
   global:
-    team_name: "Utah Football"
-    team_logo: "icons/square_utah_logo.svg"
-    team_logo_small: "icons/small_utah_logo.png"
+    team_name: "UCLA Football"
+    team_logo: "icons/ucla_icon.jpg"
+    team_logo_small: "icons/small_ucla.png"
     gravatar_url: "https://www.gravatar.com/avatar/"
   dom:
     all_level_id: "all"
