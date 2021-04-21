@@ -1,8 +1,14 @@
 ######################### MOBILITY #########################
 
-get_balance <- function(data) {
+get_balance <- function(data1, data2) {
   require(tidyverse)
-  data_trim <- data %>%
+  
+  data_trim_2 <- data2 %>%
+    select('Name',
+           'Max.Imbalance....',
+           'Impulse.Imbalance....')
+  
+  data_trim_1 <- data1 %>%
     select('Player',
            'ODS',
            'HS (L/R=F)',
@@ -13,19 +19,26 @@ get_balance <- function(data) {
            'RS',
            'FMS')
 
-  data_split <- data_trim %>%
+  data_split <- data_trim_1 %>%
     separate(col = 'HS (L/R=F)', c("hs_left_raw", "hs_right_raw", "hs_final_raw"), sep = "([/=])") %>%
     separate(col = 'ILL', c("ill_left_raw", "ill_right_raw", "ill_final_raw", "ill_ac_raw", "ill_extra"), sep = "([/=()])") %>%
     separate(col = 'SM', c("sm_left_raw", "sm_right_raw", "sm_final_raw"), sep = "([/=])") %>%
     separate(col = 'ASLR', c("aslr_left_raw", "aslr_right_raw", "aslr_final_raw"), sep = "([/=])") %>%
     separate(col = 'RS', c("rs_left_raw", "rs_right_raw", "rs_final_raw"), sep = "([/=])")
 
-  data_rename <- data_split %>%
+  data_rename_1 <- data_split %>%
     rename('player' = 'Player') %>%
     rename('ods_raw' = 'ODS') %>%
     rename('tspu_raw' = 'TSPU') %>%
     rename('fms_raw' = 'FMS')
+  
+  data_rename_2 <- data_trim_2 %>%
+    rename('player' = 'Name') %>%
+    rename('max_imbalance_raw' = 'Max.Imbalance....') %>%
+    rename('impulse_imbalance_raw' = 'Impulse.Imbalance....')
 
+  data_rename <- merge(data_rename_1, data_rename_2, by = 'player')
+  
   data_integer <- data_rename %>%
     mutate(hs_left_raw = as.numeric(hs_left_raw)) %>%
     mutate(hs_right_raw = as.numeric(hs_right_raw)) %>%
@@ -62,7 +75,9 @@ get_balance <- function(data) {
     mutate(tspu_score = ba_scoring(tspu_raw, data_integer$tspu_raw, "High")) %>%
     mutate(rs_left_score = ba_scoring(rs_left_raw, data_integer$rs_left_raw, "High")) %>%
     mutate(rs_right_score = ba_scoring(rs_right_raw, data_integer$rs_right_raw, "High")) %>%
-    mutate(rs_final_score = ba_scoring(rs_final_raw, data_integer$rs_final_raw, "High"))
+    mutate(rs_final_score = ba_scoring(rs_final_raw, data_integer$rs_final_raw, "High")) %>%
+    mutate(max_imbalance_score = ba_scoring(max_imbalance_raw, data_integer$max_imbalance_raw, "Low")) %>%
+    mutate(impulse_imbalance_score = ba_scoring(impulse_imbalance_raw, data_integer$impulse_imbalance_raw, "Low"))
 
   data_scoring$ill_ac_raw[data_scoring$ill_ac_raw == "AC"] <- 1
   data_scoring$ill_ac_raw[data_scoring$ill_ac_raw == "-AC"] <- -1
