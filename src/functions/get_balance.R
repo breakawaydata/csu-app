@@ -1,6 +1,6 @@
 ######################### MOBILITY #########################
 
-get_mobility <- function(data) {
+get_balance <- function(data) {
   require(tidyverse)
   data_trim <- data %>%
     select('Player',
