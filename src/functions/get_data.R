@@ -59,6 +59,16 @@ get_data <- function(filename1, filename2, filename3) {
   write.csv(balance_table, "data/balance_data_1.csv")
   write.csv(explosion_table, "data/explosion_data_1.csv")
   write.csv(anthro_table, "data/anthro_data_1.csv")
+  
+  master_table <- merge(reach_table, balance_table, by = c('player', 'player_id', 'first', 'last', 'suffix'), all =  TRUE) 
+  master_table <- merge(master_table, explosion_table, by = c('player', 'player_id', 'first', 'last', 'suffix'), all = TRUE)
+  master_table_trim <- master_table %>%
+    select(player,
+           explosion_score, strength_score, power_score,
+           reach_score, speed_score, agility_score,
+           balance_score, mobility_score, stability_score)
+  write.csv(master_table, "data/master_data.csv" )
+  write.csv(master_table_trim, "data/master_data_slim.csv")
 
   return()
 }
