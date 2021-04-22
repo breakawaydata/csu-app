@@ -3,6 +3,12 @@
 get_data <- function(filename1, filename2, filename3) {
   require(tidyverse)
   
+  players <- read.csv("data/players.csv") %>%
+    mutate(player = paste(first,last, sep = " "))
+  
+  players_trim <- players %>%
+    select(player, player_id, first, last, suffix)
+  
   data_source_1 <- readxl::read_excel(filename1)
   data_source_2 <- read.csv(filename2, fileEncoding="UTF-8-BOM")
   data_source_3 <- read.csv(filename3, fileEncoding="UTF-8-BOM")
@@ -23,6 +29,7 @@ get_data <- function(filename1, filename2, filename3) {
     group_by(Name) %>%
     summarize(recent_date = max(date, na.rm = FALSE), .groups = 'drop')
   
+  
   data_source_2_final <- data.frame()
   data_source_3_final <- data.frame()
 
@@ -42,10 +49,11 @@ get_data <- function(filename1, filename2, filename3) {
     data_source_3_final <- rbind(data_source_3_final,info)
   }
   
-  reach_table <- get_reach(data_source_1)
-  balance_table <- get_balance(data_source_1, data_source_3_final)
-  explosion_table <- get_explosion(data_source_1, data_source_2_final, data_source_3_final)
-  anthro_table <- get_anthro(data_source_1)
+  reach_table <- left_join(players_trim, get_reach(data_source_1), by = "player")
+  balance_table <- left_join(players_trim, get_balance(data_source_1, data_source_3_final), by = "player")
+  explosion_table <- left_join(players_trim, get_explosion(data_source_1, data_source_2_final, data_source_3_final), by = "player")
+
+  anthro_table <- left_join(players, get_anthro(data_source_1), by = "player")
 
   write.csv(reach_table, "data/reach_data_1.csv")
   write.csv(balance_table, "data/balance_data_1.csv")

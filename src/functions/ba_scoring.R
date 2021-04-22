@@ -1,10 +1,13 @@
 ######################### SCORING #########################
 
-ba_scoring <- function(data_point, data_range, direction) {
-  if (direction == "High") {
-    return(round((data_point - min(data_range, na.rm = TRUE))/ (max(data_range, na.rm = TRUE) - min(data_range, na.rm = TRUE)) * 100))
+percentile_function <- function(data, direction){
+  if (direction == "high"){
+    percentiles <- data %>%
+      mutate_all(funs(score = round(percent_rank(.)*100)))
   }
   else {
-    return(round((max(data_range, na.rm = TRUE) - data_point)/ (max(data_range, na.rm = TRUE) - min(data_range, na.rm = TRUE)) * 100))
+    percentiles <- data %>%
+      mutate_all(funs(score = 100 - round(percent_rank(.)*100)))
   }
+  return(percentiles %>% select(-player_score))
 }

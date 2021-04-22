@@ -3,22 +3,11 @@
 get_balance <- function(data1, data2) {
   require(tidyverse)
   
-  data_trim_2 <- data2 %>%
-    select('Name',
-           'Max.Imbalance....',
-           'Impulse.Imbalance....')
-  
   data_trim_1 <- data1 %>%
-    select('Player',
-           'ODS',
-           'HS (L/R=F)',
-           'ILL',
-           'SM',
-           'ASLR',
-           'TSPU',
-           'RS',
-           'FMS')
-
+    select('Player', 'ODS', 'HS (L/R=F)', 'ILL', 'SM', 'ASLR', 'TSPU', 'RS', 'FMS')
+  data_trim_2 <- data2 %>%
+    select('Name', 'Max.Imbalance....', 'Impulse.Imbalance....')
+  
   data_split <- data_trim_1 %>%
     separate(col = 'HS (L/R=F)', c("hs_left_raw", "hs_right_raw", "hs_final_raw"), sep = "([/=])") %>%
     separate(col = 'ILL', c("ill_left_raw", "ill_right_raw", "ill_final_raw", "ill_ac_raw", "ill_extra"), sep = "([/=()])") %>%
@@ -39,52 +28,43 @@ get_balance <- function(data1, data2) {
 
   data_rename <- merge(data_rename_1, data_rename_2, by = 'player')
   
+  #Handle AC for ill movement
+  data_rename$ill_ac_raw[data_rename$ill_ac_raw == "AC"] <- 1
+  data_rename$ill_ac_raw[data_rename$ill_ac_raw == "-AC"] <- -1
+  data_rename$ill_ac_raw[is.na(data_rename$ill_ac_raw)] <- 0
+  
+  #Get FMS asymmetry 
+  data_rename$hs_asym[data_rename$hs_left_raw != data_rename$hs_right_raw] <- 1
+  data_rename$hs_asym[data_rename$hs_left_raw == data_rename$hs_right_raw] <- 0
+  data_rename$ill_asym[data_rename$ill_left_raw != data_rename$ill_right_raw] <- 1
+  data_rename$ill_asym[data_rename$ill_left_raw == data_rename$ill_right_raw] <- 0
+  data_rename$sm_asym[data_rename$sm_left_raw != data_rename$sm_right_raw] <- 1
+  data_rename$sm_asym[data_rename$sm_left_raw == data_rename$sm_right_raw] <- 0
+  data_rename$aslr_asym[data_rename$aslr_left_raw != data_rename$aslr_right_raw] <- 1
+  data_rename$aslr_asym[data_rename$aslr_left_raw == data_rename$aslr_right_raw] <- 0
+  data_rename$rs_asym[data_rename$rs_left_raw != data_rename$rs_right_raw] <- 1
+  data_rename$rs_asym[data_rename$rs_left_raw == data_rename$rs_right_raw] <- 0
+  
   data_integer <- data_rename %>%
-    mutate(hs_left_raw = as.numeric(hs_left_raw)) %>%
-    mutate(hs_right_raw = as.numeric(hs_right_raw)) %>%
-    mutate(hs_final_raw = as.numeric(hs_final_raw)) %>%
-    mutate(ill_left_raw = as.numeric(ill_left_raw)) %>%
-    mutate(ill_right_raw = as.numeric(ill_right_raw)) %>%
-    mutate(ill_final_raw = as.numeric(ill_final_raw)) %>%
-    mutate(ill_ac_raw = as.character(ill_ac_raw)) %>%
-    mutate(sm_left_raw = as.numeric(sm_left_raw)) %>%
-    mutate(sm_right_raw = as.numeric(sm_right_raw)) %>%
-    mutate(sm_final_raw = as.numeric(sm_final_raw)) %>%
-    mutate(aslr_left_raw = as.numeric(aslr_left_raw)) %>%
-    mutate(aslr_right_raw = as.numeric(fms_raw)) %>%
-    mutate(aslr_final_raw = as.numeric(aslr_final_raw)) %>%
-    mutate(tspu_raw = as.numeric(tspu_raw)) %>%
-    mutate(rs_left_raw = as.numeric(rs_left_raw)) %>%
-    mutate(rs_right_raw = as.numeric(rs_right_raw)) %>%
-    mutate(rs_final_raw = as.numeric(rs_final_raw))
+    mutate(fms_asym_raw = hs_asym + ill_asym + sm_asym + aslr_asym + rs_asym)
+  
+  
+  #Ready for scores after removing columns
+  data_integer <- data_integer %>%
+    select(-ill_extra, -hs_asym, -ill_asym, -sm_asym, -aslr_asym, -rs_asym)
+  
+  data_integer_high <- data_integer%>%
+    select(-max_imbalance_raw, -impulse_imbalance_raw,-fms_asym_raw)
+  
+  data_integer_low <- data_integer%>%
+    select(player,max_imbalance_raw,impulse_imbalance_raw, fms_asym_raw)
+  
+  data_scoring1 <- percentile_function(data_integer_high,"high")
+  data_scoring2 <- percentile_function(data_integer_low,"low")
 
-  data_scoring <- data_integer %>%
-    mutate(ods_score = ba_scoring(ods_raw, data_integer$ods_raw, "High")) %>%
-    mutate(hs_left_score = ba_scoring(hs_left_raw, data_integer$hs_left_raw, "High")) %>%
-    mutate(hs_right_score = ba_scoring(hs_right_raw, data_integer$hs_right_raw, "High")) %>%
-    mutate(hs_final_score = ba_scoring(hs_final_raw, data_integer$hs_final_raw, "High")) %>%
-    mutate(ill_left_score = ba_scoring(ill_left_raw, data_integer$ill_left_raw, "High")) %>%
-    mutate(ill_right_score = ba_scoring(ill_right_raw, data_integer$ill_right_raw, "High")) %>%
-    mutate(ill_final_score = ba_scoring(ill_final_raw, data_integer$ill_final_raw, "High")) %>%
-    mutate(sm_left_score = ba_scoring(sm_left_raw, data_integer$sm_left_raw, "High")) %>%
-    mutate(sm_right_score = ba_scoring(sm_right_raw, data_integer$sm_right_raw, "High")) %>%
-    mutate(sm_final_score = ba_scoring(sm_final_raw, data_integer$sm_final_raw, "High")) %>%
-    mutate(aslr_left_score = ba_scoring(aslr_left_raw, data_integer$aslr_left_raw, "High")) %>%
-    mutate(aslr_right_score = ba_scoring(fms_raw, data_integer$fms_raw, "High")) %>%
-    mutate(aslr_final_score = ba_scoring(aslr_final_raw, data_integer$aslr_final_raw, "High")) %>%
-    mutate(tspu_score = ba_scoring(tspu_raw, data_integer$tspu_raw, "High")) %>%
-    mutate(rs_left_score = ba_scoring(rs_left_raw, data_integer$rs_left_raw, "High")) %>%
-    mutate(rs_right_score = ba_scoring(rs_right_raw, data_integer$rs_right_raw, "High")) %>%
-    mutate(rs_final_score = ba_scoring(rs_final_raw, data_integer$rs_final_raw, "High")) %>%
-    mutate(max_imbalance_score = ba_scoring(max_imbalance_raw, data_integer$max_imbalance_raw, "Low")) %>%
-    mutate(impulse_imbalance_score = ba_scoring(impulse_imbalance_raw, data_integer$impulse_imbalance_raw, "Low"))
-
-  data_scoring$ill_ac_raw[data_scoring$ill_ac_raw == "AC"] <- 1
-  data_scoring$ill_ac_raw[data_scoring$ill_ac_raw == "-AC"] <- -1
-  data_scoring$ill_ac_raw[is.na(data_scoring$ill_ac_raw)] <- 0
-
-  data_final <- data_scoring %>%
-    select(-ill_extra)
-
+  data_scoring <- merge(data_scoring1,data_scoring2)
+  
+  data_final <- data_scoring
+  
   return(data_final)
 }
