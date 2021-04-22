@@ -2,7 +2,7 @@ player_id,first,last,suffix,position,position_detailed,number,class,picture
 UCLA_001,Damian,Sellers,,LB,LB,0,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Sellers_Damian_004Cropped.jpg?width=300
 UCLA_002,Jay,Shaw,,DB,CB,1,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Shaw_Jay_03Cropped.jpg?width=300
 UCLA_003,Dorian,Thompson-Robinson,,QB,QB,1,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Thompson_Robinson_Dorian_05Cropped.jpg?width=300
-UCLA_004,Nicholas,Barr-Mira,,SP,K,2,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Barr_Mira_Nichloas_03Cropped.jpg?width=300
+UCLA_004,Nick,Barr-Mira,,SP,K,2,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Barr_Mira_Nichloas_03Cropped.jpg?width=300
 UCLA_005,Kyle,Philips,,WR,WR,2,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Philips_Kyle_04Cropped.jpg?width=300
 UCLA_006,Chase,Artopoeus,,QB,QB,3,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Artopoeus_Chase_02Cropped.jpg?width=300
 UCLA_007,Rayshad,Williams,,DB,CB,3,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Williams_Rayshad_05Cropped.jpg?width=300
@@ -10,9 +10,9 @@ UCLA_008,Stephan,Blaylock,,DB,S,4,JR,https://d3kmx57qvxfvw9.cloudfront.net/image
 UCLA_009,Blake,Kirshner,,QB,S,4,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Kirshner_Blake_06Cropped.jpg?width=300
 UCLA_010,John,Humphrey,,DB,CB,6,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Humphrey_John_009Cropped.jpg?width=300
 UCLA_011,Martell,Irby,,HB,RB,6,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Irby_Martell_05Cropped.jpg?width=300
-UCLA_012,Mo,Osling III,,DB,DB,7,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Osling_Mo_05Cropped.jpg?width=300
+UCLA_012,Mo,Osling,III,DB,DB,7,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Osling_Mo_05Cropped.jpg?width=300
 UCLA_013,Colson,Yankoff,,WR,WR,7,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Yankoff_Colson_06Cropped.jpg?width=300
-UCLA_014,Choé,Bryant-Strother,,LB,LB,9,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Bryant_Strother_Choe_003Cropped.jpg?width=300
+UCLA_014,Choe,Bryant-Strother,,LB,LB,9,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Bryant_Strother_Choe_003Cropped.jpg?width=300
 UCLA_015,Parker,McQuarrie,,QB,QB,9,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/McQuarrie_Parker_006Cropped.jpg?width=300
 UCLA_016,Demetric,Felton,,HB,RB,10,SR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Felton_Demetric_05Cropped.jpg?width=300
 UCLA_017,Joshua,Swift,,DB,DB,10,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Swift_Joshua_005Cropped.jpg?width=300
@@ -33,7 +33,7 @@ UCLA_031,Alex,Johnson,,DB,DB,19,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/
 UCLA_032,Grady,Liddell,,DB,DB,20,FR,https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/uclabruins.com/images/responsive/main_logo.svg
 UCLA_033,Kain,Medrano,,LB,LB,20,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Medrano_Kain_07Cropped.jpg?width=300
 UCLA_034,Michael,Ezeike,,WR,WR,21,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Ezeike_Michael_05Cropped.jpg?width=300
-UCLA_035,JonJon,Vaughns,,DB,DB,21,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Vaughns_JonJon_04Cropped.jpg?width=300
+UCLA_035,Jonathan,Vaughns,,DB,DB,21,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Vaughns_JonJon_04Cropped.jpg?width=300
 UCLA_036,Obi,Eboh,,DB,DB,22,GR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Eboh_Obi_007Cropped.jpg?width=300
 UCLA_037,Keegan,Jones,,HB,RB,22,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Jones_Keegan_08Cropped.jpg?width=300
 UCLA_038,Chase,Cota,,WR,WR,23,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Cota_Chase_02Cropped.jpg?width=300
@@ -43,16 +43,16 @@ UCLA_041,Brian,Kowall,,HB,RB,24,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/
 UCLA_042,Myles,Jackson,,LB,LB,25,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Jackson_Myles_003Cropped.jpg?width=300
 UCLA_043,Ashton,Authement,,WR,WR,26,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Authement_Ashton_03Cropped.jpg?width=300
 UCLA_044,Leni,Toailoa,,LB,LB,26,SR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/8/8/Toailoa_Leni_003Cropped.jpg?width=300
-UCLA_045,Patrick,"Jolly, Jr.",,DB,DB,27,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Jolly_Jr_Patrick_06Cropped.jpg?width=300
+UCLA_045,Patrick,Jolly,Jr.,DB,DB,27,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Jolly_Jr_Patrick_06Cropped.jpg?width=300
 UCLA_046,Brittain,Brown,,HB,RB,28,GR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Brown_Brittain_006Cropped.jpg?width=300
-UCLA_047,Kenny,Churchwell III,,DB,DB,28,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Churchwell_Kenny_06Cropped.jpg?width=300
+UCLA_047,Kenny,Churchwell,III,DB,DB,28,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Churchwell_Kenny_06Cropped.jpg?width=300
 UCLA_048,Evan,Thomas,,DB,DB,28,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Thomas_Evan_003Cropped.jpg?width=300
 UCLA_049,Adam,Cohen,,LB,LB,29,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Cohen_Adam_02Cropped.jpg?width=300
 UCLA_050,Delon,Hurt,,WR,WR,29,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Hurt_Delon_06Cropped.jpg?width=300
 UCLA_051,Elisha,Guidry,,DB,DB,30,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Guidry_Elisha_07Cropped.jpg?width=300
 UCLA_052,Ioholani,Raass,,LB,LB,31,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Raass_Ioholani_005Cropped.jpg?width=300
 UCLA_053,Christian,Grubb,,HB,RB,32,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Grubb_Christian_02Cropped.jpg?width=300
-UCLA_054,William,"Nimmo, Jr.",,DB,DB,32,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Nimmo_William_06Cropped.jpg?width=300
+UCLA_054,William,Nimmo,Jr.,DB,DB,32,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Nimmo_William_06Cropped.jpg?width=300
 UCLA_055,Bo,Calvert,,LB,LB,33,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Calvert_Bo_07Cropped.jpg?width=300
 UCLA_056,Jahmon,McClendon,,HB,RB,33,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/McClendon_Jahmon_02Cropped.jpg?width=300
 UCLA_057,Devanti,Dillard,,WR,WR,35,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Dillard_Devanti_005Cropped.jpg?width=300
@@ -65,7 +65,7 @@ UCLA_063,Kaleb,Tuliau,,DB,DB,39,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/
 UCLA_064,Caleb,Johnson,,LB,LB,40,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Johnson_Caleb_004Cropped.jpg?width=300
 UCLA_065,Jelani,Warren,,DB,DB,41,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/warren_Jelani_02Cropped.jpg?width=300
 UCLA_066,James,Dinneen,,LB,LB,43,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Dinneen_James_05Cropped.jpg?width=300
-UCLA_067,Martin,"Andrus, Jr.",,DL,DL,44,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Andrus_Jr_Martin_03Cropped.jpg?width=300
+UCLA_067,Martin,Andrus,Jr.,DL,DL,44,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Andrus_Jr_Martin_03Cropped.jpg?width=300
 UCLA_068,Mitchell,Agude,,LB,LB,45,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Agude_Mitchell_006Cropped.jpg?width=300
 UCLA_069,Hayden,Harris,,LB,LB,46,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Harris_Hayden_05Cropped.jpg?width=300
 UCLA_070,Erich,Osteen,,LB,LB,47,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Osteen_Erich_04Cropped.jpg?width=300
@@ -74,7 +74,7 @@ UCLA_072,Joquarri,Price,,LB,LB,48,FR,https://d3kmx57qvxfvw9.cloudfront.net/image
 UCLA_073,Collin,Flintoft,,SP,P,49,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Flintoft_Collin_03Cropped.jpg?width=300
 UCLA_074,Jonny,Garnett,,LB,LB,49,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Garnett_Jonny_04Cropped.jpg?width=300
 UCLA_075,Tyler,Manoa,,DL,DL,50,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Manoa_Tyler_04Cropped.jpg?width=300
-UCLA_076,Jack,Landherr IV,,LS,LS,51,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Landherr_Jack_02Cropped.jpg?width=300
+UCLA_076,Jack,Landherr,IV,LS,LS,51,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Landherr_Jack_02Cropped.jpg?width=300
 UCLA_077,Ethan,Matus,,DL,DL,51,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Matus_Ethan_04Cropped.jpg?width=300
 UCLA_078,Jeremiah,Trojan,,LB,LB,52,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Trojan_Jeremiah_006Cropped.jpg?width=300
 UCLA_079,Winston,Polite,,DL,DL,53,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Polite_Winston_03Cropped.jpg?width=300
@@ -85,13 +85,13 @@ UCLA_083,Paul,Grattan,,OL,OL,55,GR,https://d3kmx57qvxfvw9.cloudfront.net/images/
 UCLA_084,Steven,Mason,,DL,DL,55,SR,https://d3kmx57qvxfvw9.cloudfront.net/images/2018/7/27/MASON_Steven_55_18FB2Cropped.jpg?width=300
 UCLA_085,Kobey,Fitzgerald,,LB,LB,56,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Fitzgerald_Kobey_005Cropped.jpg?width=300
 UCLA_086,Atonio,Mafi,,OL,OL,56,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Mafi_Atonio_05Cropped.jpg?width=300
-UCLA_087,Jon,Gaines II,,OL,OL,57,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Gaines_Jon_03Cropped.jpg?width=300
+UCLA_087,Jon,Gaines,II,OL,OL,57,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Gaines_Jon_03Cropped.jpg?width=300
 UCLA_088,Datona,Jackson,,DL,DL,58,SR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Jackson_Datona_03Cropped.jpg?width=300
 UCLA_089,Siale,Liku,,OL,OL,59,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Liku_Siale_03Cropped.jpg?width=300
 UCLA_090,Beau,Gardner,,SP,LS,60,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Gardner_Beau_006Cropped.jpg?width=300
 UCLA_091,Carson,Drake,,DL,DL,61,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Drake_Carson_04Cropped.jpg?width=300
 UCLA_092,Duke,Clemens,,OL,OL,62,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Clemens_Duke_05Cropped.jpg?width=300
-UCLA_093,Brad,Whitworth,,OL,OL,63,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Whitworth_Brad_03Cropped.jpg?width=300
+UCLA_093,Bradley,Whitworth,,OL,OL,63,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Whitworth_Brad_03Cropped.jpg?width=300
 UCLA_094,Sam,Marrazzo,,OL,OL,64,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Marrazzo_Sam_04Cropped.jpg?width=300
 UCLA_095,Justin,Williams,,OL,OL,65,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Williams_Justin_009Cropped.jpg?width=300
 UCLA_096,Alec,Anderson,,OL,OL,70,SO,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Anderson_Alec_08Cropped.jpg?width=300
@@ -112,7 +112,7 @@ UCLA_110,Michael,Churich,,TE,TE,89,FR,https://d3kmx57qvxfvw9.cloudfront.net/imag
 UCLA_111,Anthony,Waller,,SP,K,90,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Waller_Anthony_005Cropped.jpg?width=300
 UCLA_112,Otito,Ogbonnia,,DL,DL,91,JR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Ogbonnia_Osa_03Cropped.jpg?width=300
 UCLA_113,Osa,Odighizuwa,,DL,DL,92,SR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Odighizuwa_Osa_06Cropped.jpg?width=300
-UCLA_114,RJ,Lopez,,SP,K,93,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Lopez_RJ_001Cropped.jpg?width=300
+UCLA_114,Richard,Lopez,,SP,K,93,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Lopez_RJ_001Cropped.jpg?width=300
 UCLA_115,Dovid,Magna,,DL,DL,94,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Magna_Dovid_006Cropped.jpg?width=300
 UCLA_116,Sitiveni,Kaufusi,,LB,LB,95,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2019/7/31/Kaufusi_Stiiveni_02Cropped.jpg?width=300
 UCLA_117,Ari,Libenson,,SP,K,96,FR,https://d3kmx57qvxfvw9.cloudfront.net/images/2020/10/29/Libenson_Ari_001Cropped.jpg?width=300

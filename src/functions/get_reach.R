@@ -17,7 +17,12 @@ get_reach <- function(data) {
   
   data_scoring <- percentile_function(data_rename, "low")
   
-  data_final <- data_scoring 
+  data_pillar <- ba_scoring(data_scoring, 
+                            c('player', 'delta_10_score', 'delta_20_score', 'delta_40_score', 'peak_40_score'),
+                            c('player', 'x3_cone_score', 'shuttle_score'),
+                            "reach")
+  
+  data_final <- merge(data_pillar, data_scoring, by = 'player', all = TRUE) 
   
   return(data_final)
 }
