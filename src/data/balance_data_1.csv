@@ -1,55 +1,121 @@
-"","player","ods_raw","hs_left_raw","hs_right_raw","hs_final_raw","ill_left_raw","ill_right_raw","ill_final_raw","ill_ac_raw","sm_left_raw","sm_right_raw","sm_final_raw","aslr_left_raw","aslr_right_raw","aslr_final_raw","tspu_raw","rs_left_raw","rs_right_raw","rs_final_raw","fms_raw","max_imbalance_raw","impulse_imbalance_raw","ods_score","hs_left_score","hs_right_score","hs_final_score","ill_left_score","ill_right_score","ill_final_score","sm_left_score","sm_right_score","sm_final_score","aslr_left_score","aslr_right_score","aslr_final_score","tspu_score","rs_left_score","rs_right_score","rs_final_score","max_imbalance_score","impulse_imbalance_score"
-"1","Alex Johnson",2,2,2,2,3,3,3,"0",1,3,1,3,16,3,3,2,2,2,16,-11.82432432,-14.10427764,50,50,50,50,100,100,100,0,100,0,100,60,100,100,50,50,50,84,75
-"2","Ashton Authement",2,2,2,2,3,3,3,"1",2,3,2,1,14,1,2,2,2,2,14,0.846113168,1.979368373,50,50,50,50,100,100,100,50,100,50,0,40,0,50,50,50,50,59,43
-"3","Atonio Mafi",2,2,2,2,2,2,2,"1",2,2,2,1,13,1,2,2,2,2,13,-9.321266968,-7.435751126,50,50,50,50,0,0,0,50,50,50,0,30,0,50,50,50,50,79,62
-"4","Blake Kirshner",1,2,2,2,2,2,2,"-1",1,2,1,2,13,2,3,2,3,2,13,8.204581779,4.868788398,0,50,50,50,0,0,0,0,50,0,50,30,50,100,50,100,50,45,37
-"5","Bo Calvert",2,2,3,2,2,2,2,"0",1,1,1,2,13,2,3,1,1,1,13,0.262743037,12.5197133,50,50,100,50,0,0,0,0,0,0,50,30,50,100,0,0,0,60,22
-"6","Bradley Schlom",2,2,2,2,2,2,2,"-1",1,1,1,2,15,2,3,3,3,3,15,-9.56284153,7.886585947,50,50,50,50,0,0,0,0,0,0,50,50,50,100,100,100,100,80,31
-"7","Brittain Brown",2,2,2,2,2,2,2,"1",1,2,1,2,13,2,2,2,2,2,13,4.685990338,5.872924929,50,50,50,50,0,0,0,0,50,0,50,30,50,50,50,50,50,52,35
-"8","Caleb Johnson",1,1,2,1,2,2,2,"-1",1,2,1,2,10,2,2,2,1,1,10,2.646502836,6.241899748,0,0,50,0,0,0,0,0,50,0,50,0,50,50,50,0,0,56,34
-"9","Chase Artopoeus",2,2,2,2,3,3,3,"1",2,3,2,2,15,2,2,2,2,2,15,12.42138365,23.36896733,50,50,50,50,100,100,100,50,100,50,50,50,50,50,50,50,50,36,0
-"10","Chase Cota",2,3,3,3,2,2,2,"1",3,2,2,3,17,3,3,2,2,2,17,-7.903780069,-26.39481509,50,100,100,100,0,0,0,100,50,50,100,70,100,100,50,50,50,77,100
-"11","Chase Griffin",2,2,2,2,2,2,2,"0",2,3,2,3,16,3,3,2,2,2,16,5.588235294,-2.126632684,50,50,50,50,0,0,0,50,100,50,100,60,100,100,50,50,50,50,51
-"12","Christian Grubb",3,2,2,NA,3,3,3,"1",3,3,3,2,19,2,3,3,3,3,19,-15.33952125,-13.79686666,100,50,50,NA,100,100,100,100,100,100,50,90,50,100,100,100,100,91,75
-"13","Colson Yankoff",2,2,2,2,3,2,2,"1",1,3,1,2,15,2,3,3,3,3,15,-19.75247525,-14.21475025,50,50,50,50,100,0,0,0,100,0,50,50,50,100,100,100,100,100,76
-"14","Damian Sellers",2,2,2,2,3,3,3,"-1",2,2,2,3,15,3,2,1,2,1,15,0.818330606,-4.693706558,50,50,50,50,100,100,100,50,50,50,100,50,100,50,0,50,0,59,56
-"15","David Priebe",3,2,2,2,2,2,2,"0",3,3,3,3,17,3,2,2,2,2,17,-3.434739941,-7.62797684,100,50,50,50,0,0,0,100,100,100,100,70,100,50,50,50,50,68,62
-"16","Deavyn Woullard",2,2,2,2,3,2,2,"1",3,3,3,2,16,2,3,2,2,2,16,-2.313284865,-8.019516776,50,50,50,50,100,0,0,100,100,100,50,60,50,100,50,50,50,65,63
-"17","Delon Hurt",2,2,2,2,2,2,2,"-1",2,2,2,2,12,2,2,2,2,2,12,-8.789386401,-4.35814021,50,50,50,50,0,0,0,50,50,50,50,20,50,50,50,50,50,78,56
-"18","Devanti Dillard",2,2,2,2,2,3,2,"-1",2,3,2,3,16,3,3,2,2,2,16,-5.547785548,-0.426392201,50,50,50,50,0,100,0,50,100,50,100,60,100,100,50,50,50,72,48
-"19","Dorian Thompson-Robinson",2,2,2,2,3,2,2,"-1",2,3,2,2,15,2,3,2,3,2,15,-14.77011494,-4.907359194,50,50,50,50,100,0,0,50,100,50,50,50,50,100,50,100,50,90,57
-"20","Elisha Guidry",2,2,2,2,2,2,2,"-1",2,2,2,2,15,2,3,2,2,2,15,5.243036592,6.094259683,50,50,50,50,0,0,0,50,50,50,50,50,50,100,50,50,50,51,35
-"21","Erich Osteen",NA,NA,NA,NA,NA,NA,NA,"0",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,-16.13079019,-25.93235135,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,93,99
-"22","Ethan Fernea",2,2,2,2,2,2,2,"0",1,1,1,1,13,1,3,2,2,2,13,7.896399242,11.90126425,50,50,50,50,0,0,0,0,0,0,0,30,0,100,50,50,50,45,23
-"23","Ethan Garbers",2,2,2,2,2,2,2,"1",2,2,2,2,14,2,3,1,2,1,14,-10.29810298,6.370820623,50,50,50,50,0,0,0,50,50,50,50,40,50,100,0,50,0,81,34
-"24","Grant Norberg",2,2,2,2,2,2,2,"0",3,3,3,3,17,3,3,2,2,2,17,-2.436440678,-7.664921514,50,50,50,50,0,0,0,100,100,100,100,70,100,100,50,50,50,66,62
-"25","Greg Dulcich",3,2,2,2,2,2,2,"-1",2,3,2,2,15,2,3,2,2,2,15,1.301518438,6.503768602,100,50,50,50,0,0,0,50,100,50,50,50,50,100,50,50,50,58,34
-"26","Hudson Habermehl",2,2,2,2,2,2,2,"1",2,3,2,1,15,1,3,3,3,3,15,-12.67605634,-4.460020895,50,50,50,50,0,0,0,50,100,50,0,50,0,100,100,100,100,86,56
-"27","Jake Newman",2,1,2,1,2,2,2,"1",2,3,2,2,14,2,3,2,2,2,14,-3.236423478,-3.08669719,50,0,50,0,0,0,0,50,100,50,50,40,50,100,50,50,50,67,53
-"28","Jelani Warren",3,3,3,3,3,3,3,"0",3,3,3,3,20,3,3,2,2,2,20,-12.46641591,-8.648575103,100,100,100,100,100,100,100,100,100,100,100,100,100,100,50,50,50,86,64
-"29","Jeremiah Trojan",3,2,2,2,2,2,2,"0",2,2,2,3,14,3,2,2,2,NA,14,-0.501002004,5.128275081,100,50,50,50,0,0,0,50,50,50,100,40,100,50,50,50,NA,62,37
-"30","Joquarri Price",3,2,2,2,2,2,2,"0",1,2,1,2,14,2,2,2,2,2,14,-13.42369917,4.612391849,100,50,50,50,0,0,0,0,50,0,50,40,50,50,50,50,50,87,38
-"31","Jordan Genmark-Heath",2,2,2,2,NA,2,2,"1",2,2,2,3,16,3,3,2,2,2,16,4.685646501,-10.47390624,50,50,50,50,NA,0,0,50,50,50,100,60,100,100,50,50,50,52,68
-"32","Joshua Swift",2,2,2,2,2,2,2,"0",2,2,2,2,15,2,3,2,2,2,15,4.673495519,16.86329605,50,50,50,50,0,0,0,50,50,50,50,50,50,100,50,50,50,52,13
-"33","Josiah Norwood",2,2,2,2,2,2,2,"1",2,3,2,2,15,2,3,2,2,2,15,-18.30601093,-8.647649551,50,50,50,50,0,0,0,50,100,50,50,50,50,100,50,50,50,97,64
-"34","Kain Medrano",2,2,2,2,2,2,2,"0",1,2,1,2,13,2,2,2,2,2,13,-0.218340611,-10.80498304,50,50,50,50,0,0,0,0,50,0,50,30,50,50,50,50,50,61,69
-"35","Kaleb Tuliau",3,2,2,2,3,3,3,"0",2,2,2,3,19,3,3,3,3,3,19,-6.792675724,-4.277623311,100,50,50,50,100,100,100,50,50,50,100,90,100,100,100,100,100,74,56
-"36","Kazmeir Allen",2,2,2,2,2,2,2,"1",1,1,1,2,12,2,2,2,2,2,12,9.403669725,18.81904302,50,50,50,50,0,0,0,0,0,0,50,20,50,50,50,50,50,42,9
-"37","Keegan Jones",1,2,2,2,2,2,2,"1",1,2,1,1,11,1,3,1,1,1,11,-12.28878648,-13.35215632,0,50,50,50,0,0,0,0,50,0,0,10,0,100,0,0,0,85,74
-"38","Keontez Lewis",2,1,1,1,2,2,2,"-1",3,3,3,3,16,3,3,2,3,2,16,-14.61843409,-23.93500876,50,0,0,0,0,0,0,100,100,100,100,60,100,100,50,100,50,90,95
-"39","Kobey Fitzgerald",NA,NA,NA,NA,NA,NA,NA,"0",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,-9.672131148,-0.062399867,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,80,47
-"40","Logan Loya",2,2,2,2,3,3,3,"0",2,2,2,1,15,1,3,2,2,2,15,5.949895616,6.215477215,50,50,50,50,100,100,100,50,50,50,0,50,0,100,50,50,50,49,34
-"41","Lucas Egurbide",2,2,2,2,2,2,2,"-1",2,3,2,1,12,1,2,1,1,1,12,30.77948035,18.82271922,50,50,50,50,0,0,0,50,100,50,0,20,0,50,0,0,0,0,9
-"42","Martell Irby",2,2,2,2,2,2,2,"1",2,2,2,2,13,2,2,1,2,1,13,7.572502685,-1.307295987,50,50,50,50,0,0,0,50,50,50,50,30,50,50,0,50,0,46,50
-"43","Michael Churich",3,2,3,2,3,3,3,"0",2,3,2,2,17,2,3,2,2,2,17,-4.381049414,1.452109403,100,50,100,50,100,100,100,50,100,50,50,70,50,100,50,50,50,70,44
-"44","Michael Ezeike",1,2,2,2,2,2,2,"0",3,3,3,3,16,3,3,3,2,2,16,6.63738409,6.605478373,0,50,50,50,0,0,0,100,100,100,100,60,100,100,100,50,50,48,34
-"45","Mike Martinez",3,2,2,2,2,2,2,"0",3,3,3,3,19,3,3,3,3,3,19,-8.439490446,-6.471851738,100,50,50,50,0,0,0,100,100,100,100,90,100,100,100,100,100,78,60
-"46","Mo Osling",2,2,2,2,2,2,2,"1",3,3,3,3,18,3,3,3,3,3,18,-6.293706294,3.105476983,50,50,50,50,0,0,0,100,100,100,100,80,100,100,100,100,100,73,41
-"47","Parker Hogan",2,2,2,2,2,2,2,"1",3,3,3,2,14,2,2,1,1,1,14,5.610357583,5.473021746,50,50,50,50,0,0,0,100,100,100,50,40,50,50,0,0,0,50,36
-"48","Parker McQuarrie",3,2,2,2,3,3,3,"0",2,2,2,1,14,1,1,2,2,2,14,4.48608745,7.407897101,100,50,50,50,100,100,100,50,50,50,0,40,0,0,50,50,50,52,32
-"49","Patrick Jolly",2,2,2,2,2,2,NA,"0",3,2,2,2,13,2,3,2,2,2,13,-13.09471846,-0.298212461,50,50,50,50,0,0,NA,100,50,50,50,30,50,100,50,50,50,87,48
-"50","Quentin Lake",2,2,2,2,2,2,2,"0",2,2,2,2,14,2,2,2,2,2,14,-6.280667321,1.710981832,50,50,50,50,0,0,0,50,50,50,50,40,50,50,50,50,50,73,44
-"51","Shamar Martin",NA,NA,NA,NA,NA,NA,NA,"0",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,16.2070906,3.431410207,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,29,40
-"52","Shea Pitts",2,2,2,2,2,2,2,"0",2,2,2,2,15,2,3,2,2,2,15,-9.25245098,2.098848298,50,50,50,50,0,0,0,50,50,50,50,50,50,100,50,50,50,79,43
-"53","Stephan Blaylock",2,2,2,2,3,2,2,"1",2,2,2,3,16,2,3,3,3,3,16,-8.862704918,-2.950554281,50,50,50,50,100,0,0,50,50,50,100,60,50,100,100,100,100,78,53
-"54","William Nimmo",2,2,2,2,2,2,2,"0",2,3,2,3,15,3,2,2,2,2,15,-11.93609023,-17.18801401,50,50,50,50,0,0,0,50,100,50,100,50,100,50,50,50,50,85,81
+"","player","player_id","first","last","suffix","ods_raw","hs_left_raw","hs_right_raw","hs_final_raw","ill_left_raw","ill_right_raw","ill_final_raw","ill_ac_raw","sm_left_raw","sm_right_raw","sm_final_raw","aslr_left_raw","aslr_right_raw","aslr_final_raw","tspu_raw","rs_left_raw","rs_right_raw","rs_final_raw","fms_raw","ods_raw_score","hs_left_raw_score","hs_right_raw_score","hs_final_raw_score","ill_left_raw_score","ill_right_raw_score","ill_final_raw_score","ill_ac_raw_score","sm_left_raw_score","sm_right_raw_score","sm_final_raw_score","aslr_left_raw_score","aslr_right_raw_score","aslr_final_raw_score","tspu_raw_score","rs_left_raw_score","rs_right_raw_score","rs_final_raw_score","fms_raw_score","max_imbalance_raw","impulse_imbalance_raw","fms_asym_raw","max_imbalance_raw_score","impulse_imbalance_raw_score","fms_asym_raw_score"
+"1","Damian Sellers","UCLA_001","Damian","Sellers",NA,2,"2","2","2","3","3","3 ","-1","2","2","2","3","3","3","2","1","2","1",15,8,6,2,6,74,80,94,0,24,8,24,68,64,70,2,0,10,0,42,0.818330606,-4.693706558,1,36,66,66
+"2","Jay Shaw","UCLA_002","Jay","Shaw",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"3","Dorian Thompson-Robinson","UCLA_003","Dorian","Thompson-Robinson",NA,2,"2","2","2","3","2","2 ","-1","2","3","2","2","2","2","3","2","3","2",15,8,6,2,6,74,0,30,0,24,54,24,16,14,16,36,14,80,16,42,-14.77011494,-4.907359194,3,92,68,2
+"4","Nicholas Barr-Mira","UCLA_004","Nicholas","Barr-Mira",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"5","Kyle Philips","UCLA_005","Kyle","Philips",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"6","Chase Artopoeus","UCLA_006","Chase","Artopoeus",NA,2,"2","2","2","3","3","3 ","1","2","3","2","2","2","2","2","2","2","2",15,8,6,2,6,74,80,94,66,24,54,24,16,14,16,2,14,10,16,42,12.42138365,23.36896733,1,4,0,66
+"7","Rayshad Williams","UCLA_007","Rayshad","Williams",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"8","Stephan Blaylock","UCLA_008","Stephan","Blaylock",NA,2,"2","2","2","3","2","2 ","1","2","2","2","3","2","2","3","3","3","3",16,8,6,2,6,74,0,30,66,24,8,24,68,14,16,36,84,80,86,68,-8.862704918,-2.950554281,2,66,57,16
+"9","Blake Kirshner","UCLA_009","Blake","Kirshner",NA,1,"2","2","2","2","2","2 ","-1","1","2","1","2","2","2","3","2","3","2",13,0,6,2,6,2,0,30,0,0,8,0,16,14,16,36,14,80,16,10,8.204581779,4.868788398,2,8,32,16
+"10","John Humphrey","UCLA_010","John","Humphrey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"11","Martell Irby","UCLA_011","Martell","Irby",NA,2,"2","2","2","2","2","2 ","1","2","2","2","2","2","2","2","1","2","1",13,8,6,2,6,2,0,30,66,24,8,24,16,14,16,2,0,10,0,10,7.572502685,-1.307295987,1,11,53,66
+"12","Mo Osling III","UCLA_012","Mo","Osling III",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"13","Colson Yankoff","UCLA_013","Colson","Yankoff",NA,2,"2","2","2","3","2","2 ","1","1","3","1","2","2","2","3","3","3","3",15,8,6,2,6,74,0,30,66,0,54,0,16,14,16,36,84,80,86,42,-19.75247525,-14.21475025,2,100,92,16
+"14","Choé Bryant-Strother","UCLA_014","Choé","Bryant-Strother",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"15","Parker McQuarrie","UCLA_015","Parker","McQuarrie",NA,3,"2","2","2","3","3","3","0","2","2","2","1","1","1","1","2","2","2",14,82,6,2,6,74,80,82,21,24,8,24,0,0,0,0,14,10,16,26,4.48608745,7.407897101,0,28,13,100
+"16","Demetric Felton","UCLA_016","Demetric","Felton",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"17","Joshua Swift","UCLA_017","Joshua","Swift",NA,2,"2","2","2","2","2","2","0","2","2","2","2","2","2","3","2","2","2",15,8,6,2,6,2,0,2,21,24,8,24,16,14,16,36,14,10,16,42,4.673495519,16.86329605,0,26,6,100
+"18","Chase Griffin","UCLA_018","Chase","Griffin",NA,2,"2","2","2","2","2","2","0","2","3","2","3","3","3","3","2","2","2",16,8,6,2,6,2,0,2,21,24,54,24,68,64,70,36,14,10,16,68,5.588235294,-2.126632684,1,19,55,66
+"19","Kenny Mestidor","UCLA_019","Kenny","Mestidor",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"20","Elijah Gates","UCLA_020","Elijah","Gates",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"21","Matt Sykes","UCLA_021","Matt","Sykes",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"22","Josiah Norwood","UCLA_022","Josiah","Norwood",NA,2,"2","2","2","2","2","2 ","1","2","3","2","2","2","2","3","2","2","2",15,8,6,2,6,2,0,30,66,24,54,24,16,14,16,36,14,10,16,42,-18.30601093,-8.647649551,1,98,79,66
+"23","DJ Warnell","UCLA_023","DJ","Warnell",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"24","Jaylen Erwin","UCLA_024","Jaylen","Erwin",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"25","Jake Newman","UCLA_025","Jake","Newman",NA,2,"1","2","1","2","2","2 ","1","2","3","2","2","2","2","3","2","2","2",14,8,0,2,0,2,0,30,66,24,54,24,16,14,16,36,14,10,16,26,-3.236423478,-3.08669719,2,47,58,16
+"26","Parker Hogan","UCLA_026","Parker","Hogan",NA,2,"2","2","2","2","2","2 ","1","3","3","3","2","2","2","2","1","1","1",14,8,6,2,6,2,0,30,66,78,54,82,16,14,16,2,0,0,0,26,5.610357583,5.473021746,0,17,28,100
+"27","Logan Loya","UCLA_027","Logan","Loya",NA,2,"2","2","2","3","3","3","0","2","2","2","1","2","1","3","2","2","2",15,8,6,2,6,74,80,82,21,24,8,24,0,14,0,36,14,10,16,42,5.949895616,6.215477215,1,15,23,66
+"28","Charles Njoku","UCLA_028","Charles","Njoku",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"29","Deavyn Woullard","UCLA_029","Deavyn","Woullard",NA,2,"2","2","2","3","2","2 ","1","3","3","3","2","2","2","3","2","2","2",16,8,6,2,6,74,0,30,66,78,54,82,16,14,16,36,14,10,16,68,-2.313284865,-8.019516776,1,43,77,66
+"30","Kazmeir Allen","UCLA_030","Kazmeir","Allen",NA,2,"2","2","2","2","2","2 ","1","1","1","1","2","2","2","2","2","2","2",12,8,6,2,6,2,0,30,66,0,0,0,16,14,16,2,14,10,16,4,9.403669725,18.81904302,0,6,4,100
+"31","Alex Johnson","UCLA_031","Alex","Johnson",NA,2,"2","2","2","3","3","3","0","1","3","1","3","3","3","3","2","2","2",16,8,6,2,6,74,80,82,21,0,54,0,68,64,70,36,14,10,16,68,-11.82432432,-14.10427764,1,77,91,66
+"32","Grady Liddell","UCLA_032","Grady","Liddell",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"33","Kain Medrano","UCLA_033","Kain","Medrano",NA,2,"2","2","2","2","2","2","0","1","2","1","2","2","2","2","2","2","2",13,8,6,2,6,2,0,2,21,0,8,0,16,14,16,2,14,10,16,10,-0.218340611,-10.80498304,1,40,85,66
+"34","Michael Ezeike","UCLA_034","Michael","Ezeike",NA,1,"2","2","2","2","2","2","0","3","3","3","3","3","3","3","3","2","2",16,0,6,2,6,2,0,2,21,78,54,82,68,64,70,36,84,10,16,68,6.63738409,6.605478373,1,13,15,66
+"35","JonJon Vaughns","UCLA_035","JonJon","Vaughns",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"36","Obi Eboh","UCLA_036","Obi","Eboh",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"37","Keegan Jones","UCLA_037","Keegan","Jones",NA,1,"2","2","2","2","2","2 ","1","1","2","1","1","1","1","3","1","1","1",11,0,6,2,6,2,0,30,66,0,8,0,0,0,0,36,0,0,0,2,-12.28878648,-13.35215632,1,81,87,66
+"38","Chase Cota","UCLA_038","Chase","Cota",NA,2,"3","3","3","2","2","2 ","1","3","2","2","3","3","3","3","2","2","2",17,8,98,94,98,2,0,30,66,78,8,24,68,64,70,36,14,10,16,84,-7.903780069,-26.39481509,1,60,100,66
+"39","Shamar Martin","UCLA_039","Shamar","Martin",NA,NA,NA,NA,NA,NA,NA,NA,"0",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,16.2070906,3.431410207,NA,2,36,NA
+"40","Qwuantrezz Knight","UCLA_040","Qwuantrezz","Knight",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"41","Brian Kowall","UCLA_041","Brian","Kowall",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"42","Myles Jackson","UCLA_042","Myles","Jackson",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"43","Ashton Authement","UCLA_043","Ashton","Authement",NA,2,"2","2","2","3","3","3 ","1","2","3","2","1","1","1","2","2","2","2",14,8,6,2,6,74,80,94,66,24,54,24,0,0,0,2,14,10,16,26,0.846113168,1.979368373,1,34,42,66
+"44","Leni Toailoa","UCLA_044","Leni","Toailoa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"45","Patrick Jolly, Jr.","UCLA_045","Patrick","Jolly, Jr.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"46","Brittain Brown","UCLA_046","Brittain","Brown",NA,2,"2","2","2","2","2","2 ","1","1","2","1","2","2","2","2","2","2","2",13,8,6,2,6,2,0,30,66,0,8,0,16,14,16,2,14,10,16,10,4.685990338,5.872924929,1,23,26,66
+"47","Kenny Churchwell III","UCLA_047","Kenny","Churchwell III",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"48","Evan Thomas","UCLA_048","Evan","Thomas",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"49","Adam Cohen","UCLA_049","Adam","Cohen",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"50","Delon Hurt","UCLA_050","Delon","Hurt",NA,2,"2","2","2","2","2","2 ","-1","2","2","2","2","2","2","2","2","2","2",12,8,6,2,6,2,0,30,0,24,8,24,16,14,16,2,14,10,16,4,-8.789386401,-4.35814021,0,64,62,100
+"51","Elisha Guidry","UCLA_051","Elisha","Guidry",NA,2,"2","2","2","2","2","2 ","-1","2","2","2","2","3","2","3","2","2","2",15,8,6,2,6,2,0,30,0,24,8,24,16,64,16,36,14,10,16,42,5.243036592,6.094259683,1,21,25,66
+"52","Ioholani Raass","UCLA_052","Ioholani","Raass",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"53","Christian Grubb","UCLA_053","Christian","Grubb",NA,3,"2","2","2 ","3","3","3 ","1","3","3","3","2","3","2","3","3","3","3",19,82,6,2,96,74,80,94,66,78,54,82,16,64,16,36,84,80,86,94,-15.33952125,-13.79686666,1,94,89,66
+"54","William Nimmo, Jr.","UCLA_054","William","Nimmo, Jr.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"55","Bo Calvert","UCLA_055","Bo","Calvert",NA,2,"2","3","2","2","2","2","0","1","1","1","2","2","2","3","1","1","1",13,8,6,94,6,2,0,2,21,0,0,0,16,14,16,36,0,0,0,10,0.262743037,12.5197133,1,38,8,66
+"56","Jahmon McClendon","UCLA_056","Jahmon","McClendon",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"57","Devanti Dillard","UCLA_057","Devanti","Dillard",NA,2,"2","2","2","2","3","2 ","-1","2","3","2","3","3","3","3","2","2","2",16,8,6,2,6,2,80,30,0,24,54,24,68,64,70,36,14,10,16,68,-5.547785548,-0.426392201,2,53,51,16
+"58","Carl Jones","UCLA_058","Carl","Jones",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"59","Ethan Fernea","UCLA_059","Ethan","Fernea",NA,2,"2","2","2","2","2","2","0","1","1","1","1","1","1","3","2","2","2",13,8,6,2,6,2,0,2,21,0,0,0,0,0,0,36,14,10,16,10,7.896399242,11.90126425,0,9,9,100
+"60","Lucas Egurbide","UCLA_060","Lucas","Egurbide",NA,2,"2","2","2","2","2","2 ","-1","2","3","2","1","1","1","2","1","1","1",12,8,6,2,6,2,0,30,0,24,54,24,0,0,0,2,0,0,0,4,30.77948035,18.82271922,1,0,2,66
+"61","Quentin Lake","UCLA_061","Quentin","Lake",NA,2,"2","2","2","2","2","2","0","2","2","2","2","2","2","2","2","2","2",14,8,6,2,6,2,0,2,21,24,8,24,16,14,16,2,14,10,16,26,-6.280667321,1.710981832,0,55,43,100
+"62","Cole Kinder","UCLA_062","Cole","Kinder",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"63","Kaleb Tuliau","UCLA_063","Kaleb","Tuliau",NA,3,"2","2","2","3","3","3","0","2","2","2","3","3","3","3","3","3","3",19,82,6,2,6,74,80,82,21,24,8,24,68,64,70,36,84,80,86,94,-6.792675724,-4.277623311,0,58,60,100
+"64","Caleb Johnson","UCLA_064","Caleb","Johnson",NA,1,"1","2","1","2","2","2 ","-1","1","2","1","2","2","2","2","2","1","1",10,0,0,2,0,2,0,30,0,0,8,0,16,14,16,2,14,0,0,0,2.646502836,6.241899748,3,30,21,2
+"65","Jelani Warren","UCLA_065","Jelani","Warren",NA,3,"3","3","3","3","3","3","0","3","3","3","3","3","3","3","2","2","2",20,82,98,94,98,74,80,82,21,78,54,82,68,64,70,36,14,10,16,100,-12.46641591,-8.648575103,0,83,81,100
+"66","James Dinneen","UCLA_066","James","Dinneen",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"67","Martin Andrus, Jr.","UCLA_067","Martin","Andrus, Jr.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"68","Mitchell Agude","UCLA_068","Mitchell","Agude",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"69","Hayden Harris","UCLA_069","Hayden","Harris",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"70","Erich Osteen","UCLA_070","Erich","Osteen",NA,NA,NA,NA,NA,NA,NA,NA,"0",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,-16.13079019,-25.93235135,NA,96,98,NA
+"71","Shea Pitts","UCLA_071","Shea","Pitts",NA,2,"2","2","2","2","2","2","0","2","2","2","2","2","2","3","2","2","2",15,8,6,2,6,2,0,2,21,24,8,24,16,14,16,36,14,10,16,42,-9.25245098,2.098848298,0,68,40,100
+"72","Joquarri Price","UCLA_072","Joquarri","Price",NA,3,"2","2","2","2","2","2","0","1","2","1","2","2","2","2","2","2","2",14,82,6,2,6,2,0,2,21,0,8,0,16,14,16,2,14,10,16,26,-13.42369917,4.612391849,1,89,34,66
+"73","Collin Flintoft","UCLA_073","Collin","Flintoft",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"74","Jonny Garnett","UCLA_074","Jonny","Garnett",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"75","Tyler Manoa","UCLA_075","Tyler","Manoa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"76","Jack Landherr IV","UCLA_076","Jack","Landherr IV",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"77","Ethan Matus","UCLA_077","Ethan","Matus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"78","Jeremiah Trojan","UCLA_078","Jeremiah","Trojan",NA,3,"2","2","2","2","2","2","0","2","2","2","3","3","3","2","2","2","2 (pn)",14,82,6,2,6,2,0,2,21,24,8,24,68,64,70,2,14,10,84,26,-0.501002004,5.128275081,0,42,30,100
+"79","Winston Polite","UCLA_079","Winston","Polite",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"80","Luke Young","UCLA_080","Luke","Young",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"81","Josh Carlin","UCLA_081","Josh","Carlin",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"82","John Ward","UCLA_082","John","Ward",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"83","Paul Grattan","UCLA_083","Paul","Grattan",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"84","Steven Mason","UCLA_084","Steven","Mason",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"85","Kobey Fitzgerald","UCLA_085","Kobey","Fitzgerald",NA,NA,NA,NA,NA,NA,NA,NA,"0",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,-9.672131148,-0.062399867,NA,74,47,NA
+"86","Atonio Mafi","UCLA_086","Atonio","Mafi",NA,2,"2","2","2","2","2","2 ","1","2","2","2","1","1","1","2","2","2","2",13,8,6,2,6,2,0,30,66,24,8,24,0,0,0,2,14,10,16,10,-9.321266968,-7.435751126,0,70,72,100
+"87","Jon Gaines II","UCLA_087","Jon","Gaines II",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"88","Datona Jackson","UCLA_088","Datona","Jackson",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"89","Siale Liku","UCLA_089","Siale","Liku",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"90","Beau Gardner","UCLA_090","Beau","Gardner",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"91","Carson Drake","UCLA_091","Carson","Drake",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"92","Duke Clemens","UCLA_092","Duke","Clemens",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"93","Brad Whitworth","UCLA_093","Brad","Whitworth",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"94","Sam Marrazzo","UCLA_094","Sam","Marrazzo",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"95","Justin Williams","UCLA_095","Justin","Williams",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"96","Alec Anderson","UCLA_096","Alec","Anderson",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"97","Baraka Beckett","UCLA_097","Baraka","Beckett",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"98","Sean Rhyan","UCLA_098","Sean","Rhyan",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"99","Bruno Fina","UCLA_099","Bruno","Fina",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"100","Patrick Selna","UCLA_100","Patrick","Selna",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"101","Beau Taylor","UCLA_101","Beau","Taylor",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"102","Lucas Gramlick","UCLA_102","Lucas","Gramlick",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"103","Hudson Habermehl","UCLA_103","Hudson","Habermehl",NA,2,"2","2","2","2","2","2 ","1","2","3","2","1","1","1","3","3","3","3",15,8,6,2,6,2,0,30,66,24,54,24,0,0,0,36,84,80,86,42,-12.67605634,-4.460020895,1,85,64,66
+"104","Evidence Njoku","UCLA_104","Evidence","Njoku",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"105","David Priebe","UCLA_105","David","Priebe",NA,3,"2","2","2","2","2","2","0","3","3","3","3","3","3","2","2","2","2",17,82,6,2,6,2,0,2,21,78,54,82,68,64,70,2,14,10,16,84,-3.434739941,-7.62797684,0,49,74,100
+"106","Greg Dulcich","UCLA_106","Greg","Dulcich",NA,3,"2","2","2","2","2","2 ","-1","2","3","2","2","3","2","3","2","2","2",15,82,6,2,6,2,0,30,0,24,54,24,16,64,16,36,14,10,16,42,1.301518438,6.503768602,2,32,17,16
+"107","Bradley Schlom","UCLA_107","Bradley","Schlom",NA,2,"2","2","2","2","2","2 ","-1","1","1","1","2","2","2","3","3","3","3",15,8,6,2,6,2,0,30,0,0,0,0,16,14,16,36,84,80,86,42,-9.56284153,7.886585947,0,72,11,100
+"108","Grant Norberg","UCLA_108","Grant","Norberg",NA,2,"2","2","2","2","2","2","0","3","3","3","3","3","3","3","2","2","2",17,8,6,2,6,2,0,2,21,78,54,82,68,64,70,36,14,10,16,84,-2.436440678,-7.664921514,0,45,75,100
+"109","Mike Martinez","UCLA_109","Mike","Martinez",NA,3,"2","2","2","2","2","2","0","3","3","3","3","3","3","3","3","3","3",19,82,6,2,6,2,0,2,21,78,54,82,68,64,70,36,84,80,86,94,-8.439490446,-6.471851738,0,62,70,100
+"110","Michael Churich","UCLA_110","Michael","Churich",NA,3,"2","3","2","3","3","3","0","2","3","2","2","2","2","3","2","2","2",17,82,6,94,6,74,80,82,21,24,54,24,16,14,16,36,14,10,16,84,-4.381049414,1.452109403,2,51,45,16
+"111","Anthony Waller","UCLA_111","Anthony","Waller",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"112","Otito Ogbonnia","UCLA_112","Otito","Ogbonnia",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"113","Osa Odighizuwa","UCLA_113","Osa","Odighizuwa",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"114","RJ Lopez","UCLA_114","RJ","Lopez",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"115","Dovid Magna","UCLA_115","Dovid","Magna",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"116","Sitiveni Kaufusi","UCLA_116","Sitiveni","Kaufusi",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"117","Ari Libenson","UCLA_117","Ari","Libenson",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"118","Odua Isibor","UCLA_118","Odua","Isibor",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"119","Jaymax Jacobsen","UCLA_119","Jaymax","Jacobsen",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"120","Luke Akers","UCLA_120","Luke","Akers",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
