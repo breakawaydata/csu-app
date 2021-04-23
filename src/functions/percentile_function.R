@@ -1,5 +1,5 @@
-######################### SCORING #########################
 
+#Gets percentile for individual metrics
 percentile_function <- function(data, direction){
   if (direction == "high"){
     percentiles <- data %>%

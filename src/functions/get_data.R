@@ -1,74 +1,33 @@
-######################### MAIN #########################
-
-get_data <- function(filename1, filename2, filename3) {
+#Takes in the complete player file, trimed player file and all cleaned data sources
+get_data <- function(players, players_trim, data_source_1, data_source_2, data_source_3) {
   require(tidyverse)
   
-  players <- read.csv("data/players.csv") %>%
-    mutate(player = paste(first,last, sep = " "))
-  
-  players_trim <- players %>%
-    select(player, player_id, first, last, suffix)
-  
-  data_source_1 <- readxl::read_excel(filename1)
-  data_source_2 <- read.csv(filename2, fileEncoding="UTF-8-BOM")
-  data_source_3 <- read.csv(filename3, fileEncoding="UTF-8-BOM")
-  
-  data_source_2 <- data_source_2 %>%
-    mutate(player = paste(First.name, Last.name, sep = " ")) %>%
-    mutate(date = as.Date(Date, format = "%m/%d/%y"))
-  
-  data_source_3 <- data_source_3 %>%
-    separate('Date.UTC', c("day", "month", "year"), "/") %>%
-    mutate(date = as.Date(paste(month,day,year, sep = "/"), format = "%m/%d/%y"))
-  
-  dates_2 <- data_source_2 %>%
-    group_by(player) %>%
-    summarize(recent_date = max(date, na.rm = FALSE), .groups = 'drop')
+  #Get data include player information to link and the data sources needed
+  reach_table <- get_reach(players_trim, data_source_1)
+  balance_table <- get_balance(players_trim, data_source_1, data_source_3)
+  explosion_table <- get_explosion(players_trim, data_source_1, data_source_2, data_source_3)
+  anthro_table <- get_anthro(players, data_source_1)
 
-  dates_3 <- data_source_3 %>%
-    group_by(Name) %>%
-    summarize(recent_date = max(date, na.rm = FALSE), .groups = 'drop')
+  #Merge tables into master table and calculate final score
+  master_table <- merge(reach_table, balance_table, by = c('player', 'player_id', 'first', 'last', 'suffix'), all =  TRUE) 
+  master_table <- merge(master_table, explosion_table, by = c('player', 'player_id', 'first', 'last', 'suffix'), all = TRUE) %>%
+    rowwise () %>%
+    mutate(total_score = round(mean(c(explosion_score, reach_score, balance_score), na.rm = TRUE)))
   
+  #Get summary table of just the players scores
+  summary_table <- master_table %>%
+    select(player, total_score,
+           explosion_score, strength_score, power_score,
+           reach_score, speed_score, agility_score,
+           balance_score, mobility_score, stability_score)
   
-  data_source_2_final <- data.frame()
-  data_source_3_final <- data.frame()
-
-  for (i in seq(1, nrow(dates_2))){
-    info <- data_source_2 %>%
-      filter(player == dates_2$player[[i]],
-             date == dates_2$recent_date[[i]])
-    
-    data_source_2_final <- rbind(data_source_2_final,info)
-  }
-  
-  for (i in seq(1, nrow(dates_3))){
-    info <- data_source_3 %>%
-      filter(Name == dates_3$Name[[i]],
-             date == dates_3$recent_date[[i]])
-    
-    data_source_3_final <- rbind(data_source_3_final,info)
-  }
-  
-  reach_table <- left_join(players_trim, get_reach(data_source_1), by = "player")
-  balance_table <- left_join(players_trim, get_balance(data_source_1, data_source_3_final), by = "player")
-  explosion_table <- left_join(players_trim, get_explosion(data_source_1, data_source_2_final, data_source_3_final), by = "player")
-
-  anthro_table <- left_join(players, get_anthro(data_source_1), by = "player")
-
+  #Write out all data to necessary csv files
   write.csv(reach_table, "data/reach_data_1.csv")
   write.csv(balance_table, "data/balance_data_1.csv")
   write.csv(explosion_table, "data/explosion_data_1.csv")
   write.csv(anthro_table, "data/anthro_data_1.csv")
-  
-  master_table <- merge(reach_table, balance_table, by = c('player', 'player_id', 'first', 'last', 'suffix'), all =  TRUE) 
-  master_table <- merge(master_table, explosion_table, by = c('player', 'player_id', 'first', 'last', 'suffix'), all = TRUE)
-  master_table_trim <- master_table %>%
-    select(player,
-           explosion_score, strength_score, power_score,
-           reach_score, speed_score, agility_score,
-           balance_score, mobility_score, stability_score)
   write.csv(master_table, "data/master_data.csv" )
-  write.csv(master_table_trim, "data/master_data_slim.csv")
+  write.csv(summary_table, "data/summary_table.csv")
 
   return()
 }
