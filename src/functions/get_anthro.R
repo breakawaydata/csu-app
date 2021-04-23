@@ -1,18 +1,13 @@
-######################### BODY COMP #########################
 
-get_anthro <- function(data) {
+#Links data for anthro data on a player
+get_anthro <- function(players, data) {
   data_trim <- data %>%
-    select('Player',
-           'Height',
-           '2021 Weight',
-           'Wingspan')
+    select('player',
+           'height',
+           'weight',
+           'wingspan')
 
-  data_rename <- data_trim %>%
-    rename('player' = 'Player') %>%
-    rename('height' = 'Height') %>%
-    rename('weight' = '2021 Weight') %>%
-    rename('wingspan' = 'Wingspan')
-
-  data_final <- data_rename
+  data_final <- left_join(players, data_trim, by = "player")
+  
   return(data_final)
 }
