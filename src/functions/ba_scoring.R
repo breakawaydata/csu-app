@@ -9,9 +9,11 @@ ba_scoring <- function(data, first_pillar, second_pillar, pillar) {
   
   #Get your sub pullar scores
   data_first$first_pillar_score = rowMeans(data_first[,seq(2,length(first_pillar))], na.rm = TRUE)
+  data_first$first_pillar_score = round(scales::rescale(data_first$first_pillar_score, to = c(40, 100)))
   data_second$second_pillar_score = rowMeans(data_second[,seq(2,length(second_pillar))], na.rm = TRUE)
+  data_second$second_pillar_score = round(scales::rescale(data_second$second_pillar_score, to = c(40, 100)))
   
-  #Merge scores for each pillar toghet
+  #Merge scores for each pillar together 
   data_score <- merge(data_first, data_second, by = "player", all = TRUE) %>%
     select(player, first_pillar_score, second_pillar_score)
   
@@ -19,7 +21,7 @@ ba_scoring <- function(data, first_pillar, second_pillar, pillar) {
   data_score$pillar_score = rowMeans(data_score[,c(2,3)], na.rm = TRUE)
   
   #Round up pillars to whole numbers now calculations are complete
-  data_score$pillar_score <- round(data_score$pillar_score)
+  data_score$pillar_score <- round(scales::rescale(data_score$pillar_score, to = c(40, 100)))
   data_score$first_pillar_score <- round(data_score$first_pillar_score)
   data_score$second_pillar_score <- round(data_score$second_pillar_score)
   
