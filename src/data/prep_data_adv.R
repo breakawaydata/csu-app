@@ -48,6 +48,12 @@ data_source_1$ill_ac[data_source_1$ill_ac == "-AC"] <- -1
 data_source_1$ill_ac[is.na(data_source_1$ill_ac)] <- 0
 
 #Get FMS asymmetry 
+data_source_1$hs_asym <- NULL
+data_source_1$ill_asy <- NULL
+data_source_1$sm_asym <- NULL
+data_source_1$aslr_asym <- NULL
+data_source_1$rs_asym <- NULL
+
 data_source_1$hs_asym[data_source_1$hs_left != data_source_1$hs_right] <- 1
 data_source_1$hs_asym[data_source_1$hs_left == data_source_1$hs_right] <- 0
 data_source_1$ill_asym[data_source_1$ill_left != data_source_1$ill_right] <- 1

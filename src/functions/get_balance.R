@@ -5,7 +5,7 @@ get_balance <- function(players_trim, data1, data2) {
   
   #Get trimmed data sets for balance
   data_trim_1 <- data1 %>%
-    select(player, ods, hs_left, hs_right, hs_final,
+    select(player, hs_left, hs_right, hs_final,
            ill_left, ill_right, ill_final, ill_ac, ill_extra,
            sm_left, sm_right, sm_final,
            aslr_left, aslr_right, aslr_final,
@@ -45,6 +45,31 @@ get_balance <- function(players_trim, data1, data2) {
   
   #Merge pillar scores, with full data scoring and slim profile information
   data_final <- merge(data_pillar, data_scoring, by = 'player', all = TRUE) 
+  data_final <- data_final %>%
+    rename(ods_raw = ods, 
+           hs_left_raw = hs_left, 
+           hs_right_raw = hs_right, 
+           hs_final_raw = hs_final,
+           ill_left_raw = ill_left, 
+           ill_right_raw = ill_right, 
+           ill_final_raw = ill_final, 
+           ill_ac_raw = ill_ac, 
+           ill_extra_raw = ill_extra,
+           sm_left_raw = sm_left, 
+           sm_right_raw = sm_right, 
+           sm_final_raw = sm_final,
+           aslr_left_raw = aslr_left, 
+           aslr_right_raw = aslr_right, 
+           aslr_final_raw = aslr_final,
+           rs_left_raw = rs_left, 
+           rs_right_raw = rs_right, 
+           rs_final_raw = rs_final, 
+           tspu_raw = tspu, 
+           fms_raw = fms, 
+           fms_asym_raw = fms_asym,
+           max_imbalance_raw = max_imbalance, 
+           impulse_imbalance_raw = impulse_imbalance)
+  
   data_final <- left_join(players_trim, data_final, by = "player")
   
   return(data_final)

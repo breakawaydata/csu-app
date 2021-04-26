@@ -7,7 +7,7 @@ ba_scoring <- function(data, first_pillar, second_pillar, pillar) {
   data_first <- data[,first_pillar]
   data_second <- data[,second_pillar]
   
-  #Get your sub pullar scores
+  #Get your sub pillar scores
   data_first$first_pillar_score = rowMeans(data_first[,seq(2,length(first_pillar))], na.rm = TRUE)
   data_first$first_pillar_score = round(scales::rescale(data_first$first_pillar_score, to = c(40, 100)))
   data_second$second_pillar_score = rowMeans(data_second[,seq(2,length(second_pillar))], na.rm = TRUE)

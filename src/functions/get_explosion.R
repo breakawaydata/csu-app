@@ -30,6 +30,16 @@ get_explosion <- function(players_trim, data1, data2, data3) {
   
   #Merge pillar scores, with full data scoring and slim profile information
   data_final <- merge(data_pillar, data_scoring, by = 'player', all = TRUE) 
+  data_final <- data_final %>%
+    rename(bench_raw = bench,
+           vertical_jump_raw = vertical_jump,
+           broad_jump_raw = broad_jump,
+           sparta_load_raw = sparta_load,
+           sparta_explode_raw = sparta_explode,
+           sparta_drive_raw = sparta_drive,
+           max_force_raw = max_force,
+           max_impulse_raw = max_impulse)
+  
   data_final <- left_join(players_trim, data_final, by = "player")
   
   return(data_final)
