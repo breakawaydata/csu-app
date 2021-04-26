@@ -12,9 +12,9 @@ players_trim <- players %>%
   select(player, player_id, first, last, suffix)
 
 #Read in all raw data sources***
-data_source_1 <- readxl::read_excel("data/ucla_v3.xlsx")
-data_source_2 <- read.csv("data/sparta.csv", fileEncoding="UTF-8-BOM")
-data_source_3 <- read.csv("data/nordbord.csv", fileEncoding="UTF-8-BOM")
+data_source_1 <- readxl::read_excel("data/inputs/ucla_v3.xlsx")
+data_source_2 <- read.csv("data/inputs/sparta.csv", fileEncoding="UTF-8-BOM")
+data_source_3 <- read.csv("data/inputs/nordbord.csv", fileEncoding="UTF-8-BOM")
 
 #Fix data sources columns
 
@@ -83,7 +83,6 @@ data_source_3 <- data_source_3 %>%
   mutate(max_force = as.numeric(L.Max.Force..N.) + as.numeric(R.Max.Force..N.)) %>%
   mutate(max_impulse = as.numeric(L.Max.Impulse..Ns.) + as.numeric(R.Max.Impulse..Ns.))
   
-print(data_source_3$max_force_left)
 data_source_3 <- get_latest_assessment(data_source_3)
 
 
