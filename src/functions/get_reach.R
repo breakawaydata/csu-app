@@ -25,6 +25,15 @@ get_reach <- function(players_trim, data) {
   
   #Merge pillar scores, with full data scoring and slim profile information
   data_final <- merge(data_pillar, data_scoring, by = 'player', all = TRUE) 
+  
+  data_final <- data_final %>%
+    rename(delta_10_raw = delta_10,
+           delta_20_raw = delta_20,
+           delta_40_raw = delta_40,
+           peak_40_raw = peak_40,
+           x3_cone_raw = x3_cone,
+           shuttle_raw = shuttle)
+  
   data_final <- left_join(players_trim, data_final, by = "player")
   
   return(data_final)

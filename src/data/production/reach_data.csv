@@ -1,4 +1,4 @@
-"","player","player_id","first","last","suffix","assessment_date","speed_score","agility_score","reach_score","delta_10","delta_20","delta_40","peak_40","x3_cone","shuttle","delta_10_score","delta_20_score","delta_40_score","peak_40_score","x3_cone_score","shuttle_score"
+"","player","player_id","first","last","suffix","assessment_date","speed_score","agility_score","reach_score","delta_10_raw","delta_20_raw","delta_40_raw","peak_40_raw","x3_cone_raw","shuttle_raw","delta_10_score","delta_20_score","delta_40_score","peak_40_score","x3_cone_score","shuttle_score"
 "1","Damian Sellers","UCLA_001","Damian","Sellers","","04-26-2021",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "2","Jay Shaw","UCLA_002","Jay","Shaw","","04-26-2021",92,80,86,1.49,2.59,4.59,20.2,7.43,4.34,100,98,81,62,51,81
 "3","Dorian Thompson-Robinson","UCLA_003","Dorian","Thompson-Robinson","","04-26-2021",84,91,88,1.58,2.65,4.55,21.6,7.12,4.31,92,90,92,17,84,84
