@@ -381,13 +381,6 @@
       "Repository": "CRAN",
       "Hash": "023cecbdc0a32f86ad3cb1734c018d2e"
     },
-    "littler": {
-      "Package": "littler",
-      "Version": "0.3.9",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "c3acd4365e02598fc09d6c547255602e"
-    },
     "magrittr": {
       "Package": "magrittr",
       "Version": "1.5",
