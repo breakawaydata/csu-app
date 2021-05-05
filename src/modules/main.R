@@ -46,6 +46,14 @@ server <- function(input, output, session, pages) {
       class = "player-content",
       style = glue::glue("background-image: url('assets/{session$userData$stat()}.png'); height: 100vh;")
     )
+    
+    if (session$userData$stat() == "summary") {
+      pages$summary$active_player$id <- input$player
+      content <- tags$div(
+        class = "player-content",
+        pages$summary$ui
+      )
+    }
 
     if (session$userData$stat() == "explosive") {
       pages$explosion$active_player$id <- input$player
