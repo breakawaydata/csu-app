@@ -1,0 +1,85 @@
+.balance_chart {
+  min-height: 600px;
+  max-height: 650px;
+
+  min-height: 600px;
+  position: relative;
+
+  .balance_stat {
+    position: relative;
+  }
+
+  .title {
+    color: $text-main-color;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    text-align: center;
+    color: $text-main-color;
+    font-size: 42px;
+    border: 2px solid $text-main-color;
+    border-radius: 4px;
+    font-weight: bolder;
+    line-height: 42px;
+    background: #F58A2D;
+  }
+
+  .total {
+    color: $text-main-color;
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 50px;
+    text-align: center;
+    font-family: $font-wide;
+  }
+
+  .stat_value {
+    text-align: center;
+    background: #C4C5C4;
+    font-size: 35px;
+    font-weight: bolder;
+    line-height: 35px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #6E7681;
+    color: #6E7681;
+    
+    .score {
+      
+      &[data-color = "red"] {
+      color: #ED1C24;
+      }
+      
+      &[data-color = "yellow"] {
+        color: #FBEC5D;
+      }
+      
+      &[data-color = "green"] {
+        color: #39B54A;
+      }
+      
+      &[data-color = "black"] {
+        color: #6E7681;
+      }
+    }
+  }
+  
+  .exercise_value {
+    text-align: left;
+    color: $text-main-color;
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: 25px;
+  }
+}
+
+@keyframes border-pulsate {
+    0%   { border-color: $main-team-color; }
+    50%   { border-color: $main-team-color; }
+    75% { border-color: #B4C2D1; }
+    100%   { border-color: $main-team-color; }
+}
