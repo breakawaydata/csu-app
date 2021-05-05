@@ -13,8 +13,8 @@ get_data <- function(players, players_trim, data_source_1, data_source_2, data_s
 
   
   #Merge tables into master table and calculate final score
-  master_table <- merge(reach_table, balance_table, by = c('player', 'player_id', 'first', 'last', 'suffix'), all =  TRUE) 
-  master_table <- merge(master_table, explosion_table, by = c('player', 'player_id', 'first', 'last', 'suffix'), all = TRUE) %>%
+  master_table <- base::merge(reach_table, balance_table, by = c('player', 'player_id', 'first', 'last', 'suffix'), all =  TRUE) 
+  master_table <- base::merge(master_table, explosion_table, by = c('player', 'player_id', 'first', 'last', 'suffix'), all = TRUE) %>%
     rowwise () %>%
     mutate(total_score = round(mean(c(explosion_score, reach_score, balance_score), na.rm = TRUE)))
   

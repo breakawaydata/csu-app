@@ -14,8 +14,8 @@ get_explosion <- function(players_trim, data1, data2, data3) {
     select(player, max_force, max_impulse)
    
   #Link data sets
-  data_linked <- merge(data_trim_1,data_trim_2, all = TRUE)
-  data_linked <- merge(data_linked, data_trim_3, all = TRUE)
+  data_linked <- base::merge(data_trim_1,data_trim_2, all = TRUE)
+  data_linked <- base::merge(data_linked, data_trim_3, all = TRUE)
   
   #Get scores for each movement
   data_scoring <- percentile_function(data_linked, "high")
@@ -29,7 +29,7 @@ get_explosion <- function(players_trim, data1, data2, data3) {
                             "explosion")
   
   #Merge pillar scores, with full data scoring and slim profile information
-  data_final <- merge(data_pillar, data_scoring, by = 'player', all = TRUE) 
+  data_final <- base::merge(data_pillar, data_scoring, by = 'player', all = TRUE) 
   data_final <- data_final %>%
     rename(bench_raw = bench,
            vertical_jump_raw = vertical_jump,
