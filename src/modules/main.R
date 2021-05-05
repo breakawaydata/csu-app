@@ -71,6 +71,14 @@ server <- function(input, output, session, pages) {
       )
     }
 
+    if (session$userData$stat() == "balance") {
+      pages$balance$active_player$id <- input$player
+      content <- tags$div(
+        class = "player-content",
+        pages$balance$ui
+      )
+    }
+    
     if (session$userData$page() == "game") {
     content <- tags$div(
       class = "player-content",
