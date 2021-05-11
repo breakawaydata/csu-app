@@ -22,6 +22,10 @@ export("fingerprintChart")
 ui <- function(id, options) {
   ns <- NS(id)
   
+  tags$style(".fingerprint_plot{
+    background: #f1f1f1;
+  }")
+  
   plotOutput(ns("fingerprint_plot"))
 }
 
@@ -94,7 +98,7 @@ server <- function(input, output, session, state) {
           " " = "white")) +
       theme_void() +
       geom_text(aes(label = score, x = 0, y = 25),   # need to update font here:: family = "Axia Stencil Black"
-                size= 12) +
+                size= 30) +
       theme(legend.position = "none",
             panel.grid.major = element_blank(),
             panel.grid.minor = element_blank(),
@@ -103,7 +107,8 @@ server <- function(input, output, session, state) {
             axis.text.x = element_blank(),
             axis.ticks = element_blank(),
             plot.margin = unit(c(0, 0, 0, 0), "lines"),
-            plot.background = element_blank())
+            plot.background = element_rect(fill = "#f1f1f1", color = "#f1f1f1"),
+            panel.background = element_rect(fill = "#f1f1f1", color = "#f1f1f1"))
     return(plot)
     })
     
@@ -135,11 +140,7 @@ fingerprintChart <- R6Class("fingerprintChart",
                          options = list(
                            title = "Explosive Score",
                            color = "black",
-                           active_color = "lightslategray",
-                           labels = list(
-                             left = list(top = "Upper Left", middle = "Center Left", bottom = "Lower Left"),
-                             right = list(top = "Upper Right", middle = "Center Right", bottom = "Lower Right")
-                           )
+                           active_color = "lightslategray"
                          ),
                          values = list(
                            total = 0,

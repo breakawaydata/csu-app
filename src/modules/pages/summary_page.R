@@ -53,11 +53,10 @@ ui <- function(id) {
     uiOutput(ns("assessment_report_toggle")),
     gridPanel(
       class = "summary_page_wrapper",
-      areas = c("... fingerprint_chart ... ... ... ...",
-                "... fingerprint_chart explosion_info reach_info balance_info ... "),
-      gap = "10px",
-      columns = "25px 500px 0.25fr 0.25fr 0.25fr 25px",
-      rows = "25px 1fr ",
+      areas = c("fingerprint_chart ... ... ... ",
+      "fingerprint_chart explosion_info reach_info balance_info "),
+      columns = "450px 20% 20% 20%",
+      rows = "10px 450px",
       
       uiOutput(ns("fingerprint_chart")) %>%
         tagAppendAttributes(class = "fingerprint_chart"),
@@ -93,40 +92,24 @@ server <- function(input, output, session, data, active_player) {
   )
 
   fingerprint_chart <- use("modules/components/fingerprint_chart.R")$fingerprintChart(
-    "fingerprint_chart",
-    list(
-      color = "#C4C4C4",
-      active_color = "#F66733",
-      labels = list(
-        left = list(
-          top = "Upper Strength",
-          middle = "Core Strength",
-          bottom = "Lower Strength"
-        ),
-        right = list(
-          top = "Upper Power",
-          middle = "Core Power",
-          bottom = "Lower Power"
-        )
-      )
-    ) 
+    "fingerprint_chart"
   )
   
   explosion_info <- use("modules/components/pillar_chart.R")$pillarChart(
     "explosion_info", "Explosion", "Strength", "Power",
-    "icons/BA_Strength.svg", "icons/BA_Strength.svg", "icons/BA_Power.svg", 
+    "icons/BA_explosive_circle.png", "icons/strength_banner.png", "icons/power_banner.png", 
     chart_options
   )
 
   reach_info <- use("modules/components/pillar_chart.R")$pillarChart(
     "reach_info", "Reach", "Speed", "Agility",
-    "icons/BA_Speed.svg", "icons/BA_Speed.svg", "icons/BA_Agility.svg",
+    "icons/BA_reach_circle.png", "icons/speed_banner.png", "icons/agility_banner.png",
     chart_options
   )
   
   balance_info <- use("modules/components/pillar_chart.R")$pillarChart(
     "balance_info", "Balance", "Mobility", "Stability",
-    "icons/BA_Mobility.svg", "icons/BA_Mobility.svg", "icons/BA_Mechanics.svg",
+    "icons/BA_balance_circle.png", "icons/mobility_banner.png", "icons/stability_banner.png",
     chart_options
   )
   

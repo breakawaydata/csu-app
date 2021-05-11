@@ -23,25 +23,25 @@ ui <- function(id, options) {
   gridPanel(
     areas = c(
       "chart_title chart_title chart_title",
-      "pillar_score pillar_score pillar_score",
       "pillar_icon pillar_icon pillar_icon",
+      "pillar_score pillar_score pillar_score",
       "subpillar_name_1 ... subpillar_name_2",
       "subpillar_icon_1 ... subpillar_icon_2",
       "first_pillar_score ... second_pillar_score"
     ),
-    rows = "30px 50px 50px 30px 50px ",
-    columns = "150px 10px 150px",
+    rows = "30px 125px 40px 30px 175px 40px",
+    columns = ".5fr 15px .5fr",
     
     id = id,
-    class = "stats-progress-widget",
+    class = "pillar_chart",
     
     div(class = "chart_title title_label", options$title),
     div(class = "subpillar_name_1 title_label", options$subpillar_one),
     div(class = "subpillar_name_2 title_label", options$subpillar_two),
     
     div(class = "pillar_icon chart_icon", tags$img(class = "icon", src = glue::glue("{options$icon}"))),
-    div(class = "subpillar_icon_1 chart_icon", tags$img(class = "icon", src = glue::glue("{options$icon_1}"))),
-    div(class = "subpillar_icon_2 chart_icon", tags$img(class = "icon", src = glue::glue("{options$icon_2}"))),
+    div(class = "subpillar_icon_1 chart_icon", tags$img(class = "banner", src = glue::glue("{options$icon_1}"))),
+    div(class = "subpillar_icon_2 chart_icon", tags$img(class = "banner", src = glue::glue("{options$icon_2}"))),
     div(
       class = "pillar_score stat_score",
       uiOutput(ns("total_score"))

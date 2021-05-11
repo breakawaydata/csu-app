@@ -1,4 +1,4 @@
-.stats-progress-widget {
+.pillar_chart {
   overflow: hidden;
 
   .ui.progress .bar {
@@ -9,7 +9,8 @@
     color: #2E3D49;
     font-size: 20px;
     font-weight: bolder;
-    line-height: 30px;
+    margin: .5px;
+    line-height: 25px;
     text-align: center;
     text-transform: uppercase;
     font-family: $font-wide;
@@ -21,6 +22,9 @@
     align-items: center;
 
     .icon {
+      height: 100%;
+    }
+    .banner {
       height: 100%;
     }
   }
