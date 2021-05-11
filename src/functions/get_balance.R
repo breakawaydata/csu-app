@@ -77,5 +77,6 @@ get_balance <- function(players_trim, data1, data2) {
   
   data_final <- left_join(players_trim, data_final, by = "player")
   
-  return(data_final)
+  return(data_final %>%
+           select(-player))
 }

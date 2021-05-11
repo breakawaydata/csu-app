@@ -36,5 +36,6 @@ get_reach <- function(players_trim, data) {
   
   data_final <- left_join(players_trim, data_final, by = "player")
   
-  return(data_final)
+  return(data_final %>%
+           select(-player))
 }
