@@ -12,6 +12,7 @@ data <- data.table::fread("data/data_players.csv", data.table = FALSE)
 position_stats <- data.table::fread("data/data_positions.csv", data.table = FALSE)
 
 
+summary_data <- data.table::fread("data/summary_data.csv", data.table = FALSE)
 explosion_data <- data.table::fread("data/explosion_data.csv", data.table = FALSE)
 reach_data <- data.table::fread("data/reach_data.csv", data.table = FALSE)
 capacity_data <- data.table::fread("data/production/capacity_data.csv", data.table = FALSE)
@@ -20,6 +21,7 @@ balance_data <- data.table::fread("data/production/balance_data.csv", data.table
 file_downloader <- use("modules/components/file_generator.R")$fileDownloader("fileDownloader")
 
 pages <- list(
+  summary = use("modules/pages/summary_page.R")$summaryPage("summaryPage", summary_data),
   explosion = use("modules/pages/explosive_page.R")$explosivePage("explosivePage", explosion_data),
   reach = use("modules/pages/reach_page.R")$reachPage("reachPage", reach_data),
   balance = use("modules/pages/balance_page.R")$balancePage("balancePage", balance_data),

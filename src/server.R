@@ -5,6 +5,7 @@ server <- function(input, output, session) {
   sidebar$init_server("sidebar")
   main$init_server("main", pages)
 
+  pages$summary$server()
   pages$explosion$server()
   pages$reach$server()
   pages$capacity$server()
