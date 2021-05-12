@@ -56,7 +56,7 @@ ui <- function(id) {
       areas = c("fingerprint_chart ... ... ... ",
       "fingerprint_chart explosion_info reach_info balance_info "),
       columns = "450px 20% 20% 20%",
-      rows = "10px 450px",
+      rows = "10px 1fr",
       
       uiOutput(ns("fingerprint_chart")) %>%
         tagAppendAttributes(class = "fingerprint_chart"),

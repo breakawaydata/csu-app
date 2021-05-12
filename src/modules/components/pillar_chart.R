@@ -29,7 +29,7 @@ ui <- function(id, options) {
       "subpillar_icon_1 ... subpillar_icon_2",
       "first_pillar_score ... second_pillar_score"
     ),
-    rows = "30px 125px 40px 30px 175px 40px",
+    rows = "30px 1fr 40px 30px 175px 40px",
     columns = ".5fr 15px .5fr",
     
     id = id,
