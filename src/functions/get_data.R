@@ -13,8 +13,8 @@ get_data <- function(players, players_trim, data_source_1, data_source_2, data_s
 
   
   #Merge tables into master table and calculate final score
-  master_table <- base::merge(reach_table, balance_table, by = c('player', 'player_id', 'first', 'last', 'suffix'), all =  TRUE) 
-  master_table <- base::merge(master_table, explosion_table, by = c('player', 'player_id', 'first', 'last', 'suffix'), all = TRUE) %>%
+  master_table <- base::merge(reach_table, balance_table, by = c('player_id', 'first', 'last', 'suffix'), all =  TRUE) 
+  master_table <- base::merge(master_table, explosion_table, by = c('player_id', 'first', 'last', 'suffix'), all = TRUE) %>%
     rowwise () %>%
     mutate(total_score = round(mean(c(explosion_score, reach_score, balance_score), na.rm = TRUE)))
   
@@ -22,18 +22,18 @@ get_data <- function(players, players_trim, data_source_1, data_source_2, data_s
   
   #Get summary table of just the players scores
   summary_table <- master_table %>%
-    select(player, player_id, first, last, suffix, assessment_date, total_score,
+    select(player_id, first, last, suffix, assessment_date, total_score,
            explosion_score, strength_score, power_score,
            reach_score, speed_score, agility_score,
            balance_score, mobility_score, stability_score)
   
   #Write out all data to necessary csv files
-  write.csv(reach_table, "data/production/reach_data.csv")
-  write.csv(balance_table, "data/production/balance_data.csv")
-  write.csv(explosion_table, "data/production/explosion_data.csv")
-  write.csv(anthro_table, "data/production/anthro_data.csv")
-  write.csv(master_table, "data/production/master_data.csv" )
-  write.csv(summary_table, "data/production/summary_table.csv")
+  write.csv(reach_table, "data/production/reach_data.csv", row.names = FALSE)
+  write.csv(balance_table, "data/production/balance_data.csv", row.names = FALSE)
+  write.csv(explosion_table, "data/production/explosion_data.csv", row.names = FALSE)
+  write.csv(anthro_table, "data/production/anthro_data.csv", row.names = FALSE)
+  write.csv(master_table, "data/production/master_data.csv" , row.names = FALSE)
+  write.csv(summary_table, "data/production/summary_table.csv", row.names = FALSE)
 
   return()
 }

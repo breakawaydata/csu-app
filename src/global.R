@@ -14,8 +14,8 @@ position_stats <- data.table::fread("data/data_positions.csv", data.table = FALS
 
 explosion_data <- data.table::fread("data/explosion_data.csv", data.table = FALSE)
 reach_data <- data.table::fread("data/reach_data.csv", data.table = FALSE)
-capacity_data <- data.table::fread("data/capacity_data.csv", data.table = FALSE)
-balance_data <- data.table::fread("data/balance_data.csv", data.table = FALSE)
+capacity_data <- data.table::fread("data/production/capacity_data.csv", data.table = FALSE)
+balance_data <- data.table::fread("data/production/balance_data.csv", data.table = FALSE)
 
 file_downloader <- use("modules/components/file_generator.R")$fileDownloader("fileDownloader")
 
