@@ -9,5 +9,6 @@ server <- function(input, output, session) {
   pages$explosion$server()
   pages$reach$server()
   pages$capacity$server()
+  pages$balance$server()
   file_downloader$server()
 }

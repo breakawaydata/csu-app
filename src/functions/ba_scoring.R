@@ -14,7 +14,7 @@ ba_scoring <- function(data, first_pillar, second_pillar, pillar) {
   data_second$second_pillar_score = round(scales::rescale(data_second$second_pillar_score, to = c(40, 100)))
   
   #Merge scores for each pillar together 
-  data_score <- merge(data_first, data_second, by = "player", all = TRUE) %>%
+  data_score <- base::merge(data_first, data_second, by = "player", all = TRUE) %>%
     select(player, first_pillar_score, second_pillar_score)
   
   #Calculate pillar score

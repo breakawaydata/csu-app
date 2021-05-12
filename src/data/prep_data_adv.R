@@ -1,6 +1,7 @@
 
 library(tidyverse)
 library(readxl)
+library(dplyr)
 miceadds::source.all("functions")
 
 #Get player data
@@ -41,6 +42,14 @@ data_source_1 <- data_source_1 %>%
          ods = 'ODS',
          tspu = 'TSPU',
          fms = 'FMS')
+
+#Get FMS difference from left to right
+data_source_1 <- data_source_1 %>%
+  mutate(hs_diff = as.numeric(hs_left) - as.numeric(hs_right)) %>%
+  mutate(ill_diff = as.numeric(ill_left) - as.numeric(ill_right)) %>%
+  mutate(sm_diff = as.numeric(sm_left) - as.numeric(sm_right)) %>%
+  mutate(aslr_diff = as.numeric(aslr_left) - as.numeric(aslr_right)) %>%
+  mutate(rs_diff = as.numeric(rs_left) - as.numeric(rs_right))
 
 #Handle AC for ill movement
 data_source_1$ill_ac[data_source_1$ill_ac == "AC"] <- 1
