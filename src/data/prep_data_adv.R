@@ -8,6 +8,9 @@ miceadds::source.all("functions")
 players <- read.csv("data/players.csv") %>%
   mutate(player = paste(first,last, sep = " "))
 
+#Get position names
+positions <- read.csv("data/positions.csv")
+
 #Get trimmed version
 players_trim <- players %>%
   select(player, player_id, first, last, suffix)
@@ -102,4 +105,4 @@ data_source_3 <- get_latest_assessment(data_source_3)
 
 
 ### CALCULATE DATA ###
-get_data(players, players_trim, data_source_1, data_source_2, data_source_3)
+get_data(players, players_trim, positions, data_source_1, data_source_2, data_source_3)

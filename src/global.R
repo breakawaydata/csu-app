@@ -8,8 +8,8 @@ library(sass)
 library(dplyr)
 
 consts <- config::get(file = "constants/constants.yml")
-data <- data.table::fread("data/data_players.csv", data.table = FALSE)
-position_stats <- data.table::fread("data/data_positions.csv", data.table = FALSE)
+data <- data.table::fread("data/production/data_players.csv", data.table = FALSE)
+position_stats <- data.table::fread("data/production/data_positions.csv", data.table = FALSE)
 
 
 summary_data <- data.table::fread("data/production/summary_table.csv", data.table = FALSE)
@@ -31,7 +31,7 @@ pages <- list(
 
 sass(
   sass::sass_file(consts$sass$input),
-  cache_options = sass_cache_options(FALSE),
+  cache = sass_cache_options(FALSE),
   options = sass_options(output_style = consts$sass$style),
   output = consts$sass$output
 )
