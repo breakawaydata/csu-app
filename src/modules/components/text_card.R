@@ -39,7 +39,7 @@ text_card <- function(category,
                       header_color = "",
                       score_color = "",
                       description_color = "") {
-  uicard(
+  card(
     p(
       class = "header",
       style = glue("color: {header_color}; border-bottom-color: {header_color};"),

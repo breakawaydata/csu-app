@@ -31,7 +31,7 @@ pages <- list(
 
 sass(
   sass::sass_file(consts$sass$input),
-  cache_options = sass_cache_options(FALSE),
+  cache = sass_cache_options(FALSE),
   options = sass_options(output_style = consts$sass$style),
   output = consts$sass$output
 )
