@@ -70,14 +70,14 @@ server <- function(input, output, session, pages) {
         pages$reach$ui
       )
     }
-    
-    if (session$userData$stat() == "capacity") {
-      pages$capacity$active_player$id <- input$player
-      content <- tags$div(
-        class = "player-content",
-        pages$capacity$ui
-      )
-    }
+    # 
+    # if (session$userData$stat() == "capacity") {
+    #   pages$capacity$active_player$id <- input$player
+    #   content <- tags$div(
+    #     class = "player-content",
+    #     pages$capacity$ui
+    #   )
+    # }
 
     if (session$userData$stat() == "balance") {
       pages$balance$active_player$id <- input$player
@@ -87,12 +87,12 @@ server <- function(input, output, session, pages) {
       )
     }
     
-    if (session$userData$page() == "game") {
-    content <- tags$div(
-      class = "player-content",
-      style = glue::glue("background-image: url('assets/live.gif'); height: 100vh;")
-     )
-    }
+    # if (session$userData$page() == "game") {
+    # content <- tags$div(
+    #   class = "player-content",
+    #   style = glue::glue("background-image: url('assets/live.gif'); height: 100vh;")
+    #  )
+    # }
 
     content
   })
