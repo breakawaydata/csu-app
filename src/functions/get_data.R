@@ -38,29 +38,33 @@ get_data <- function(players, players_trim, positions, data_source_1, data_sourc
 
   #Get data_players for main menu page
   data_players <- master_table %>%
+    rename(summary = total_score,
+           explosion = explosion_score,
+           reach = reach_score,
+           balance = balance_score) %>%
     select(player_id, 
-           total_score,
-           explosion_score,
-           reach_score,
-           balance_score)
+           summary,
+           explosion,
+           reach,
+           balance)
   
   data_players <- base::merge(data_players, players, by = "player_id")
   data_players <- base::merge(data_players, positions, by.x = "position", by.y = "abbreviation")
   data_players <- data_players %>%
     select(player_id, first, last, suffix, position, position_detailed,
            number, class, picture, positions,
-           total_score,
-           explosion_score,
-           reach_score,
-           balance_score)
+           summary,
+           explosion,
+           reach,
+           balance)
   
   #Get data_positions for main menu page
   data_positions <- data_players %>%
     group_by(position, positions) %>%
-    summarise(summary = round(mean(total_score, na.rm = TRUE)),
-              explosion =round(mean(explosion_score, na.rm = TRUE)),
-              reach = round(mean(reach_score, na.rm = TRUE)),
-              balance = round(mean(balance_score, na.rm = TRUE)))
+    summarise(summary = round(mean(summary, na.rm = TRUE)),
+              explosion =round(mean(explosion, na.rm = TRUE)),
+              reach = round(mean(reach, na.rm = TRUE)),
+              balance = round(mean(balance, na.rm = TRUE)))
   
   #Write out all data to necessary csv files
   write.csv(reach_table, "data/production/reach_data.csv", row.names = FALSE)
