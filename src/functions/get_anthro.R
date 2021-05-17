@@ -7,7 +7,8 @@ get_anthro <- function(players, data) {
            'weight',
            'wingspan')
 
-  data_final <- left_join(players, data_trim, by = "player")
+  data_final <- left_join(players, data_trim, by = "player") %>%
+    select(-player)
   
   return(data_final)
 }
