@@ -1,5 +1,5 @@
 #Takes in the complete player file, trimed player file and all cleaned data sources
-get_data <- function(players, players_trim, data_source_1, data_source_2, data_source_3) {
+get_data <- function(players, players_trim, positions, data_source_1, data_source_2, data_source_3) {
   require(tidyverse)
   
   #ASSESSMENT DATE
@@ -27,6 +27,33 @@ get_data <- function(players, players_trim, data_source_1, data_source_2, data_s
            reach_score, speed_score, agility_score,
            balance_score, mobility_score, stability_score)
   
+
+  #Get data_players for main menu page
+  data_players <- master_table %>%
+    select(player_id, 
+           total_score,
+           explosion_score,
+           reach_score,
+           balance_score)
+  
+  data_players <- base::merge(data_players, players, by = "player_id")
+  data_players <- base::merge(data_players, positions, by.x = "position", by.y = "abbreviation")
+  data_players <- data_players %>%
+    select(player_id, first, last, suffix, position, position_detailed,
+           number, class, picture, positions,
+           total_score,
+           explosion_score,
+           reach_score,
+           balance_score)
+  
+  #Get data_positions for main menu page
+  data_positions <- data_players %>%
+    group_by(position, positions) %>%
+    summarise(summary = round(mean(total_score, na.rm = TRUE)),
+              explosion =round(mean(explosion_score, na.rm = TRUE)),
+              reach = round(mean(reach_score, na.rm = TRUE)),
+              balance = round(mean(balance_score, na.rm = TRUE)))
+  
   #Write out all data to necessary csv files
   write.csv(reach_table, "data/production/reach_data.csv", row.names = FALSE)
   write.csv(balance_table, "data/production/balance_data.csv", row.names = FALSE)
@@ -34,6 +61,8 @@ get_data <- function(players, players_trim, data_source_1, data_source_2, data_s
   write.csv(anthro_table, "data/production/anthro_data.csv", row.names = FALSE)
   write.csv(master_table, "data/production/master_data.csv" , row.names = FALSE)
   write.csv(summary_table, "data/production/summary_table.csv", row.names = FALSE)
+  write.csv(data_players, "data/production/data_players.csv", row.names = FALSE)
+  write.csv(data_positions, "data/production/data_positions.csv", row.names = FALSE)
 
   return()
 }
