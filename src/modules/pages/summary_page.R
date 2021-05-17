@@ -169,7 +169,7 @@ server <- function(input, output, session, data, active_player) {
     })
 
     fingerprint_chart$state$values <- list(
-      total = active_assessment$explosion_score,
+      total = active_assessment$total_score,
       explosion = active_assessment$explosion_score,
       reach = active_assessment$reach_score,
       balance = active_assessment$balance_score
