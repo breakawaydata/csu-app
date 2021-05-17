@@ -20,11 +20,11 @@
   .header {
     text-align: center;
     color: $text-main-color;
-    font-size: 42px;
+    font-size: 25px;
     border: 2px solid $text-main-color;
     border-radius: 4px;
     font-weight: bolder;
-    line-height: 42px;
+    line-height: 32px;
     background: #F58A2D;
   }
 
@@ -38,40 +38,46 @@
   }
 
   .stat_value {
-    text-align: center;
-    background: #C4C5C4;
-    font-size: 35px;
-    font-weight: bolder;
-    line-height: 35px;
-    cursor: pointer;
-    border-radius: 4px;
-    border: 1px solid #6E7681;
-    color: #6E7681;
-    
     .score {
+      text-align: center;
+      background: #FEFCFD;
+      font-size: 30px;
+      font-weight: bolder;
+      line-height: 32px;
+      cursor: pointer;
+      color: #6E7681;
+      border-radius: 4px;
       
       &[data-color = "red"] {
-      color: #ED1C24;
+        border: 2px solid #ED1C24;
+        border-radius: 4px;
+        color: #ED1C24;
       }
-      
+        
       &[data-color = "yellow"] {
+        border: 2px solid #FBEC5D;
+        border-radius: 4px;
         color: #FBEC5D;
       }
-      
+        
       &[data-color = "green"] {
+        border: 2px solid #39B54A;
+        border-radius: 4px;
         color: #39B54A;
       }
-      
+        
       &[data-color = "black"] {
+        border: 2px solid #6E7681;
+        border-radius: 4px;
         color: #6E7681;
-      }
+      } 
     }
   }
   
   .exercise_value {
     text-align: left;
     color: $text-main-color;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bolder;
     line-height: 25px;
   }

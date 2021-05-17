@@ -55,10 +55,10 @@ ui <- function(id, options) {
       "total",
       "title",
       "header",
-      " .... ",
-      "balance_chart"
+      " ... ",
+      "balance_table"
     ),
-    rows = "25px 50px 25px 50px 10px 1fr",
+    rows = "25px 50px 25px 35px 10px minmax(500px, 1fr)",
     
     div(class = "title", uiOutput(ns("title"))),
     div(class = "total", uiOutput(ns("total_score"))),
@@ -68,9 +68,10 @@ ui <- function(id, options) {
       class = glue::glue("header {ns('grid')}"),
       gridPanel(
         areas = c(
-          "exercise_header left_header right_header diff_header"
+          "exercise_header left_header ... left_header ... left_header ..."
         ),
-        
+        columns = "250px 1fr 1fr 1fr 10px ",
+          
         uiOutput(ns("exercise_header")),
         uiOutput(ns("left_header")),
         uiOutput(ns("right_header")),
@@ -79,24 +80,24 @@ ui <- function(id, options) {
     ),
     div(
       id = id,
-      class = glue::glue("balance_chart {ns('grid')}"),
+      class = glue::glue("balance_table {ns('grid')}"),
       gridPanel(
         areas = c(
-          " exercise_one fms_score fms_score fms_score ... ... ...",
-          " exercise_two ds_score ds_score ds_score ... ... ...",
-          " exercise_three tspu_score tspu_score tspu_score ... ... ... ",
-          " exercise_four hs_left_score ... hs_right_score ... hs_diff_score ... ",
-          " exercise_five ill_left_score ... ill_right_score ... ill_diff_score ...",
-          " exercise_six sm_left_score ... sm_right_score ... sm_diff_score ...",
-          " exercise_seven aslr_left_score ... aslr_right_score ... aslr_diff_score ...",
-          " exercise_eight rs_left_score ... rs_right_score ... rs_diff_score ...",
-          " exercise_nine max_imbalance_score max_imbalance_score max_imbalance_score ... ... ... ",
-          " exercise_ten impulse_imbalance_score impulse_imbalance_score  impulse_imbalance_score ... ... ...",
-          " exercise_eleven fms_asym_score fms_asym_score fms_asym_score ... ... ..."
+          " exercise_one fms_score fms_score ... ...",
+          " exercise_two ds_score ds_score   ... ...",
+          " exercise_three tspu_score tspu_score ...  ... ",
+          " exercise_four hs_left_score hs_right_score hs_diff_score ... ",
+          " exercise_five ill_left_score ill_right_score ill_diff_score ...",
+          " exercise_six sm_left_score sm_right_score sm_diff_score ...",
+          " exercise_seven aslr_left_score aslr_right_score aslr_diff_score ...",
+          " exercise_eight rs_left_score rs_right_score rs_diff_score ...",
+          " exercise_nine max_imbalance_score max_imbalance_score ... ... ",
+          " exercise_ten impulse_imbalance_score impulse_imbalance_score   ... ...",
+          " exercise_eleven fms_asym_score fms_asym_score  ... ..."
         ),
-        rows = "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr",
-        columns = "300px 1fr 10px 1fr 10px 1fr 10px ",
-        gap = "2px",
+        rows = "max(35px) max(35px) max(35px) max(35px) max(35px) max(35px) max(35px) max(35px) max(35px) max(35px) max(35px)",
+        columns = "250px 1fr 1fr 1fr 10px ",
+        gap = "5px",
 
         exercise_wrapper("exercise_one", "exercise", "one", uiOutput(ns("exercise_one"))),
         exercise_wrapper("exercise_two", "exercise", "two", uiOutput(ns("exercise_two"))),
@@ -156,6 +157,9 @@ color_decision <- function(group, stat_value){
         else if (stat_value == 1){
           return("red")
         }
+        else {
+          return("black")
+        }
       }
       else if (group == "fms_score_full"){
         if (stat_value > 17){
@@ -175,6 +179,17 @@ color_decision <- function(group, stat_value){
         else (
           return("red")
         )
+      }
+      else if (group == "standard"){
+        if (stat_value > 67){
+          return("green")
+        }
+        else if (stat_value > 33){
+          return("yellow")
+        }
+        else if (stat_value <= 33){
+          return("red")
+        }
       }
     }
     else {
@@ -244,9 +259,9 @@ server <- function(input, output, session, state) {
     output$rs_right_score <- renderUI({ div(class = "score", `data-color` = color_decision("fms_score", state$values$data$rs_right_score), span(state$values$data$rs_left_score)) })
     output$rs_diff_score <- renderUI({ div(class = "score", `data-color` = color_decision("differences", state$values$data$rs_diff_score), span(state$values$data$rs_diff_score)) })
 
-    output$max_imbalance_score <- renderUI({ div(class = "score", `data-color` = "black", span(state$values$data$max_imbalance_score)) })
-    output$impulse_imbalance_score <- renderUI({ div(class = "score", `data-color` = "black", span(state$values$data$impulse_imbalance_score)) })
-    output$fms_asym_score <- renderUI({ div(class = "score", `data-color` = "black", span(state$values$data$fms_asym_score)) })
+    output$max_imbalance_score <- renderUI({ div(class = "score", `data-color` = color_decision("standard", state$values$data$max_imbalance_score), span(state$values$data$max_imbalance_score)) })
+    output$impulse_imbalance_score <- renderUI({ div(class = "score", `data-color` = color_decision("standard", state$values$data$impulse_imbalance_score), span(state$values$data$impulse_imbalance_score)) })
+    output$fms_asym_score <- renderUI({ div(class = "score", `data-color` = color_decision("standard", state$values$data$fms_asym_score), span(state$values$data$fms_asym_score)) })
 
     observeEvent(input$part_selected, {
       state$active <- c(input$part_selected)
@@ -293,9 +308,9 @@ balanceChart <- R6Class("balanceChart",
             ),
           headers = list(
             left = "Exercise", 
-            left_middle = "Right", 
-            right_middle = "Left", 
-            right = "Difference"
+            left_middle = "Left", 
+            right_middle = "Right", 
+            right = "Diff"
             )
           )
         ),

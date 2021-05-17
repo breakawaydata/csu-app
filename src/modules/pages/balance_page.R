@@ -78,7 +78,7 @@ ui <- function(id) {
     gridPanel(
       class = "balance_page_wrapper",
       areas = c("mobility_card ... stability_card"),
-      columns = "400px 1fr 400px",
+      columns = "1fr minmax(500px, 2fr) 1fr",
       gap = "20px",
       
       uiOutput(ns("mobility_card")) %>%
@@ -139,9 +139,9 @@ server <- function(input, output, session, data, active_player) {
         ),
         headers = list(
           left = "Exercise", 
-          left_middle = "Right", 
-          right_middle = "Left", 
-          right = "Difference"
+          left_middle = "Left", 
+          right_middle = "Right", 
+          right = "Diff"
         )
       )
     )
