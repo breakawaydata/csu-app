@@ -16,8 +16,8 @@ ui <- function(id) {
         sidebar_element(page_id = "explosive", item_id = "explosive", icon = "explosive", text = "EXPLOSION"),
         sidebar_element(page_id = "reach", item_id = "reach", icon = "reach", text = "REACH"),
         sidebar_element(page_id = "balance", item_id = "balance", icon = "balance", text = "BALANCE"),
-        sidebar_element(page_id = "capacity", item_id = "capacity", icon = "capacity", text = "CAPACITY"),
-        sidebar_element(page_id = "game", item_id = "summary", icon = "analytics_bars", text = "LIVE")
+        # sidebar_element(page_id = "capacity", item_id = "capacity", icon = "capacity", text = "CAPACITY"),
+        # sidebar_element(page_id = "game", item_id = "summary", icon = "analytics_bars", text = "LIVE")
       ),
     id = consts$dom$sidebar_navigation_id
   )
