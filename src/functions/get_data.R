@@ -1,20 +1,25 @@
-#Takes in the complete player file, trimed player file and all cleaned data sources
+#Takes in the complete player file, trimmed player file and all cleaned data sources
 get_data <- function(players, players_trim, data_source_1, data_source_2, data_source_3) {
   require(tidyverse)
   
   #ASSESSMENT DATE
-  players_trim$assessment_date = "04-26-2021"
+  players_trim$assessment_date = "Spring 2021"
   
   #Get data include player information to link and the data sources needed
   reach_table <- get_reach(players_trim, data_source_1)
   balance_table <- get_balance(players_trim, data_source_1, data_source_3)
   explosion_table <- get_explosion(players_trim, data_source_1, data_source_2, data_source_3)
-  anthro_table <- get_anthro(players, data_source_1)
+  anthro_table <- get_anthro(players_trim, data_source_1)
 
+  #Make all NA values 0 - ignore the anthro table
+  reach_table[is.na(reach_table)] <-0
+  balance_table[is.na(balance_table)] <-0
+  explosion_table[is.na(explosion_table)] <-0
   
   #Merge tables into master table and calculate final score
-  master_table <- base::merge(reach_table, balance_table, by = c('player_id', 'first', 'last', 'suffix'), all =  TRUE) 
-  master_table <- base::merge(master_table, explosion_table, by = c('player_id', 'first', 'last', 'suffix'), all = TRUE) %>%
+  master_table <- base::merge(reach_table, balance_table, by = c('player_id', 'first', 'last', 'suffix', 'assessment_date'), all =  TRUE) 
+  master_table <- base::merge(master_table, anthro_table, by = c('player_id', 'first', 'last', 'suffix',  'assessment_date'), all =  TRUE)
+  master_table <- base::merge(master_table, explosion_table, by = c('player_id', 'first', 'last', 'suffix',  'assessment_date'), all = TRUE) %>%
     rowwise () %>%
     mutate(total_score = round(mean(c(explosion_score, reach_score, balance_score), na.rm = TRUE)))
   
@@ -25,7 +30,8 @@ get_data <- function(players, players_trim, data_source_1, data_source_2, data_s
     select(player_id, first, last, suffix, assessment_date, total_score,
            explosion_score, strength_score, power_score,
            reach_score, speed_score, agility_score,
-           balance_score, mobility_score, stability_score)
+           balance_score, mobility_score, stability_score,
+           height, weight, wingspan)
   
   #Write out all data to necessary csv files
   write.csv(reach_table, "data/production/reach_data.csv", row.names = FALSE)

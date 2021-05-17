@@ -103,7 +103,7 @@ player_card <- function(player) {
   tags$div(
     id = player$player_id,
     class = consts$dom$player_card_class,
-    `data-summary` = player$summary,
+    `data-summary` = player$total_score,
     `data-explosive` = player$explosive,
     `data-reach` = player$reach,
     `data-balance` = player$balance,
