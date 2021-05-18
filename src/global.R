@@ -6,6 +6,8 @@ library(modules)
 library(config)
 library(sass)
 library(dplyr)
+library(Cairo)
+options(shiny.usecairo=TRUE)
 
 consts <- config::get(file = "constants/constants.yml")
 data <- data.table::fread("data/production/data_players.csv", data.table = FALSE)
