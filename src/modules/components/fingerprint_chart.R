@@ -26,7 +26,7 @@ ui <- function(id, options) {
     background: #f1f1f1;
   }")
   
-  plotOutput(ns("fingerprint_plot"))
+  plotOutput(ns("fingerprint_plot"), height = 450)
 }
 
 
@@ -83,6 +83,8 @@ server <- function(input, output, session, state) {
   output$fingerprint_plot <- renderPlot({
     datadata <- fingerprint_df_final()
     score <- overall_score()
+    
+    
     plot <- ggplot(datadata, aes(x = category, y = value, fill = dummy)) + 
       geom_bar(width = 0.8, stat="identity") + 
       coord_polar(theta = "y", direction = 1, start = 3.1) +
