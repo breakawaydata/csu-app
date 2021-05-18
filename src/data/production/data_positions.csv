@@ -1,10 +1,10 @@
-"position","positions","summary","explosion","reach","balance"
-"DB","Secondary",79,58,55,52
-"DL","Defensive Line",68,48,30,42
-"HB","Halfbacks",76,52,56,42
-"LB","Linebackers",80,60,55,53
-"OL","Offensive Line",80,68,40,61
-"QB","Quarterbacks",84,60,61,64
-"SP","Specialists",66,62,0,45
-"TE","Tight Ends",79,59,45,61
-"WR","Wide Receivers",80,60,52,57
+position,positions,summary,explosion,reach,balance
+DB,Secondary,79,58,55,52
+DL,Defensive Line,68,48,30,42
+RB,Running Backs,76,52,56,42
+LB,Linebackers,80,60,55,53
+OL,Offensive Line,80,68,40,61
+QB,Quarterbacks,84,60,61,64
+SP,Specialists,66,62,0,45
+TE,Tight Ends,79,59,45,61
+WR,Wide Receivers,80,60,52,57

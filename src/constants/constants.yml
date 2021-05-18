@@ -1,8 +1,8 @@
 default:
   global:
-    team_name: "UCLA Football"
-    team_logo: "icons/ucla_icon.jpg"
-    team_logo_small: "icons/small_ucla.png"
+    team_name: "CSU Football"
+    team_logo: "icons/csu_icon.png"
+    team_logo_small: "icons/big_csu.png"
     gravatar_url: "https://www.gravatar.com/avatar/"
   dom:
     all_level_id: "all"
