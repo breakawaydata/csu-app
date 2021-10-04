@@ -6,4 +6,4 @@ rsconnect::setAccountInfo(
   token = "B52B06FDCA4E6833CF8118C71A9285AF",
   secret = "gdBZ0iOgw5+vvQPpKWevp3vmrvMJVb8Rs06KDAEw"
 )
-rsconnect::deployApp(getwd(), appName = "breakaway")
+rsconnect::deployApp(getwd(), appName = "co-state")
