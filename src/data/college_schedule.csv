@@ -1,0 +1,880 @@
+game_id,week,home_team_id,home_team_name,home_team_abbr,home_score,away_team_id,away_team_name,away_team_abbr,away_score,venue_name,game_date,start_time_local,timestamp_utc,timestamp_pst,season_id,season_name,season_year,season_type,league_id,league_name
+401282714,1,10041,Illinois,ILL,30,10068,Nebraska,NEB,22,Memorial Stadium,,,8/28/2021 17:20,8/28/2021 10:20,10001,College Football 2021,2021,regular,1001,College Football
+401286187,1,10034,Fresno State,FRES,45,10026,Connecticut,CONN,0,Bulldog Stadium,,,8/28/2021 18:00,8/28/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309833,1,10112,UCLA,UCLA,44,10039,Hawai'i,HAW,10,Rose Bowl,,,8/28/2021 19:30,8/28/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282049,1,10071,New Mexico State,NMSU,3,10118,UTEP,UTEP,30,Aggie Memorial Stadium,,,8/29/2021 1:30,8/28/2021 18:30,10001,College Football 2021,2021,regular,1001,College Football
+401310693,1,10091,San Jos,SJSU,45,10535,Southern Utah,NULL,14,Spartan Stadium,,,8/29/2021 2:00,8/28/2021 19:00,10001,College Football 2021,2021,regular,1001,College Football
+401282050,1,10484,Jacksonville State,NULL,0,10110,UAB,UAB,31,Cramton Bowl,,,9/1/2021 23:30,9/1/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309540,1,10011,Ball State,BALL,31,10551,Western Illinois,NULL,21,Scheumann Stadium,,,9/2/2021 23:00,9/2/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401328545,1,10023,Coastal Carolina,CCU,52,10452,The Citadel,NULL,14,Brooks Stadium,,,9/2/2021 23:00,9/2/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401300995,1,10111,UCF,UCF,36,10013,Boise State,BSU,31,Bright House Networks Stadium,,,9/2/2021 23:00,9/2/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309542,1,10016,Buffalo,BUFF,69,10548,Wagner,NULL,7,UB Stadium,,,9/2/2021 23:00,9/2/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282607,1,10067,NC State,NCST,45,10096,South Florida,USF,0,Carter-Finley Stadium,,,9/2/2021 23:30,9/2/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309834,1,10116,Utah,UTAH,40,10549,Weber State,NULL,17,Rice-Eccles Stadium,,,9/2/2021 23:30,9/2/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401300993,1,10004,Appalachian State,APP,33,10028,East Carolina,ECU,19,Kidd Brewer Stadium,,,9/2/2021 23:30,9/2/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401300994,1,10109,Tulsa,TLSA,17,10543,UC Davis,NULL,19,Skelly Field at H. A. Chapman Stadium,,,9/2/2021 23:30,9/2/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401281952,1,10101,Tennessee,TENN,38,10015,Bowling Green,BGSU,6,Neyland Stadium,,,9/3/2021 0:00,9/2/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401310696,1,10070,New Mexico,UNM,27,10476,Houston Baptist,NULL,17,University Stadium,,,9/3/2021 0:00,9/2/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282789,1,10063,Minnesota,MINN,31,10078,Ohio State,OSU,45,TCF Bank Stadium,,,9/3/2021 0:00,9/2/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282180,1,10126,Western Kentucky,WKU,59,10544,UT Martin,NULL,21,Houchens Industries-L. T. Smith Stadium,,,9/3/2021 0:00,9/2/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401310694,1,10114,UNLV,UNLV,33,10466,Eastern Washington,NULL,35,Allegiant Stadium,,,9/3/2021 2:00,9/2/2021 19:00,10001,College Football 2021,2021,regular,1001,College Football
+401309835,1,10006,Arizona State,ASU,41,10535,Southern Utah,NULL,14,Sun Devil Stadium,,,9/3/2021 2:30,9/2/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309937,1,10122,Virginia Tech,VT,17,10072,North Carolina,UNC,10,Lane Stadium,,,9/3/2021 22:00,9/3/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282608,1,10123,Wake Forest,WAKE,42,10081,Old Dominion,ODU,10,BB&T Field,,,9/3/2021 23:00,9/3/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282052,1,10020,Charlotte,CHAR,31,10027,Duke,DUKE,28,Jerry Richardson Stadium,,,9/3/2021 23:00,9/3/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401287888,1,10045,Kansas,KU,17,10529,South Dakota,NULL,14,Memorial Stadium,,,9/4/2021 0:00,9/3/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282782,1,10075,Northwestern,NW,21,10061,Michigan State,MSU,38,Ryan Field,,,9/4/2021 1:00,9/3/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401310695,1,10025,Colorado State,CSU,23,10530,South Dakota State,NULL,42,Canvas Stadium,,,9/4/2021 1:00,9/3/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401309836,1,10024,Colorado,COLO,35,10511,Northern Colorado,NULL,7,Folsom Field,,,9/4/2021 1:00,9/3/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401287894,1,10079,Oklahoma,OKLA,40,10108,Tulane,TULN,35,Gaylord Family Oklahoma Memorial Stadium,,,9/4/2021 16:00,9/4/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401281947,1,10048,Kentucky,UK,45,10051,Louisiana Monroe,ULM,10,Commonwealth Stadium,,,9/4/2021 16:00,9/4/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309601,1,10037,Georgia State,GAST,10,10009,Army,ARMY,43,Georgia State Stadium,,,9/4/2021 16:00,9/4/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282815,1,10129,Wisconsin,WIS,10,10085,Penn State,PSU,16,Camp Randall Stadium,,,9/4/2021 16:00,9/4/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287889,1,10046,Kansas State,KSU,24,10097,Stanford,STAN,7,AT&T Stadium,,,9/4/2021 16:00,9/4/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282772,1,10060,Michigan,MICH,47,10127,Western Michigan,WMU,14,Michigan Stadium,,,9/4/2021 16:00,9/4/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282822,1,10089,Rutgers,RUTG,61,10100,Temple,TEM,14,SHI Stadium,,,9/4/2021 16:00,9/4/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401286188,1,10026,Connecticut,CONN,28,10475,Holy Cross,NULL,38,Rentschler Field,,,9/4/2021 16:00,9/4/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401327913,1,10068,Nebraska,NEB,52,10469,Fordham,NULL,7,Memorial Stadium,,,9/4/2021 16:00,9/4/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282609,1,10014,Boston College,BC,51,10453,Colgate,NULL,0,Alumni Stadium,,,9/4/2021 16:00,9/4/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309838,1,10083,Oregon,ORE,31,10034,Fresno State,FRES,24,Autzen Stadium,,,9/4/2021 18:00,9/4/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401310861,1,10001,Air Force,AFA,35,10487,Lafayette,NULL,14,Falcon Stadium,,,9/4/2021 18:00,9/4/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401281943,1,10007,Arkansas,ARK,38,10088,Rice,RICE,17,Donald W. Reynolds Razorback Stadium Frank Broyles Field,,,9/4/2021 18:00,9/4/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401282764,1,10056,Maryland,MD,30,10128,West Virginia,WVU,24,Maryland Stadium,,,9/4/2021 19:30,9/4/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282174,1,10066,Navy,NAVY,7,10055,Marshall,MRSH,49,Navy-Marine Corps Memorial Stadium,,,9/4/2021 19:30,9/4/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401281942,1,10058,Miami,MIAMI,13,10003,Alabama,ALA,44,Mercedes-Benz Stadium,,,9/4/2021 19:30,9/4/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401300996,1,10021,Cincinnati,CIN,49,10059,Miami (OH),M-OH,14,Nippert Stadium,,,9/4/2021 19:30,9/4/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282723,1,10043,Iowa,IOWA,34,10042,Indiana,IND,6,Kinnick Stadium,,,9/4/2021 19:30,9/4/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401281950,1,10065,Missouri,MIZ,34,10019,Central Michigan,CMU,24,Faurot Field,,,9/4/2021 20:00,9/4/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282612,1,10086,Pittsburgh,PITT,51,10113,UMass,UMASS,7,Heinz Field,,,9/4/2021 20:00,9/4/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401310697,1,10130,Wyoming,WYO,19,10499,Montana State,NULL,16,War Memorial Stadium,,,9/4/2021 20:00,9/4/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401281949,1,10064,Mississippi State,MSST,35,10052,Louisiana Tech,LT,34,Davis Wade Stadium,,,9/4/2021 20:00,9/4/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401287887,1,10044,Iowa State,ISU,16,10512,Northern Iowa,NULL,10,Jack Trice Stadium,,,9/4/2021 20:30,9/4/2021 13:30,10001,College Football 2021,2021,regular,1001,College Football
+401287892,1,10102,Texas,TEX,38,10050,Louisiana,ULL,18,Darrell K Royal-Texas Memorial Stadium,,,9/4/2021 20:30,9/4/2021 13:30,10001,College Football 2021,2021,regular,1001,College Football
+401309842,1,10115,USC,USC,30,10091,San Jos,SJSU,7,Los Angeles Memorial Coliseum,,,9/4/2021 21:00,9/4/2021 14:00,10001,College Football 2021,2021,regular,1001,College Football
+401309600,1,10036,Georgia Southern,GASO,30,10470,Gardner-Webb,NULL,25,Paulson Stadium,,,9/4/2021 22:00,9/4/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401286294,1,10049,Liberty,LIB,48,10447,Campbell,NULL,7,Williams Stadium,,,9/4/2021 22:00,9/4/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401281951,1,10094,South Carolina,SC,46,10464,Eastern Illinois,NULL,0,Williams-Brice Stadium,,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401287890,1,10080,Oklahoma State,OKST,23,10496,Missouri State,NULL,16,Boone Pickens Stadium,,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309543,1,10106,Toledo,TOL,49,10505,Norfolk State,NULL,10,Glass Bowl,,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401300997,1,10057,Memphis,MEM,42,10504,Nicholls,NULL,17,Liberty Bowl Memorial Stadium,,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309598,1,10008,Arkansas State,ARST,40,10448,Central Arkansas,NULL,21,Centennial Bank Stadium,,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282173,1,10062,Middle Tennessee,MTSU,50,10497,Monmouth,NULL,15,"Johnny Red"""" Floyd Stadium""""",,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309602,1,10107,Troy,TROY,55,10533,Southern,NULL,3,Veterans Memorial Stadium,,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401300998,1,10092,SMU,SMU,56,10434,Abilene Christian,NULL,9,Gerald J. Ford Stadium,,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401287886,1,10040,Houston,HOU,21,10105,Texas Tech,TTU,38,NRG Stadium,,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401287893,1,10104,Texas State,TXST,22,10012,Baylor,BAY,29,Jim Wacker Field at Bobcat Stadium,,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401281944,1,10010,Auburn,AUB,60,10002,Akron,AKR,10,Jordan-Hare Stadium,,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282819,1,10087,Purdue,PUR,30,10084,Oregon State,ORST,21,Ross-Ade Stadium,,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282611,1,10077,Ohio,OHIO,9,10098,Syracuse,SYR,29,Peden Stadium,,,9/4/2021 23:00,9/4/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401281945,1,10030,Florida,FLA,35,10031,Florida Atlantic,FAU,14,Ben Hill Griffin Stadium,,,9/4/2021 23:30,9/4/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401281946,1,10022,Clemson,CLEM,3,10035,Georgia,UGA,10,Bank of America Stadium,,,9/4/2021 23:30,9/4/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282610,1,10038,Georgia Tech,GT,21,10073,Northern Illinois,NIU,22,Bobby Dodd Stadium at Historic Grant Field,,,9/4/2021 23:30,9/4/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282179,1,10041,Illinois,ILL,30,10119,UT San Antonio,UTSA,37,Memorial Stadium,,,9/4/2021 23:30,9/4/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282175,1,10074,North Texas,UNT,44,10513,Northwestern State,NULL,14,Apogee Stadium,,,9/4/2021 23:30,9/4/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282613,1,10121,Virginia,UVA,43,10552,William & Mary,NULL,0,Scott Stadium,,,9/4/2021 23:30,9/4/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401287891,1,10099,TCU,TCU,45,10462,Duquesne,NULL,3,Amon G. Carter Stadium,,,9/5/2021 0:00,9/4/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282054,1,10120,Vanderbilt,VAN,3,10463,East Tennessee State,NULL,23,Vanderbilt Stadium,,,9/5/2021 0:00,9/4/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401309839,1,10124,Washington,WASH,7,10498,Montana,NULL,13,Husky Stadium,,,9/5/2021 0:00,9/4/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282177,1,10093,South Alabama,USA,31,10095,Southern Mississippi,USM,7,Hancock Whitney Stadium,,,9/5/2021 0:00,9/4/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282053,1,10103,Texas A&M,TA&M,41,10047,Kent State,KENT,10,Kyle Field,,,9/5/2021 0:00,9/4/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401281948,1,10112,UCLA,UCLA,38,10054,LSU,LSU,27,Rose Bowl,,,9/5/2021 0:30,9/4/2021 17:30,10001,College Football 2021,2021,regular,1001,College Football
+401282178,1,10118,UTEP,UTEP,38,10441,Bethune-Cookman,NULL,28,Sun Bowl Stadium,,,9/5/2021 1:00,9/4/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401309841,1,10005,Arizona,ARIZ,16,10017,BYU,BYU,24,Allegiant Stadium,,,9/5/2021 2:30,9/4/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309837,1,10018,California,CAL,17,10069,Nevada,NEV,22,California Memorial Stadium,,,9/5/2021 2:30,9/4/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401310699,1,10090,San Diego State,SDSU,28,10071,New Mexico State,NMSU,10,Qualcomm Stadium,,,9/5/2021 2:30,9/4/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309840,1,10125,Washington State,WSU,23,10117,Utah State,USU,26,Martin Stadium,,,9/5/2021 3:00,9/4/2021 20:00,10001,College Football 2021,2021,regular,1001,College Football
+401310698,1,10039,Hawai'i,HAW,49,10515,Portland State,NULL,35,Aloha Stadium,,,9/5/2021 3:59,9/4/2021 20:59,10001,College Football 2021,2021,regular,1001,College Football
+401282614,1,10033,Florida State,FSU,38,10076,Notre Dame,ND,41,Bobby Bowden Field at Doak Campbell Stadium,,,9/5/2021 23:30,9/5/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282055,1,10082,Ole Miss,MISS,43,10053,Louisville,LOU,24,Mercedes-Benz Stadium,,,9/7/2021 0:00,9/6/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401331164,1,10106,Toledo,TOL,24,10062,Middle Tennessee,MTSU,31,Thomas Robinson Stadium,,,12/17/2021 17:00,12/17/2021 9:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331165,1,10023,Coastal Carolina,CCU,47,10073,Northern Illinois,NIU,41,Orlando City Stadium,,,12/17/2021 23:00,12/17/2021 15:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331166,1,10004,Appalachian State,APP,38,10126,Western Kentucky,WKU,59,FAU Stadium,,,12/18/2021 16:00,12/18/2021 8:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331167,1,10034,Fresno State,FRES,31,10118,UTEP,UTEP,24,University Stadium,,,12/18/2021 19:15,12/18/2021 11:15,10001,College Football 2021,2021,postseason,1001,College Football
+401331168,1,10017,BYU,BYU,28,10110,UAB,UAB,31,Independence Stadium,,,12/18/2021 20:30,12/18/2021 12:30,10001,College Football 2021,2021,postseason,1001,College Football
+401331169,1,10049,Liberty,LIB,56,10029,Eastern Michigan,EMU,20,Hancock Whitney Stadium,,,12/18/2021 22:45,12/18/2021 14:45,10001,College Football 2021,2021,postseason,1001,College Football
+401331170,1,10084,Oregon State,ORST,13,10117,Utah State,USU,24,SoFi Stadium,,,12/19/2021 0:30,12/18/2021 16:30,10001,College Football 2021,2021,postseason,1001,College Football
+401331171,1,10055,Marshall,MRSH,21,10050,Louisiana,ULL,36,Mercedes-Benz Superdome,,,12/19/2021 2:15,12/18/2021 18:15,10001,College Football 2021,2021,postseason,1001,College Football
+401331172,1,10109,Tulsa,TLSA,30,10081,Old Dominion,ODU,17,Brooks Stadium,,,12/20/2021 19:30,12/20/2021 11:30,10001,College Football 2021,2021,postseason,1001,College Football
+401331213,1,10130,Wyoming,WYO,52,10047,Kent State,KENT,38,Albertsons Stadium,,,12/21/2021 20:30,12/21/2021 12:30,10001,College Football 2021,2021,postseason,1001,College Football
+401331214,1,10090,San Diego State,SDSU,38,10119,UT San Antonio,UTSA,24,Toyota Stadium,,,12/22/2021 0:30,12/21/2021 16:30,10001,College Football 2021,2021,postseason,1001,College Football
+401331215,1,10009,Army,ARMY,24,10065,Missouri,MIZ,22,Amon G. Carter Stadium,,,12/23/2021 1:00,12/22/2021 17:00,10001,College Football 2021,2021,postseason,1001,College Football
+401391158,1,10059,Miami (OH),M-OH,27,10074,North Texas,UNT,14,Toyota Stadium,,,12/23/2021 20:30,12/23/2021 12:30,10001,College Football 2021,2021,postseason,1001,College Football
+401331216,1,10030,Florida,FLA,17,10111,UCF,UCF,29,Raymond James Stadium,,,12/24/2021 0:00,12/23/2021 16:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331218,1,10011,Ball State,BALL,20,10037,Georgia State,GAST,51,Cramton Bowl,,,12/25/2021 19:30,12/25/2021 11:30,10001,College Football 2021,2021,postseason,1001,College Football
+401331219,1,10069,Nevada,NEV,24,10127,Western Michigan,WMU,52,Ford Field,,,12/27/2021 16:00,12/27/2021 8:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331221,1,10010,Auburn,AUB,13,10040,Houston,HOU,17,Protective Stadium,,,12/28/2021 17:00,12/28/2021 9:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331222,1,10053,Louisville,LOU,28,10001,Air Force,AFA,31,Gerald J. Ford Stadium,,,12/28/2021 20:15,12/28/2021 12:15,10001,College Football 2021,2021,postseason,1001,College Football
+401331223,1,10105,Texas Tech,TTU,34,10064,Mississippi State,MSST,7,Liberty Bowl Memorial Stadium,,,12/28/2021 23:45,12/28/2021 15:45,10001,College Football 2021,2021,postseason,1001,College Football
+401331224,1,10063,Minnesota,MINN,18,10128,West Virginia,WVU,6,Chase Field,,,12/29/2021 3:15,12/28/2021 19:15,10001,College Football 2021,2021,postseason,1001,College Football
+401331226,1,10122,Virginia Tech,VT,10,10056,Maryland,MD,54,Yankee Stadium,,,12/29/2021 19:15,12/29/2021 11:15,10001,College Football 2021,2021,postseason,1001,College Football
+401331227,1,10044,Iowa State,ISU,13,10022,Clemson,CLEM,20,Camping World Stadium,,,12/29/2021 22:45,12/29/2021 14:45,10001,College Football 2021,2021,postseason,1001,College Football
+401331228,1,10079,Oklahoma,OKLA,47,10083,Oregon,ORE,32,Alamodome,,,12/30/2021 2:15,12/29/2021 18:15,10001,College Football 2021,2021,postseason,1001,College Football
+401331229,1,10094,South Carolina,SC,38,10072,North Carolina,UNC,21,Bank of America Stadium,,,12/30/2021 16:30,12/30/2021 8:30,10001,College Football 2021,2021,postseason,1001,College Football
+401331230,1,10087,Purdue,PUR,48,10101,Tennessee,TENN,45,Nissan Stadium,,,12/30/2021 20:00,12/30/2021 12:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331231,1,10061,Michigan State,MSU,31,10086,Pittsburgh,PITT,21,Mercedes-Benz Stadium,,,12/31/2021 0:00,12/30/2021 16:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331232,1,10006,Arizona State,ASU,13,10129,Wisconsin,WIS,20,Allegiant Stadium,,,12/31/2021 3:30,12/30/2021 19:30,10001,College Football 2021,2021,postseason,1001,College Football
+401331233,1,10089,Rutgers,RUTG,10,10123,Wake Forest,WAKE,38,EverBank Field,,,12/31/2021 16:00,12/31/2021 8:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331654,1,10019,Central Michigan,CMU,24,10125,Washington State,WSU,21,Sun Bowl Stadium,,,12/31/2021 17:00,12/31/2021 9:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331235,1,10003,Alabama,ALA,27,10021,Cincinnati,CIN,6,AT&T Stadium,,,12/31/2021 20:30,12/31/2021 12:30,10001,College Football 2021,2021,postseason,1001,College Football
+401331234,1,10060,Michigan,MICH,11,10035,Georgia,UGA,34,Hard Rock Stadium,,,1/1/2022 0:30,12/31/2021 16:30,10001,College Football 2021,2021,postseason,1001,College Football
+401331236,1,10007,Arkansas,ARK,24,10085,Penn State,PSU,10,Raymond James Stadium,,,1/1/2022 17:00,1/1/2022 9:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331238,1,10076,Notre Dame,ND,35,10080,Oklahoma State,OKST,37,University of Phoenix Stadium,,,1/1/2022 18:00,1/1/2022 10:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331237,1,10048,Kentucky,UK,20,10043,Iowa,IOWA,17,Camping World Stadium,,,1/1/2022 18:00,1/1/2022 10:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331239,1,10078,Ohio State,OSU,48,10116,Utah,UTAH,45,Rose Bowl,,,1/1/2022 22:00,1/1/2022 14:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331240,1,10082,Ole Miss,MISS,7,10012,Baylor,BAY,21,Mercedes-Benz Superdome,,,1/2/2022 1:45,1/1/2022 17:45,10001,College Football 2021,2021,postseason,1001,College Football
+401331241,1,10046,Kansas State,KSU,42,10054,LSU,LSU,20,NRG Stadium,,,1/5/2022 2:00,1/4/2022 18:00,10001,College Football 2021,2021,postseason,1001,College Football
+401331242,1,10003,Alabama,ALA,,10035,Georgia,UGA,,Lucas Oil Stadium,,,1/11/2022 1:00,1/10/2022 17:00,10001,College Football 2021,2021,postseason,1001,College Football
+401287896,2,10023,Coastal Carolina,CCU,49,10045,Kansas,KU,22,Brooks Stadium,,,9/10/2021 23:30,9/10/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282616,2,10027,Duke,DUKE,45,10506,North Carolina A&T,NULL,17,Wallace Wade Stadium,,,9/11/2021 0:00,9/10/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401310701,2,10117,Utah State,USU,48,10508,North Dakota,NULL,24,Romney Stadium,,,9/11/2021 1:00,9/10/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401282191,2,10013,Boise State,BSU,54,10118,UTEP,UTEP,13,Albertsons Stadium,,,9/11/2021 1:30,9/10/2021 18:30,10001,College Football 2021,2021,regular,1001,College Football
+401282624,2,10121,Virginia,UVA,42,10041,Illinois,ILL,14,Scott Stadium,,,9/11/2021 15:00,9/11/2021 8:00,10001,College Football 2021,2021,regular,1001,College Football
+401282193,2,10009,Army,ARMY,38,10126,Western Kentucky,WKU,35,Blaik Field at Michie Stadium,,,9/11/2021 15:30,9/11/2021 8:30,10001,College Football 2021,2021,regular,1001,College Football
+401309545,2,10047,Kent State,KENT,60,10547,VMI,NULL,10,Dix Stadium,,,9/11/2021 15:30,9/11/2021 8:30,10001,College Football 2021,2021,regular,1001,College Football
+401282625,2,10123,Wake Forest,WAKE,41,10505,Norfolk State,NULL,16,BB&T Field,,,9/11/2021 16:00,9/11/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282804,2,10075,Northwestern,NW,24,10482,Indiana State,NULL,6,Ryan Field,,,9/11/2021 16:00,9/11/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282058,2,10010,Auburn,AUB,62,10436,Alabama State,NULL,0,Jordan-Hare Stadium,,,9/11/2021 16:00,9/11/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282783,2,10061,Michigan State,MSU,42,10555,Youngstown State,NULL,14,Spartan Stadium,,,9/11/2021 16:00,9/11/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282809,2,10078,Ohio State,OSU,28,10083,Oregon,ORE,35,Ohio Stadium,,,9/11/2021 16:00,9/11/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282618,2,10038,Georgia Tech,GT,45,10486,Kennesaw State,NULL,17,Bobby Dodd Stadium at Historic Grant Field,,,9/11/2021 16:00,9/11/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282790,2,10063,Minnesota,MINN,31,10059,Miami (OH),M-OH,26,TCF Bank Stadium,,,9/11/2021 16:00,9/11/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282066,2,10101,Tennessee,TENN,34,10086,Pittsburgh,PITT,41,Neyland Stadium,,,9/11/2021 16:00,9/11/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287899,2,10080,Oklahoma State,OKST,28,10109,Tulsa,TLSA,23,Boone Pickens Stadium,,,9/11/2021 16:00,9/11/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282065,2,10028,East Carolina,ECU,17,10094,South Carolina,SC,20,Dowdy-Ficklen Stadium,,,9/11/2021 16:00,9/11/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282059,2,10096,South Florida,USF,20,10030,Florida,FLA,42,Raymond James Stadium,,,9/11/2021 17:00,9/11/2021 10:00,10001,College Football 2021,2021,regular,1001,College Football
+401301000,2,10108,Tulane,TULN,69,10501,Morgan State,NULL,20,Benson Field at Yulman Stadium,,,9/11/2021 17:00,9/11/2021 10:00,10001,College Football 2021,2021,regular,1001,College Football
+401309547,2,10073,Northern Illinois,NIU,43,10130,Wyoming,WYO,50,Brigham Field at Huskie Stadium,,,9/11/2021 17:30,9/11/2021 10:30,10001,College Football 2021,2021,regular,1001,College Football
+401282186,2,10122,Virginia Tech,VT,35,10062,Middle Tennessee,MTSU,14,Lane Stadium,,,9/11/2021 18:00,9/11/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401282622,2,10098,Syracuse,SYR,7,10089,Rutgers,RUTG,17,Carrier Dome,,,9/11/2021 18:00,9/11/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309753,2,10077,Ohio,OHIO,26,10462,Duquesne,NULL,28,Peden Stadium,,,9/11/2021 18:00,9/11/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401282705,2,10076,Notre Dame,ND,32,10106,Toledo,TOL,29,Notre Dame Stadium,,,9/11/2021 18:30,9/11/2021 11:30,10001,College Football 2021,2021,regular,1001,College Football
+401282820,2,10026,Connecticut,CONN,0,10087,Purdue,PUR,49,Rentschler Field,,,9/11/2021 19:00,9/11/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401309548,2,10019,Central Michigan,CMU,45,10521,Robert Morris,NULL,0,Kelly/Shorts Stadium,,,9/11/2021 19:00,9/11/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401301002,2,10021,Cincinnati,CIN,42,10502,Murray State,NULL,7,Nippert Stadium,,,9/11/2021 19:30,9/11/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282183,2,10031,Florida Atlantic,FAU,38,10036,Georgia Southern,GASO,6,FAU Stadium,,,9/11/2021 19:30,9/11/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401300999,2,10002,Akron,AKR,24,10100,Temple,TEM,45,Summa Field at InfoCision Stadium,,,9/11/2021 19:30,9/11/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287900,2,10099,TCU,TCU,34,10018,California,CAL,32,Amon G. Carter Stadium,,,9/11/2021 19:30,9/11/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282060,2,10035,Georgia,UGA,56,10110,UAB,UAB,7,Sanford Stadium,,,9/11/2021 19:30,9/11/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282797,2,10068,Nebraska,NEB,28,10016,Buffalo,BUFF,3,Memorial Stadium,,,9/11/2021 19:30,9/11/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401301004,2,10066,Navy,NAVY,3,10001,Air Force,AFA,23,Navy-Marine Corps Memorial Stadium,,,9/11/2021 19:30,9/11/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282067,2,10024,Colorado,COLO,7,10103,Texas A&M,TA&M,10,Sports Authority Field at Mile High,,,9/11/2021 19:30,9/11/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282623,2,10113,UMass,UMASS,28,10014,Boston College,BC,45,Warren McGuirk Alumni Stadium,,,9/11/2021 19:30,9/11/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282816,2,10085,Penn State,PSU,44,10011,Ball State,BALL,13,Beaver Stadium,,,9/11/2021 19:30,9/11/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309546,2,10015,Bowling Green,BGSU,19,10093,South Alabama,USA,22,Doyt Perry Stadium,,,9/11/2021 20:00,9/11/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282056,2,10003,Alabama,ALA,48,10494,Mercer,NULL,14,Bryant Denny Stadium,,,9/11/2021 20:00,9/11/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282754,2,10044,Iowa State,ISU,17,10043,Iowa,IOWA,27,Jack Trice Stadium,,,9/11/2021 20:30,9/11/2021 13:30,10001,College Football 2021,2021,regular,1001,College Football
+401309544,2,10127,Western Michigan,WMU,28,10480,Illinois State,NULL,0,Waldo Stadium,,,9/11/2021 21:00,9/11/2021 14:00,10001,College Football 2021,2021,regular,1001,College Football
+401282615,2,10022,Clemson,CLEM,49,10528,South Carolina State,NULL,3,Memorial Stadium,,,9/11/2021 21:00,9/11/2021 14:00,10001,College Football 2021,2021,regular,1001,College Football
+401309845,2,10125,Washington State,WSU,44,10515,Portland State,NULL,24,Martin Stadium,,,9/11/2021 22:00,9/11/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282192,2,10119,UT San Antonio,UTSA,54,10488,Lamar,NULL,0,Alamodome,,,9/11/2021 22:00,9/11/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282181,2,10020,Charlotte,CHAR,38,10470,Gardner-Webb,NULL,10,Jerry Richardson Stadium,,,9/11/2021 22:00,9/11/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401301001,2,10111,UCF,UCF,63,10441,Bethune-Cookman,NULL,14,Bright House Networks Stadium,,,9/11/2021 22:30,9/11/2021 15:30,10001,College Football 2021,2021,regular,1001,College Football
+401282185,2,10055,Marshall,MRSH,44,10507,North Carolina Central,NULL,10,Joan C. Edwards Stadium,,,9/11/2021 22:30,9/11/2021 15:30,10001,College Football 2021,2021,regular,1001,College Football
+401282189,2,10088,Rice,RICE,7,10040,Houston,HOU,44,Rice Stadium,,,9/11/2021 22:30,9/11/2021 15:30,10001,College Football 2021,2021,regular,1001,College Football
+401286295,2,10107,Troy,TROY,13,10049,Liberty,LIB,21,Veterans Memorial Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282620,2,10058,Miami,MIAMI,25,10004,Appalachian State,APP,23,Hard Rock Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401310700,2,10070,New Mexico,UNM,34,10071,New Mexico State,NMSU,25,University Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401301003,2,10008,Arkansas State,ARST,50,10057,Memphis,MEM,55,Centennial Bank Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282825,2,10129,Wisconsin,WIS,34,10029,Eastern Michigan,EMU,7,Camp Randall Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282057,2,10007,Arkansas,ARK,40,10102,Texas,TEX,21,Donald W. Reynolds Razorback Stadium Frank Broyles Field,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282064,2,10064,Mississippi State,MSST,24,10067,NC State,NCST,10,Davis Wade Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282182,2,10032,Florida International,FIU,17,10104,Texas State,TXST,23,FIU Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282187,2,10092,SMU,SMU,35,10074,North Texas,UNT,12,Gerald J. Ford Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401287897,2,10046,Kansas State,KSU,31,10534,Southern Illinois,NULL,23,Bill Snyder Family Football Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309603,2,10050,Louisiana,ULL,27,10504,Nicholls,NULL,24,Cajun Field,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282184,2,10052,Louisiana Tech,LT,45,10532,Southeastern Louisiana,NULL,42,Joe Aillet Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282619,2,10053,Louisville,LOU,30,10465,Eastern Kentucky,NULL,3,Papa John's Cardinal Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401287895,2,10012,Baylor,BAY,66,10541,Texas Southern,NULL,7,McLane Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401287898,2,10079,Oklahoma,OKLA,76,10550,Western Carolina,NULL,0,Gaylord Family Oklahoma Memorial Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282188,2,10081,Old Dominion,ODU,47,10473,Hampton,NULL,7,Foreman Field,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401287901,2,10105,Texas Tech,TTU,28,10536,Stephen F. Austin,NULL,22,Jones AT&T Stadium,,,9/11/2021 23:00,9/11/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282063,2,10082,Ole Miss,MISS,54,10440,Austin Peay,NULL,17,Vaught-Hemingway Stadium,,,9/11/2021 23:30,9/11/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401286207,2,10056,Maryland,MD,62,10477,Howard,NULL,0,Maryland Stadium,,,9/11/2021 23:30,9/11/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282724,2,10042,Indiana,IND,56,10478,Idaho,NULL,14,Memorial Stadium,,,9/11/2021 23:30,9/11/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282061,2,10048,Kentucky,UK,35,10065,Missouri,MIZ,28,Commonwealth Stadium,,,9/11/2021 23:30,9/11/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282621,2,10072,North Carolina,UNC,59,10037,Georgia State,GAST,17,Kenan Memorial Stadium,,,9/11/2021 23:30,9/11/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282773,2,10060,Michigan,MICH,31,10124,Washington,WASH,10,Michigan Stadium,,,9/12/2021 0:00,9/11/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282617,2,10033,Florida State,FSU,17,10484,Jacksonville State,NULL,20,Bobby Bowden Field at Doak Campbell Stadium,,,9/12/2021 0:00,9/11/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401310702,2,10034,Fresno State,FRES,63,10446,Cal Poly,NULL,10,Bulldog Stadium,,,9/12/2021 2:00,9/11/2021 19:00,10001,College Football 2021,2021,regular,1001,College Football
+401309846,2,10005,Arizona,ARIZ,14,10090,San Diego State,SDSU,38,Arizona Stadium,,,9/12/2021 2:00,9/11/2021 19:00,10001,College Football 2021,2021,regular,1001,College Football
+401282068,2,10025,Colorado State,CSU,21,10120,Vanderbilt,VAN,24,Canvas Stadium,,,9/12/2021 2:00,9/11/2021 19:00,10001,College Football 2021,2021,regular,1001,College Football
+401309848,2,10017,BYU,BYU,26,10116,Utah,UTAH,17,LaVell Edwards Stadium,,,9/12/2021 2:15,9/11/2021 19:15,10001,College Football 2021,2021,regular,1001,College Football
+401309843,2,10115,USC,USC,28,10097,Stanford,STAN,42,Los Angeles Memorial Coliseum,,,9/12/2021 2:30,9/11/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309847,2,10006,Arizona State,ASU,37,10114,UNLV,UNLV,10,Sun Devil Stadium,,,9/12/2021 2:30,9/11/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401310703,2,10069,Nevada,NEV,49,10479,Idaho State,NULL,10,Mackay Stadium,,,9/12/2021 2:30,9/11/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309844,2,10084,Oregon State,ORST,45,10039,Hawai'i,HAW,27,Reser Stadium,,,9/12/2021 3:00,9/11/2021 20:00,10001,College Football 2021,2021,regular,1001,College Football
+401309606,3,10050,Louisiana,ULL,49,10077,Ohio,OHIO,14,Cajun Field,,,9/17/2021 0:00,9/16/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282626,3,10053,Louisville,LOU,42,10111,UCF,UCF,35,Papa John's Cardinal Stadium,,,9/17/2021 23:30,9/17/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282715,3,10041,Illinois,ILL,17,10056,Maryland,MD,20,Memorial Stadium,,,9/18/2021 1:00,9/17/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401282774,3,10060,Michigan,MICH,63,10073,Northern Illinois,NIU,10,Michigan Stadium,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282073,3,10048,Kentucky,UK,28,10451,Chattanooga,NULL,23,Commonwealth Stadium,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309552,3,10016,Buffalo,BUFF,25,10023,Coastal Carolina,CCU,28,UB Stadium,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282077,3,10065,Missouri,MIZ,59,10531,Southeast Missouri State,NULL,28,Faurot Field,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282078,3,10101,Tennessee,TENN,56,10540,Tennessee Tech,NULL,0,Neyland Stadium,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282633,3,10098,Syracuse,SYR,62,10437,Albany,NULL,24,Carrier Dome,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282798,3,10079,Oklahoma,OKLA,23,10068,Nebraska,NEB,16,Gaylord Family Oklahoma Memorial Stadium,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282079,3,10103,Texas A&M,TA&M,34,10070,New Mexico,UNM,0,Kyle Field,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282634,3,10100,Temple,TEM,3,10014,Boston College,BC,28,Lincoln Financial Field,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282636,3,10128,West Virginia,WVU,27,10122,Virginia Tech,VT,21,Mountaineer Field at Milan Puskar Stadium,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401286189,3,10009,Army,ARMY,52,10026,Connecticut,CONN,21,Blaik Field at Michie Stadium,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282725,3,10042,Indiana,IND,24,10021,Cincinnati,CIN,38,Memorial Stadium,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282629,3,10058,Miami,MIAMI,17,10061,Michigan State,MSU,38,Hard Rock Stadium,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282632,3,10086,Pittsburgh,PITT,41,10127,Western Michigan,WMU,44,Heinz Field,,,9/18/2021 16:00,9/18/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282791,3,10024,Colorado,COLO,0,10063,Minnesota,MINN,30,Folsom Field,,,9/18/2021 17:00,9/18/2021 10:00,10001,College Football 2021,2021,regular,1001,College Football
+401287905,3,10046,Kansas State,KSU,38,10069,Nevada,NEV,17,Bill Snyder Family Football Stadium,,,9/18/2021 18:00,9/18/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401282706,3,10076,Notre Dame,ND,27,10087,Purdue,PUR,13,Notre Dame Stadium,,,9/18/2021 18:30,9/18/2021 11:30,10001,College Football 2021,2021,regular,1001,College Football
+401309852,3,10125,Washington State,WSU,14,10115,USC,USC,45,Martin Stadium,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282635,3,10123,Wake Forest,WAKE,35,10033,Florida State,FSU,14,BB&T Field,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282627,3,10022,Clemson,CLEM,14,10038,Georgia Tech,GT,8,Memorial Stadium,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282823,3,10089,Rutgers,RUTG,45,10459,Delaware,NULL,13,SHI Stadium,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309550,3,10002,Akron,AKR,35,10443,Bryant,NULL,14,Summa Field at InfoCision Stadium,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309851,3,10084,Oregon State,ORST,42,10478,Idaho,NULL,0,Reser Stadium,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309604,3,10004,Appalachian State,APP,44,10467,Elon,NULL,10,Kidd Brewer Stadium,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282071,3,10030,Florida,FLA,29,10003,Alabama,ALA,31,Ben Hill Griffin Stadium,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282199,3,10052,Louisiana Tech,LT,37,10092,SMU,SMU,39,Joe Aillet Stadium,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282810,3,10078,Ohio State,OSU,41,10109,Tulsa,TLSA,20,Ohio Stadium,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287904,3,10045,Kansas,KU,7,10012,Baylor,BAY,45,Memorial Stadium,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401286300,3,10113,UMass,UMASS,28,10029,Eastern Michigan,EMU,42,Warren McGuirk Alumni Stadium,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282755,3,10043,Iowa,IOWA,30,10047,Kent State,KENT,7,Kinnick Stadium,,,9/18/2021 19:30,9/18/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309549,3,10130,Wyoming,WYO,45,10011,Ball State,BALL,12,War Memorial Stadium,,,9/18/2021 20:00,9/18/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401309849,3,10018,California,CAL,42,10522,Sacramento State,NULL,30,California Memorial Stadium,,,9/18/2021 20:00,9/18/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282076,3,10057,Memphis,MEM,31,10064,Mississippi State,MSST,29,Liberty Bowl Memorial Stadium,,,9/18/2021 20:00,9/18/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282628,3,10027,Duke,DUKE,30,10075,Northwestern,NW,23,Wallace Wade Stadium,,,9/18/2021 20:00,9/18/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401309553,3,10106,Toledo,TOL,6,10025,Colorado State,CSU,22,Glass Bowl,,,9/18/2021 20:00,9/18/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282069,3,10007,Arkansas,ARK,45,10036,Georgia Southern,GASO,10,Donald W. Reynolds Razorback Stadium Frank Broyles Field,,,9/18/2021 20:00,9/18/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401309605,3,10124,Washington,WASH,52,10008,Arkansas State,ARST,3,Husky Stadium,,,9/18/2021 20:15,9/18/2021 13:15,10001,College Football 2021,2021,regular,1001,College Football
+401309551,3,10015,Bowling Green,BGSU,27,10502,Murray State,NULL,10,Doyt Perry Stadium,,,9/18/2021 21:00,9/18/2021 14:00,10001,College Football 2021,2021,regular,1001,College Football
+401282198,3,10031,Florida Atlantic,FAU,45,10469,Fordham,NULL,14,FAU Stadium,,,9/18/2021 22:00,9/18/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282194,3,10119,UT San Antonio,UTSA,27,10062,Middle Tennessee,MTSU,13,Alamodome,,,9/18/2021 22:00,9/18/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282200,3,10055,Marshall,MRSH,38,10028,East Carolina,ECU,42,Joan C. Edwards Stadium,,,9/18/2021 22:00,9/18/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282201,3,10049,Liberty,LIB,45,10081,Old Dominion,ODU,17,Williams Stadium,,,9/18/2021 22:00,9/18/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282072,3,10035,Georgia,UGA,40,10094,South Carolina,SC,13,Sanford Stadium,,,9/18/2021 23:00,9/18/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401301006,3,10096,South Florida,USF,38,10468,Florida A&M,NULL,17,Raymond James Stadium,,,9/18/2021 23:00,9/18/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282197,3,10105,Texas Tech,TTU,54,10032,Florida International,FIU,21,Jones AT&T Stadium,,,9/18/2021 23:00,9/18/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282203,3,10095,Southern Mississippi,USM,9,10107,Troy,TROY,21,M. M. Roberts Stadium,,,9/18/2021 23:00,9/18/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309856,3,10090,San Diego State,SDSU,33,10116,Utah,UTAH,31,Qualcomm Stadium,,,9/18/2021 23:00,9/18/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309609,3,10104,Texas State,TXST,34,10481,Incarnate Word,NULL,42,Jim Wacker Field at Bobcat Stadium,,,9/18/2021 23:00,9/18/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282196,3,10037,Georgia State,GAST,20,10020,Charlotte,CHAR,9,Georgia State Stadium,,,9/18/2021 23:00,9/18/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282631,3,10072,North Carolina,UNC,59,10121,Virginia,UVA,39,Kenan Memorial Stadium,,,9/18/2021 23:30,9/18/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282195,3,10074,North Texas,UNT,6,10110,UAB,UAB,40,Apogee Stadium,,,9/18/2021 23:30,9/18/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401310704,3,10001,Air Force,AFA,45,10117,Utah State,USU,49,Falcon Stadium,,,9/18/2021 23:30,9/18/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309850,3,10083,Oregon,ORE,48,10538,Stony Brook,NULL,7,Autzen Stadium,,,9/18/2021 23:30,9/18/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282074,3,10054,LSU,LSU,49,10019,Central Michigan,CMU,21,Tiger Stadium,,,9/18/2021 23:30,9/18/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282070,3,10085,Penn State,PSU,28,10010,Auburn,AUB,20,Beaver Stadium,,,9/18/2021 23:30,9/18/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282630,3,10067,NC State,NCST,45,10319,Furman,FUR,7,Carter-Finley Stadium,,,9/18/2021 23:30,9/18/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282080,3,10120,Vanderbilt,VAN,23,10097,Stanford,STAN,41,Vanderbilt Stadium,,,9/19/2021 0:00,9/18/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401309607,3,10051,Louisiana Monroe,ULM,12,10483,Jackson State,NULL,7,Malone Stadium,,,9/19/2021 0:00,9/18/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401309608,3,10093,South Alabama,USA,28,10438,Alcorn State,NULL,21,Hancock Whitney Stadium,,,9/19/2021 0:00,9/18/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282202,3,10102,Texas,TEX,58,10088,Rice,RICE,0,Darrell K Royal-Texas Memorial Stadium,,,9/19/2021 0:00,9/18/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401319455,3,10071,New Mexico State,NMSU,43,10528,South Carolina State,NULL,35,Aggie Memorial Stadium,,,9/19/2021 0:00,9/18/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282075,3,10082,Ole Miss,MISS,61,10108,Tulane,TULN,21,Vaught-Hemingway Stadium,,,9/19/2021 0:00,9/18/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401287903,3,10013,Boise State,BSU,20,10080,Oklahoma State,OKST,21,Albertsons Stadium,,,9/19/2021 1:00,9/18/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401309853,3,10005,Arizona,ARIZ,19,10510,Northern Arizona,NULL,21,Arizona Stadium,,,9/19/2021 2:00,9/18/2021 19:00,10001,College Football 2021,2021,regular,1001,College Football
+401309854,3,10017,BYU,BYU,27,10006,Arizona State,ASU,17,LaVell Edwards Stadium,,,9/19/2021 2:15,9/18/2021 19:15,10001,College Football 2021,2021,regular,1001,College Football
+401287906,3,10114,UNLV,UNLV,3,10044,Iowa State,ISU,48,Allegiant Stadium,,,9/19/2021 2:30,9/18/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309855,3,10112,UCLA,UCLA,37,10034,Fresno State,FRES,40,Rose Bowl,,,9/19/2021 2:45,9/18/2021 19:45,10001,College Football 2021,2021,regular,1001,College Football
+401310705,3,10039,Hawai'i,HAW,13,10091,San Jos,SJSU,17,Aloha Stadium,,,9/19/2021 4:30,9/18/2021 21:30,10001,College Football 2021,2021,regular,1001,College Football
+401282208,4,10004,Appalachian State,APP,31,10055,Marshall,MRSH,30,Kidd Brewer Stadium,,,9/23/2021 23:30,9/23/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282204,4,10020,Charlotte,CHAR,42,10062,Middle Tennessee,MTSU,39,Jerry Richardson Stadium,,,9/24/2021 22:30,9/24/2021 15:30,10001,College Football 2021,2021,regular,1001,College Football
+401282638,4,10121,Virginia,UVA,17,10123,Wake Forest,WAKE,37,Scott Stadium,,,9/24/2021 23:00,9/24/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282637,4,10098,Syracuse,SYR,24,10049,Liberty,LIB,21,Carrier Dome,,,9/25/2021 0:00,9/24/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401310707,4,10034,Fresno State,FRES,38,10114,UNLV,UNLV,30,Bulldog Stadium,,,9/25/2021 2:00,9/24/2021 19:00,10001,College Football 2021,2021,regular,1001,College Football
+401287910,4,10099,TCU,TCU,34,10092,SMU,SMU,42,Amon G. Carter Stadium,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282644,4,10086,Pittsburgh,PITT,77,10503,New Hampshire,NULL,7,Heinz Field,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282817,4,10085,Penn State,PSU,38,10546,Villanova,NULL,17,Beaver Stadium,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282805,4,10075,Northwestern,NW,35,10077,Ohio,OHIO,6,Ryan Field,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401310706,4,10117,Utah State,USU,3,10013,Boise State,BSU,27,Romney Stadium,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282645,4,10122,Virginia Tech,VT,21,10520,Richmond,NULL,10,Lane Stadium,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401301010,4,10100,Temple,TEM,41,10548,Wagner,NULL,7,Lincoln Financial Field,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282707,4,10129,Wisconsin,WIS,13,10076,Notre Dame,ND,41,Soldier Field,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282088,4,10120,Vanderbilt,VAN,0,10035,Georgia,UGA,62,Vanderbilt Stadium,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282206,4,10019,Central Michigan,CMU,31,10032,Florida International,FIU,27,Kelly/Shorts Stadium,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287911,4,10102,Texas,TEX,70,10105,Texas Tech,TTU,35,Darrell K Royal-Texas Memorial Stadium,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401308834,4,10009,Army,ARMY,23,10059,Miami (OH),M-OH,10,Blaik Field at Michie Stadium,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282085,4,10064,Mississippi State,MSST,25,10054,LSU,LSU,28,Davis Wade Stadium,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282086,4,10014,Boston College,BC,41,10065,Missouri,MIZ,34,Alumni Stadium,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282792,4,10063,Minnesota,MINN,10,10015,Bowling Green,BGSU,14,TCF Bank Stadium,,,9/25/2021 16:00,9/25/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282642,4,10058,Miami,MIAMI,69,10449,Central Connecticut,NULL,0,Hard Rock Stadium,,,9/25/2021 16:30,9/25/2021 9:30,10001,College Football 2021,2021,regular,1001,College Football
+401286301,4,10023,Coastal Carolina,CCU,53,10113,UMass,UMASS,3,Brooks Stadium,,,9/25/2021 17:00,9/25/2021 10:00,10001,College Football 2021,2021,regular,1001,College Football
+401309554,4,10127,Western Michigan,WMU,23,10091,San Jos,SJSU,3,Waldo Stadium,,,9/25/2021 18:00,9/25/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309557,4,10029,Eastern Michigan,EMU,59,10104,Texas State,TXST,21,Rynearson Stadium,,,9/25/2021 18:00,9/25/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309555,4,10011,Ball State,BALL,12,10106,Toledo,TOL,22,Scheumann Stadium,,,9/25/2021 18:00,9/25/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309861,4,10116,Utah,UTAH,24,10125,Washington State,WSU,13,Rice-Eccles Stadium,,,9/25/2021 18:30,9/25/2021 11:30,10001,College Football 2021,2021,regular,1001,College Football
+401309556,4,10073,Northern Illinois,NIU,41,10491,Maine,NULL,14,Brigham Field at Huskie Stadium,,,9/25/2021 18:30,9/25/2021 11:30,10001,College Football 2021,2021,regular,1001,College Football
+401282213,4,10057,Memphis,MEM,28,10119,UT San Antonio,UTSA,31,Liberty Bowl Memorial Stadium,,,9/25/2021 19:30,9/25/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282765,4,10056,Maryland,MD,37,10047,Kent State,KENT,16,Maryland Stadium,,,9/25/2021 19:30,9/25/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282756,4,10043,Iowa,IOWA,24,10025,Colorado State,CSU,14,Kinnick Stadium,,,9/25/2021 19:30,9/25/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287907,4,10012,Baylor,BAY,31,10044,Iowa State,ISU,29,McLane Stadium,,,9/25/2021 19:30,9/25/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282640,4,10033,Florida State,FSU,23,10053,Louisville,LOU,31,Bobby Bowden Field at Doak Campbell Stadium,,,9/25/2021 19:30,9/25/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282716,4,10087,Purdue,PUR,13,10041,Illinois,ILL,9,Ross-Ade Stadium,,,9/25/2021 19:30,9/25/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282082,4,10007,Arkansas,ARK,20,10103,Texas A&M,TA&M,10,AT&T Stadium,,,9/25/2021 19:30,9/25/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282643,4,10067,NC State,NCST,27,10022,Clemson,CLEM,21,Carter-Finley Stadium,,,9/25/2021 19:30,9/25/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282775,4,10060,Michigan,MICH,20,10089,Rutgers,RUTG,13,Michigan Stadium,,,9/25/2021 19:30,9/25/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401286190,4,10026,Connecticut,CONN,22,10130,Wyoming,WYO,24,Rentschler Field,,,9/25/2021 19:30,9/25/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401310709,4,10090,San Diego State,SDSU,48,10542,Towson,NULL,21,Qualcomm Stadium,,,9/25/2021 19:30,9/25/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282639,4,10027,Duke,DUKE,52,10045,Kansas,KU,33,Wallace Wade Stadium,,,9/25/2021 20:00,9/25/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282083,4,10010,Auburn,AUB,34,10037,Georgia State,GAST,24,Jordan-Hare Stadium,,,9/25/2021 20:00,9/25/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401301011,4,10109,Tulsa,TLSA,41,10008,Arkansas State,ARST,34,Skelly Field at H. A. Chapman Stadium,,,9/25/2021 21:00,9/25/2021 14:00,10001,College Football 2021,2021,regular,1001,College Football
+401309858,4,10097,Stanford,STAN,24,10112,UCLA,UCLA,35,Stanford Stadium,,,9/25/2021 22:00,9/25/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401309610,4,10036,Georgia Southern,GASO,20,10050,Louisiana,ULL,28,Paulson Stadium,,,9/25/2021 22:00,9/25/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282209,4,10081,Old Dominion,ODU,34,10016,Buffalo,BUFF,35,Foreman Field,,,9/25/2021 22:00,9/25/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401301007,4,10028,East Carolina,ECU,31,10450,Charleston Southern,NULL,28,Dowdy-Ficklen Stadium,,,9/25/2021 22:00,9/25/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282210,4,10088,Rice,RICE,48,10541,Texas Southern,NULL,34,Rice Stadium,,,9/25/2021 22:30,9/25/2021 15:30,10001,College Football 2021,2021,regular,1001,College Football
+401301008,4,10040,Houston,HOU,28,10066,Navy,NAVY,20,John O'Quinn Field at TDECU Stadium,,,9/25/2021 23:00,9/25/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282084,4,10030,Florida,FLA,38,10101,Tennessee,TENN,14,Ben Hill Griffin Stadium,,,9/25/2021 23:00,9/25/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282087,4,10094,South Carolina,SC,10,10048,Kentucky,UK,16,Williams-Brice Stadium,,,9/25/2021 23:00,9/25/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401287909,4,10080,Oklahoma State,OKST,31,10046,Kansas State,KSU,20,Boone Pickens Stadium,,,9/25/2021 23:00,9/25/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282784,4,10061,Michigan State,MSU,23,10068,Nebraska,NEB,20,Spartan Stadium,,,9/25/2021 23:00,9/25/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282205,4,10052,Louisiana Tech,LT,24,10074,North Texas,UNT,0,Joe Aillet Stadium,,,9/25/2021 23:00,9/25/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282811,4,10078,Ohio State,OSU,59,10002,Akron,AKR,7,Ohio Stadium,,,9/25/2021 23:30,9/25/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401287908,4,10079,Oklahoma,OKLA,16,10128,West Virginia,WVU,13,Gaylord Family Oklahoma Memorial Stadium,,,9/25/2021 23:30,9/25/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282641,4,10038,Georgia Tech,GT,45,10072,North Carolina,UNC,22,Mercedes-Benz Stadium,,,9/25/2021 23:30,9/25/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282081,4,10003,Alabama,ALA,63,10095,Southern Mississippi,USM,14,Bryant Denny Stadium,,,9/25/2021 23:30,9/25/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282214,4,10126,Western Kentucky,WKU,31,10042,Indiana,IND,33,Houchens Industries-L. T. Smith Stadium,,,9/26/2021 0:00,9/25/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282207,4,10001,Air Force,AFA,31,10031,Florida Atlantic,FAU,7,Falcon Stadium,,,9/26/2021 0:00,9/25/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282211,4,10108,Tulane,TULN,21,10110,UAB,UAB,28,Benson Field at Yulman Stadium,,,9/26/2021 0:00,9/25/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401309611,4,10051,Louisiana Monroe,ULM,29,10107,Troy,TROY,16,Malone Stadium,,,9/26/2021 0:00,9/25/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401310708,4,10071,New Mexico State,NMSU,21,10039,Hawai'i,HAW,41,Aggie Memorial Stadium,,,9/26/2021 0:00,9/25/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282212,4,10118,UTEP,UTEP,20,10070,New Mexico,UNM,13,Sun Bowl Stadium,,,9/26/2021 1:00,9/25/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401309857,4,10124,Washington,WASH,31,10018,California,CAL,24,Husky Stadium,,,9/26/2021 1:30,9/25/2021 18:30,10001,College Football 2021,2021,regular,1001,College Football
+401301009,4,10017,BYU,BYU,35,10096,South Florida,USF,27,LaVell Edwards Stadium,,,9/26/2021 2:15,9/25/2021 19:15,10001,College Football 2021,2021,regular,1001,College Football
+401309862,4,10006,Arizona State,ASU,35,10024,Colorado,COLO,13,Sun Devil Stadium,,,9/26/2021 2:30,9/25/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309859,4,10083,Oregon,ORE,41,10005,Arizona,ARIZ,19,Autzen Stadium,,,9/26/2021 2:30,9/25/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309860,4,10115,USC,USC,27,10084,Oregon State,ORST,45,Los Angeles Memorial Coliseum,,,9/26/2021 2:30,9/25/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401282646,5,10058,Miami,MIAMI,28,10121,Virginia,UVA,30,Hard Rock Stadium,,,9/30/2021 23:30,9/30/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401301012,5,10109,Tulsa,TLSA,10,10040,Houston,HOU,45,Skelly Field at H. A. Chapman Stadium,,,10/1/2021 23:30,10/1/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282759,5,10056,Maryland,MD,14,10043,Iowa,IOWA,51,Maryland Stadium,,,10/2/2021 0:00,10/1/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401309912,5,10117,Utah State,USU,20,10017,BYU,BYU,34,Romney Stadium,,,10/2/2021 1:00,10/1/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401282093,5,10065,Missouri,MIZ,24,10101,Tennessee,TENN,62,Faurot Field,,,10/2/2021 16:00,10/2/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282090,5,10035,Georgia,UGA,37,10007,Arkansas,ARK,0,Sanford Stadium,,,10/2/2021 16:00,10/2/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282219,5,10041,Illinois,ILL,24,10020,Charlotte,CHAR,14,Memorial Stadium,,,10/2/2021 16:00,10/2/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287915,5,10099,TCU,TCU,27,10102,Texas,TEX,32,Amon G. Carter Stadium,,,10/2/2021 16:00,10/2/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401286302,5,10113,UMass,UMASS,7,10106,Toledo,TOL,45,Warren McGuirk Alumni Stadium,,,10/2/2021 16:00,10/2/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401301015,5,10100,Temple,TEM,34,10057,Memphis,MEM,31,Lincoln Financial Field,,,10/2/2021 16:00,10/2/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309561,5,10016,Buffalo,BUFF,17,10127,Western Michigan,WMU,24,UB Stadium,,,10/2/2021 16:00,10/2/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282649,5,10038,Georgia Tech,GT,21,10086,Pittsburgh,PITT,52,Bobby Dodd Stadium at Historic Grant Field,,,10/2/2021 16:00,10/2/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282793,5,10087,Purdue,PUR,13,10063,Minnesota,MINN,20,Ross-Ade Stadium,,,10/2/2021 16:00,10/2/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282776,5,10129,Wisconsin,WIS,17,10060,Michigan,MICH,38,Camp Randall Stadium,,,10/2/2021 16:00,10/2/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282650,5,10072,North Carolina,UNC,38,10027,Duke,DUKE,7,Kenan Memorial Stadium,,,10/2/2021 16:00,10/2/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282651,5,10123,Wake Forest,WAKE,37,10053,Louisville,LOU,34,BB&T Field,,,10/2/2021 16:30,10/2/2021 9:30,10001,College Football 2021,2021,regular,1001,College Football
+401309867,5,10024,Colorado,COLO,14,10115,USC,USC,37,Folsom Field,,,10/2/2021 18:00,10/2/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309612,5,10037,Georgia State,GAST,16,10004,Appalachian State,APP,45,Georgia State Stadium,,,10/2/2021 18:00,10/2/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309558,5,10073,Northern Illinois,NIU,27,10029,Eastern Michigan,EMU,20,Brigham Field at Huskie Stadium,,,10/2/2021 18:30,10/2/2021 11:30,10001,College Football 2021,2021,regular,1001,College Football
+401309614,5,10023,Coastal Carolina,CCU,59,10051,Louisiana Monroe,ULM,6,Brooks Stadium,,,10/2/2021 18:30,10/2/2021 11:30,10001,College Football 2021,2021,regular,1001,College Football
+401282708,5,10076,Notre Dame,ND,13,10021,Cincinnati,CIN,24,Notre Dame Stadium,,,10/2/2021 18:30,10/2/2021 11:30,10001,College Football 2021,2021,regular,1001,College Football
+401310711,5,10013,Boise State,BSU,31,10069,Nevada,NEV,41,Albertsons Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401301014,5,10028,East Carolina,ECU,52,10108,Tulane,TULN,29,Dowdy-Ficklen Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309562,5,10047,Kent State,KENT,27,10015,Bowling Green,BGSU,20,Dix Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287913,5,10046,Kansas State,KSU,31,10079,Oklahoma,OKLA,37,Bill Snyder Family Football Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309864,5,10097,Stanford,STAN,31,10083,Oregon,ORE,24,Stanford Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309560,5,10002,Akron,AKR,17,10077,Ohio,OHIO,34,Summa Field at InfoCision Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282089,5,10003,Alabama,ALA,42,10082,Ole Miss,MISS,21,Bryant Denny Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401301013,5,10066,Navy,NAVY,34,10111,UCF,UCF,30,Navy-Marine Corps Memorial Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282813,5,10089,Rutgers,RUTG,13,10078,Ohio State,OSU,52,SHI Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282648,5,10033,Florida State,FSU,33,10098,Syracuse,SYR,30,Bobby Bowden Field at Doak Campbell Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401308835,5,10059,Miami (OH),M-OH,28,10019,Central Michigan,CMU,17,Yager Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287916,5,10128,West Virginia,WVU,20,10105,Texas Tech,TTU,23,Mountaineer Field at Milan Puskar Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282215,5,10031,Florida Atlantic,FAU,58,10032,Florida International,FIU,21,FAU Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282094,5,10094,South Carolina,SC,23,10107,Troy,TROY,14,Williams-Brice Stadium,,,10/2/2021 19:30,10/2/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309613,5,10036,Georgia Southern,GASO,59,10008,Arkansas State,ARST,33,Paulson Stadium,,,10/2/2021 20:00,10/2/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401301016,5,10092,SMU,SMU,41,10096,South Florida,USF,17,Gerald J. Ford Stadium,,,10/2/2021 20:00,10/2/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401309559,5,10011,Ball State,BALL,28,10009,Army,ARMY,16,Scheumann Stadium,,,10/2/2021 21:00,10/2/2021 14:00,10001,College Football 2021,2021,regular,1001,College Football
+401309863,5,10018,California,CAL,6,10125,Washington State,WSU,21,California Memorial Stadium,,,10/2/2021 21:30,10/2/2021 14:30,10001,College Football 2021,2021,regular,1001,College Football
+401282222,5,10119,UT San Antonio,UTSA,24,10114,UNLV,UNLV,17,Alamodome,,,10/2/2021 22:00,10/2/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282091,5,10048,Kentucky,UK,20,10030,Florida,FLA,13,Commonwealth Stadium,,,10/2/2021 22:00,10/2/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282220,5,10067,NC State,NCST,34,10052,Louisiana Tech,LT,27,Carter-Finley Stadium,,,10/2/2021 22:00,10/2/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282218,5,10088,Rice,RICE,24,10095,Southern Mississippi,USM,19,Rice Stadium,,,10/2/2021 22:30,10/2/2021 15:30,10001,College Football 2021,2021,regular,1001,College Football
+401310710,5,10070,New Mexico,UNM,10,10001,Air Force,AFA,38,University Stadium,,,10/2/2021 22:30,10/2/2021 15:30,10001,College Football 2021,2021,regular,1001,College Football
+401287912,5,10044,Iowa State,ISU,59,10045,Kansas,KU,7,Jack Trice Stadium,,,10/2/2021 23:00,10/2/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401287914,5,10080,Oklahoma State,OKST,24,10012,Baylor,BAY,14,Boone Pickens Stadium,,,10/2/2021 23:00,10/2/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282221,5,10110,UAB,UAB,12,10049,Liberty,LIB,36,Legion Field,,,10/2/2021 23:00,10/2/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282216,5,10062,Middle Tennessee,MTSU,34,10055,Marshall,MRSH,28,"Johnny Red"""" Floyd Stadium""""",,,10/2/2021 23:00,10/2/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282095,5,10103,Texas A&M,TA&M,22,10064,Mississippi State,MSST,26,Kyle Field,,,10/2/2021 23:00,10/2/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282096,5,10120,Vanderbilt,VAN,30,10026,Connecticut,CONN,28,Vanderbilt Stadium,,,10/2/2021 23:30,10/2/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282800,5,10068,Nebraska,NEB,56,10075,Northwestern,NW,7,Memorial Stadium,,,10/2/2021 23:30,10/2/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282647,5,10022,Clemson,CLEM,19,10014,Boston College,BC,13,Memorial Stadium,,,10/2/2021 23:30,10/2/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282223,5,10061,Michigan State,MSU,48,10126,Western Kentucky,WKU,31,Spartan Stadium,,,10/2/2021 23:30,10/2/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282729,5,10085,Penn State,PSU,24,10042,Indiana,IND,0,Beaver Stadium,,,10/2/2021 23:30,10/2/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309615,5,10093,South Alabama,USA,18,10050,Louisiana,ULL,20,Hancock Whitney Stadium,,,10/3/2021 0:00,10/2/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401309865,5,10084,Oregon State,ORST,27,10124,Washington,WASH,24,Reser Stadium,,,10/3/2021 1:00,10/2/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401282217,5,10118,UTEP,UTEP,28,10081,Old Dominion,ODU,21,Sun Bowl Stadium,,,10/3/2021 1:00,10/2/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401282092,5,10054,LSU,LSU,19,10010,Auburn,AUB,24,Tiger Stadium,,,10/3/2021 1:00,10/2/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401310713,5,10091,San Jos,SJSU,37,10071,New Mexico State,NMSU,31,Spartan Stadium,,,10/3/2021 2:30,10/2/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309866,5,10112,UCLA,UCLA,23,10006,Arizona State,ASU,42,Rose Bowl,,,10/3/2021 2:30,10/2/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401310712,5,10039,Hawai'i,HAW,27,10034,Fresno State,FRES,24,Aloha Stadium,,,10/3/2021 3:00,10/2/2021 20:00,10001,College Football 2021,2021,regular,1001,College Football
+401309616,6,10008,Arkansas State,ARST,20,10023,Coastal Carolina,CCU,52,Centennial Bank Stadium,,,10/7/2021 23:30,10/7/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401301017,6,10108,Tulane,TULN,22,10040,Houston,HOU,40,Benson Field at Yulman Stadium,,,10/7/2021 23:30,10/7/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282224,6,10032,Florida International,FIU,33,10020,Charlotte,CHAR,45,FIU Stadium,,,10/8/2021 23:00,10/8/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401301018,6,10021,Cincinnati,CIN,52,10100,Temple,TEM,3,Nippert Stadium,,,10/8/2021 23:00,10/8/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309868,6,10006,Arizona State,ASU,28,10097,Stanford,STAN,10,Sun Devil Stadium,,,10/9/2021 2:30,10/8/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401287918,6,10102,Texas,TEX,48,10079,Oklahoma,OKLA,55,Cotton Bowl,,,10/9/2021 16:00,10/9/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282100,6,10082,Ole Miss,MISS,52,10007,Arkansas,ARK,51,Vaught-Hemingway Stadium,,,10/9/2021 16:00,10/9/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309564,6,10106,Toledo,TOL,20,10073,Northern Illinois,NIU,22,Glass Bowl,,,10/9/2021 16:00,10/9/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309566,6,10015,Bowling Green,BGSU,20,10002,Akron,AKR,35,Doyt Perry Stadium,,,10/9/2021 16:00,10/9/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282769,6,10078,Ohio State,OSU,66,10056,Maryland,MD,17,Ohio Stadium,,,10/9/2021 16:00,10/9/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282098,6,10030,Florida,FLA,42,10120,Vanderbilt,VAN,0,Ben Hill Griffin Stadium,,,10/9/2021 16:00,10/9/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282788,6,10089,Rutgers,RUTG,13,10061,Michigan State,MSU,31,SHI Stadium,,,10/9/2021 16:00,10/9/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287917,6,10012,Baylor,BAY,45,10128,West Virginia,WVU,20,McLane Stadium,,,10/9/2021 16:00,10/9/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282102,6,10101,Tennessee,TENN,45,10094,South Carolina,SC,20,Neyland Stadium,,,10/9/2021 16:00,10/9/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282652,6,10027,Duke,DUKE,27,10038,Georgia Tech,GT,31,Wallace Wade Stadium,,,10/9/2021 16:30,10/9/2021 9:30,10001,College Football 2021,2021,regular,1001,College Football
+401282226,6,10055,Marshall,MRSH,20,10081,Old Dominion,ODU,13,Joan C. Edwards Stadium,,,10/9/2021 18:00,10/9/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401282653,6,10053,Louisville,LOU,33,10121,Virginia,UVA,34,Papa John's Cardinal Stadium,,,10/9/2021 19:00,10/9/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401310715,6,10025,Colorado State,CSU,32,10091,San Jos,SJSU,14,Canvas Stadium,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282229,6,10049,Liberty,LIB,41,10062,Middle Tennessee,MTSU,13,Williams Stadium,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282655,6,10098,Syracuse,SYR,37,10123,Wake Forest,WAKE,40,Carrier Dome,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282718,6,10041,Illinois,ILL,0,10129,Wisconsin,WIS,24,Memorial Stadium,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282654,6,10072,North Carolina,UNC,25,10033,Florida State,FSU,35,Kenan Memorial Stadium,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309913,6,10017,BYU,BYU,17,10013,Boise State,BSU,26,LaVell Edwards Stadium,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401286191,6,10113,UMass,UMASS,27,10026,Connecticut,CONN,13,Warren McGuirk Alumni Stadium,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282225,6,10110,UAB,UAB,31,10031,Florida Atlantic,FAU,14,Legion Field,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282097,6,10010,Auburn,AUB,10,10035,Georgia,UGA,34,Jordan-Hare Stadium,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309567,6,10077,Ohio,OHIO,27,10019,Central Michigan,CMU,30,Peden Stadium,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401308836,6,10029,Eastern Michigan,EMU,13,10059,Miami (OH),M-OH,12,Rynearson Stadium,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309563,6,10127,Western Michigan,WMU,20,10011,Ball State,BALL,45,Waldo Stadium,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401301021,6,10066,Navy,NAVY,24,10092,SMU,SMU,31,Navy-Marine Corps Memorial Stadium,,,10/9/2021 19:30,10/9/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309869,6,10125,Washington State,WSU,31,10084,Oregon State,ORST,24,Martin Stadium,,,10/9/2021 20:00,10/9/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282101,6,10065,Missouri,MIZ,48,10074,North Texas,UNT,35,Faurot Field,,,10/9/2021 20:00,10/9/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282758,6,10043,Iowa,IOWA,23,10085,Penn State,PSU,20,Kinnick Stadium,,,10/9/2021 20:00,10/9/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401301019,6,10111,UCF,UCF,20,10028,East Carolina,ECU,16,Bright House Networks Stadium,,,10/9/2021 22:00,10/9/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401309619,6,10104,Texas State,TXST,33,10093,South Alabama,USA,31,Jim Wacker Field at Bobcat Stadium,,,10/9/2021 23:00,10/9/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401287919,6,10105,Texas Tech,TTU,31,10099,TCU,TCU,52,Jones AT&T Stadium,,,10/9/2021 23:00,10/9/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282227,6,10095,Southern Mississippi,USM,13,10118,UTEP,UTEP,26,M. M. Roberts Stadium,,,10/9/2021 23:00,10/9/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282228,6,10126,Western Kentucky,WKU,46,10119,UT San Antonio,UTSA,52,Houchens Industries-L. T. Smith Stadium,,,10/9/2021 23:00,10/9/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309617,6,10107,Troy,TROY,27,10036,Georgia Southern,GASO,24,Veterans Memorial Stadium,,,10/9/2021 23:00,10/9/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309565,6,10047,Kent State,KENT,48,10016,Buffalo,BUFF,38,Dix Stadium,,,10/9/2021 23:00,10/9/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401310714,6,10001,Air Force,AFA,24,10130,Wyoming,WYO,14,Falcon Stadium,,,10/9/2021 23:00,10/9/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282778,6,10068,Nebraska,NEB,29,10060,Michigan,MICH,32,Memorial Stadium,,,10/9/2021 23:30,10/9/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282656,6,10122,Virginia Tech,VT,29,10076,Notre Dame,ND,32,Lane Stadium,,,10/9/2021 23:30,10/9/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282099,6,10048,Kentucky,UK,42,10054,LSU,LSU,21,Commonwealth Stadium,,,10/9/2021 23:30,10/9/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282103,6,10103,Texas A&M,TA&M,41,10003,Alabama,ALA,38,Kyle Field,,,10/10/2021 0:00,10/9/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401309618,6,10051,Louisiana Monroe,ULM,21,10037,Georgia State,GAST,55,Malone Stadium,,,10/10/2021 0:00,10/9/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401309871,6,10115,USC,USC,26,10116,Utah,UTAH,42,Los Angeles Memorial Coliseum,,,10/10/2021 0:00,10/9/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401301020,6,10109,Tulsa,TLSA,35,10057,Memphis,MEM,29,Skelly Field at H. A. Chapman Stadium,,,10/10/2021 1:00,10/9/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401310716,6,10090,San Diego State,SDSU,31,10070,New Mexico,UNM,7,Qualcomm Stadium,,,10/10/2021 1:00,10/9/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401310717,6,10069,Nevada,NEV,55,10071,New Mexico State,NMSU,28,Mackay Stadium,,,10/10/2021 2:30,10/9/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309870,6,10005,Arizona,ARIZ,16,10112,UCLA,UCLA,34,Arizona Stadium,,,10/10/2021 2:30,10/9/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309620,7,10050,Louisiana,ULL,41,10004,Appalachian State,APP,13,Cajun Field,,,10/12/2021 23:30,10/12/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401301022,7,10057,Memphis,MEM,35,10066,Navy,NAVY,17,Liberty Bowl Memorial Stadium,,,10/14/2021 23:30,10/14/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309621,7,10093,South Alabama,USA,41,10036,Georgia Southern,GASO,14,Hancock Whitney Stadium,,,10/14/2021 23:30,10/14/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282231,7,10074,North Texas,UNT,21,10055,Marshall,MRSH,49,Apogee Stadium,,,10/15/2021 23:00,10/15/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282657,7,10098,Syracuse,SYR,14,10022,Clemson,CLEM,17,Carrier Dome,,,10/15/2021 23:00,10/15/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309872,7,10083,Oregon,ORE,24,10018,California,CAL,17,Autzen Stadium,,,10/16/2021 2:30,10/15/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401310723,7,10091,San Jos,SJSU,13,10090,San Diego State,SDSU,19,Spartan Stadium,,,10/16/2021 2:30,10/15/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401282104,7,10007,Arkansas,ARK,23,10010,Auburn,AUB,38,Donald W. Reynolds Razorback Stadium Frank Broyles Field,,,10/16/2021 16:00,10/16/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282106,7,10054,LSU,LSU,49,10030,Florida,FLA,42,Tiger Stadium,,,10/16/2021 16:00,10/16/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282731,7,10042,Indiana,IND,15,10061,Michigan State,MSU,20,Memorial Stadium,,,10/16/2021 16:00,10/16/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309571,7,10016,Buffalo,BUFF,27,10077,Ohio,OHIO,26,UB Stadium,,,10/16/2021 16:00,10/16/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287924,7,10102,Texas,TEX,24,10080,Oklahoma State,OKST,32,Darrell K Royal-Texas Memorial Stadium,,,10/16/2021 16:00,10/16/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401286192,7,10026,Connecticut,CONN,21,10554,Yale,NULL,15,Rentschler Field,,,10/16/2021 16:00,10/16/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282796,7,10063,Minnesota,MINN,30,10068,Nebraska,NEB,23,TCF Bank Stadium,,,10/16/2021 16:00,10/16/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401301023,7,10021,Cincinnati,CIN,56,10111,UCF,UCF,21,Nippert Stadium,,,10/16/2021 16:00,10/16/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282108,7,10065,Missouri,MIZ,14,10103,Texas A&M,TA&M,35,Faurot Field,,,10/16/2021 16:00,10/16/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401301024,7,10096,South Florida,USF,31,10109,Tulsa,TLSA,32,Raymond James Stadium,,,10/16/2021 16:00,10/16/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282807,7,10075,Northwestern,NW,21,10089,Rutgers,RUTG,7,Ryan Field,,,10/16/2021 16:00,10/16/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282660,7,10121,Virginia,UVA,48,10027,Duke,DUKE,0,Scott Stadium,,,10/16/2021 16:30,10/16/2021 9:30,10001,College Football 2021,2021,regular,1001,College Football
+401309568,7,10029,Eastern Michigan,EMU,31,10011,Ball State,BALL,38,Rynearson Stadium,,,10/16/2021 18:00,10/16/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401308837,7,10059,Miami (OH),M-OH,34,10002,Akron,AKR,21,Yager Stadium,,,10/16/2021 18:30,10/16/2021 11:30,10001,College Football 2021,2021,regular,1001,College Football
+401309622,7,10104,Texas State,TXST,28,10107,Troy,TROY,31,Jim Wacker Field at Bobcat Stadium,,,10/16/2021 19:00,10/16/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401282760,7,10043,Iowa,IOWA,7,10087,Purdue,PUR,24,Kinnick Stadium,,,10/16/2021 19:30,10/16/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282661,7,10122,Virginia Tech,VT,7,10086,Pittsburgh,PITT,28,Lane Stadium,,,10/16/2021 19:30,10/16/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309570,7,10073,Northern Illinois,NIU,34,10015,Bowling Green,BGSU,26,Brigham Field at Huskie Stadium,,,10/16/2021 19:30,10/16/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309875,7,10024,Colorado,COLO,34,10005,Arizona,ARIZ,0,Folsom Field,,,10/16/2021 19:30,10/16/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401310721,7,10130,Wyoming,WYO,0,10034,Fresno State,FRES,17,War Memorial Stadium,,,10/16/2021 19:30,10/16/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309572,7,10127,Western Michigan,WMU,64,10047,Kent State,KENT,31,Waldo Stadium,,,10/16/2021 19:30,10/16/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282105,7,10035,Georgia,UGA,30,10048,Kentucky,UK,13,Sanford Stadium,,,10/16/2021 19:30,10/16/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282234,7,10095,Southern Mississippi,USM,0,10110,UAB,UAB,34,M. M. Roberts Stadium,,,10/16/2021 19:30,10/16/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282232,7,10081,Old Dominion,ODU,20,10126,Western Kentucky,WKU,43,Foreman Field,,,10/16/2021 19:30,10/16/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287920,7,10012,Baylor,BAY,38,10017,BYU,BYU,24,McLane Stadium,,,10/16/2021 19:30,10/16/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309569,7,10019,Central Michigan,CMU,26,10106,Toledo,TOL,23,Kelly/Shorts Stadium,,,10/16/2021 19:30,10/16/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282659,7,10072,North Carolina,UNC,45,10058,Miami,MIAMI,42,Kenan Memorial Stadium,,,10/16/2021 19:30,10/16/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287921,7,10045,Kansas,KU,14,10105,Texas Tech,TTU,41,Memorial Stadium,,,10/16/2021 20:00,10/16/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282109,7,10094,South Carolina,SC,21,10120,Vanderbilt,VAN,20,Williams-Brice Stadium,,,10/16/2021 20:00,10/16/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282233,7,10119,UT San Antonio,UTSA,45,10088,Rice,RICE,0,Alamodome,,,10/16/2021 22:00,10/16/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401310719,7,10070,New Mexico,UNM,7,10025,Colorado State,CSU,36,University Stadium,,,10/16/2021 23:00,10/16/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282107,7,10064,Mississippi State,MSST,9,10003,Alabama,ALA,49,Davis Wade Stadium,,,10/16/2021 23:00,10/16/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401310720,7,10114,UNLV,UNLV,24,10117,Utah State,USU,28,Allegiant Stadium,,,10/16/2021 23:00,10/16/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401286296,7,10051,Louisiana Monroe,ULM,31,10049,Liberty,LIB,28,Malone Stadium,,,10/16/2021 23:00,10/16/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309873,7,10125,Washington State,WSU,34,10097,Stanford,STAN,31,Martin Stadium,,,10/16/2021 23:30,10/16/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282110,7,10101,Tennessee,TENN,26,10082,Ole Miss,MISS,31,Neyland Stadium,,,10/16/2021 23:30,10/16/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401287922,7,10046,Kansas State,KSU,20,10044,Iowa State,ISU,33,Bill Snyder Family Football Stadium,,,10/16/2021 23:30,10/16/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282658,7,10014,Boston College,BC,7,10067,NC State,NCST,33,Alumni Stadium,,,10/16/2021 23:30,10/16/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401287923,7,10079,Oklahoma,OKLA,52,10099,TCU,TCU,31,Gaylord Family Oklahoma Memorial Stadium,,,10/16/2021 23:30,10/16/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282826,7,10129,Wisconsin,WIS,20,10009,Army,ARMY,14,Camp Randall Stadium,,,10/17/2021 0:00,10/16/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401309874,7,10124,Washington,WASH,17,10112,UCLA,UCLA,24,Husky Stadium,,,10/17/2021 0:30,10/16/2021 17:30,10001,College Football 2021,2021,regular,1001,College Football
+401282230,7,10118,UTEP,UTEP,19,10052,Louisiana Tech,LT,3,Sun Bowl Stadium,,,10/17/2021 1:00,10/16/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401310718,7,10013,Boise State,BSU,17,10001,Air Force,AFA,24,Albertsons Stadium,,,10/17/2021 1:00,10/16/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401309876,7,10116,Utah,UTAH,35,10006,Arizona State,ASU,21,Rice-Eccles Stadium,,,10/17/2021 2:00,10/16/2021 19:00,10001,College Football 2021,2021,regular,1001,College Football
+401310722,7,10069,Nevada,NEV,34,10039,Hawai'i,HAW,17,Mackay Stadium,,,10/17/2021 2:30,10/16/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309623,8,10004,Appalachian State,APP,30,10023,Coastal Carolina,CCU,27,Kidd Brewer Stadium,,,10/20/2021 23:30,10/20/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309624,8,10008,Arkansas State,ARST,27,10050,Louisiana,ULL,28,Centennial Bank Stadium,,,10/21/2021 23:30,10/21/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401301025,8,10092,SMU,SMU,55,10108,Tulane,TULN,26,Gerald J. Ford Stadium,,,10/21/2021 23:30,10/21/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282235,8,10020,Charlotte,CHAR,9,10031,Florida Atlantic,FAU,38,Jerry Richardson Stadium,,,10/21/2021 23:30,10/21/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401310729,8,10114,UNLV,UNLV,20,10091,San Jos,SJSU,27,Allegiant Stadium,,,10/22/2021 3:00,10/21/2021 20:00,10001,College Football 2021,2021,regular,1001,College Football
+401282239,8,10026,Connecticut,CONN,13,10062,Middle Tennessee,MTSU,44,Rentschler Field,,,10/22/2021 22:00,10/22/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401301026,8,10111,UCF,UCF,24,10057,Memphis,MEM,7,Bright House Networks Stadium,,,10/22/2021 23:00,10/22/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401310725,8,10117,Utah State,USU,26,10025,Colorado State,CSU,24,Romney Stadium,,,10/23/2021 1:30,10/22/2021 18:30,10001,College Football 2021,2021,regular,1001,College Football
+401309877,8,10005,Arizona,ARIZ,16,10124,Washington,WASH,21,Arizona Stadium,,,10/23/2021 2:30,10/22/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309577,8,10019,Central Michigan,CMU,38,10073,Northern Illinois,NIU,39,Kelly/Shorts Stadium,,,10/23/2021 16:00,10/23/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287926,8,10045,Kansas,KU,23,10079,Oklahoma,OKLA,35,Memorial Stadium,,,10/23/2021 16:00,10/23/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287928,8,10105,Texas Tech,TTU,24,10046,Kansas State,KSU,25,Jones AT&T Stadium,,,10/23/2021 16:00,10/23/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282779,8,10060,Michigan,MICH,33,10075,Northwestern,NW,7,Michigan Stadium,,,10/23/2021 16:00,10/23/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282112,8,10007,Arkansas,ARK,45,10439,Arkansas-Pine Bluff,NULL,3,Donald W. Reynolds Razorback Stadium Frank Broyles Field,,,10/23/2021 16:00,10/23/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282717,8,10085,Penn State,PSU,18,10041,Illinois,ILL,20,Beaver Stadium,,,10/23/2021 16:00,10/23/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309574,8,10015,Bowling Green,BGSU,24,10029,Eastern Michigan,EMU,55,Doyt Perry Stadium,,,10/23/2021 16:00,10/23/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401301027,8,10066,Navy,NAVY,20,10021,Cincinnati,CIN,27,Navy-Marine Corps Memorial Stadium,,,10/23/2021 16:00,10/23/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282663,8,10033,Florida State,FSU,59,10113,UMass,UMASS,3,Bobby Bowden Field at Doak Campbell Stadium,,,10/23/2021 16:00,10/23/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282662,8,10009,Army,ARMY,56,10123,Wake Forest,WAKE,70,Blaik Field at Michie Stadium,,,10/23/2021 16:00,10/23/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282668,8,10122,Virginia Tech,VT,36,10098,Syracuse,SYR,41,Lane Stadium,,,10/23/2021 16:30,10/23/2021 9:30,10001,College Football 2021,2021,regular,1001,College Football
+401309576,8,10077,Ohio,OHIO,27,10047,Kent State,KENT,34,Peden Stadium,,,10/23/2021 17:00,10/23/2021 10:00,10001,College Football 2021,2021,regular,1001,College Football
+401309625,8,10037,Georgia State,GAST,28,10104,Texas State,TXST,16,Georgia State Stadium,,,10/23/2021 18:00,10/23/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401282821,8,10087,Purdue,PUR,13,10129,Wisconsin,WIS,30,Ross-Ade Stadium,,,10/23/2021 19:00,10/23/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401309881,8,10125,Washington State,WSU,19,10017,BYU,BYU,21,Martin Stadium,,,10/23/2021 19:30,10/23/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309879,8,10112,UCLA,UCLA,31,10083,Oregon,ORE,34,Rose Bowl,,,10/23/2021 19:30,10/23/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401308838,8,10011,Ball State,BALL,17,10059,Miami (OH),M-OH,24,Scheumann Stadium,,,10/23/2021 19:30,10/23/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282666,8,10086,Pittsburgh,PITT,27,10022,Clemson,CLEM,17,Heinz Field,,,10/23/2021 19:30,10/23/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309573,8,10106,Toledo,TOL,34,10127,Western Michigan,WMU,15,Glass Bowl,,,10/23/2021 19:30,10/23/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401310726,8,10130,Wyoming,WYO,3,10070,New Mexico,UNM,14,War Memorial Stadium,,,10/23/2021 19:30,10/23/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287925,8,10044,Iowa State,ISU,24,10080,Oklahoma State,OKST,21,Jack Trice Stadium,,,10/23/2021 19:30,10/23/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282238,8,10110,UAB,UAB,24,10088,Rice,RICE,30,Legion Field,,,10/23/2021 19:30,10/23/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282113,8,10082,Ole Miss,MISS,31,10054,LSU,LSU,17,Vaught-Hemingway Stadium,,,10/23/2021 19:30,10/23/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309575,8,10002,Akron,AKR,10,10016,Buffalo,BUFF,45,Summa Field at InfoCision Stadium,,,10/23/2021 19:30,10/23/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309878,8,10018,California,CAL,26,10024,Colorado,COLO,3,California Memorial Stadium,,,10/23/2021 19:30,10/23/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282767,8,10063,Minnesota,MINN,34,10056,Maryland,MD,16,TCF Bank Stadium,,,10/23/2021 19:30,10/23/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282664,8,10053,Louisville,LOU,28,10014,Boston College,BC,14,Papa John's Cardinal Stadium,,,10/23/2021 20:00,10/23/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282115,8,10120,Vanderbilt,VAN,6,10064,Mississippi State,MSST,45,Vanderbilt Stadium,,,10/23/2021 20:00,10/23/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401301028,8,10040,Houston,HOU,31,10028,East Carolina,ECU,24,John O'Quinn Field at TDECU Stadium,,,10/23/2021 20:00,10/23/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282240,8,10074,North Texas,UNT,26,10049,Liberty,LIB,35,Apogee Stadium,,,10/23/2021 20:00,10/23/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401310727,8,10034,Fresno State,FRES,34,10069,Nevada,NEV,32,Bulldog Stadium,,,10/23/2021 23:00,10/23/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282236,8,10032,Florida International,FIU,19,10126,Western Kentucky,WKU,34,FIU Stadium,,,10/23/2021 23:00,10/23/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401301029,8,10096,South Florida,USF,34,10100,Temple,TEM,14,Raymond James Stadium,,,10/23/2021 23:00,10/23/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309626,8,10051,Louisiana Monroe,ULM,41,10093,South Alabama,USA,31,Malone Stadium,,,10/23/2021 23:00,10/23/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401310724,8,10001,Air Force,AFA,14,10090,San Diego State,SDSU,20,Falcon Stadium,,,10/23/2021 23:00,10/23/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282111,8,10003,Alabama,ALA,52,10101,Tennessee,TENN,24,Bryant Denny Stadium,,,10/23/2021 23:00,10/23/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282237,8,10052,Louisiana Tech,LT,16,10119,UT San Antonio,UTSA,45,Joe Aillet Stadium,,,10/23/2021 23:00,10/23/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282709,8,10076,Notre Dame,ND,31,10115,USC,USC,16,Notre Dame Stadium,,,10/23/2021 23:30,10/23/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401287927,8,10099,TCU,TCU,17,10128,West Virginia,WVU,29,Amon G. Carter Stadium,,,10/23/2021 23:30,10/23/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282114,8,10103,Texas A&M,TA&M,44,10094,South Carolina,SC,14,Kyle Field,,,10/23/2021 23:30,10/23/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282667,8,10121,Virginia,UVA,48,10038,Georgia Tech,GT,40,Scott Stadium,,,10/23/2021 23:30,10/23/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309880,8,10084,Oregon State,ORST,42,10116,Utah,UTAH,34,Reser Stadium,,,10/23/2021 23:30,10/23/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282730,8,10042,Indiana,IND,7,10078,Ohio State,OSU,54,Memorial Stadium,,,10/23/2021 23:30,10/23/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282665,8,10058,Miami,MIAMI,31,10067,NC State,NCST,30,Hard Rock Stadium,,,10/23/2021 23:30,10/23/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401310728,8,10039,Hawai'i,HAW,48,10071,New Mexico State,NMSU,34,Aloha Stadium,,,10/24/2021 3:59,10/23/2021 20:59,10001,College Football 2021,2021,regular,1001,College Football
+401301033,9,10028,East Carolina,ECU,29,10096,South Florida,USF,14,Dowdy-Ficklen Stadium,,,10/28/2021 23:30,10/28/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309627,9,10023,Coastal Carolina,CCU,35,10107,Troy,TROY,28,Brooks Stadium,,,10/28/2021 23:30,10/28/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401301030,9,10109,Tulsa,TLSA,17,10066,Navy,NAVY,20,Skelly Field at H. A. Chapman Stadium,,,10/29/2021 23:30,10/29/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401310734,9,10069,Nevada,NEV,51,10114,UNLV,UNLV,20,Mackay Stadium,,,10/30/2021 2:00,10/29/2021 19:00,10001,College Football 2021,2021,regular,1001,College Football
+401301031,9,10100,Temple,TEM,7,10111,UCF,UCF,49,Lincoln Financial Field,,,10/30/2021 16:00,10/30/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401301032,9,10108,Tulane,TULN,12,10021,Cincinnati,CIN,31,Benson Field at Yulman Stadium,,,10/30/2021 16:00,10/30/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287929,9,10012,Baylor,BAY,31,10102,Texas,TEX,24,McLane Stadium,,,10/30/2021 16:00,10/30/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401286297,9,10049,Liberty,LIB,62,10113,UMass,UMASS,17,Williams Stadium,,,10/30/2021 16:00,10/30/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282719,9,10041,Illinois,ILL,14,10089,Rutgers,RUTG,20,Memorial Stadium,,,10/30/2021 16:00,10/30/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282726,9,10056,Maryland,MD,38,10042,Indiana,IND,35,Maryland Stadium,,,10/30/2021 16:00,10/30/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282777,9,10061,Michigan State,MSU,37,10060,Michigan,MICH,33,Spartan Stadium,,,10/30/2021 16:00,10/30/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282674,9,10086,Pittsburgh,PITT,34,10058,Miami,MIAMI,38,Heinz Field,,,10/30/2021 16:00,10/30/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282671,9,10038,Georgia Tech,GT,17,10122,Virginia Tech,VT,26,Bobby Dodd Stadium at Historic Grant Field,,,10/30/2021 16:00,10/30/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309631,9,10050,Louisiana,ULL,45,10104,Texas State,TXST,0,Cajun Field,,,10/30/2021 16:00,10/30/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282763,9,10129,Wisconsin,WIS,27,10043,Iowa,IOWA,7,Camp Randall Stadium,,,10/30/2021 16:00,10/30/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309578,9,10016,Buffalo,BUFF,44,10015,Bowling Green,BGSU,56,UB Stadium,,,10/30/2021 16:00,10/30/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287933,9,10128,West Virginia,WVU,38,10044,Iowa State,ISU,31,Mountaineer Field at Milan Puskar Stadium,,,10/30/2021 18:00,10/30/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401282246,9,10088,Rice,RICE,24,10074,North Texas,UNT,30,Rice Stadium,,,10/30/2021 18:00,10/30/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401310731,9,10117,Utah State,USU,51,10039,Hawai'i,HAW,31,Romney Stadium,,,10/30/2021 19:00,10/30/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401282119,9,10120,Vanderbilt,VAN,28,10065,Missouri,MIZ,37,Vanderbilt Stadium,,,10/30/2021 19:00,10/30/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401309885,9,10006,Arizona State,ASU,21,10125,Washington State,WSU,34,Sun Devil Stadium,,,10/30/2021 19:00,10/30/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401282117,9,10030,Florida,FLA,7,10035,Georgia,UGA,34,EverBank Field,,,10/30/2021 19:30,10/30/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282670,9,10022,Clemson,CLEM,30,10033,Florida State,FSU,20,Memorial Stadium,,,10/30/2021 19:30,10/30/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282795,9,10075,Northwestern,NW,14,10063,Minnesota,MINN,41,Ryan Field,,,10/30/2021 19:30,10/30/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287930,9,10046,Kansas State,KSU,31,10099,TCU,TCU,12,Bill Snyder Family Football Stadium,,,10/30/2021 19:30,10/30/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282675,9,10098,Syracuse,SYR,21,10014,Boston College,BC,6,Carrier Dome,,,10/30/2021 19:30,10/30/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309884,9,10083,Oregon,ORE,52,10024,Colorado,COLO,29,Autzen Stadium,,,10/30/2021 19:30,10/30/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287931,9,10079,Oklahoma,OKLA,52,10105,Texas Tech,TTU,21,Gaylord Family Oklahoma Memorial Stadium,,,10/30/2021 19:30,10/30/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282244,9,10081,Old Dominion,ODU,23,10052,Louisiana Tech,LT,20,Foreman Field,,,10/30/2021 19:30,10/30/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282242,9,10055,Marshall,MRSH,38,10032,Florida International,FIU,0,Joan C. Edwards Stadium,,,10/30/2021 19:30,10/30/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282801,9,10068,Nebraska,NEB,23,10087,Purdue,PUR,28,Memorial Stadium,,,10/30/2021 19:30,10/30/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309628,9,10004,Appalachian State,APP,59,10051,Louisiana Monroe,ULM,28,Kidd Brewer Stadium,,,10/30/2021 19:30,10/30/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282245,9,10062,Middle Tennessee,MTSU,35,10095,Southern Mississippi,USM,10,"Johnny Red"""" Floyd Stadium""""",,,10/30/2021 19:30,10/30/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282676,9,10123,Wake Forest,WAKE,45,10027,Duke,DUKE,7,BB&T Field,,,10/30/2021 20:00,10/30/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401310732,9,10091,San Jos,SJSU,27,10130,Wyoming,WYO,21,Spartan Stadium,,,10/30/2021 20:00,10/30/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282241,9,10126,Western Kentucky,WKU,45,10020,Charlotte,CHAR,13,Houchens Industries-L. T. Smith Stadium,,,10/30/2021 20:00,10/30/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401309629,9,10093,South Alabama,USA,31,10008,Arkansas State,ARST,13,Hancock Whitney Stadium,,,10/30/2021 21:00,10/30/2021 14:00,10001,College Football 2021,2021,regular,1001,College Football
+401282243,9,10031,Florida Atlantic,FAU,28,10118,UTEP,UTEP,25,FAU Stadium,,,10/30/2021 22:00,10/30/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401309630,9,10036,Georgia Southern,GASO,14,10037,Georgia State,GAST,21,Paulson Stadium,,,10/30/2021 22:00,10/30/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401310730,9,10025,Colorado State,CSU,19,10013,Boise State,BSU,28,Canvas Stadium,,,10/30/2021 23:00,10/30/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401301034,9,10040,Houston,HOU,44,10092,SMU,SMU,37,John O'Quinn Field at TDECU Stadium,,,10/30/2021 23:00,10/30/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401287932,9,10080,Oklahoma State,OKST,55,10045,Kansas,KU,3,Boone Pickens Stadium,,,10/30/2021 23:00,10/30/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282116,9,10010,Auburn,AUB,31,10082,Ole Miss,MISS,20,Jordan-Hare Stadium,,,10/30/2021 23:00,10/30/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309886,9,10115,USC,USC,41,10005,Arizona,ARIZ,34,Los Angeles Memorial Coliseum,,,10/30/2021 23:00,10/30/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282118,9,10064,Mississippi State,MSST,31,10048,Kentucky,UK,17,Davis Wade Stadium,,,10/30/2021 23:00,10/30/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309882,9,10018,California,CAL,39,10084,Oregon State,ORST,25,California Memorial Stadium,,,10/30/2021 23:00,10/30/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282673,9,10076,Notre Dame,ND,44,10072,North Carolina,UNC,34,Notre Dame Stadium,,,10/30/2021 23:30,10/30/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282814,9,10078,Ohio State,OSU,33,10085,Penn State,PSU,24,Ohio Stadium,,,10/30/2021 23:30,10/30/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282672,9,10067,NC State,NCST,28,10053,Louisville,LOU,13,Carter-Finley Stadium,,,10/30/2021 23:30,10/30/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309887,9,10116,Utah,UTAH,44,10112,UCLA,UCLA,24,Rice-Eccles Stadium,,,10/31/2021 2:00,10/30/2021 19:00,10001,College Football 2021,2021,regular,1001,College Football
+401282669,9,10017,BYU,BYU,66,10121,Virginia,UVA,49,LaVell Edwards Stadium,,,10/31/2021 2:15,10/30/2021 19:15,10001,College Football 2021,2021,regular,1001,College Football
+401309883,9,10097,Stanford,STAN,13,10124,Washington,WASH,20,Stanford Stadium,,,10/31/2021 2:30,10/30/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401310733,9,10090,San Diego State,SDSU,20,10034,Fresno State,FRES,30,Qualcomm Stadium,,,10/31/2021 2:30,10/30/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309579,10,10002,Akron,AKR,25,10011,Ball State,BALL,31,Summa Field at InfoCision Stadium,,,11/2/2021 23:00,11/2/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401308839,10,10077,Ohio,OHIO,35,10059,Miami (OH),M-OH,33,Peden Stadium,,,11/2/2021 23:30,11/2/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309580,10,10106,Toledo,TOL,49,10029,Eastern Michigan,EMU,52,Glass Bowl,,,11/2/2021 23:30,11/2/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309582,10,10047,Kent State,KENT,52,10073,Northern Illinois,NIU,47,Dix Stadium,,,11/3/2021 23:00,11/3/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309581,10,10127,Western Michigan,WMU,30,10019,Central Michigan,CMU,42,Waldo Stadium,,,11/3/2021 23:00,11/3/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309632,10,10050,Louisiana,ULL,21,10037,Georgia State,GAST,17,Cajun Field,,,11/4/2021 23:30,11/4/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282677,10,10014,Boston College,BC,17,10122,Virginia Tech,VT,3,Alumni Stadium,,,11/5/2021 23:30,11/5/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309888,10,10097,Stanford,STAN,7,10116,Utah,UTAH,52,Stanford Stadium,,,11/6/2021 2:30,11/5/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401310253,10,10001,Air Force,AFA,14,10009,Army,ARMY,21,Dignity Health Sports Park,,,11/6/2021 15:30,11/6/2021 8:30,10001,College Football 2021,2021,regular,1001,College Football
+401282799,10,10068,Nebraska,NEB,17,10078,Ohio State,OSU,26,Memorial Stadium,,,11/6/2021 16:00,11/6/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282122,10,10035,Georgia,UGA,43,10065,Missouri,MIZ,6,Sanford Stadium,,,11/6/2021 16:00,11/6/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282720,10,10063,Minnesota,MINN,6,10041,Illinois,ILL,14,TCF Bank Stadium,,,11/6/2021 16:00,11/6/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282682,10,10072,North Carolina,UNC,58,10123,Wake Forest,WAKE,55,Kenan Memorial Stadium,,,11/6/2021 16:00,11/6/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287935,10,10045,Kansas,KU,10,10046,Kansas State,KSU,35,Memorial Stadium,,,11/6/2021 16:00,11/6/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282678,10,10027,Duke,DUKE,29,10086,Pittsburgh,PITT,54,Wallace Wade Stadium,,,11/6/2021 16:00,11/6/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282250,10,10110,UAB,UAB,52,10052,Louisiana Tech,LT,38,Protective Stadium,,,11/6/2021 16:00,11/6/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282124,10,10082,Ole Miss,MISS,27,10049,Liberty,LIB,14,Vaught-Hemingway Stadium,,,11/6/2021 16:00,11/6/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401301039,10,10057,Memphis,MEM,28,10092,SMU,SMU,25,Liberty Bowl Memorial Stadium,,,11/6/2021 16:00,11/6/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282681,10,10058,Miami,MIAMI,33,10038,Georgia Tech,GT,30,Hard Rock Stadium,,,11/6/2021 16:30,11/6/2021 9:30,10001,College Football 2021,2021,regular,1001,College Football
+401309633,10,10008,Arkansas State,ARST,14,10004,Appalachian State,APP,48,Centennial Bank Stadium,,,11/6/2021 18:00,11/6/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309889,10,10005,Arizona,ARIZ,10,10018,California,CAL,3,Arizona Stadium,,,11/6/2021 19:00,11/6/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401282252,10,10095,Southern Mississippi,USM,14,10074,North Texas,UNT,38,M. M. Roberts Stadium,,,11/6/2021 19:00,11/6/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401301035,10,10028,East Carolina,ECU,45,10100,Temple,TEM,3,Dowdy-Ficklen Stadium,,,11/6/2021 19:00,11/6/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401309635,10,10104,Texas State,TXST,27,10051,Louisiana Monroe,ULM,19,Jim Wacker Field at Bobcat Stadium,,,11/6/2021 19:00,11/6/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401282824,10,10089,Rutgers,RUTG,3,10129,Wisconsin,WIS,52,SHI Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282787,10,10087,Purdue,PUR,40,10061,Michigan State,MSU,29,Ross-Ade Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282251,10,10126,Western Kentucky,WKU,48,10062,Middle Tennessee,MTSU,21,Houchens Industries-L. T. Smith Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282768,10,10056,Maryland,MD,14,10085,Penn State,PSU,31,Maryland Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282126,10,10103,Texas A&M,TA&M,20,10010,Auburn,AUB,3,Kyle Field,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287937,10,10128,West Virginia,WVU,3,10080,Oklahoma State,OKST,24,Mountaineer Field at Milan Puskar Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287936,10,10099,TCU,TCU,30,10012,Baylor,BAY,28,Amon G. Carter Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401286303,10,10113,UMass,UMASS,22,10519,Rhode Island,NULL,35,Warren McGuirk Alumni Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309914,10,10017,BYU,BYU,59,10479,Idaho State,NULL,14,LaVell Edwards Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401310736,10,10130,Wyoming,WYO,31,10025,Colorado State,CSU,17,War Memorial Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401301037,10,10021,Cincinnati,CIN,28,10109,Tulsa,TLSA,20,Nippert Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282710,10,10076,Notre Dame,ND,34,10066,Navy,NAVY,6,Notre Dame Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282247,10,10020,Charlotte,CHAR,31,10088,Rice,RICE,24,Jerry Richardson Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309636,10,10107,Troy,TROY,31,10093,South Alabama,USA,24,Veterans Memorial Stadium,,,11/6/2021 19:30,11/6/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282121,10,10007,Arkansas,ARK,31,10064,Mississippi State,MSST,28,Donald W. Reynolds Razorback Stadium Frank Broyles Field,,,11/6/2021 20:00,11/6/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401301036,10,10111,UCF,UCF,14,10108,Tulane,TULN,10,Bright House Networks Stadium,,,11/6/2021 20:00,11/6/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282679,10,10033,Florida State,FSU,14,10067,NC State,NCST,28,Bobby Bowden Field at Doak Campbell Stadium,,,11/6/2021 20:00,11/6/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401310738,10,10071,New Mexico State,NMSU,13,10117,Utah State,USU,35,Aggie Memorial Stadium,,,11/6/2021 20:00,11/6/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282249,10,10031,Florida Atlantic,FAU,13,10055,Marshall,MRSH,28,FAU Stadium,,,11/6/2021 22:00,11/6/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401309634,10,10036,Georgia Southern,GASO,8,10023,Coastal Carolina,CCU,28,Paulson Stadium,,,11/6/2021 22:00,11/6/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401282123,10,10048,Kentucky,UK,42,10101,Tennessee,TENN,45,Commonwealth Stadium,,,11/6/2021 23:00,11/6/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282757,10,10075,Northwestern,NW,12,10043,Iowa,IOWA,17,Ryan Field,,,11/6/2021 23:00,11/6/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282248,10,10032,Florida International,FIU,24,10081,Old Dominion,ODU,47,FIU Stadium,,,11/6/2021 23:00,11/6/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309891,10,10024,Colorado,COLO,37,10084,Oregon State,ORST,34,Folsom Field,,,11/6/2021 23:00,11/6/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401310735,10,10034,Fresno State,FRES,14,10013,Boise State,BSU,40,Bulldog Stadium,,,11/6/2021 23:00,11/6/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401310737,10,10070,New Mexico,UNM,17,10114,UNLV,UNLV,31,University Stadium,,,11/6/2021 23:00,11/6/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282120,10,10003,Alabama,ALA,20,10054,LSU,LSU,14,Bryant Denny Stadium,,,11/6/2021 23:00,11/6/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282727,10,10060,Michigan,MICH,29,10042,Indiana,IND,7,Michigan Stadium,,,11/6/2021 23:30,11/6/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282125,10,10094,South Carolina,SC,40,10030,Florida,FLA,17,Williams-Brice Stadium,,,11/6/2021 23:30,11/6/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401287934,10,10044,Iowa State,ISU,30,10102,Texas,TEX,7,Jack Trice Stadium,,,11/6/2021 23:30,11/6/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401301038,10,10096,South Florida,USF,42,10040,Houston,HOU,54,Raymond James Stadium,,,11/6/2021 23:30,11/6/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282680,10,10053,Louisville,LOU,24,10022,Clemson,CLEM,30,Papa John's Cardinal Stadium,,,11/6/2021 23:30,11/6/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309890,10,10124,Washington,WASH,16,10083,Oregon,ORE,26,Husky Stadium,,,11/6/2021 23:30,11/6/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401310740,10,10069,Nevada,NEV,27,10091,San Jos,SJSU,24,Mackay Stadium,,,11/7/2021 2:00,11/6/2021 19:00,10001,College Football 2021,2021,regular,1001,College Football
+401282253,10,10118,UTEP,UTEP,23,10119,UT San Antonio,UTSA,44,Sun Bowl Stadium,,,11/7/2021 2:15,11/6/2021 19:15,10001,College Football 2021,2021,regular,1001,College Football
+401309892,10,10006,Arizona State,ASU,31,10115,USC,USC,16,Sun Devil Stadium,,,11/7/2021 2:30,11/6/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401310739,10,10039,Hawai'i,HAW,10,10090,San Diego State,SDSU,17,Clarence T.C. Ching Athletics Complex,,,11/7/2021 3:00,11/6/2021 20:00,10001,College Football 2021,2021,regular,1001,College Football
+401309584,11,10127,Western Michigan,WMU,45,10002,Akron,AKR,40,Waldo Stadium,,,11/10/2021 0:00,11/9/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401308840,11,10059,Miami (OH),M-OH,45,10016,Buffalo,BUFF,18,Yager Stadium,,,11/10/2021 0:00,11/9/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309583,11,10029,Eastern Michigan,EMU,26,10077,Ohio,OHIO,34,Rynearson Stadium,,,11/10/2021 1:00,11/9/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401309585,11,10015,Bowling Green,BGSU,17,10106,Toledo,TOL,49,Doyt Perry Stadium,,,11/11/2021 0:00,11/10/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309587,11,10073,Northern Illinois,NIU,30,10011,Ball State,BALL,29,Brigham Field at Huskie Stadium,,,11/11/2021 0:00,11/10/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309586,11,10019,Central Michigan,CMU,54,10047,Kent State,KENT,30,Kelly/Shorts Stadium,,,11/11/2021 1:00,11/10/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401282683,11,10086,Pittsburgh,PITT,30,10072,North Carolina,UNC,23,Heinz Field,,,11/12/2021 0:30,11/11/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401301040,11,10096,South Florida,USF,28,10021,Cincinnati,CIN,45,Raymond James Stadium,,,11/12/2021 23:00,11/12/2021 15:00,10001,College Football 2021,2021,regular,1001,College Football
+401310742,11,10013,Boise State,BSU,23,10130,Wyoming,WYO,13,Albertsons Stadium,,,11/13/2021 2:00,11/12/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401282687,11,10053,Louisville,LOU,41,10098,Syracuse,SYR,3,Papa John's Cardinal Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282128,11,10010,Auburn,AUB,34,10064,Mississippi State,MSST,43,Jordan-Hare Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282129,11,10030,Florida,FLA,70,10526,Samford,NULL,52,Ben Hill Griffin Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282780,11,10085,Penn State,PSU,17,10060,Michigan,MICH,21,Beaver Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401310254,11,10009,Army,ARMY,63,10444,Bucknell,NULL,10,Blaik Field at Michie Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401286304,11,10113,UMass,UMASS,10,10491,Maine,NULL,35,Warren McGuirk Alumni Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282127,11,10003,Alabama,ALA,59,10071,New Mexico State,NMSU,3,Bryant Denny Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287938,11,10012,Baylor,BAY,27,10079,Oklahoma,OKLA,14,McLane Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282806,11,10129,Wisconsin,WIS,35,10075,Northwestern,NW,7,Camp Randall Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401301042,11,10057,Memphis,MEM,29,10028,East Carolina,ECU,30,Liberty Bowl Memorial Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401301041,11,10092,SMU,SMU,55,10111,UCF,UCF,28,Gerald J. Ford Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401301043,11,10100,Temple,TEM,8,10040,Houston,HOU,37,Lincoln Financial Field,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287939,11,10046,Kansas State,KSU,34,10128,West Virginia,WVU,17,Bill Snyder Family Football Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282728,11,10042,Indiana,IND,3,10089,Rutgers,RUTG,38,Memorial Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282684,11,10022,Clemson,CLEM,44,10026,Connecticut,CONN,7,Memorial Stadium,,,11/13/2021 17:00,11/13/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282259,11,10088,Rice,RICE,21,10126,Western Kentucky,WKU,42,Rice Stadium,,,11/13/2021 19:00,11/13/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309896,11,10005,Arizona,ARIZ,29,10116,Utah,UTAH,38,Arizona Stadium,,,11/13/2021 19:00,11/13/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309639,11,10023,Coastal Carolina,CCU,40,10037,Georgia State,GAST,42,Brooks Stadium,,,11/13/2021 19:00,11/13/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309637,11,10004,Appalachian State,APP,31,10093,South Alabama,USA,7,Kidd Brewer Stadium,,,11/13/2021 19:30,11/13/2021 11:30,10001,College Football 2021,2021,regular,1001,College Football
+401309640,11,10104,Texas State,TXST,30,10036,Georgia Southern,GASO,38,Jim Wacker Field at Bobcat Stadium,,,11/13/2021 20:00,11/13/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401282686,11,10038,Georgia Tech,GT,30,10014,Boston College,BC,41,Bobby Dodd Stadium at Historic Grant Field,,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282689,11,10122,Virginia Tech,VT,48,10027,Duke,DUKE,17,Lane Stadium,,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282685,11,10033,Florida State,FSU,31,10058,Miami,MIAMI,28,Bobby Bowden Field at Doak Campbell Stadium,,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282762,11,10043,Iowa,IOWA,27,10063,Minnesota,MINN,22,Kinnick Stadium,,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282260,11,10119,UT San Antonio,UTSA,27,10095,Southern Mississippi,USM,17,Alamodome,,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282257,11,10055,Marshall,MRSH,14,10110,UAB,UAB,21,Joan C. Edwards Stadium,,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282812,11,10078,Ohio State,OSU,59,10087,Purdue,PUR,31,Ohio Stadium,,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282256,11,10081,Old Dominion,ODU,30,10031,Florida Atlantic,FAU,16,Foreman Field,,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401287942,11,10105,Texas Tech,TTU,41,10044,Iowa State,ISU,38,Jones AT&T Stadium,,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309641,11,10107,Troy,TROY,21,10050,Louisiana,ULL,35,Veterans Memorial Stadium,,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282254,11,10052,Louisiana Tech,LT,42,10020,Charlotte,CHAR,32,Joe Aillet Stadium,,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282133,11,10101,Tennessee,TENN,17,10035,Georgia,UGA,41,Neyland Stadium,,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282255,11,10062,Middle Tennessee,MTSU,50,10032,Florida International,FIU,10,"Johnny Red"""" Floyd Stadium""""",,,11/13/2021 20:30,11/13/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401301044,11,10108,Tulane,TULN,13,10109,Tulsa,TLSA,20,Benson Field at Yulman Stadium,,,11/13/2021 21:00,11/13/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282258,11,10074,North Texas,UNT,20,10118,UTEP,UTEP,17,Apogee Stadium,,,11/13/2021 21:00,11/13/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282771,11,10061,Michigan State,MSU,40,10056,Maryland,MD,21,Spartan Stadium,,,11/13/2021 21:00,11/13/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282132,11,10065,Missouri,MIZ,31,10094,South Carolina,SC,28,Faurot Field,,,11/13/2021 21:00,11/13/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401310745,11,10114,UNLV,UNLV,27,10039,Hawai'i,HAW,13,Allegiant Stadium,,,11/13/2021 21:00,11/13/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401309638,11,10051,Louisiana Monroe,ULM,24,10008,Arkansas State,ARST,27,Malone Stadium,,,11/13/2021 22:00,11/13/2021 14:00,10001,College Football 2021,2021,regular,1001,College Football
+401309894,11,10084,Oregon State,ORST,35,10097,Stanford,STAN,14,Reser Stadium,,,11/13/2021 22:30,11/13/2021 14:30,10001,College Football 2021,2021,regular,1001,College Football
+401310743,11,10034,Fresno State,FRES,34,10070,New Mexico,UNM,7,Bulldog Stadium,,,11/14/2021 0:00,11/13/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401310741,11,10025,Colorado State,CSU,21,10001,Air Force,AFA,35,Canvas Stadium,,,11/14/2021 0:00,11/13/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309897,11,10124,Washington,WASH,30,10006,Arizona State,ASU,35,Husky Stadium,,,11/14/2021 0:00,11/13/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282131,11,10082,Ole Miss,MISS,29,10103,Texas A&M,TA&M,19,Vaught-Hemingway Stadium,,,11/14/2021 0:00,11/13/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282134,11,10120,Vanderbilt,VAN,17,10048,Kentucky,UK,34,Vanderbilt Stadium,,,11/14/2021 0:00,11/13/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282688,11,10121,Virginia,UVA,3,10076,Notre Dame,ND,28,Scott Stadium,,,11/14/2021 0:30,11/13/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282690,11,10123,Wake Forest,WAKE,45,10067,NC State,NCST,42,BB&T Field,,,11/14/2021 0:30,11/13/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401287941,11,10102,Texas,TEX,56,10045,Kansas,KU,57,Darrell K Royal-Texas Memorial Stadium,,,11/14/2021 0:30,11/13/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282130,11,10054,LSU,LSU,13,10007,Arkansas,ARK,16,Tiger Stadium,,,11/14/2021 0:30,11/13/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401287940,11,10080,Oklahoma State,OKST,63,10099,TCU,TCU,17,Boone Pickens Stadium,,,11/14/2021 1:00,11/13/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401309898,11,10112,UCLA,UCLA,44,10024,Colorado,COLO,20,Rose Bowl,,,11/14/2021 2:00,11/13/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401309895,11,10083,Oregon,ORE,38,10125,Washington State,WSU,24,Autzen Stadium,,,11/14/2021 3:30,11/13/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401310744,11,10091,San Jos,SJSU,17,10117,Utah State,USU,48,Spartan Stadium,,,11/14/2021 3:30,11/13/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401310746,11,10090,San Diego State,SDSU,23,10069,Nevada,NEV,21,StubHub Center,,,11/14/2021 3:30,11/13/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309589,12,10077,Ohio,OHIO,23,10106,Toledo,TOL,35,Peden Stadium,,,11/17/2021 0:00,11/16/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309588,12,10029,Eastern Michigan,EMU,22,10127,Western Michigan,WMU,21,Rynearson Stadium,,,11/17/2021 0:30,11/16/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401308841,12,10059,Miami (OH),M-OH,34,10015,Bowling Green,BGSU,7,Yager Stadium,,,11/17/2021 1:00,11/16/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401309591,12,10011,Ball State,BALL,17,10019,Central Michigan,CMU,37,Scheumann Stadium,,,11/18/2021 0:00,11/17/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309590,12,10016,Buffalo,BUFF,27,10073,Northern Illinois,NIU,33,UB Stadium,,,11/18/2021 0:00,11/17/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282691,12,10027,Duke,DUKE,22,10053,Louisville,LOU,62,Wallace Wade Stadium,,,11/19/2021 0:30,11/18/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282264,12,10052,Louisiana Tech,LT,19,10095,Southern Mississippi,USM,35,Joe Aillet Stadium,,,11/20/2021 1:00,11/19/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401310747,12,10069,Nevada,NEV,39,10001,Air Force,AFA,41,Mackay Stadium,,,11/20/2021 2:00,11/19/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401301045,12,10040,Houston,HOU,31,10057,Memphis,MEM,13,John O'Quinn Field at TDECU Stadium,,,11/20/2021 2:00,11/19/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401309899,12,10125,Washington State,WSU,44,10005,Arizona,ARIZ,18,Martin Stadium,,,11/20/2021 2:00,11/19/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401310751,12,10114,UNLV,UNLV,20,10090,San Diego State,SDSU,28,Allegiant Stadium,,,11/20/2021 4:30,11/19/2021 20:30,10001,College Football 2021,2021,regular,1001,College Football
+401301048,12,10108,Tulane,TULN,45,10096,South Florida,USF,14,Benson Field at Yulman Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287944,12,10079,Oklahoma,OKLA,28,10044,Iowa State,ISU,21,Gaylord Family Oklahoma Memorial Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282786,12,10078,Ohio State,OSU,56,10061,Michigan State,MSU,7,Ohio Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287947,12,10128,West Virginia,WVU,31,10102,Texas,TEX,23,Mountaineer Field at Milan Puskar Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282263,12,10126,Western Kentucky,WKU,52,10031,Florida Atlantic,FAU,17,Houchens Industries-L. T. Smith Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282818,12,10085,Penn State,PSU,28,10089,Rutgers,RUTG,0,Beaver Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282137,12,10048,Kentucky,UK,56,10071,New Mexico State,NMSU,16,Commonwealth Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282693,12,10022,Clemson,CLEM,48,10123,Wake Forest,WAKE,27,Memorial Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282696,12,10072,North Carolina,UNC,34,10553,Wofford,NULL,14,Kenan Memorial Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282140,12,10064,Mississippi State,MSST,55,10539,Tennessee State,NULL,10,Davis Wade Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282136,12,10035,Georgia,UGA,56,10450,Charleston Southern,NULL,7,Sanford Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309592,12,10002,Akron,AKR,0,10047,Kent State,KENT,38,Summa Field at InfoCision Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282692,12,10014,Boston College,BC,23,10033,Florida State,FSU,26,Alumni Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282808,12,10075,Northwestern,NW,14,10087,Purdue,PUR,32,Wrigley Field,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401286305,12,10009,Army,ARMY,33,10113,UMass,UMASS,17,Blaik Field at Michie Stadium,,,11/20/2021 17:00,11/20/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309644,12,10023,Coastal Carolina,CCU,35,10104,Texas State,TXST,21,Brooks Stadium,,,11/20/2021 18:00,11/20/2021 10:00,10001,College Football 2021,2021,regular,1001,College Football
+401282721,12,10043,Iowa,IOWA,33,10041,Illinois,ILL,23,Kinnick Stadium,,,11/20/2021 19:00,11/20/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309643,12,10037,Georgia State,GAST,28,10008,Arkansas State,ARST,20,Georgia State Stadium,,,11/20/2021 19:00,11/20/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401282697,12,10076,Notre Dame,ND,55,10038,Georgia Tech,GT,0,Notre Dame Stadium,,,11/20/2021 19:30,11/20/2021 11:30,10001,College Football 2021,2021,regular,1001,College Football
+401309903,12,10024,Colorado,COLO,20,10124,Washington,WASH,17,Folsom Field,,,11/20/2021 20:00,11/20/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401282698,12,10086,Pittsburgh,PITT,48,10121,Virginia,UVA,38,Heinz Field,,,11/20/2021 20:30,11/20/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282770,12,10056,Maryland,MD,18,10060,Michigan,MICH,59,Maryland Stadium,,,11/20/2021 20:30,11/20/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282267,12,10119,UT San Antonio,UTSA,34,10110,UAB,UAB,31,Alamodome,,,11/20/2021 20:30,11/20/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282732,12,10042,Indiana,IND,14,10063,Minnesota,MINN,35,Memorial Stadium,,,11/20/2021 20:30,11/20/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282135,12,10003,Alabama,ALA,42,10007,Arkansas,ARK,35,Bryant Denny Stadium,,,11/20/2021 20:30,11/20/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309642,12,10107,Troy,TROY,7,10004,Appalachian State,APP,45,Veterans Memorial Stadium,,,11/20/2021 20:30,11/20/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282265,12,10062,Middle Tennessee,MTSU,17,10081,Old Dominion,ODU,24,"Johnny Red"""" Floyd Stadium""""",,,11/20/2021 20:30,11/20/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282803,12,10129,Wisconsin,WIS,35,10068,Nebraska,NEB,28,Camp Randall Stadium,,,11/20/2021 20:30,11/20/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401301046,12,10021,Cincinnati,CIN,48,10092,SMU,SMU,14,Nippert Stadium,,,11/20/2021 20:30,11/20/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282261,12,10020,Charlotte,CHAR,28,10055,Marshall,MRSH,49,Jerry Richardson Stadium,,,11/20/2021 20:30,11/20/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401301047,12,10066,Navy,NAVY,35,10028,East Carolina,ECU,38,Navy-Marine Corps Memorial Stadium,,,11/20/2021 20:30,11/20/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282141,12,10065,Missouri,MIZ,24,10030,Florida,FLA,23,Faurot Field,,,11/20/2021 21:00,11/20/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401301049,12,10109,Tulsa,TLSA,44,10100,Temple,TEM,10,Skelly Field at H. A. Chapman Stadium,,,11/20/2021 21:00,11/20/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401287945,12,10099,TCU,TCU,31,10045,Kansas,KU,28,Amon G. Carter Stadium,,,11/20/2021 21:00,11/20/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401309645,12,10036,Georgia Southern,GASO,17,10017,BYU,BYU,34,Paulson Stadium,,,11/20/2021 21:00,11/20/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401286298,12,10049,Liberty,LIB,14,10050,Louisiana,ULL,42,Williams Stadium,,,11/20/2021 21:00,11/20/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282266,12,10118,UTEP,UTEP,38,10088,Rice,RICE,28,Sun Bowl Stadium,,,11/20/2021 21:00,11/20/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401286293,12,10111,UCF,UCF,49,10026,Connecticut,CONN,17,Bright House Networks Stadium,,,11/20/2021 21:00,11/20/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401309904,12,10115,USC,USC,33,10112,UCLA,UCLA,62,Los Angeles Memorial Coliseum,,,11/20/2021 21:00,11/20/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401282695,12,10067,NC State,NCST,41,10098,Syracuse,SYR,17,Carter-Finley Stadium,,,11/20/2021 21:00,11/20/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401287943,12,10046,Kansas State,KSU,10,10012,Baylor,BAY,20,Bill Snyder Family Football Stadium,,,11/20/2021 22:30,11/20/2021 14:30,10001,College Football 2021,2021,regular,1001,College Football
+401309900,12,10097,Stanford,STAN,11,10018,California,CAL,41,Stanford Stadium,,,11/21/2021 0:00,11/20/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282262,12,10032,Florida International,FIU,7,10074,North Texas,UNT,49,FIU Stadium,,,11/21/2021 0:00,11/20/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282142,12,10094,South Carolina,SC,21,10010,Auburn,AUB,17,Williams-Brice Stadium,,,11/21/2021 0:00,11/20/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282694,12,10058,Miami,MIAMI,38,10122,Virginia Tech,VT,26,Hard Rock Stadium,,,11/21/2021 0:30,11/20/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309901,12,10116,Utah,UTAH,38,10083,Oregon,ORE,7,Rice-Eccles Stadium,,,11/21/2021 0:30,11/20/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282139,12,10082,Ole Miss,MISS,31,10120,Vanderbilt,VAN,17,Vaught-Hemingway Stadium,,,11/21/2021 0:30,11/20/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282143,12,10101,Tennessee,TENN,60,10093,South Alabama,USA,14,Neyland Stadium,,,11/21/2021 0:30,11/20/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401287946,12,10105,Texas Tech,TTU,0,10080,Oklahoma State,OKST,23,Jones AT&T Stadium,,,11/21/2021 1:00,11/20/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401310750,12,10117,Utah State,USU,17,10130,Wyoming,WYO,44,Romney Stadium,,,11/21/2021 1:00,11/20/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401310748,12,10013,Boise State,BSU,37,10070,New Mexico,UNM,0,Albertsons Stadium,,,11/21/2021 2:00,11/20/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401282138,12,10054,LSU,LSU,27,10051,Louisiana Monroe,ULM,14,Tiger Stadium,,,11/21/2021 2:00,11/20/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401309902,12,10084,Oregon State,ORST,24,10006,Arizona State,ASU,10,Reser Stadium,,,11/21/2021 3:30,11/20/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401310749,12,10039,Hawai'i,HAW,50,10025,Colorado State,CSU,45,Clarence T.C. Ching Athletics Complex,,,11/21/2021 4:00,11/20/2021 20:00,10001,College Football 2021,2021,regular,1001,College Football
+401309594,13,10073,Northern Illinois,NIU,21,10127,Western Michigan,WMU,42,Brigham Field at Huskie Stadium,,,11/24/2021 0:00,11/23/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309593,13,10011,Ball State,BALL,20,10016,Buffalo,BUFF,3,Scheumann Stadium,,,11/24/2021 0:00,11/23/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401310757,13,10091,San Jos,SJSU,9,10034,Fresno State,FRES,40,Spartan Stadium,,,11/25/2021 20:30,11/25/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282151,13,10064,Mississippi State,MSST,21,10082,Ole Miss,MISS,31,Davis Wade Stadium,,,11/26/2021 0:30,11/25/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401309596,13,10015,Bowling Green,BGSU,21,10077,Ohio,OHIO,10,Doyt Perry Stadium,,,11/26/2021 17:00,11/26/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309595,13,10019,Central Michigan,CMU,31,10029,Eastern Michigan,EMU,10,Kelly/Shorts Stadium,,,11/26/2021 17:00,11/26/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401310753,13,10090,San Diego State,SDSU,27,10013,Boise State,BSU,16,StubHub Center,,,11/26/2021 17:00,11/26/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287952,13,10102,Texas,TEX,22,10046,Kansas State,KSU,17,Darrell K Royal-Texas Memorial Stadium,,,11/26/2021 17:00,11/26/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401310755,13,10070,New Mexico,UNM,10,10117,Utah State,USU,35,University Stadium,,,11/26/2021 18:00,11/26/2021 10:00,10001,College Football 2021,2021,regular,1001,College Football
+401282761,13,10068,Nebraska,NEB,21,10043,Iowa,IOWA,28,Memorial Stadium,,,11/26/2021 18:30,11/26/2021 10:30,10001,College Football 2021,2021,regular,1001,College Football
+401282274,13,10110,UAB,UAB,42,10118,UTEP,UTEP,25,Protective Stadium,,,11/26/2021 19:00,11/26/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401310752,13,10001,Air Force,AFA,48,10114,UNLV,UNLV,14,Falcon Stadium,,,11/26/2021 20:30,11/26/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401301050,13,10111,UCF,UCF,17,10096,South Florida,USF,13,Bright House Networks Stadium,,,11/26/2021 20:30,11/26/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401301051,13,10028,East Carolina,ECU,13,10021,Cincinnati,CIN,35,Dowdy-Ficklen Stadium,,,11/26/2021 20:30,11/26/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282145,13,10007,Arkansas,ARK,34,10065,Missouri,MIZ,17,War Memorial Stadium,,,11/26/2021 20:30,11/26/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309648,13,10093,South Alabama,USA,21,10023,Coastal Carolina,CCU,27,Hancock Whitney Stadium,,,11/26/2021 20:30,11/26/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309906,13,10116,Utah,UTAH,28,10024,Colorado,COLO,13,Rice-Eccles Stadium,,,11/26/2021 21:00,11/26/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401287949,13,10044,Iowa State,ISU,48,10099,TCU,TCU,14,Jack Trice Stadium,,,11/26/2021 21:30,11/26/2021 13:30,10001,College Football 2021,2021,regular,1001,College Football
+401282699,13,10067,NC State,NCST,34,10072,North Carolina,UNC,30,Carter-Finley Stadium,,,11/27/2021 0:00,11/26/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401309905,13,10124,Washington,WASH,13,10125,Washington State,WSU,40,Husky Stadium,,,11/27/2021 1:00,11/26/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401301054,13,10100,Temple,TEM,14,10066,Navy,NAVY,38,Lincoln Financial Field,,,11/27/2021 17:00,11/27/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282766,13,10089,Rutgers,RUTG,16,10056,Maryland,MD,40,SHI Stadium,,,11/27/2021 17:00,11/27/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401308842,13,10047,Kent State,KENT,48,10059,Miami (OH),M-OH,47,Dix Stadium,,,11/27/2021 17:00,11/27/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401309597,13,10106,Toledo,TOL,49,10002,Akron,AKR,14,Glass Bowl,,,11/27/2021 17:00,11/27/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282700,13,10014,Boston College,BC,10,10123,Wake Forest,WAKE,41,Alumni Stadium,,,11/27/2021 17:00,11/27/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401286299,13,10049,Liberty,LIB,16,10009,Army,ARMY,31,Williams Stadium,,,11/27/2021 17:00,11/27/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287948,13,10012,Baylor,BAY,27,10105,Texas Tech,TTU,24,McLane Stadium,,,11/27/2021 17:00,11/27/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282148,13,10038,Georgia Tech,GT,0,10035,Georgia,UGA,45,Bobby Dodd Stadium at Historic Grant Field,,,11/27/2021 17:00,11/27/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282147,13,10030,Florida,FLA,24,10033,Florida State,FSU,21,Ben Hill Griffin Stadium,,,11/27/2021 17:00,11/27/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282781,13,10060,Michigan,MICH,42,10078,Ohio State,OSU,27,Michigan Stadium,,,11/27/2021 17:00,11/27/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401301052,13,10026,Connecticut,CONN,17,10040,Houston,HOU,45,Rentschler Field,,,11/27/2021 17:00,11/27/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401282701,13,10027,Duke,DUKE,10,10058,Miami,MIAMI,47,Wallace Wade Stadium,,,11/27/2021 17:30,11/27/2021 9:30,10001,College Football 2021,2021,regular,1001,College Football
+401282271,13,10088,Rice,RICE,35,10052,Louisiana Tech,LT,31,Rice Stadium,,,11/27/2021 18:00,11/27/2021 10:00,10001,College Football 2021,2021,regular,1001,College Football
+401309647,13,10008,Arkansas State,ARST,22,10104,Texas State,TXST,24,Centennial Bank Stadium,,,11/27/2021 19:00,11/27/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401282268,13,10081,Old Dominion,ODU,56,10020,Charlotte,CHAR,34,Foreman Field,,,11/27/2021 19:00,11/27/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401282273,13,10074,North Texas,UNT,45,10119,UT San Antonio,UTSA,23,Apogee Stadium,,,11/27/2021 19:00,11/27/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309649,13,10037,Georgia State,GAST,37,10107,Troy,TROY,10,Georgia State Stadium,,,11/27/2021 19:00,11/27/2021 11:00,10001,College Football 2021,2021,regular,1001,College Football
+401309646,13,10004,Appalachian State,APP,27,10036,Georgia Southern,GASO,3,Kidd Brewer Stadium,,,11/27/2021 19:30,11/27/2021 11:30,10001,College Football 2021,2021,regular,1001,College Football
+401286306,13,10071,New Mexico State,NMSU,44,10113,UMass,UMASS,27,Aggie Memorial Stadium,,,11/27/2021 20:00,11/27/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401310756,13,10130,Wyoming,WYO,14,10039,Hawai'i,HAW,38,War Memorial Stadium,,,11/27/2021 20:00,11/27/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401282269,13,10095,Southern Mississippi,USM,37,10032,Florida International,FIU,17,M. M. Roberts Stadium,,,11/27/2021 20:00,11/27/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401282753,13,10087,Purdue,PUR,44,10042,Indiana,IND,7,Ross-Ade Stadium,,,11/27/2021 20:30,11/27/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282722,13,10041,Illinois,ILL,47,10075,Northwestern,NW,14,Memorial Stadium,,,11/27/2021 20:30,11/27/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282272,13,10055,Marshall,MRSH,21,10126,Western Kentucky,WKU,53,Joan C. Edwards Stadium,,,11/27/2021 20:30,11/27/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401309908,13,10083,Oregon,ORE,38,10084,Oregon State,ORST,29,Autzen Stadium,,,11/27/2021 20:30,11/27/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282146,13,10010,Auburn,AUB,22,10003,Alabama,ALA,24,Jordan-Hare Stadium,,,11/27/2021 20:30,11/27/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282785,13,10061,Michigan State,MSU,30,10085,Penn State,PSU,27,Spartan Stadium,,,11/27/2021 20:30,11/27/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282703,13,10121,Virginia,UVA,24,10122,Virginia Tech,VT,29,Scott Stadium,,,11/27/2021 20:45,11/27/2021 12:45,10001,College Football 2021,2021,regular,1001,College Football
+401282153,13,10101,Tennessee,TENN,45,10120,Vanderbilt,VAN,21,Neyland Stadium,,,11/27/2021 20:45,11/27/2021 12:45,10001,College Football 2021,2021,regular,1001,College Football
+401282794,13,10063,Minnesota,MINN,23,10129,Wisconsin,WIS,13,TCF Bank Stadium,,,11/27/2021 21:00,11/27/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401309650,13,10050,Louisiana,ULL,21,10051,Louisiana Monroe,ULM,16,Cajun Field,,,11/27/2021 21:00,11/27/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401309909,13,10006,Arizona State,ASU,38,10005,Arizona,ARIZ,15,Sun Devil Stadium,,,11/27/2021 21:00,11/27/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401301055,13,10092,SMU,SMU,31,10109,Tulsa,TLSA,34,Gerald J. Ford Stadium,,,11/27/2021 21:00,11/27/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401287950,13,10045,Kansas,KU,28,10128,West Virginia,WVU,34,Memorial Stadium,,,11/28/2021 0:00,11/27/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282150,13,10054,LSU,LSU,27,10103,Texas A&M,TA&M,24,Tiger Stadium,,,11/28/2021 0:00,11/27/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282270,13,10031,Florida Atlantic,FAU,17,10062,Middle Tennessee,MTSU,27,FAU Stadium,,,11/28/2021 0:00,11/27/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401282149,13,10053,Louisville,LOU,21,10048,Kentucky,UK,52,Papa John's Cardinal Stadium,,,11/28/2021 0:30,11/27/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401301053,13,10057,Memphis,MEM,33,10108,Tulane,TULN,28,Liberty Bowl Memorial Stadium,,,11/28/2021 0:30,11/27/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282152,13,10094,South Carolina,SC,0,10022,Clemson,CLEM,30,Williams-Brice Stadium,,,11/28/2021 0:30,11/27/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401287951,13,10080,Oklahoma State,OKST,37,10079,Oklahoma,OKLA,33,Boone Pickens Stadium,,,11/28/2021 0:30,11/27/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282702,13,10098,Syracuse,SYR,14,10086,Pittsburgh,PITT,31,Carrier Dome,,,11/28/2021 0:30,11/27/2021 16:30,10001,College Football 2021,2021,regular,1001,College Football
+401282711,13,10097,Stanford,STAN,14,10076,Notre Dame,ND,45,Stanford Stadium,,,11/28/2021 1:00,11/27/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401310754,13,10025,Colorado State,CSU,10,10069,Nevada,NEV,52,Canvas Stadium,,,11/28/2021 2:00,11/27/2021 18:00,10001,College Football 2021,2021,regular,1001,College Football
+401309910,13,10115,USC,USC,31,10017,BYU,BYU,35,Los Angeles Memorial Coliseum,,,11/28/2021 3:30,11/27/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401309907,13,10112,UCLA,UCLA,42,10018,California,CAL,14,Rose Bowl,,,11/28/2021 3:30,11/27/2021 19:30,10001,College Football 2021,2021,regular,1001,College Football
+401282156,14,10119,UT San Antonio,UTSA,49,10126,Western Kentucky,WKU,41,Alamodome,,,12/4/2021 0:00,12/3/2021 16:00,10001,College Football 2021,2021,regular,1001,College Football
+401331159,14,10116,Utah,UTAH,38,10083,Oregon,ORE,10,Allegiant Stadium,,,12/4/2021 1:00,12/3/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401331160,14,10073,Northern Illinois,NIU,41,10047,Kent State,KENT,23,Ford Field,,,12/4/2021 17:00,12/4/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401287953,14,10080,Oklahoma State,OKST,16,10012,Baylor,BAY,21,AT&T Stadium,,,12/4/2021 17:00,12/4/2021 9:00,10001,College Football 2021,2021,regular,1001,College Football
+401310676,14,10090,San Diego State,SDSU,13,10117,Utah State,USU,46,StubHub Center,,,12/4/2021 20:00,12/4/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
+401331161,14,10050,Louisiana,ULL,24,10004,Appalachian State,APP,16,Cajun Field,,,12/4/2021 20:30,12/4/2021 12:30,10001,College Football 2021,2021,regular,1001,College Football
+401282154,14,10003,Alabama,ALA,41,10035,Georgia,UGA,24,Mercedes-Benz Stadium,,,12/4/2021 21:00,12/4/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401331162,14,10021,Cincinnati,CIN,35,10040,Houston,HOU,20,Nippert Stadium,,,12/4/2021 21:00,12/4/2021 13:00,10001,College Football 2021,2021,regular,1001,College Football
+401331447,14,10043,Iowa,IOWA,3,10060,Michigan,MICH,42,Lucas Oil Stadium,,,12/5/2021 1:00,12/4/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401331163,14,10123,Wake Forest,WAKE,21,10086,Pittsburgh,PITT,45,Bank of America Stadium,,,12/5/2021 1:00,12/4/2021 17:00,10001,College Football 2021,2021,regular,1001,College Football
+401387250,14,10018,California,CAL,24,10115,USC,USC,14,California Memorial Stadium,,,12/5/2021 4:00,12/4/2021 20:00,10001,College Football 2021,2021,regular,1001,College Football
+401301056,15,10009,Army,ARMY,13,10066,Navy,NAVY,17,MetLife Stadium,,,12/11/2021 20:00,12/11/2021 12:00,10001,College Football 2021,2021,regular,1001,College Football
