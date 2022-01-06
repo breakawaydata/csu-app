@@ -70,14 +70,6 @@ server <- function(input, output, session, pages) {
         pages$reach$ui
       )
     }
-    # 
-    # if (session$userData$stat() == "capacity") {
-    #   pages$capacity$active_player$id <- input$player
-    #   content <- tags$div(
-    #     class = "player-content",
-    #     pages$capacity$ui
-    #   )
-    # }
 
     if (session$userData$stat() == "balance") {
       pages$balance$active_player$id <- input$player
@@ -87,12 +79,13 @@ server <- function(input, output, session, pages) {
       )
     }
     
-    # if (session$userData$page() == "game") {
-    # content <- tags$div(
-    #   class = "player-content",
-    #   style = glue::glue("background-image: url('assets/live.gif'); height: 100vh;")
-    #  )
-    # }
+    if (session$userData$stat() == "schedule") {
+      pages$schedule$active_player$id <- input$player
+      content <- tags$div(
+        class = "player-content",
+        pages$schedule$ui
+      )
+    }
 
     content
   })
@@ -107,7 +100,7 @@ player_card <- function(player) {
     `data-explosive` = player$explosion,
     `data-reach` = player$reach,
     `data-balance` = player$balance,
-    `data-capacity` = player$balance,
+    `data-schedule` = player$number,
     `data-picture` = player$picture,
     `data-position` = player$positions,
     `data-name` = paste(player$first, player$last),
@@ -129,7 +122,7 @@ position_card <- function(position) {
     `data-explosive` = position$explosion,
     `data-reach` = position$reach,
     `data-balance` = position$balance,
-    `data-capacity` = position$balance,
+    `data-schedule` = position$summary,
     `data-position` = position$positions,
     tags$div(class = "stat", position$summary),
     tags$div(class = "position-name", p(position$position)),
