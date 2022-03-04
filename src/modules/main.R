@@ -10,18 +10,29 @@ consts <- modules::use(consts)
 ui <- function(id, data, positions) {
   ns <- NS(id)
   tagList(
-    div(id = consts$dom$body_container_all_id, class = consts$dom$body_container_class,
-      seq_len(nrow(data)) %>% purrr::map(
-        ~ player_card(data[.x, ])
+    div(id = "toggle_main_buttons_wrapper",
+      div(id = "toggle_main_buttons", class = "ui breadcrumb",
+          tags$a("All", id = "toggle_main_buttons_all", class = "section"),
+          tags$a("Team", id = "toggle_main_buttons_team", class = "section")
       )
     ),
-    div(id = consts$dom$body_container_position_id, class = consts$dom$body_container_class, style = "display: none",
-        seq_len(nrow(positions)) %>% purrr::map(
-          ~ position_card(positions[.x, ])
+    div(id = "main_team_wrapper",
+      div(id = consts$dom$body_container_all_id, class = consts$dom$body_container_class,
+        seq_len(nrow(data)) %>% purrr::map(
+          ~ player_card(data[.x, ])
         )
+      ),
+      div(id = consts$dom$body_container_position_id, class = consts$dom$body_container_class, style = "display: none",
+          seq_len(nrow(positions)) %>% purrr::map(
+            ~ position_card(positions[.x, ])
+          )
+      ),
+      div(id = consts$dom$body_container_player_id, class = consts$dom$body_container_class, style = "display: none",
+        uiOutput(ns("player"))
+      )
     ),
-    div(id = consts$dom$body_container_player_id, class = consts$dom$body_container_class, style = "display: none",
-      uiOutput(ns("player"))
+    div(id = "main_all_wrapper", #style = ifelse(consts$default$main_toggle_all)
+      br(), DT::DTOutput(ns("table"))
     )
   )
 }
@@ -38,6 +49,10 @@ server <- function(input, output, session, pages) {
   observeEvent(input$player, {
     session$userData$player(input$player)
   }, ignoreInit = TRUE)
+  
+  output$table <- DT::renderDT({
+    pages[[session$userData$stat()]]$data$dataset
+  })
 
   output$player <- renderUI({
     req(!is.null(session$userData$player()))
@@ -90,6 +105,7 @@ server <- function(input, output, session, pages) {
     content
   })
   outputOptions(output, "player", suspendWhenHidden = FALSE)
+  outputOptions(output, "table", suspendWhenHidden = FALSE)
 }
 
 player_card <- function(player) {

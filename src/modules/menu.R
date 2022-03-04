@@ -1,7 +1,7 @@
 import("htmltools")
 import("shiny")
 import("shiny.semantic")
-import("shiny.grid")
+import("imola")
 import("magrittr")
 
 export("ui", "init_server")

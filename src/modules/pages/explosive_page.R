@@ -3,7 +3,7 @@ import("glue")
 import("dplyr")
 import("htmltools")
 import("shiny")
-import("shiny.grid")
+import("imola")
 
 export("explosivePage")
 

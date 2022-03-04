@@ -21,6 +21,11 @@ default:
     sidebar_class: "sidebar"
     menu_class: "header"
     user_card_class: "user-card"
+  main_toggle_all:
+    summary: TRUE 
+    explosion: FALSE 
+    reach: TRUE 
+    schedule: FALSE
   search:
     id: "search_field"
     player_search_type: "player"

@@ -4,7 +4,7 @@ import("shiny")
 import("glue")
 import("dplyr")
 import("htmltools")
-import("shiny.grid")
+import("imola")
 
 export("pillarChart")
 

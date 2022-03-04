@@ -10,7 +10,8 @@ function(input, output, session) {
       tags$script(src = "js/menu.js"),
       tags$script(src = "js/sidebar.js"),
       tags$script(src = "js/player.js"),
-      tags$script(src = "js/main.js")
+      tags$script(src = "js/main.js"),
+      tags$script(src = "js/toggle_main.js")
     ),
     gridPage(
       title = "Gains Group",

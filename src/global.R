@@ -1,6 +1,6 @@
 library(shiny)
 library(shiny.semantic)
-library(shiny.grid)
+library(imola)
 library(shinyjs)
 library(modules)
 library(config)
