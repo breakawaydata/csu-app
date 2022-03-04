@@ -1,0 +1,145 @@
+.forty_chart {
+  min-height: 600px;
+  max-height: 650px;
+
+  min-height: 600px;
+  position: relative;
+
+  .forty_stat {
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      border: 2px dashed #B4C2D1;
+
+      opacity: 0;
+
+      -webkit-transition : all 500ms ease-out;
+      -moz-transition : all 500ms ease-out;
+      -o-transition : all 500ms ease-out;
+    }
+
+    &.stat_active:after,
+    &.stat_focus:after {
+      opacity: 1;
+      border : 2px dashed $main-team-color;
+
+      animation: border-pulsate 2.5s infinite;
+    }
+
+
+    &.stat_right:after {
+      right: 110%;
+      top: 77%;
+      transform: rotate(-7deg);
+    }
+    &.stat_bottom.stat_left:after {
+      top: 33%;
+      transform: rotate(-7deg);
+    }
+    &.stat_bottom.stat_right:after {
+      top: 33%;
+      transform: rotate(7deg);
+    }
+    &.stat_center:after {
+      top: 50%;
+      transform: rotate(0deg);
+    }
+    &.stat_upper.stat_right:after {
+      right: 105%;
+      top: 106%;
+      transform: rotate(-35deg);
+    }
+    &.stat_upper.stat_left:after {
+      right: -105%;
+      top: 106%;
+      transform: rotate(35deg);
+    }
+  }
+
+  .title {
+    color: $text-main-color;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+  }
+
+  .total {
+    color: $text-main-color;
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 50px;
+    text-align: center;
+    font-family: $font-wide;
+  }
+
+  .stat_label {
+    position: absolute;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #C4CB38;
+    opacity: 0;
+
+    -webkit-transition : all 500ms ease-out;
+    -moz-transition : all 500ms ease-out;
+    -o-transition : all 500ms ease-out;
+  }
+
+  [data-part] {
+    cursor: pointer;
+    animation: border-pulsate 2.5s infinite;
+  }
+
+  .stat_value {
+    text-align: center;
+    background: #FEFCFD;
+    border: 2px solid #C4CB38;
+    border-radius: 4px;
+    color: #C4CB38;
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 50px;
+    margin: .5px;
+    cursor: pointer;
+
+    -webkit-transition : all 500ms ease-out;
+    -moz-transition : all 500ms ease-out;
+    -o-transition : all 500ms ease-out;
+
+    &.stat_active,
+    &.stat_focus {
+      border : 2px solid $main-team-color;
+      color: $main-team-color;
+
+      animation: border-pulsate 2.5s infinite;
+    }
+  }
+
+  .background_body {
+    svg {
+      height: 100%;
+      width: 100%;
+
+      path {
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+@keyframes border-pulsate {
+    0%   { border-color: $main-team-color; }
+    50%   { border-color: $main-team-color; }
+    75% { border-color: #B4C2D1; }
+    100%   { border-color: $main-team-color; }
+}
