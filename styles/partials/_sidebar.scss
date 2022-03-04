@@ -1,0 +1,51 @@
+$sidebar-item-size: 45px;
+$sidebar-icon-size: 35px;
+
+.left-centered-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ui.vertical.menu {
+  width: 100% !important;
+  background-color: $background-color;
+  position: sticky;
+  top: 200px;
+  @extend .overwrite-semantic-card;
+  .item {
+    @extend .overwrite-semantic-card;
+    &:before {
+      width: 0;
+    }
+    &:hover {
+      background-color: $background-color !important;
+    }
+    .sidebar-item {
+      height: $sidebar-item-size;
+      @extend .overwrite-semantic-card;
+
+      &:hover {
+        background-color: $text-lighter-color;
+      }
+      .sidebar-image {
+        @extend .left-centered-content;
+        width: $sidebar-item-size;
+        height: $sidebar-item-size;
+        background-color: $background-color;
+        border-radius: 0% 50% 50% 0%;
+        .icon {
+          width: $sidebar-icon-size;
+          margin-right: $sidebar-icon-size/2;
+        }
+      }
+    }
+  }
+  .sidebar-active {
+    .sidebar-item {
+      color: $active-text !important;
+      border-radius: 100px 30px 30px 100px !important;
+      background-color: $main-team-color !important;
+    }
+  }
+}
