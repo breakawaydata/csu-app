@@ -3,9 +3,15 @@ $( document ).ready(function() {
   
   $(document).on('click','#' + consts.dom.sidebar_navigation_id + ' > .item', setToggleMain)
   
-  $("#toggle_main_buttons_all").on("click", showToggleMainAll)
+  $("#toggle_main_buttons_all").on("click", function() {
+    Shiny.setInputValue('main-toggle_all', true);
+    showToggleMainAll()
+  })
   
-  $("#toggle_main_buttons_team").on("click", showToggleMainTeam)
+  $("#toggle_main_buttons_team").on("click", function() {
+    Shiny.setInputValue('main-toggle_all', false);
+    showToggleMainTeam()
+  })
 })
 
 function setToggleMain() {

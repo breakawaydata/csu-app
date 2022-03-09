@@ -45,15 +45,17 @@ server <- function(input, output, session, pages) {
   ns <- session$ns
 
   session$userData$player <- reactiveVal()
+  session$userData$toggle_all <- reactiveVal()
 
   observeEvent(input$player, {
     session$userData$player(input$player)
   }, ignoreInit = TRUE)
   
   output$table <- DT::renderDT({
+    input$toggle_all
     pages[[session$userData$stat()]]$data$dataset
   })
-
+  
   output$player <- renderUI({
     req(!is.null(session$userData$player()))
 
