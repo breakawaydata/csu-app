@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>R: CSS Layouts (Grid and Flexbox) Implementation for R/Shiny</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+<h1> CSS Layouts (Grid and Flexbox) Implementation for R/Shiny
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;imola&rsquo; version 0.3.2</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="activeBreakpoints.html">activeBreakpoints</a></td>
+<td>Current active media breakpoints. By default the default_system setting values are used, but the list can be customized by using the registerBreakpoint() and unregisterBreakpoint() functions.</td></tr>
+<tr><td style="width: 25%;"><a href="applyTemplate.html">applyTemplate</a></td>
+<td>Merges a set of attributes with a given template. To avoid redundanct attributes being added to the final list, a list of default values (based of the specific panel creation callback formals) is used to validate the need of the argument value in the final list.</td></tr>
+<tr><td style="width: 25%;"><a href="flexPage.html">flexPage</a></td>
+<td>Create a page a with CSS flexbox layout</td></tr>
+<tr><td style="width: 25%;"><a href="flexPanel.html">flexPanel</a></td>
+<td>Create a panel with a CSS flexbox layout</td></tr>
+<tr><td style="width: 25%;"><a href="generateCSSPropertyStyles.html">generateCSSPropertyStyles</a></td>
+<td>Generates the requires css statements for a specific css property. It will iterated over all breakpoints in the given value and return all statements for all breakpoints in a vector format.</td></tr>
+<tr><td style="width: 25%;"><a href="generateFlexChildrenCSS.html">generateFlexChildrenCSS</a></td>
+<td>Generates all required css for a set of children attributes, for a flex wrapper.</td></tr>
+<tr><td style="width: 25%;"><a href="generateFlexCSS.html">generateFlexCSS</a></td>
+<td>Generates all required css for a set of attributes, for a flex wrapper.</td></tr>
+<tr><td style="width: 25%;"><a href="generateGridAreaCSS.html">generateGridAreaCSS</a></td>
+<td>Generates the requires css statements for a specific set of grid areas. This includes the css required to position each child element into each of the named grid area.</td></tr>
+<tr><td style="width: 25%;"><a href="generateGridCSS.html">generateGridCSS</a></td>
+<td>Generates all required css for a set of attributes, for a grid wrapper.</td></tr>
+<tr><td style="width: 25%;"><a href="generateID.html">generateID</a></td>
+<td>Generates a HTML valid ID. HTML IDs should follow specific standards: - The ID must start with a letter (a-z or A-Z).  - All subsequent characters can be letters, numbers (0-9), hyphens (-), underscores (_), colons (:), and periods (.).  - Each ID must be unique within the document.</td></tr>
+<tr><td style="width: 25%;"><a href="gridPage.html">gridPage</a></td>
+<td>Create a page a with CSS grid layout</td></tr>
+<tr><td style="width: 25%;"><a href="gridPanel.html">gridPanel</a></td>
+<td>Create a panel with a CSS grid layout</td></tr>
+<tr><td style="width: 25%;"><a href="listTemplates.html">listTemplates</a></td>
+<td>Lists all available grid and flex templates. If type is given, returns only templates for the given grid type. Templates are collections of arguments that can be grouped and stored for later usage via the "template" argument of panel and page functions.</td></tr>
+<tr><td style="width: 25%;"><a href="mediaRuleTemplate.html">mediaRuleTemplate</a></td>
+<td>Generates a valid glue::glue string template for a css media query. Used internally to generate a breakpoint specific wrapper.</td></tr>
+<tr><td style="width: 25%;"><a href="normalizeAttribute.html">normalizeAttribute</a></td>
+<td>Converts non named list attributes into a named list. Does nothing if the attribute is already a list in the correct format.</td></tr>
+<tr><td style="width: 25%;"><a href="normalizeAttributes.html">normalizeAttributes</a></td>
+<td>Applies the normalizeAttribute() function to a full attribute list.</td></tr>
+<tr><td style="width: 25%;"><a href="processContent.html">processContent</a></td>
+<td>Adds a css class to any HTML elements from the content that are named and which name is in the areas vector for names. This allows content to be assigned to the grid areas via named argument while still allowing other generic HTML tag attributes to be used.</td></tr>
+<tr><td style="width: 25%;"><a href="readSettingsFile.html">readSettingsFile</a></td>
+<td>Reads the content of a YAML settings file from the package directory.</td></tr>
+<tr><td style="width: 25%;"><a href="registerBreakpoint.html">registerBreakpoint</a></td>
+<td>Adds a new breakpoint entry to the currelty active media breakpoints.</td></tr>
+<tr><td style="width: 25%;"><a href="registerTemplate.html">registerTemplate</a></td>
+<td>Registers a new css template for future use. Depending on the given type, the template will then be available to be passed as an argument to a panel or page function of that specific type. Templates are collections of arguments that can be grouped and stored for later usage via the "template" argument of panel and page functions.</td></tr>
+<tr><td style="width: 25%;"><a href="setBreakpointSystem.html">setBreakpointSystem</a></td>
+<td>Sets the current active media breakpoints. By default the default_system setting values are used, but the list can be customized by using the registerBreakpoint() and unregisterBreakpoint() functions.</td></tr>
+<tr><td style="width: 25%;"><a href="stringCSSRule.html">stringCSSRule</a></td>
+<td>Applies a CSS statement template stored in the package settings. These templates use the htmlTemplate format, meaning placeholders are marked using the placeholder convention.  Each placeholder value should be passed as a named argument to the function using the placeholder value as a name.  Used primarily as a shorthand to stringTemplate() for stored templates.</td></tr>
+<tr><td style="width: 25%;"><a href="stringTemplate.html">stringTemplate</a></td>
+<td>Processes a string template in the htmlTemplate format into a valid string with no placeholders. The string must use the htmlTemplate format, meaning placeholders are marked using the placeholder convention.</td></tr>
+<tr><td style="width: 25%;"><a href="unregisterBreakpoint.html">unregisterBreakpoint</a></td>
+<td>Allows removing an entry from the current activeBreakpoints.</td></tr>
+<tr><td style="width: 25%;"><a href="unregisterTemplate.html">unregisterTemplate</a></td>
+<td>Deletes an existing css template from the available list of templates for the given grid type. Templates are collections of arguments that can be grouped and stored for later usage via the "template" argument of panel and page functions.</td></tr>
+<tr><td style="width: 25%;"><a href="valueToCSS.html">valueToCSS</a></td>
+<td>Converts a R List or vector object into a valid css string. Used primarily to convert normalized attribute values into css values during processing.</td></tr>
+</table>
+</div></body></html>

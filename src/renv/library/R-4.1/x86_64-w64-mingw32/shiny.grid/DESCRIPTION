@@ -1,0 +1,25 @@
+Package: shiny.grid
+Type: Package
+Title: CSS grid implementation for shiny
+Version: 0.1.0
+Author: Pedro Coutinho Silva
+Maintainer: The package maintainer <sparktuga@gmail.com>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+Depends: htmltools, stringi, magrittr, glue
+RoxygenNote: 7.1.0
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: shiny.grid
+RemoteUsername: pedrocoutinhosilva
+RemoteRef: HEAD
+RemoteSha: e1f629a081e4b01f6d22428a9351ccf72bd66dec
+GithubRepo: shiny.grid
+GithubUsername: pedrocoutinhosilva
+GithubRef: HEAD
+GithubSHA1: e1f629a081e4b01f6d22428a9351ccf72bd66dec
+NeedsCompilation: no
+Packaged: 2022-03-07 23:12:42 UTC; kelli
+Built: R 4.1.2; ; 2022-03-07 23:12:42 UTC; windows

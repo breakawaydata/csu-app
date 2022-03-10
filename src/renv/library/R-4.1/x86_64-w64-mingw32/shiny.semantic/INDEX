@@ -1,0 +1,123 @@
+%:::%                   ::: hack solution to pass CRAN checks
+.onLoad                 Internal function that expose javascript
+                        bindings to Shiny app.
+COLOR_PALETTE           Semantic colors
+Progress                Reporting progress (object-oriented API)
+SIZE_LEVELS             Allowed sizes
+SUPPORTED_THEMES        Supported semantic themes
+accordion               Accordion UI
+action_button           Action button
+attach_rule             Internal function that creates the rule for a
+                        specific setting or behavior of the modal.
+button                  Create Semantic UI Button
+calendar                Create Semantic UI Calendar
+card                    Create Semantic UI card tag
+cards                   Create Semantic UI cards tag
+check_proper_color      Check if color is set from Fomantic-UI palette
+check_semantic_theme    Semantic theme path validator
+check_shiny_param       Checks whether argument included as shiny
+                        exclusive parameter
+checkbox_input          Create Semantic UI checkbox
+counter_button          Counter Button
+create_modal            Allows for the creation of modals in the server
+                        side without being tied to a specific HTML
+                        element.
+data_frame_to_css_grid_template_areas
+                        Generate CSS string representing grid template
+                        areas.
+date_input              Define simple date input with Semantic UI
+                        styling
+define_selection_type   Define search type if multiple
+digits2words            Helper function that transforms digits to words
+display_grid            Display grid template in a browser for easy
+                        debugging
+dropdown_input          Create dropdown Semantic UI component
+dropdown_menu           Create Semantic UI Dropdown
+extract_icon_name       Extract icon name
+field                   Create Semantic UI field tag
+fields                  Create Semantic UI fields tag
+file_input              Create Semantic UI File Input
+flow_layout             Flow layout
+form                    Create Semantic UI form tag
+generate_random_id      Some elements require input id, but this does
+                        not need to be specified by the user. Thus we
+                        assign random value with prefix where needed.
+get_cdn_path            Get CDN path semantic dependencies
+get_default_semantic_theme
+                        Get default semantic css
+get_dependencies        Add dashboard dependencies to html
+get_numeric             Extracts numeric values
+grid                    Use CSS grid template in Shiny UI
+grid_container_css      Generate template string representing CSS
+                        styles of grid container div.
+grid_template           Define a template of a CSS grid
+header                  Create Semantic UI header
+horizontal_menu         Horizontal menu
+icon                    Create Semantic UI icon tag
+label                   Create Semantic UI label tag
+list_container          Create Semantic UI list with header,
+                        description and icons
+list_element            Helper function to render list element
+list_of_area_tags       Generate list of HTML div elements representing
+                        grid areas.
+menu                    Create Semantic UI Menu
+menu_divider            Create Semantic UI Divider Item
+menu_header             Create Semantic UI Header Item
+menu_item               Create Semantic UI Menu Item
+message_box             Create Semantic UI Message box
+modal                   Create Semantic UI modal
+multiple_checkbox       Create Semantic UI multiple checkbox
+numeric_input           Create Semantic UI Numeric Input
+parse_val               Parse the 'shiny_input' value from JSON
+progress                Create progress Semantic UI component
+rating_input            Rating Input.
+register_search         Register search api url
+render_menu_link        Render menu link
+search_field            Create search field Semantic UI component
+search_selection_api    Add Semantic UI search selection dropdown based
+                        on REST API
+search_selection_choices
+                        Add Semantic UI search selection dropdown based
+                        on provided choices
+segment                 Create Semantic UI segment
+selectInput             Create a select list input control
+semanticPage            Semantic UI page
+semantic_DT             Create Semantic DT Table
+semantic_DTOutput       Semantic DT Output
+set_tab_id              Sets tab id if not provided
+shiny.semantic          Semantic UI wrapper for Shiny
+shiny_input             Create universal Shiny input binding
+shiny_text_input        Create universal Shiny text input binding
+show_modal              Show, Hide or Remove Semantic UI modal
+sidebar_panel           Creates div containing children elements of
+                        sidebar panel
+single_step             Creates a single step to be used inside of a
+                        list of steps by the steps function
+slider_input            Create Semantic UI Slider / Range
+split_args              Split arguments to positional and named
+split_layout            Split layout
+steps                   Show steps
+tabset                  Create Semantic UI tabs
+textAreaInput           Create a semantic Text Area input
+text_input              Create Semantic UI Text Input
+theme_selector          Themes changer dropdown
+toast                   Show and remove Semantic UI toast
+toggle_step_state       Toggle step state
+uiinput                 Create Semantic UI Input
+uirender                Render semanticui htmlwidget
+updateSelectInput       Change the value of a select input on the
+                        client
+update_action_button    Change the label or icon of an action button on
+                        the client
+update_dropdown_input   Update dropdown Semantic UI component
+update_multiple_checkbox
+                        Update checkbox Semantic UI component
+update_numeric_input    Change numeric input value and settings
+update_progress         Update progress Semantic UI component
+update_rating_input     Update rating
+update_slider           Update slider Semantic UI component
+update_tabset           Change the selected tab of a tabset on the
+                        client
+vertical_layout         Vertical layout
+warn_unsupported_args   Warn that there are not supported arguments
+with_progress           Reporting progress (functional API)

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Create a panel with a CSS grid layout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for gridPanel {shiny.grid}"><tr><td>gridPanel {shiny.grid}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Create a panel with a CSS grid layout</h2>
+
+<h3>Description</h3>
+
+<p>Create a panel with a CSS grid layout
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+gridPanel(
+  ...,
+  areas = NULL,
+  rows = NULL,
+  columns = NULL,
+  id = paste0("grid-", stringi::stri_rand_strings(1, 12)),
+  class = NULL,
+  gap = NULL,
+  style = NULL
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>Elements to include within the panel</p>
+</td></tr>
+<tr valign="top"><td><code>areas</code></td>
+<td>
+<p>A list of named areas. Each element should contain
+the names, per row, of each area of the grid. Expected values follow the
+convension for the grid-template-areas css attribute.</p>
+</td></tr>
+<tr valign="top"><td><code>rows</code></td>
+<td>
+<p>A string of css valid sizes separated by a space.
+Follows the convension for the grid-template-rows css attribute.
+If not provided the existing space will be split equally acording to the
+areas defined in areas.</p>
+</td></tr>
+<tr valign="top"><td><code>columns</code></td>
+<td>
+<p>A string of css valid sizes separated by a space.
+Follows the convension for the grid-template-columns css attribute.
+If not provided the existing space will be split equally acording to the
+areas defined in areas.</p>
+</td></tr>
+<tr valign="top"><td><code>id</code></td>
+<td>
+<p>The html id of the panel container.</p>
+</td></tr>
+<tr valign="top"><td><code>class</code></td>
+<td>
+<p>Custom classes to be added to the panel container.</p>
+</td></tr>
+<tr valign="top"><td><code>style</code></td>
+<td>
+<p>Custom css style attributes to be added to the panel container.</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>Behaves similar to normal HTML div tags, but simplifies
+the way css grid can be used via the arguments area, rows and columns.
+Only areas is required, when not used rows and columns will simply split
+the existing space equaly between each row / column.
+Internally the function creates the styles for the grid positions by
+generating the rules for positioning the children via their classes.
+To position a child element simply make sure that it includes a class
+with the same name as the named area.
+</p>
+
+
+<h3>Value</h3>
+
+<p>An HTML tagList.
+</p>
+
+
+<h3>Note</h3>
+
+<p>See <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/</a>
+for additional details on using css grids
+</p>
+
+
+<h3>See Also</h3>
+
+<p>[gridPage()]
+</p>
+<p>Other grid functions: 
+<code><a href="../../imola/html/flexPanel.html">flexPanel</a>()</code>,
+<code><a href="../../shiny.grid/help/gridPage.html">gridPage</a>()</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+gridPanel(
+  areas = c("area-1 area-1", "area-2 area-3"),
+  rows = c"1fr 2fr",
+  columns = c"2fr 100px",
+  div(class = "area-1"),
+  div(class = "area-2"),
+  div(class = "area-3")
+)
+
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>shiny.grid</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</div></body></html>

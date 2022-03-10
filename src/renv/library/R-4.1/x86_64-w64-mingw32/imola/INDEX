@@ -1,0 +1,101 @@
+activeBreakpoints       Current active media breakpoints. By default
+                        the default_system setting values are used, but
+                        the list can be customized by using the
+                        registerBreakpoint() and unregisterBreakpoint()
+                        functions.
+applyTemplate           Merges a set of attributes with a given
+                        template. To avoid redundanct attributes being
+                        added to the final list, a list of default
+                        values (based of the specific panel creation
+                        callback formals) is used to validate the need
+                        of the argument value in the final list.
+flexPage                Create a page a with CSS flexbox layout
+flexPanel               Create a panel with a CSS flexbox layout
+generateCSSPropertyStyles
+                        Generates the requires css statements for a
+                        specific css property. It will iterated over
+                        all breakpoints in the given value and return
+                        all statements for all breakpoints in a vector
+                        format.
+generateFlexCSS         Generates all required css for a set of
+                        attributes, for a flex wrapper.
+generateFlexChildrenCSS
+                        Generates all required css for a set of
+                        children attributes, for a flex wrapper.
+generateGridAreaCSS     Generates the requires css statements for a
+                        specific set of grid areas. This includes the
+                        css required to position each child element
+                        into each of the named grid area.
+generateGridCSS         Generates all required css for a set of
+                        attributes, for a grid wrapper.
+generateID              Generates a HTML valid ID. HTML IDs should
+                        follow specific standards: - The ID must start
+                        with a letter (a-z or A-Z).  - All subsequent
+                        characters can be letters, numbers (0-9),
+                        hyphens (-), underscores (_), colons (:), and
+                        periods (.).  - Each ID must be unique within
+                        the document.
+gridPage                Create a page a with CSS grid layout
+gridPanel               Create a panel with a CSS grid layout
+listTemplates           Lists all available grid and flex templates. If
+                        type is given, returns only templates for the
+                        given grid type. Templates are collections of
+                        arguments that can be grouped and stored for
+                        later usage via the "template" argument of
+                        panel and page functions.
+mediaRuleTemplate       Generates a valid glue::glue string template
+                        for a css media query. Used internally to
+                        generate a breakpoint specific wrapper.
+normalizeAttribute      Converts non named list attributes into a named
+                        list. Does nothing if the attribute is already
+                        a list in the correct format.
+normalizeAttributes     Applies the normalizeAttribute() function to a
+                        full attribute list.
+processContent          Adds a css class to any HTML elements from the
+                        content that are named and which name is in the
+                        areas vector for names. This allows content to
+                        be assigned to the grid areas via named
+                        argument while still allowing other generic
+                        HTML tag attributes to be used.
+readSettingsFile        Reads the content of a YAML settings file from
+                        the package directory.
+registerBreakpoint      Adds a new breakpoint entry to the currelty
+                        active media breakpoints.
+registerTemplate        Registers a new css template for future use.
+                        Depending on the given type, the template will
+                        then be available to be passed as an argument
+                        to a panel or page function of that specific
+                        type. Templates are collections of arguments
+                        that can be grouped and stored for later usage
+                        via the "template" argument of panel and page
+                        functions.
+setBreakpointSystem     Sets the current active media breakpoints. By
+                        default the default_system setting values are
+                        used, but the list can be customized by using
+                        the registerBreakpoint() and
+                        unregisterBreakpoint() functions.
+stringCSSRule           Applies a CSS statement template stored in the
+                        package settings. These templates use the
+                        htmlTemplate format, meaning placeholders are
+                        marked using the placeholder convention.  Each
+                        placeholder value should be passed as a named
+                        argument to the function using the placeholder
+                        value as a name.  Used primarily as a shorthand
+                        to stringTemplate() for stored templates.
+stringTemplate          Processes a string template in the htmlTemplate
+                        format into a valid string with no
+                        placeholders. The string must use the
+                        htmlTemplate format, meaning placeholders are
+                        marked using the placeholder convention.
+unregisterBreakpoint    Allows removing an entry from the current
+                        activeBreakpoints.
+unregisterTemplate      Deletes an existing css template from the
+                        available list of templates for the given grid
+                        type. Templates are collections of arguments
+                        that can be grouped and stored for later usage
+                        via the "template" argument of panel and page
+                        functions.
+valueToCSS              Converts a R List or vector object into a valid
+                        css string. Used primarily to convert
+                        normalized attribute values into css values
+                        during processing.

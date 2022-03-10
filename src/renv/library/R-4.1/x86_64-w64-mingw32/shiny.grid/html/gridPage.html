@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Create a page a with CSS grid layout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for gridPage {shiny.grid}"><tr><td>gridPage {shiny.grid}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Create a page a with CSS grid layout</h2>
+
+<h3>Description</h3>
+
+<p>Create a page a with CSS grid layout
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+gridPage(..., title = NULL, fill_page = TRUE, dependency = bootstrapLib())
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>Elements to include within the page</p>
+</td></tr>
+<tr valign="top"><td><code>title</code></td>
+<td>
+<p>The browser window title (defaults to the host URL of the page).</p>
+</td></tr>
+<tr valign="top"><td><code>fill_page</code></td>
+<td>
+<p>Flag to tell the page if it should adjust the page to
+adjust and fill the browser window size.</p>
+</td></tr>
+<tr valign="top"><td><code>dependency</code></td>
+<td>
+<p>The set of web dependencies. This value can be a
+htmlDependency, for example the shiny bootstrap one (the default)
+or a tagList with diferent dependencies</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>A UI definition that can be passed to the [shinyUI] function.
+</p>
+
+
+<h3>Note</h3>
+
+<p>See <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/</a>
+for additional details on using css grids
+</p>
+
+
+<h3>See Also</h3>
+
+<p>[gridPanel()]
+</p>
+<p>Other grid functions: 
+<code><a href="../../imola/html/flexPanel.html">flexPanel</a>()</code>,
+<code><a href="../../shiny.grid/help/gridPanel.html">gridPanel</a>()</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+gridPage(
+  title = "A grid page",
+  areas = c("area-1 area-1", "area-2 area-3"),
+  div(class = "area-1"),
+  div(class = "area-2"),
+  div(class = "area-3")
+)
+
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>shiny.grid</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</div></body></html>

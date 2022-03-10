@@ -7,8 +7,10 @@ server <- function(input, output, session) {
 
   pages$summary$server()
   pages$explosion$server()
+  pages$explosion2$server()
   pages$reach$server()
   pages$balance$server()
   pages$schedule$server()
+  pages$schedule2$server()
   file_downloader$server()
 }

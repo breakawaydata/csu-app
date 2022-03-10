@@ -22,9 +22,9 @@ default:
     menu_class: "header"
     user_card_class: "user-card"
   main_toggle_all:
-    summary: TRUE 
+    summary: FALSE 
     explosion: FALSE 
-    reach: TRUE 
+    reach: FALSE
     schedule: FALSE
   search:
     id: "search_field"
