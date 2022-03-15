@@ -1,0 +1,104 @@
+@import '../modules/themes.scss';
+
+$card-size: 100px;
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-card {
+  width: $card-size;
+  height: $card-size + $card-size/2;
+  float: left;
+  margin: 5px;
+
+  .player-image {
+    height: $card-size;
+    background-size: cover;
+    border-radius: $card-size/2;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 1px 0px;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 0px 3px $main-team-color;
+    }
+  }
+
+  .first-name {
+    text-align: center;
+    font-size: 10px;
+    height: 12px;
+  }
+
+  .last-name {
+    text-align: center;
+    font-weight: bold;
+    height: 16px;
+  }
+
+  .player-number {
+    text-align: center;
+    font-size: 10px;
+    height: 12px;
+    color: $text-light-color;
+  }
+}
+
+.stat {
+  height: $card-size*0.4;
+  background-color: $stat-background;
+  width: $card-size*0.4;
+  font-size: $card-size*0.2;
+  border-radius: 50%;
+  float: right;
+  margin-top: $card-size*0.6;
+  color: $text-main-color;
+  font-weight: bold;
+  @extend .centered-content;
+  box-shadow: 0px 0px 1px 0px;
+}
+
+.position-card {
+  width: $card-size;
+  height: $card-size + $card-size/2;
+  float: left;
+  margin: 5px;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+
+    .position-name p {
+      box-shadow: 0px 0px 0px 3px $main-team-color;
+    }
+  }
+  .position-name {
+    height: $card-size;
+    font-size: $card-size/2;
+    color: $main-team-color;
+    p {
+      @extend .centered-content;
+      margin: 0;
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      align-items: flex-start;
+      border-radius: 100px;
+      line-height: 100px;
+      z-index: -1;
+      font-size: 80%;
+      box-shadow: 0px 0px 2px 0px;
+      background: $stat-background;
+    }
+  }
+  .position-desc {
+    text-align: center;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+  }
+}
