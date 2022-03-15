@@ -33,12 +33,10 @@ ui <- function(id, data, positions) {
     ),
     div(id = "main_all_wrapper", #style = ifelse(consts$default$main_toggle_all)
       br(), 
-      DT::DTOutput(ns("table"))
-      # div(id = "main_container",
-      #     # class = "body_container",
-      #     uiOutput(ns("table"))
-      #     # DT::DTOutput(ns("table"))
-      # )
+      # DT::DTOutput(ns("table"))
+      div(id = "main_container",
+          uiOutput(ns("table"))
+      )
     )
   )
 }
@@ -51,30 +49,39 @@ server <- function(input, output, session, pages) {
   ns <- session$ns
 
   session$userData$player <- reactiveVal()
+  session$userData$toggle_all <- reactiveVal()
 
   observeEvent(input$player, {
     session$userData$player(input$player)
   }, ignoreInit = TRUE)
   
-  output$table <- DT::renderDT({
-    pages[[session$userData$stat()]]$data$dataset
-  })
-
-  # output$table <- renderUI({
-  #   main_content <- tags$div(
-  #     class = "table-content",
-  #     style = glue::glue("background-image: url('assets/{session$userData$stat()}.png'); height: 100vh;")
-  #   )
-  #   if (session$userData$stat() == "schedule") {
-  #     pages$schedule2$active_player$id = "CSU_004"
-  #     pages$schedule2$data$dataset = pages[["schedule2"]]$data$dataset
-  #     main_content <- tags$div(
-  #       class = "table-content",
-  #       pages$schedule2$ui
-  #     )
-  #   }
-  #   main_content
+  # output$table <- DT::renderDT({
+  #   input$toggle_all
+  #   pages[[session$userData$stat()]]$data$dataset
   # })
+
+  output$table <- renderUI({
+    input$toggle_all
+
+    #  if (session$userData$stat() == "schedule") {
+    #   # pages$schedule2$active_player$id <- "CSU_004"
+    #   # pages$schedule2$data$dataset <- pages[["schedule2"]]$data$dataset
+    #   # browser()
+    #    main_content <- tags$div(
+    #     class = "table-content",
+    #     pages$schedule2$ui
+    #   )
+    # 
+    # }
+    # else {
+      main_content <- tags$div(
+        DT::renderDT({
+          pages[[session$userData$stat()]]$data$dataset
+        })
+      )
+    # }
+    main_content
+  })
 
   output$player <- renderUI({
     req(!is.null(session$userData$player()))

@@ -8,9 +8,6 @@ import("gt")
 
 export("schedule2Page")
 
-
-
-
 #' Creates the UI for the schedule page.
 #'
 #' @description Used by the schedulePage class to generate the corresponding ui.
@@ -47,7 +44,8 @@ ui <- function(id) {
 #'
 #' @return A server module that can be initialized from the application
 #'   server function.
-server <- function(input, output, session, data, active_player) {
+server <- function(input, output, session, data) {
+# server <- function(input, output, session, data, active_player) {
   ns <- session$ns
   
   gt_table  <- reactive({
@@ -76,12 +74,12 @@ schedule2Page <- R6Class("schedule2Page",
                             dataset = NULL
                           ),
                           
-                          #' @field active_player Current active played and corresponding assessments.
-                          active_player = reactiveValues(
-                            id = NULL,
-                            assessments = NULL,
-                            active_assessment = NULL
-                          ),
+                          #' #' @field active_player Current active played and corresponding assessments.
+                          #' active_player = reactiveValues(
+                          #'   id = NULL,
+                          #'   assessments = NULL,
+                          #'   active_assessment = NULL
+                          #' ),
                           
                           #' @description
                           #' Create a new explosivePage object.
@@ -94,7 +92,8 @@ schedule2Page <- R6Class("schedule2Page",
                             
                             self$ui = ui(id)
                             self$server = function() {
-                              callModule(server, id, self$data, self$active_player)
+                              # callModule(server, id, self$data, self$active_player)
+                              callModule(server, id, self$data)
                             }
                           }
                         )
