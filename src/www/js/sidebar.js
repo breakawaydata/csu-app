@@ -8,7 +8,9 @@ function replaceContent(selector, data_attribute) {
 
 $( document ).ready(function() {
   $(document).on('click','#' + consts.dom.sidebar_navigation_id + ' > .item', function(){
-
+    
+    Shiny.setInputValue('main-toggle_all', true);
+    
     Shiny.setInputValue('sidebar-stat', $(this).attr("id"));
     Shiny.setInputValue('sidebar-page', $(this).data("page-id"));
 

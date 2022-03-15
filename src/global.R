@@ -29,7 +29,12 @@ pages <- list(
   explosion = use("modules/pages/explosive_page.R")$explosivePage("explosivePage", explosion_data),
   reach = use("modules/pages/reach_page.R")$reachPage("reachPage", reach_data),
   balance = use("modules/pages/balance_page.R")$balancePage("balancePage", balance_data),
+<<<<<<< Updated upstream
   schedule = use("modules/pages/schedule_page.R")$schedulePage("schedulePage", mock_data)
+=======
+  schedule = use("modules/pages/schedule_page.R")$schedulePage("schedulePage", mock_data),
+  scheduleall = use("modules/pages/scheduleall_page.R")$scheduleallPage("scheduleallPage", mock_data)
+>>>>>>> Stashed changes
 )
 
 sass(

@@ -38,6 +38,33 @@ server <- function(input, output, session, pages) {
   observeEvent(input$player, {
     session$userData$player(input$player)
   }, ignoreInit = TRUE)
+<<<<<<< Updated upstream
+=======
+  
+  # output$table <- DT::renderDT({
+  #   input$toggle_all
+  #   pages[[session$userData$stat()]]$data$dataset
+  # })
+
+  output$table <- renderUI({
+    input$toggle_all
+    main_content <- tags$div(
+      DT::renderDT({
+        pages[[session$userData$stat()]]$data$dataset
+      })
+    )
+    if (session$userData$stat() == "schedule") {
+      # pages$scheduleal$active_player$id <- "CSU_004"
+      # pages$schedule2$data$dataset <- pages[["schedule2"]]$data$dataset
+      # browser()
+      main_content <- tags$div(
+        class = "table-content",
+        pages$scheduleall$ui
+      )
+    }
+    main_content
+  })
+>>>>>>> Stashed changes
 
   output$player <- renderUI({
     req(!is.null(session$userData$player()))

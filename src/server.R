@@ -10,5 +10,9 @@ server <- function(input, output, session) {
   pages$reach$server()
   pages$balance$server()
   pages$schedule$server()
+<<<<<<< Updated upstream
+=======
+  pages$scheduleall$server()
+>>>>>>> Stashed changes
   file_downloader$server()
 }

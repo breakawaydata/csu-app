@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="author" content="Tony Fischetti" />
+
+<meta name="date" content="2021-01-24" />
+
+<title>Assertive R Programming with assertr</title>
+
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Assertive R Programming with assertr</h1>
+<h4 class="author">Tony Fischetti</h4>
+<h4 class="date">2021-01-24</h4>
+
+
+
+<p>In data analysis workflows that depend on un-sanitized data sets from external sources, it’s very common that errors in data bring an analysis to a screeching halt. Oftentimes, these errors occur late in the analysis and provide no clear indication of which datum caused the error.</p>
+<p>On occasion, the error resulting from bad data won’t even appear to be a data error at all. Still worse, errors in data will pass through analysis without error, remain undetected, and produce inaccurate results.</p>
+<p>The solution to the problem is to provide as much information as you can about how you expect the data to look up front so that any deviation from this expectation can be dealt with immediately. This is what the <code>assertr</code> package tries to make dead simple.</p>
+<p>Essentially, <code>assertr</code> provides a suite of functions designed to verify assumptions about data early in an analysis pipeline. This package needn’t be used with the <code>magrittr</code>/<code>dplyr</code> piping mechanism but the examples in this vignette will use them to enhance clarity.</p>
+<div id="concrete-data-errors" class="section level3">
+<h3>concrete data errors</h3>
+<p>Let’s say, for example, that the R’s built-in car dataset, <code>mtcars</code>, was not built-in but rather procured from an external source that was known for making errors in data entry or coding.</p>
+<p>In particular, the mtcars dataset looks like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">head</span>(mtcars)</a></code></pre></div>
+<pre><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+<p>But let’s pretend that the data we got accidentally negated the 5th mpg value:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">our.data &lt;-<span class="st"> </span>mtcars</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">our.data<span class="op">$</span>mpg[<span class="dv">5</span>] &lt;-<span class="st"> </span>our.data<span class="op">$</span>mpg[<span class="dv">5</span>] <span class="op">*</span><span class="st"> </span><span class="dv">-1</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3">our.data[<span class="dv">4</span><span class="op">:</span><span class="dv">6</span>,]</a></code></pre></div>
+<pre><code>##                     mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Hornet 4 Drive     21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout -18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant            18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+<p>Whoops!</p>
+<p>If we wanted to find the average miles per gallon for each number of engine cylinders, we might do so like this:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3">our.data <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw">group_by</span>(cyl) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">avg.mpg=</span><span class="kw">mean</span>(mpg))</a></code></pre></div>
+<pre><code>## # A tibble: 3 x 2
+##     cyl avg.mpg
+## * &lt;dbl&gt;   &lt;dbl&gt;
+## 1     4    26.7
+## 2     6    19.7
+## 3     8    12.4</code></pre>
+<p>This indicates that the average miles per gallon for a 8 cylinder car is a lowly 12.43. However, in the correct dataset it’s really just over 15. Data errors like that are extremely easy to miss because it doesn’t cause an error, and the results look reasonable.</p>
+</div>
+<div id="enter-assertr" class="section level3">
+<h3>enter assertr</h3>
+<p>To combat this, we might want to use assertr’s <code>verify</code> function to make sure that <code>mpg</code> is a positive number:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">library</span>(assertr)</a>
+<a class="sourceLine" id="cb7-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb7-3" data-line-number="3">our.data <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb7-4" data-line-number="4"><span class="st">  </span><span class="kw">verify</span>(mpg <span class="op">&gt;=</span><span class="st"> </span><span class="dv">0</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb7-5" data-line-number="5"><span class="st">  </span><span class="kw">group_by</span>(cyl) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb7-6" data-line-number="6"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">avg.mpg=</span><span class="kw">mean</span>(mpg))</a></code></pre></div>
+<pre><code>## verification [mpg &gt;= 0] failed! (1 failure)
+## 
+##     verb redux_fn predicate column index value
+## 1 verify       NA  mpg &gt;= 0     NA     5    NA</code></pre>
+<pre><code>## Error: assertr stopped execution</code></pre>
+<p>If we had done this, we would have caught this data error.</p>
+<p>The <code>verify</code> function takes a data frame (its first argument is provided by the <code>%&gt;%</code> operator), and a logical (boolean) expression. Then, <code>verify</code> evaluates that expression using the scope of the provided data frame. If any of the logical values of the expression’s result are <code>FALSE</code>, <code>verify</code> will raise an error that terminates any further processing of the pipeline.</p>
+<p>We could have also written this assertion using <code>assertr</code>’s <code>assert</code> function…</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1">our.data <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb10-2" data-line-number="2"><span class="st">  </span><span class="kw">assert</span>(<span class="kw">within_bounds</span>(<span class="dv">0</span>,<span class="ot">Inf</span>), mpg) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb10-3" data-line-number="3"><span class="st">  </span><span class="kw">group_by</span>(cyl) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb10-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">avg.mpg=</span><span class="kw">mean</span>(mpg))</a></code></pre></div>
+<pre><code>## Column 'mpg' violates assertion 'within_bounds(0, Inf)' 1 time
+##     verb redux_fn             predicate column index value
+## 1 assert       NA within_bounds(0, Inf)    mpg     5 -18.7</code></pre>
+<pre><code>## Error: assertr stopped execution</code></pre>
+<p>The <code>assert</code> function takes a data frame, a predicate function, and an arbitrary number of columns to apply the predicate function to. The predicate function (a function that returns a logical/boolean value) is then applied to every element of the columns selected, and will raise an error when if it finds violations.</p>
+<p>Internally, the <code>assert</code> function uses <code>dplyr</code>’s <code>select</code> function to extract the columns to test the predicate function on. This allows for complex assertions. Let’s say we wanted to make sure that all values in the dataset are <em>greater</em> than zero (except <code>mpg</code>):</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw">library</span>(assertr)</a>
+<a class="sourceLine" id="cb13-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb13-3" data-line-number="3">our.data <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb13-4" data-line-number="4"><span class="st">  </span><span class="kw">assert</span>(<span class="kw">within_bounds</span>(<span class="dv">0</span>,<span class="ot">Inf</span>, <span class="dt">include.lower=</span><span class="ot">FALSE</span>), <span class="op">-</span>mpg) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb13-5" data-line-number="5"><span class="st">  </span><span class="kw">group_by</span>(cyl) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb13-6" data-line-number="6"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">avg.mpg=</span><span class="kw">mean</span>(mpg))</a></code></pre></div>
+<pre><code>## Column 'vs' violates assertion 'within_bounds(0, Inf, include.lower = FALSE)' 18 times
+##     verb redux_fn                                    predicate column index
+## 1 assert       NA within_bounds(0, Inf, include.lower = FALSE)     vs     1
+## 2 assert       NA within_bounds(0, Inf, include.lower = FALSE)     vs     2
+## 3 assert       NA within_bounds(0, Inf, include.lower = FALSE)     vs     5
+## 4 assert       NA within_bounds(0, Inf, include.lower = FALSE)     vs     7
+## 5 assert       NA within_bounds(0, Inf, include.lower = FALSE)     vs    12
+##   value
+## 1     0
+## 2     0
+## 3     0
+## 4     0
+## 5     0
+##   [omitted 13 rows]
+## 
+## 
+## Column 'am' violates assertion 'within_bounds(0, Inf, include.lower = FALSE)' 19 times
+##     verb redux_fn                                    predicate column index
+## 1 assert       NA within_bounds(0, Inf, include.lower = FALSE)     am     4
+## 2 assert       NA within_bounds(0, Inf, include.lower = FALSE)     am     5
+## 3 assert       NA within_bounds(0, Inf, include.lower = FALSE)     am     6
+## 4 assert       NA within_bounds(0, Inf, include.lower = FALSE)     am     7
+## 5 assert       NA within_bounds(0, Inf, include.lower = FALSE)     am     8
+##   value
+## 1     0
+## 2     0
+## 3     0
+## 4     0
+## 5     0
+##   [omitted 14 rows]</code></pre>
+<pre><code>## Error: assertr stopped execution</code></pre>
+</div>
+<div id="verify-vs.assert" class="section level3">
+<h3>verify vs. assert</h3>
+<p>The first noticable difference between <code>verify</code> and <code>assert</code> is that <code>verify</code> takes an expression, and <code>assert</code> takes a predicate and columns to apply it to. This might make the <code>verify</code> function look more elegant–but there’s an important drawback. <code>verify</code> has to evaluate the entire expression first, and <em>then</em> check if there were any violations. Because of this, <code>verify</code> can’t tell you the offending datum.</p>
+<p>One important drawback to <code>assert</code>, and a consequence of its application of the predicate to <em>columns</em>, is that <code>assert</code> can’t confirm assertions about the data structure <em>itself</em>. For example, let’s say we were reading a dataset from disk that we know has more than 100 observations; we could write a check of that assumption like this:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1">dat &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;a-data-file.csv&quot;</span>)</a>
+<a class="sourceLine" id="cb16-2" data-line-number="2">dat <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb16-3" data-line-number="3"><span class="st">  </span><span class="kw">verify</span>(<span class="kw">nrow</span>(.) <span class="op">&gt;</span><span class="st"> </span><span class="dv">100</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb16-4" data-line-number="4"><span class="st">  </span>....</a></code></pre></div>
+<p>This is a powerful advantage over <code>assert</code>… but <code>assert</code> has one more advantage of its own that we’ve heretofore ignored.</p>
+</div>
+<div id="assertrs-predicates" class="section level3">
+<h3>assertr’s predicates</h3>
+<p><code>assertr</code>’s predicates, both built-in and custom, make <code>assert</code> very powerful. The predicates that are built in to <code>assertr</code> are</p>
+<ul>
+<li><code>not_na</code> - that checks if an element is not NA</li>
+<li><code>within_bounds</code> - that returns a predicate function that checks if a numeric value falls within the bounds supplied, and</li>
+<li><code>in_set</code> - that returns a predicate function that checks if an element is a member of the set supplied.</li>
+<li><code>is_uniq</code> - that checks to see if each element appears only once</li>
+</ul>
+<p>We’ve already seen <code>within_bounds</code> in action… let’s use the <code>in_set</code> function to make sure that there are only 0s and 1s (automatic and manual, respectively) values in the <code>am</code> column…</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" data-line-number="1">our.data <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb17-2" data-line-number="2"><span class="st">  </span><span class="kw">assert</span>(<span class="kw">in_set</span>(<span class="dv">0</span>,<span class="dv">1</span>), am) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb17-3" data-line-number="3"><span class="st">  </span>...</a></code></pre></div>
+<p>If we were reading a dataset that contained a column representing boroughs of New York City (named <code>BORO</code>), we can verify that there are no mis-spelled or otherwise unexpected boroughs like so…</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1">boroughs &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Bronx&quot;</span>, <span class="st">&quot;Manhattan&quot;</span>, <span class="st">&quot;Queens&quot;</span>, <span class="st">&quot;Brooklyn&quot;</span>, <span class="st">&quot;Staten Island&quot;</span>)</a>
+<a class="sourceLine" id="cb18-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb18-3" data-line-number="3"><span class="kw">read.csv</span>(<span class="st">&quot;a-dataset.csv&quot;</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb18-4" data-line-number="4"><span class="st">  </span><span class="kw">assert</span>(<span class="kw">in_set</span>(boroughs), BORO) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb18-5" data-line-number="5"><span class="st">  </span>...</a></code></pre></div>
+<p>Rad!</p>
+</div>
+<div id="custom-predicates" class="section level3">
+<h3>custom predicates</h3>
+<p>A convenient feature of <code>assertr</code> is that it makes the construction of custom predicate functions easy.</p>
+<p>In order to make a custom predicate, you only have to specify cases where the predicate should return FALSE. Let’s say that a dataset has an ID column (named <code>ID</code>) that we want to check is not an empty string. We can create a predicate like this:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" data-line-number="1">not.empty.p &lt;-<span class="st"> </span><span class="cf">function</span>(x) <span class="cf">if</span>(x<span class="op">==</span><span class="st">&quot;&quot;</span>) <span class="kw">return</span>(<span class="ot">FALSE</span>)</a></code></pre></div>
+<p>and apply it like this:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1"><span class="kw">read.csv</span>(<span class="st">&quot;another-dataset.csv&quot;</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb20-2" data-line-number="2"><span class="st">  </span><span class="kw">assert</span>(not.empty.p, ID) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb20-3" data-line-number="3"><span class="st">  </span>...</a></code></pre></div>
+<p>Let’s say that the ID column is always a 7-digit number. We can confirm that all the IDs are 7-digits by defining the following predicate:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" data-line-number="1">seven.digit.p &lt;-<span class="st"> </span><span class="cf">function</span>(x) <span class="kw">nchar</span>(x)<span class="op">==</span><span class="dv">7</span></a></code></pre></div>
+<p>A powerful consequence of this easy creation of predicates is that the <code>assert</code> function lends itself to use with lambda predicates (unnamed predicates that are only used once). The check above might be better written as</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" data-line-number="1"><span class="kw">read.csv</span>(<span class="st">&quot;another-dataset.csv&quot;</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb22-2" data-line-number="2"><span class="st">  </span><span class="kw">assert</span>(<span class="cf">function</span>(x) <span class="kw">nchar</span>(x)<span class="op">==</span><span class="dv">7</span>, ID) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb22-3" data-line-number="3"><span class="st">  </span>...</a></code></pre></div>
+<p>Neat-o!</p>
+</div>
+<div id="enter-insist-and-predicate-generators" class="section level3">
+<h3>enter <code>insist</code> and predicate ‘generators’</h3>
+<p>Very often, there is a need to dynamically determine the predicate function to be used based on the vector being checked.</p>
+<p>For example, to check to see if every element of a vector is within <em>n</em> standard deviations of the mean, you need to create a <code>within_bounds</code> predicate <em>after</em> dynamically determining the bounds by reading and computing on the vector itself.</p>
+<p>To this end, the <code>assert</code> function is no good; it just applies a raw predicate to a vector. We need a function like <code>assert</code> that will apply predicate <em>generators</em> to vectors, return predicates, and <em>then</em> perform <code>assert</code>-like functionality by checking each element of the vectors with its respective custom predicate. This is precisely what <code>insist</code> does.</p>
+<p>This is all much simpler than it may sound. Hopefully, the examples will clear up any confusion.</p>
+<p>The primary use case for <code>insist</code> is in conjunction with the <code>within_n_sds</code> or <code>within_n_mads</code> predicate generator.</p>
+<p>Suppose we wanted to check that every <code>mpg</code> value in the <code>mtcars</code> data set was within 3 standard deviations of the mean before finding the average miles per gallon for each number of engine cylinders. We could write something like this:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" data-line-number="1">mtcars <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb23-2" data-line-number="2"><span class="st">  </span><span class="kw">insist</span>(<span class="kw">within_n_sds</span>(<span class="dv">3</span>), mpg) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb23-3" data-line-number="3"><span class="st">  </span><span class="kw">group_by</span>(cyl) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb23-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">avg.mpg=</span><span class="kw">mean</span>(mpg))</a></code></pre></div>
+<pre><code>## # A tibble: 3 x 2
+##     cyl avg.mpg
+## * &lt;dbl&gt;   &lt;dbl&gt;
+## 1     4    26.7
+## 2     6    19.7
+## 3     8    15.1</code></pre>
+<p>Notice what happens when we drop that z-score to 2 standard deviations from the mean</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" data-line-number="1">mtcars <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb25-2" data-line-number="2"><span class="st">  </span><span class="kw">insist</span>(<span class="kw">within_n_sds</span>(<span class="dv">2</span>), mpg) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb25-3" data-line-number="3"><span class="st">  </span><span class="kw">group_by</span>(cyl) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb25-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">avg.mpg=</span><span class="kw">mean</span>(mpg))</a></code></pre></div>
+<pre><code>## Column 'mpg' violates assertion 'within_n_sds(2)' 2 times
+##     verb redux_fn       predicate column index value
+## 1 insist       NA within_n_sds(2)    mpg    18  32.4
+## 2 insist       NA within_n_sds(2)    mpg    20  33.9</code></pre>
+<pre><code>## Error: assertr stopped execution</code></pre>
+<p>Execution of the pipeline was halted. But now we know exactly which data point violated the predicate that <code>within_n_sds(2)(mtcars$mpg)</code> returned.</p>
+<p>Now that’s an efficient car!</p>
+<p>After the predicate generator, <code>insist</code> takes an arbitrary number of columns just like <code>assert</code> using the syntax of <code>dplyr</code>’s <code>select</code> function. If you wanted to check that everything in mtcars is within 10 standard deviations of the mean (of each column vector), you can do so like this:</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" data-line-number="1">mtcars <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb28-2" data-line-number="2"><span class="st">  </span><span class="kw">insist</span>(<span class="kw">within_n_sds</span>(<span class="dv">10</span>), mpg<span class="op">:</span>carb) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb28-3" data-line-number="3"><span class="st">  </span><span class="kw">group_by</span>(cyl) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb28-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">avg.mpg=</span><span class="kw">mean</span>(mpg))</a></code></pre></div>
+<pre><code>## # A tibble: 3 x 2
+##     cyl avg.mpg
+## * &lt;dbl&gt;   &lt;dbl&gt;
+## 1     4    26.7
+## 2     6    19.7
+## 3     8    15.1</code></pre>
+<p>Aces!</p>
+<p>I chose to use <code>within_n_sds</code> in this example because people are familiar z-scores. However, for most practical purposes, the related predicate generator <code>within_n_mads</code> is more useful.</p>
+<p>The problem with <code>within_n_sds</code> is the mean and standard deviation are so heavily influenced by outliers, their very presence will compromise attempts to identify them using these statistics. In contrast with <code>within_n_sds</code>, <code>within_n_mads</code> uses the robust statistics, median and median absolute deviation, to identify potentially erroneous data points.</p>
+<p>For example, the vector <code>&lt;7.4, 7.1, 7.2, 72.1&gt;</code> almost certainly has an erroneous data point, but <code>within_n_sds(2)</code> will fail to detect it.</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" data-line-number="1">example.vector &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">7.4</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">72.1</span>)</a>
+<a class="sourceLine" id="cb30-2" data-line-number="2"><span class="kw">within_n_sds</span>(<span class="dv">2</span>)(example.vector)(example.vector)</a></code></pre></div>
+<pre><code>## [1] TRUE TRUE TRUE TRUE</code></pre>
+<p>whereas <code>within_n_mads</code> will detect it at even lower levels of power….</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" data-line-number="1">example.vector &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">7.4</span>, <span class="fl">7.1</span>, <span class="fl">7.2</span>, <span class="fl">72.1</span>)</a>
+<a class="sourceLine" id="cb32-2" data-line-number="2"><span class="kw">within_n_mads</span>(<span class="dv">2</span>)(example.vector)(example.vector)</a></code></pre></div>
+<pre><code>## [1]  TRUE  TRUE  TRUE FALSE</code></pre>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" data-line-number="1"><span class="kw">within_n_mads</span>(<span class="dv">1</span>)(example.vector)(example.vector)</a></code></pre></div>
+<pre><code>## [1]  TRUE  TRUE  TRUE FALSE</code></pre>
+<p>Tubular!</p>
+</div>
+<div id="row-wise-assertions-and-row-reduction-functions" class="section level3">
+<h3>row-wise assertions and row reduction functions</h3>
+<p>As cool as it’s been so far, this still isn’t enough to constitute a complete grammar of data integrity checking. To see why, check out the following small example data set:</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" data-line-number="1">example.data &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">x=</span><span class="kw">c</span>(<span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">9</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>,</a>
+<a class="sourceLine" id="cb36-2" data-line-number="2">                             <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>),</a>
+<a class="sourceLine" id="cb36-3" data-line-number="3">                         <span class="dt">y=</span><span class="kw">c</span>(<span class="dv">82</span>, <span class="dv">91</span>, <span class="dv">61</span>, <span class="dv">49</span>, <span class="dv">40</span>, <span class="dv">49</span>, <span class="dv">57</span>,</a>
+<a class="sourceLine" id="cb36-4" data-line-number="4">                             <span class="dv">74</span>, <span class="dv">78</span>, <span class="dv">90</span>, <span class="dv">61</span>, <span class="dv">49</span>, <span class="dv">51</span>, <span class="dv">62</span>, <span class="dv">68</span>))</a>
+<a class="sourceLine" id="cb36-5" data-line-number="5">(example.data)</a></code></pre></div>
+<pre><code>##    x  y
+## 1  8 82
+## 2  9 91
+## 3  6 61
+## 4  5 49
+## 5  9 40
+## 6  5 49
+## 7  6 57
+## 8  7 74
+## 9  8 78
+## 10 9 90
+## 11 6 61
+## 12 5 49
+## 13 5 51
+## 14 6 62
+## 15 7 68</code></pre>
+<p>Can you spot the brazen outlier? You’re certainly not going to find it by checking the distribution of each <em>column</em>! All elements from both columns are within 2 standard deviations of their respective means.</p>
+<p>Unless you have a <em>really</em> good eye, the only way you’re going to catch this mistake is by plotting the data set.</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb38-1" data-line-number="1"><span class="kw">plot</span>(example.data<span class="op">$</span>x, example.data<span class="op">$</span>y, <span class="dt">xlab=</span><span class="st">&quot;&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;&quot;</span>)</a></code></pre></div>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASAAAAEgCAMAAAAjXV6yAAAC91BMVEUAAAABAQECAgIDAwMEBAQFBQUGBgYHBwcICAgJCQkKCgoLCwsMDAwNDQ0ODg4PDw8QEBARERESEhITExMUFBQVFRUWFhYXFxcYGBgZGRkaGhobGxscHBwdHR0eHh4fHx8gICAhISEiIiIjIyMkJCQlJSUmJiYnJycoKCgpKSkqKiorKyssLCwtLS0uLi4vLy8wMDAxMTEyMjIzMzM0NDQ1NTU2NjY3Nzc4ODg5OTk6Ojo7Ozs8PDw9PT0+Pj4/Pz9AQEBBQUFCQkJDQ0NERERFRUVGRkZHR0dISEhJSUlKSkpLS0tMTExNTU1OTk5PT09QUFBRUVFSUlJTU1NUVFRVVVVWVlZXV1dYWFhZWVlaWlpbW1tcXFxdXV1eXl5fX19gYGBhYWFiYmJjY2NkZGRlZWVmZmZnZ2doaGhpaWlqampra2tsbGxtbW1ubm5vb29wcHBxcXFycnJzc3N0dHR1dXV2dnZ3d3d4eHh5eXl6enp7e3t8fHx9fX1+fn5/f3+AgICBgYGCgoKDg4OEhISFhYWGhoaHh4eIiIiJiYmKioqLi4uMjIyNjY2Ojo6Pj4+QkJCRkZGSkpKUlJSVlZWWlpaXl5eYmJiZmZmampqbm5ucnJydnZ2enp6fn5+goKChoaGioqKjo6OkpKSlpaWmpqanp6eoqKipqamqqqqrq6usrKytra2urq6vr6+wsLCxsbGysrKzs7O0tLS1tbW2tra3t7e4uLi5ubm6urq7u7u8vLy9vb2/v7/AwMDBwcHCwsLDw8PExMTFxcXGxsbHx8fIyMjJycnKysrLy8vMzMzNzc3Ozs7Pz8/Q0NDR0dHS0tLT09PU1NTV1dXW1tbX19fY2NjZ2dnb29vc3Nzd3d3e3t7f39/g4ODh4eHi4uLj4+Pk5OTl5eXm5ubn5+fo6Ojp6enq6urr6+vs7Ozt7e3u7u7v7+/w8PDx8fHy8vLz8/P09PT19fX29vb39/f4+Pj5+fn6+vr7+/v8/Pz9/f3+/v7////C07hsAAAACXBIWXMAAA7DAAAOwwHHb6hkAAALD0lEQVR4nO2deVQV1x3HhyXIJgYRWVSiFBUXVDQq0RBxBRvrbqyKNiomFZc24pagEWNUFLW2xoA2pNW0tiYYrfveVlt3raQxNdaaaFQwGjEgCDJ/dN5jOTHnPb937B3m8fr9nMOdh+87v5nzkZm5M+++GUUlj0UxewUcHQoCUBCAggAUBKAgAAUBKAhAQQAKAlAQgIIAFASgIAAFASgIQEEACgJQEICCABQEoCAABQEoCEBBAAoCUBCAggAUBKAgAAUBKAhAQQAKAlAQgIIAFASgIAAFASgIQEEACgJQEICCABQEoCAABQEoCEBBAAoCUBCAggAUBKAgAAUBKAhAQQAKAlAQgIIAFASgIAAFASgIQEEACgJQEICCABQEoCAABQEoCEBBAAoCUBCAggAUBJAsaEYnR6ddZHvL5Pkb5giKef+UQ/Nhx4C2fn33njrV/B8mCfq73HqSyQ9dd/Ns3uvRpWo7CrLF0pF9AjrUG9t1GwXZZnj9NWVqUUrIQgqyTefu1knIhBoWlPtKFXU3yahnGN0jH2rtPb+pNSwof31WJZ7vyqhnGONb9T9ybVfHDhmmbWK+6+XWk8zGuNVdQ+M2ND1NQbYpixt4Iu9gl1dVCrJDSUbHwOc2llMQhIIAFASgIAAFASgIQEEAAwWV5ZXaf9NMQQ/0hI0SdC4p2FVxDZ5gr7xpgm5MDPBsue6hcN4gQX/1ipybuSlzXnuvv9kOmCXoVtPUvLKT3X4mPINBgmKHllmn5ZN62A6YJWh+sqUtCPq36AwGCfLbUvniaD3bAbME9d5nnYz6negMBgmKnlX5IqOT7YBZgnoetE7GbBCdwSBB2cronNMXz2xLcv2t7YBZguakWNqi0H+JzmDUUWxjlGIh6gM775sl6HqjFcXqpfgJwjMY1w/64tiuY19879+uV11xzarzjt56krg0xDsoMF28K2RsT/rzO4/+fqH6ov1Tq5+kngQK5kbWj90qnjdK0MeDhx1QhysuSSW23zdrEytoPemT/J1t0oRnMEjQJqVbL+9XW3601m+l7YBZgpaMs7R5Da6KzmCQoA7TVHWhovWi06NsB8wS1HeXdTLiD6IzGCTIW1uP48p9Vd3nbTtglqAeh6yTcb8RncEgQRHLVfU9Rets/DrCdsAsQdPnW9oHTc+LzmCQoLe9Zr7h1znhyulwO6eFZgm6HLSxXP169FDhGQwSVDonqNGqwtaK0umW7YBplzvOPhcYVfe1b4XzhvaDSrbvKbbzlnxBhWnd247OFQjePG9vpWzhNJdcb7V8+UjumuAPJZd1HkEp0yztmSA7HdMnxmkEtT1jnXSWPTDLaQSFX7JO+uyXXNdpBA3YaGkLG1yTXNdpBB1qfFxV7/x4nOSyziNI3RIWHRcwtUh2WecRpJacOZQvvagzCTIGCgLUrKDi6i+LeFOQLY5Wf9nILUNGve/ycMPYgfNuyq7qPJtYYVyPDdtmNPyz5LLOI+itkeVau69ZmeS6TiOoY8VJWLtTkus6jaCml62Tvnsl13UaQb2tHwaWhgqPaxHEaQTlRF7R/KT0l1zWeQSpqxsOHR/xovSTDecRpN7MyT4jvagzCTIGCgJQEKA2DCTfPTfl97I7yMI4/kDywv7RS1f0aS88XkUyjj+QfNaYjB4xM9N+qGv58nD8geQhgZ5x/ev51L2tawWk4fgDyV3C7mttrPunulZAGo4/kFx539LmK+d0rYA0HH8guTKwRNtUZ7vu0LUC0nD8geTucS3mLugS4/IffSsgi5odSH5IqWaZaJ1ujQ8uTdvRLUTv8iVhaE+68DO7I9rF/4LuNKoT26+u7z+fYPkyMEhQ+S+GqsWTXRXPxeW2A3p60rNbNh0n/hVByRgkKN0lRZ3vk77nTQ87IsQFlU4KS57RJv4OThqCQYKema2qP0jXXixobzsgLmhRQqF2XjdllK7ly8MgQf5aR/HpndqL3b62A+KCwj+xtIX17upaAWkYJCg+UftZqL2Y/z93FN0rrgm0cq6e9AmfhD9uDlh5+C2PLNsBHedi1g5Qqb+dAddGY9Rh/sRgN0tvJ2yNnffFBU1PshwIV/bVt3xpGNcP+iZ37+GLdq9ziQu6G9v9nfVDml/Wu3xJ1IJLruWbk5Oy9AyOl0otEGQuFASgIICpgq5u3X5dbln5mCiodEbDgQMappp2GiqGiYJSE26r6s0X0uUWlo15gsoCrJfTLjSSW1g25gm6HqyeeCX5vOp7T25lyZgn6FvfMOUpdyXC27RPlYWoWUHH+lThtkL1cj2oqttc7Xxw5ijUrKDCg/sr8VpXpNRP3rd3Yn0Hf6KJeZvYQeXOm33jF91TLsmtLBnzBF1SrHvnawp30rbQ+kHuL1hetK8jt7BsTBS0SgmZNSOw4qN3x8XMc7GjQW5uoWfl1pUOz+YBFASgIAAFASgIUBvGSZuK44+TNhnHHydtMo4/TtpkHH+ctFmUXrMOjnP8cdLm8NUY71DfmQW1YZy0KdyLmF+o5o3rVV4Lxkmbwi+tI/7KO+yv4XHSF+dU4fErvfVqlMSKP/zXFxvck96a9+jvX6ZX0XDnk9SrMX6SbZ3MSjdYkHLA3jsO/pzVdQMs7YPIo0YJSqxA6Z2YaDvg4IKKo5OulOcmjDDsKNZdeSZGQ2kVE2M7EDPXcuv/aYMSRRj6olDspXih2Kg+AqGRrb1dAoevzcpqZNDdgGf6f6w+bhNbb731f/OGrUQI9heKNfEVijXzFIq1cLeu4nTR8dl690Hb/F978BhBFbyxWKjW2slCsT/9SCh2toNQLL+BUKwa3Tvpy892vUJBj6NkSn0Kejw5PweP0Pl/FwShIAAFASgIQEGAN5cLxdZPE4rtHiIUy31WKHYnWChWjSGCCsVu/1xSIBQrE/xeq+A3z3R+Qc3BR8qZDwUBKAhAQQAKAlAQgIIAFASgIAAFASgIQEEACgLIF5RjHf+RhIMnE/ybwesiBypvHoeec126pLlP9Ca4zPvzWvjFgo8cHkW+oGVBmRqHYe6k7+icWS7o6eJXLcUyJ/hdBrk5nst2TIUa1WEN1uyc6K7nMSbyBU3qJ5YbEq81KUKPji0Ih89wDkrRmm6DQeqcVeEgPXfYlS+o59TbZwQucd11E35wtfryWBgJTdWaXsNA6gPF8pSgVV7CSzZCUJNID0UZCh9jkKtsTng6YoHI40GP++C7Tq/0yz6+0Bs9KvIviiUxWtFxC2Lpgoq94i8UbAsYhHJ7lYC0nUt8kgVKPp+KM0VdtD35T1GqrEuT7N1TvJSvBJZaiUGH+dXKNyBxWFmhtUtdC2Gtw+43YKakdb9Pi460eAnl8seHBo5d4abjxiIGCdqtXASJi4rlQLdH+QzWGiGwI9+uXNHaj5TPRVZuTrhIqhLpgg54WroZ8+uh/6SysEVau8DT7m1hq8h334IiFtGntfZdF3B0KOqare0EwhbggtVIF/SwU+Plu1M91sLgGo+0PWkeb8PcRpev8VKLO4W/t3+Z30SUG+W/MqdnYz13N5K/id0YH+LbZbNAMDPaJyrTzk1zv8OoKJGl3poW7tUmAx4T700OCh7+pUjBKnguBqAgAAUBKAhAQQAKAlAQgIIAFASgIAAFASgIQEEACgJQEICCABQEoCAABQEoCEBBAAoCUBCAggAUBKAgAAUBKAhAQQAKAlAQgIIAFASgIAAFASgIQEEACgJQEICCABQEoCAABQEoCEBBAAoCUBCAggAUBKAgAAUBKAhAQQAKAlAQgIIAFASgIAAFASgIQEEACgJQEOC/NCeLrIWs/u0AAAAASUVORK5CYII=" /><!-- --></p>
+<p>Ok, so all the <code>y</code>s are roughly 10 times the <code>x</code>s except the outlying data point.</p>
+<p>The problem having to plot data sets to catch anomalies is that it is <em>really</em> hard to visualize 4-dimensions at once, and it is near impossible with high-dimensional data.</p>
+<p>There’s no way of catching this anomaly by looking at each individual column separately; the only way to catch it is to view each row as a complete observation and compare it to the rest.</p>
+<p>To this end, <code>assertr</code> provides three functions that take a data frame, and reduce each row into a single value. We’ll call them <em>row reduction functions</em>.</p>
+<p>The first one we’ll look at is called <code>maha_dist</code>. It computes the average mahalanobis distance (kind of like multivariate z-scoring for outlier detection) of each row from the whole data set. The big idea is that in the resultant vector, big/distant values are potential anomalous entries. Let’s look at the distribution of mahalanobis distances for this data set…</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" data-line-number="1"><span class="kw">maha_dist</span>(example.data)</a></code></pre></div>
+<pre><code>##  [1]  1.28106379  3.10992407  0.25081851  1.35993969 12.81898913  1.35993969
+##  [7]  0.26181283  0.47714597  0.87804987  2.95741956  0.25081851  1.35993969
+## [13]  1.29208587  0.28235776  0.05969507</code></pre>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" data-line-number="1"><span class="kw">maha_dist</span>(example.data) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">hist</span>(<span class="dt">main=</span><span class="st">&quot;&quot;</span>, <span class="dt">xlab=</span><span class="st">&quot;&quot;</span>)</a></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+<p>There’s no question here as to whether there’s an anomalous entry! But how do you check for this sort of thing using <code>assertr</code> constructs?</p>
+<p>Well, <code>maha_dist</code> will typically be used with the <code>insist_rows</code> function. <code>insist_rows</code> takes a data frame, a row reduction function, a predicate-generating function, and an arbitrary number of columns to apply the predicate function to. The row reduction function (<code>maha_dist</code> in this case) is applied to the data frame, and returns a value for each row. The predicate-generating function is then applied to the vector returned from the row reduction function and the resultant predicate is applied to each element of that vector. It will raise an error if it finds any violations.</p>
+<p>As always, this undoubtedly sounds far more confusing than it really is. Here’s an example of it in use</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb42-1" data-line-number="1">example.data <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb42-2" data-line-number="2"><span class="st">  </span><span class="kw">insist_rows</span>(maha_dist, <span class="kw">within_n_mads</span>(<span class="dv">3</span>), dplyr<span class="op">::</span><span class="kw">everything</span>())</a></code></pre></div>
+<pre><code>## Data frame row reduction 'maha_dist' violates predicate 'within_n_mads(3)' 1 time
+##          verb  redux_fn        predicate               column index    value
+## 1 insist_rows maha_dist within_n_mads(3) ~dplyr::everything()     5 12.81899</code></pre>
+<pre><code>## Error: assertr stopped execution</code></pre>
+<p>Check that out! To be clear, this function is running the supplied data frame through the <code>maha_dist</code> function which returns a value for each row corresponding to its mahalanobis distance. (The whole data frame is used because we used the <code>everything()</code> selection function from the <code>dplyr</code> package.) Then, <code>within_n_mads(3)</code> computes on that vector and returns a bounds checking predicate. The bounds checking predicate checks to see that all mahalanobis distances are within 3 median absolute deviations of each other. They are not, and the pipeline errors out. Note that the <code>data.frame</code> of errors that is returned by error report contains the verb used (<code>insist_rows</code>), the row reduction function, the predicate, the column (or columns), the index of the failure and the offendind datum.</p>
+<p>This is probably the most powerful construct in <code>assertr</code>–it can find a whole lot of nasty errors that would be very difficult to check for by hand.</p>
+<p>Part of what makes it so powerful is how flexible <code>maha_dist</code> is. We only used it, so far, on a data frame of numerics, but it can handle all sorts of data frames. To really see it shine, let’s use it on the iris data set, that contains a categorical variable in its right-most column…</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb45-1" data-line-number="1"><span class="kw">head</span>(iris)</a></code></pre></div>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa</code></pre>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb47-1" data-line-number="1">iris <span class="op">%&gt;%</span><span class="st"> </span>maha_dist <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">hist</span>(<span class="dt">main=</span><span class="st">&quot;&quot;</span>, <span class="dt">xlab=</span><span class="st">&quot;&quot;</span>)</a></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+<p>Looks ok, but what happens when we accidentally enter a row as a different species…</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb48-1" data-line-number="1">mistake &lt;-<span class="st"> </span>iris</a>
+<a class="sourceLine" id="cb48-2" data-line-number="2">(mistake[<span class="dv">149</span>,<span class="dv">5</span>])</a></code></pre></div>
+<pre><code>## [1] virginica
+## Levels: setosa versicolor virginica</code></pre>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb50-1" data-line-number="1">mistake[<span class="dv">149</span>,<span class="dv">5</span>] &lt;-<span class="st"> &quot;setosa&quot;</span></a>
+<a class="sourceLine" id="cb50-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb50-3" data-line-number="3">mistake <span class="op">%&gt;%</span><span class="st"> </span>maha_dist <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">hist</span>(<span class="dt">main=</span><span class="st">&quot;&quot;</span>, <span class="dt">xlab=</span><span class="st">&quot;&quot;</span>)</a></code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb51-1" data-line-number="1">mistake <span class="op">%&gt;%</span><span class="st"> </span>maha_dist <span class="op">%&gt;%</span><span class="st"> </span>which.max</a></code></pre></div>
+<pre><code>## [1] 149</code></pre>
+<p>Look at that! This mistake can easily be picked up by any reasonable bounds checker…</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb53-1" data-line-number="1">mistake <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">insist_rows</span>(maha_dist, <span class="kw">within_n_mads</span>(<span class="dv">7</span>), dplyr<span class="op">::</span><span class="kw">everything</span>())</a></code></pre></div>
+<pre><code>## Data frame row reduction 'maha_dist' violates predicate 'within_n_mads(7)' 1 time
+##          verb  redux_fn        predicate               column index   value
+## 1 insist_rows maha_dist within_n_mads(7) ~dplyr::everything()   149 56.6992</code></pre>
+<pre><code>## Error: assertr stopped execution</code></pre>
+<p><code>insist</code> and <code>insist_rows</code> are both similar in that they both take predicate generators and not actual predicates. What makes <code>insist_rows</code> different is its usage of a row-reduce data frame.</p>
+<p><code>assert</code> has a row-oriented counterpart, too; it’s called <code>assert_rows</code>. <code>insist</code> is to <code>assert</code> as <code>insist_rows</code> is to <code>assert_rows</code>.</p>
+<p><code>assert_rows</code> works the same as <code>insist_rows</code>, except that instead of using a predicate generator on the row-reduced data frame, it uses a regular-old predicate.</p>
+<p>For an example of a <code>assert_rows</code> use case, let’s say that we got a data set (<code>another-dataset.csv</code>) from the web and we don’t want to continue processing the data set if any row contains more than two missing values (NAs). You can use the row reduction function <code>num_row_NAs</code> to reduce all the rows into the number of NAs they contain. Then, a simple bounds checker will suffice for ensuring that no element is higher than 2…</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb56-1" data-line-number="1"><span class="kw">read.csv</span>(<span class="st">&quot;another-dataset.csv&quot;</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb56-2" data-line-number="2"><span class="st">  </span><span class="kw">assert_rows</span>(num_row_NAs, <span class="kw">within_bounds</span>(<span class="dv">0</span>,<span class="dv">2</span>), dplyr<span class="op">::</span><span class="kw">everything</span>()) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb56-3" data-line-number="3"><span class="st">  </span>...</a></code></pre></div>
+<p><code>assert_rows</code> can be used for anomaly detection as well. A future version of <code>assertr</code> may contain a cosine distance row reduction function. Since all cosine distances are constained from -1 to 1, it is easy to use a non-dynamic predicate to disallow certain values.</p>
+</div>
+<div id="success-error-and-defect-functions" class="section level3">
+<h3>success, error and defect functions</h3>
+<p>The behavior of functions like <code>assert</code>, <code>assert_rows</code>, <code>insist</code>, <code>insist_rows</code>, <code>verify</code> when the assertion passes, fails or is skipped due to data defect is configurable via the <code>success_fun</code>, <code>error_fun</code> and <code>defect_fun</code> parameters, respectively.</p>
+<p>The <code>success_fun</code> parameter takes a function that takes the data passed to the assertion function as a parameter. You can write your own success handler function, but there are a few provided by this package:</p>
+<ul>
+<li><p><code>success_continue</code> - just returns the data that was passed into the assertion function (this is default).</p></li>
+<li><p><code>success_logical</code> - returns TRUE</p></li>
+<li><p><code>success_append</code> - returns the data that was passed into the assertion function but also attaches basic information about verification result to a special attribute of <code>data</code>.</p></li>
+<li><p><code>success_report</code> - when success results are stored (<code>chain_start(store_results=TRUE)</code>), and each verification ended up with success, it prints a summary of all successful validations (when being in chan) or simple verification result for single check and returns data.</p></li>
+<li><p><code>success_df_return</code> - when success results are stored (<code>chain_start(store_results=TRUE)</code>), and each verification ended up with success, it prints data.frame with verification results (can be used for <code>chain_end</code> or single verification).</p></li>
+</ul>
+<p>The <code>error_fun</code> parameter takes a function that takes the data passed to the assertion function as a parameter. You can write your own error handler function, but there are a few provided by this package:</p>
+<ul>
+<li><p><code>error_stop</code> - Prints a summary of the errors and halts execution (default)</p></li>
+<li><p><code>error_report</code> - Prints <em>all</em> the information available about the errors and halts execution.</p></li>
+<li><p><code>error_append</code> - Attaches the errors to a special attribute of <code>data</code> and returns the data. This is chiefly to allow assertr errors to be accumulated in a pipeline so that all assertions can have a chance to be checked and so that all the errors can be displayed at the end of the chain.</p></li>
+<li><p><code>error_logical</code> - returns FALSE</p></li>
+<li><p><code>just_warn</code> - Prints a summary of the errors but does not halt execution, it just issues a warning.</p></li>
+<li><p><code>warn_report</code> - Prints all the information available about the errors but does not halt execution, it just issues a warning.</p></li>
+<li><p><code>defect_report</code> - For single rule and defective data it displays short info about skipping the current assertion. For <code>chain_end</code> sums up all skipped rules for defective data.</p></li>
+<li><p><code>defect_df_return</code> - For single rule and defective data it returns info data.frame about skipping current assertion. For <code>chain_end</code> returns all skipped rules info data.frame for defective data.</p></li>
+</ul>
+<p>The <code>defect_fun</code> parameter takes a function that takes the data passed to the assertion function as a parameter. Defect handler is called when any of previous assertions that was marked as obligatory failed (see below section). You can write your own defect handler function, but there are a few provided by this package:</p>
+<ul>
+<li><p><code>defect_append</code> - Attaches the assertion call info on defective data to a special attribute of <code>data</code> and returns the data.</p></li>
+<li><p><code>defect_report</code> - For single rule and defective data it displays short info about skipping current assertion. For <code>chain_end</code> sums up all skipped rules for defective data.</p></li>
+<li><p><code>defect_df_return</code> - For single rule and defective data it returns info data.frame about skipping current assertion. For <code>chain_end</code> returns all skipped rules info data.frame for defective data.</p></li>
+</ul>
+</div>
+<div id="obligatory-assertions" class="section level3">
+<h3>Obligatory assertions</h3>
+<p>You may find a situation in which some rules are not independent.</p>
+<p>For example:</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb57-1" data-line-number="1">mtcars_without_am &lt;-<span class="st"> </span>mtcars <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb57-2" data-line-number="2"><span class="st">  </span>dplyr<span class="op">::</span><span class="kw">select</span>(<span class="op">-</span>am)</a>
+<a class="sourceLine" id="cb57-3" data-line-number="3">mtcars_without_am <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb57-4" data-line-number="4"><span class="st">  </span><span class="kw">verify</span>(<span class="kw">has_all_names</span>(<span class="st">&quot;am&quot;</span>, <span class="st">&quot;vs&quot;</span>), <span class="dt">error_fun =</span> error_append) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb57-5" data-line-number="5"><span class="st">  </span><span class="kw">assert</span>(<span class="kw">in_set</span>(<span class="dv">0</span>, <span class="dv">1</span>), am, vs, <span class="dt">error_fun =</span> error_report)</a></code></pre></div>
+<p><code>assert</code> requires existence of <code>am</code> and <code>vs</code> columns, which are checked previously by <code>verify</code> assertion. In the above example, we want to store info about all errors after assertions are finished but it won’t happen. A missing <code>am</code> column in the data returns error not related to assertion check. As a result code execution ends up with not handled error.</p>
+<p>To allow such situations obligatory rules were introduced. You can create an obligatory rule by adding <code>obligatory = TRUE</code> inside assertion function. When a rule was obligatory and failed, the data is marked as defective and each following rule will be handled by <code>defect_fun</code> function. By default <code>defect_fun=defect_append</code> which registers information about running assertion on defective data and skips the rule execution.</p>
+<p>Below we display information about a skipped rule by using <code>defect_report</code>:</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb58-1" data-line-number="1">mtcars_without_am &lt;-<span class="st"> </span>mtcars <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb58-2" data-line-number="2"><span class="st">  </span>dplyr<span class="op">::</span><span class="kw">select</span>(<span class="op">-</span>am)</a>
+<a class="sourceLine" id="cb58-3" data-line-number="3">mtcars_without_am <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb58-4" data-line-number="4"><span class="st">  </span><span class="kw">verify</span>(<span class="kw">has_all_names</span>(<span class="st">&quot;am&quot;</span>, <span class="st">&quot;vs&quot;</span>), <span class="dt">obligatory=</span><span class="ot">TRUE</span>, <span class="dt">error_fun=</span>error_append) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb58-5" data-line-number="5"><span class="st">  </span><span class="kw">assert</span>(<span class="kw">in_set</span>(<span class="dv">0</span>, <span class="dv">1</span>), am, vs, <span class="dt">defect_fun=</span>defect_report)</a></code></pre></div>
+<pre><code>## assert: verification [in_set(0, 1)] omitted due to data defect! Columns passed to assertion: am vs</code></pre>
+</div>
+<div id="combining-chains-of-assertions" class="section level3">
+<h3>combining chains of assertions</h3>
+<p>Let’s say that as part of an automated pipeline that grabs mtcars from an untrusted source and finds the average miles per gallon for each number of engine cylinders, we want to perform the following checks…</p>
+<ul>
+<li>that it has the columns “mpg”, “vs”, and “am”</li>
+<li>that the dataset contains more than 10 observations</li>
+<li>that the column for ‘miles per gallon’ (mpg) is a positive number</li>
+<li>that the column for ‘miles per gallon’ (mpg) does not contain a datum that is outside 4 standard deviations from its mean, and</li>
+<li>that the am and vs columns (automatic/manual and v/straight engine, respectively) contain 0s and 1s only</li>
+</ul>
+<p>This could be written thusly:</p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb60-1" data-line-number="1">mtcars <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb60-2" data-line-number="2"><span class="st">  </span><span class="kw">verify</span>(<span class="kw">has_all_names</span>(<span class="st">&quot;mpg&quot;</span>, <span class="st">&quot;vs&quot;</span>, <span class="st">&quot;am&quot;</span>)) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb60-3" data-line-number="3"><span class="st">  </span><span class="kw">verify</span>(<span class="kw">nrow</span>(mtcars) <span class="op">&gt;</span><span class="st"> </span><span class="dv">10</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb60-4" data-line-number="4"><span class="st">  </span><span class="kw">verify</span>(mpg <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb60-5" data-line-number="5"><span class="st">  </span><span class="kw">insist</span>(<span class="kw">within_n_sds</span>(<span class="dv">4</span>), mpg) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb60-6" data-line-number="6"><span class="st">  </span><span class="kw">assert</span>(<span class="kw">in_set</span>(<span class="dv">0</span>,<span class="dv">1</span>), am, vs) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb60-7" data-line-number="7"><span class="st">  </span><span class="kw">group_by</span>(cyl) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb60-8" data-line-number="8"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">avg.mpg=</span><span class="kw">mean</span>(mpg))</a></code></pre></div>
+<pre><code>## # A tibble: 3 x 2
+##     cyl avg.mpg
+## * &lt;dbl&gt;   &lt;dbl&gt;
+## 1     4    26.7
+## 2     6    19.7
+## 3     8    15.1</code></pre>
+<p>In an assertr chain with default options, <code>assert</code>, <code>assert_rows</code>, <code>insist</code>, <code>insist_rows</code>, and <code>verify</code> will stop at the first assertion that yields an error and not go on to process the assertions further down in the chain. For some needs, this is sensible behavior. There are times, however, when we might like to get a report of all assertion violations. For example, one might want to write an R program to download some dataset from the internet and get a detailed report of all deviations from expectation.</p>
+<p>The best thing to do for this use case, is to use the <code>chain_start</code>, and <code>chain_end</code> functions at the beginning and end of a chain of assertr assertions. When <code>chain_start</code> gets called with data, the data gets a special tag that tells the assertr assertions that follow to override their <code>success_fun</code> and <code>error_fun</code> values and replace them with <code>success_continue</code> (which passes the data along if the test passes) and <code>error_append</code> (which we’ve just discussed). After all relevant verifications, <code>chain_end</code> will receive the data (possibly with accumulated error messages attached) and, by default, print a report of all the errors that have been found since the start of the chain.</p>
+<p>Let’s see it in action!</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb62-1" data-line-number="1">mtcars <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb62-2" data-line-number="2"><span class="st">  </span>chain_start <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb62-3" data-line-number="3"><span class="st">  </span><span class="kw">verify</span>(<span class="kw">nrow</span>(mtcars) <span class="op">&gt;</span><span class="st"> </span><span class="dv">10</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb62-4" data-line-number="4"><span class="st">  </span><span class="kw">verify</span>(mpg <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb62-5" data-line-number="5"><span class="st">  </span><span class="kw">insist</span>(<span class="kw">within_n_sds</span>(<span class="dv">4</span>), mpg) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb62-6" data-line-number="6"><span class="st">  </span><span class="kw">assert</span>(<span class="kw">in_set</span>(<span class="dv">0</span>,<span class="dv">1</span>), am, vs) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb62-7" data-line-number="7"><span class="st">  </span>chain_end <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb62-8" data-line-number="8"><span class="st">  </span><span class="kw">group_by</span>(cyl) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb62-9" data-line-number="9"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">avg.mpg=</span><span class="kw">mean</span>(mpg))</a></code></pre></div>
+<pre><code>## # A tibble: 3 x 2
+##     cyl avg.mpg
+## * &lt;dbl&gt;   &lt;dbl&gt;
+## 1     4    26.7
+## 2     6    19.7
+## 3     8    15.1</code></pre>
+<p>Now <em>all</em> assertions will be checked and reported.</p>
+<p>Tip: we can make this whole thing look a lot better by abstracting out all the assertions:</p>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb64-1" data-line-number="1">check_me &lt;-<span class="st"> </span>. <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb64-2" data-line-number="2"><span class="st">  </span>chain_start <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb64-3" data-line-number="3"><span class="st">  </span><span class="kw">verify</span>(<span class="kw">nrow</span>(mtcars) <span class="op">&gt;</span><span class="st"> </span><span class="dv">10</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb64-4" data-line-number="4"><span class="st">  </span><span class="kw">verify</span>(mpg <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb64-5" data-line-number="5"><span class="st">  </span><span class="kw">insist</span>(<span class="kw">within_n_sds</span>(<span class="dv">4</span>), mpg) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb64-6" data-line-number="6"><span class="st">  </span><span class="kw">assert</span>(<span class="kw">in_set</span>(<span class="dv">0</span>,<span class="dv">1</span>), am, vs) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb64-7" data-line-number="7"><span class="st">  </span>chain_end </a>
+<a class="sourceLine" id="cb64-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb64-9" data-line-number="9">mtcars <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb64-10" data-line-number="10"><span class="st">  </span>check_me <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb64-11" data-line-number="11"><span class="st">  </span><span class="kw">group_by</span>(cyl) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb64-12" data-line-number="12"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">avg.mpg=</span><span class="kw">mean</span>(mpg))</a></code></pre></div>
+<p>Awesome! Now we can add an arbitrary number of assertions, as the need arises, without touching the real logic.</p>
+<p>Note: By default, all assertions in the chain use <code>success_continue</code> and <code>error_append</code> functions. It allows you to continue workflow in both cases and aggregate error logs. In some cases (i.e. when you don’t want to include the error log and just have some error printed), you can require using assertion specific success/error callback in chain.</p>
+<p>Just use <code>skip_chain_opts = TRUE</code> and specify callback inside assertion:</p>
+<pre><code>print_error &lt;- function(errors, data=NULL) {
+  print(errors)
+  return(data)
+}
+mtcars %&gt;%
+  chain_start %&gt;%
+  verify(nrow(mtcars) &gt; 32, error_fun=print_error, skip_chain_opts=TRUE) %&gt;%
+  verify(mpg &gt; 0) %&gt;%
+  insist(within_n_sds(4), mpg) %&gt;%
+  assert(in_set(0,1), am, vs) %&gt;%
+  chain_end </code></pre>
+<p>You may also store validation successful results by using <code>store_success=TRUE</code>:</p>
+<pre><code>mtcars %&gt;%
+  chain_start(store_success=TRUE) %&gt;%
+  verify(nrow(mtcars) == 32) %&gt;%
+  verify(mpg &gt; 0) %&gt;%
+  insist(within_n_sds(4), mpg) %&gt;%
+  assert(in_set(0,1), am, vs) %&gt;%
+  chain_end(success_fun=success_df_return)</code></pre>
+</div>
+<div id="advanced-send-email-reports-using-custom-error-functions" class="section level3">
+<h3>advanced: send email reports using custom error functions</h3>
+<p>One particularly cool application of <code>assertr</code> is to use it as a data integrity checker for frequently updated data sources. A script can download new data as it becomes available, and then run <code>assertr</code> checks on it. This makes <code>assertr</code> into a sort of “continuous integration” tool (but for data, not code.)</p>
+<p>In an unsupervised “continuous integration” environment, you need a way to discover that the assertions failed. In CI-as-a-service in the software world, failed automated checks often send an email of reporting the maintainer of a botched build; why not bring that functionality to <code>assertr</code>?!</p>
+<p>As we learned in the last sections, all assertion verbs in <code>assertr</code> support a custom error function. <code>chain_end</code> similarly supports custom error functions. By default, this is <code>error_stop</code> (or <code>error_report</code> in the case of <code>chain_end</code>) which prints a summary of the errors and halts execution.</p>
+<p>You can specify your own, though, to hijack this behavior and redirect flow-of-control wherever you want.</p>
+<p>Your custom error function must take, as its first argument, a list of <code>assertr_error</code> S3 objects. The second argument must be the <code>data.frame</code> that the verb is computing on. Every error function must take this because there may be some other errors that are attached to the <code>data.frame</code>’s <code>assertr_errors</code> attribute leftover from other previous assertions.</p>
+<p>Below we are going to build a function that takes a list of <code>assertr_errors</code>, gets a string representation of the errors and emails it to someone before halting execution. We will use the <code>mailR</code> package to send the mail.</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb67-1" data-line-number="1"><span class="kw">library</span>(mailR)</a>
+<a class="sourceLine" id="cb67-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb67-3" data-line-number="3">email_me &lt;-<span class="st"> </span><span class="cf">function</span>(list_of_errors, <span class="dt">data=</span><span class="ot">NULL</span>, ...){</a>
+<a class="sourceLine" id="cb67-4" data-line-number="4">  <span class="co"># we are checking to see if there are any errors that</span></a>
+<a class="sourceLine" id="cb67-5" data-line-number="5">  <span class="co"># are still attached to the data.frame</span></a>
+<a class="sourceLine" id="cb67-6" data-line-number="6">  <span class="cf">if</span>(<span class="op">!</span><span class="kw">is.null</span>(data) <span class="op">&amp;&amp;</span><span class="st"> </span><span class="op">!</span><span class="kw">is.null</span>(<span class="kw">attr</span>(data, <span class="st">&quot;assertr_errors&quot;</span>)))</a>
+<a class="sourceLine" id="cb67-7" data-line-number="7">    errors &lt;-<span class="st"> </span><span class="kw">append</span>(<span class="kw">attr</span>(data, <span class="st">&quot;assertr_errors&quot;</span>), errors)</a>
+<a class="sourceLine" id="cb67-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb67-9" data-line-number="9">  num.of.errors &lt;-<span class="st"> </span><span class="kw">length</span>(list_of_errors)</a>
+<a class="sourceLine" id="cb67-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb67-11" data-line-number="11">  preface &lt;-<span class="st"> </span><span class="kw">sprintf</span>(<span class="st">&quot;There %s %d error%s:</span><span class="ch">\n</span><span class="st">&quot;</span>,</a>
+<a class="sourceLine" id="cb67-12" data-line-number="12">                     <span class="kw">ifelse</span>(num.of.errors<span class="op">==</span><span class="dv">1</span>,<span class="st">&quot;is&quot;</span>, <span class="st">&quot;are&quot;</span>),</a>
+<a class="sourceLine" id="cb67-13" data-line-number="13">                     num.of.errors,</a>
+<a class="sourceLine" id="cb67-14" data-line-number="14">                     <span class="kw">ifelse</span>(num.of.errors<span class="op">==</span><span class="dv">1</span>,<span class="st">&quot;&quot;</span>, <span class="st">&quot;s&quot;</span>))</a>
+<a class="sourceLine" id="cb67-15" data-line-number="15"></a>
+<a class="sourceLine" id="cb67-16" data-line-number="16">  <span class="co"># all `assertr_error` S3 objects have `print` and `summary` methods</span></a>
+<a class="sourceLine" id="cb67-17" data-line-number="17">  <span class="co"># here, we will call `print` on all of the errors since `print`</span></a>
+<a class="sourceLine" id="cb67-18" data-line-number="18">  <span class="co"># will give us the complete/unabridged error report</span></a>
+<a class="sourceLine" id="cb67-19" data-line-number="19">  error_string &lt;-<span class="st"> </span><span class="kw">capture.output</span>(tmp &lt;-<span class="st"> </span><span class="kw">lapply</span>(list_of_errors,</a>
+<a class="sourceLine" id="cb67-20" data-line-number="20">                                               <span class="cf">function</span>(x){</a>
+<a class="sourceLine" id="cb67-21" data-line-number="21">                                                 <span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">- &quot;</span>);</a>
+<a class="sourceLine" id="cb67-22" data-line-number="22">                                                 <span class="kw">print</span>(x);</a>
+<a class="sourceLine" id="cb67-23" data-line-number="23">                                                 <span class="kw">return</span>();}))</a>
+<a class="sourceLine" id="cb67-24" data-line-number="24">  error_string &lt;-<span class="st"> </span><span class="kw">c</span>(preface, error_string)</a>
+<a class="sourceLine" id="cb67-25" data-line-number="25">  error_string &lt;-<span class="st"> </span>error_string <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">paste0</span>(<span class="dt">collapse=</span><span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</a>
+<a class="sourceLine" id="cb67-26" data-line-number="26"></a>
+<a class="sourceLine" id="cb67-27" data-line-number="27">  <span class="kw">send.mail</span>(<span class="dt">from=</span><span class="st">&quot;assertr@gmail.com&quot;</span>, <span class="dt">to=</span><span class="st">&quot;YOU@gmail.com&quot;</span>,</a>
+<a class="sourceLine" id="cb67-28" data-line-number="28">            <span class="dt">subject=</span><span class="st">&quot;error from assertr&quot;</span>, <span class="dt">body=</span>error_string,</a>
+<a class="sourceLine" id="cb67-29" data-line-number="29">            <span class="dt">smtp =</span> <span class="kw">list</span>(<span class="dt">host.name=</span><span class="st">&quot;aspmx.l.google.com&quot;</span>, <span class="dt">port=</span><span class="dv">25</span>),</a>
+<a class="sourceLine" id="cb67-30" data-line-number="30">            <span class="dt">authenticate =</span> <span class="ot">FALSE</span>, <span class="dt">send=</span><span class="ot">TRUE</span>)</a>
+<a class="sourceLine" id="cb67-31" data-line-number="31">  <span class="kw">stop</span>(<span class="st">&quot;assertr stopped execution&quot;</span>, <span class="dt">call.=</span><span class="ot">FALSE</span>)</a>
+<a class="sourceLine" id="cb67-32" data-line-number="32">}</a>
+<a class="sourceLine" id="cb67-33" data-line-number="33"></a>
+<a class="sourceLine" id="cb67-34" data-line-number="34">questionable_mtcars <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb67-35" data-line-number="35"><span class="st">  </span>chain_start <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb67-36" data-line-number="36"><span class="st">  </span><span class="kw">verify</span>(<span class="kw">nrow</span>(.) <span class="op">&gt;</span><span class="st"> </span><span class="dv">10</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb67-37" data-line-number="37"><span class="st">  </span><span class="kw">insist</span>(<span class="kw">within_n_sds</span>(<span class="dv">4</span>), mpg) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb67-38" data-line-number="38"><span class="st">  </span><span class="co"># ...</span></a>
+<a class="sourceLine" id="cb67-39" data-line-number="39"><span class="st">  </span><span class="kw">chain_end</span>(<span class="dt">error_fun=</span>email.me)</a></code></pre></div>
+<p>(this particular <code>send.mail</code> formulation will only work for gmail recipients; see the <code>mailR</code> documentation for more information)</p>
+<p>Now you’ll get notified of <s>any</s> all failed assertions via email. Groovy!</p>
+</div>
+<div id="advanced-creating-your-own-predicate-generators-for-insist" class="section level3">
+<h3>advanced: creating your own predicate generators for <code>insist</code></h3>
+<p><code>assertr</code> is build with robustness, correctness, and extensibility in mind. Just like <code>assertr</code> makes it easy to create your own custom predicates, so too does this package make it easy to create your own custom predicate generators.</p>
+<p>Okay… so its, perhaps, not <em>easy</em> because predicate generators by nature are functions that return functions. But it’s possible!</p>
+<p>Let’s say you wanted to create a predicate generator that checks if all elements of a vector are within 3 times the vector’s interquartile range from the median. We need to create a function that looks like this</p>
+<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb68-1" data-line-number="1">within_<span class="dv">3</span>_iqrs &lt;-<span class="st"> </span><span class="cf">function</span>(a_vector){</a>
+<a class="sourceLine" id="cb68-2" data-line-number="2">  the_median &lt;-<span class="st"> </span><span class="kw">median</span>(a_vector)</a>
+<a class="sourceLine" id="cb68-3" data-line-number="3">  the_iqr &lt;-<span class="st"> </span><span class="kw">IQR</span>(a_vector)</a>
+<a class="sourceLine" id="cb68-4" data-line-number="4">  <span class="kw">within_bounds</span>((the_median<span class="op">-</span>the_iqr<span class="op">*</span><span class="dv">3</span>), (the_median<span class="op">+</span>the_iqr<span class="op">*</span><span class="dv">3</span>))</a>
+<a class="sourceLine" id="cb68-5" data-line-number="5">}</a></code></pre></div>
+<p>Now, we can use it on <code>mpg</code> from <code>mtcars</code> like so:</p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb69-1" data-line-number="1">mtcars <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb69-2" data-line-number="2"><span class="st">  </span><span class="kw">insist</span>(within_<span class="dv">3</span>_iqrs, mpg) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb69-3" data-line-number="3"><span class="st">  </span><span class="kw">group_by</span>(cyl) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb69-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">avg.mpg=</span><span class="kw">mean</span>(mpg))</a></code></pre></div>
+<pre><code>## # A tibble: 3 x 2
+##     cyl avg.mpg
+## * &lt;dbl&gt;   &lt;dbl&gt;
+## 1     4    26.7
+## 2     6    19.7
+## 3     8    15.1</code></pre>
+<p>There are two problems with this, though…</p>
+<ol style="list-style-type: decimal">
+<li>We may want to abstract this so that we can supply an arbitrary number of IQRs to create the bounds with</li>
+<li>We lose the ability to choose what optional arguments (if any) that we give to the returned <code>within_bounds</code> predicate.</li>
+</ol>
+<p>Now we have to write a function that returns a function that returns a function…</p>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb71-1" data-line-number="1">within_n_iqrs &lt;-<span class="st"> </span><span class="cf">function</span>(n, ...){</a>
+<a class="sourceLine" id="cb71-2" data-line-number="2">  <span class="cf">function</span>(a_vector){</a>
+<a class="sourceLine" id="cb71-3" data-line-number="3">    the_median &lt;-<span class="st"> </span><span class="kw">median</span>(a_vector)</a>
+<a class="sourceLine" id="cb71-4" data-line-number="4">    the_iqr &lt;-<span class="st"> </span><span class="kw">IQR</span>(a_vector)</a>
+<a class="sourceLine" id="cb71-5" data-line-number="5">    <span class="kw">within_bounds</span>((the_median<span class="op">-</span>the_iqr<span class="op">*</span>n), (the_median<span class="op">+</span>the_iqr<span class="op">*</span>n), ...)</a>
+<a class="sourceLine" id="cb71-6" data-line-number="6">  }</a>
+<a class="sourceLine" id="cb71-7" data-line-number="7">}</a></code></pre></div>
+<p>Much better! Now, if we want to check that every <code>mpg</code> from <code>mtcars</code> is within 5 IQRs of the median and <em>not allow NA values</em> we can do so like this:</p>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb72-1" data-line-number="1">mtcars <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb72-2" data-line-number="2"><span class="st">  </span><span class="kw">insist</span>(<span class="kw">within_n_iqrs</span>(<span class="dv">5</span>), mpg) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb72-3" data-line-number="3"><span class="st">  </span><span class="kw">group_by</span>(cyl) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb72-4" data-line-number="4"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">avg.mpg=</span><span class="kw">mean</span>(mpg))</a></code></pre></div>
+<pre><code>## # A tibble: 3 x 2
+##     cyl avg.mpg
+## * &lt;dbl&gt;   &lt;dbl&gt;
+## 1     4    26.7
+## 2     6    19.7
+## 3     8    15.1</code></pre>
+<p>Super!</p>
+</div>
+<div id="advanced-programming-with-assertion-functions" class="section level3">
+<h3>advanced: programming with assertion functions</h3>
+<p>These assertion functions use the <a href="https://rpubs.com/hadley/dplyr-programming">tidyeval</a> framework. In the past, programming in a tidyverse-like setting was accomplished through standard evaluation versions of verbs, which used functions postfixed with an underscore: <code>insist_</code> instead of <code>insist</code>, for example. However, when tidyeval was made popular with <code>dplyr</code> 0.7.0, this usage became deprecated, and therefore underscore-postfixed functions are no longer part of <code>assertr</code>.</p>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

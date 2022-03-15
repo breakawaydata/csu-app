@@ -1,0 +1,38 @@
+add_results             Add validation results to the Report object
+convert_error_df        Convert error table column types
+create_summary_row      Create summary table row.
+data_validation_report
+                        Create new validator object
+display_results         Displays results of validations.
+error_class             Constants
+find_chain_parts        Find all chain parts in parent frame
+generate_id             Generate a random ID.
+get_assert_method       Match proper method depending on predicate type
+get_assertion_type      get assertion type
+get_first_name          Get first name of the data frame
+get_results             Get validation results
+get_results_number      Get results number
+get_semantic_report_ui
+                        Generate HTML report.
+make_accordion_container
+                        Create a UI accordion container.
+make_accordion_element
+                        Create a UI accordion element.
+make_summary_table      Create summary table.
+make_table_row          Create table row.
+parse_errors_to_df      Parse errors to data.frame
+parse_results_to_df     Parse results to data.frame
+parse_successes_to_df   Parse successes to data.frame
+prepare_modal_content   Prepare modal content.
+render_raw_report_ui    Render simple version of report
+render_semantic_report_ui
+                        Render semantic version of report
+result_table            Create table with results.
+save_report             Saving results as a HTML report
+save_results            Saving results table to external file
+save_summary            Save simple validation summary in text file
+segment                 Create a UI segment element.
+validate                Prepare data for validation chain
+validate_cols           Validation on columns
+validate_if             Verify if expression regarding data is TRUE
+validate_rows           Validation on rows
