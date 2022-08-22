@@ -107,8 +107,7 @@ search_api <- function(data, q) {
   }
   data <- data %>%
     dplyr::mutate(first_last = paste(first, last)) %>%
-    dplyr::mutate(last_first = paste(last, first)) %>%
-    dplyr::select(player_id, first, last, first_last, last_first, position, positions, number)
+    dplyr::mutate(last_first = paste(last, first))
 
   players = data %>%
     dplyr::filter(
@@ -120,8 +119,6 @@ search_api <- function(data, q) {
   positions = data %>%
     dplyr::filter(has_matching(positions)) %>%
     dplyr::mutate(search = consts$search$position_search_type)
-  
-  print(rbind(players, positions))
   rbind(players, positions)
 }
 

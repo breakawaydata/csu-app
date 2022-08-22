@@ -1,0 +1,49 @@
+.main {
+  padding: 9px 15px;
+
+  .player-content {
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+
+#toggle_main_buttons_wrapper {
+  width: 100%;
+  /* Firefox */
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  /* Safari and Chrome */
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  /* W3C */
+  display: box;
+  box-pack: center;
+  box-align: center;
+}
+
+#toggle_main_buttons {
+  background-color: $main-team-color;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  
+  a.section {
+    color: $active-text;
+    padding: 3px 7px 1px 7px;
+    border-radius: 10px;
+    line-height: 1.4;
+    font-size: 20px;
+    font-size: 20px;
+    margin: 5px;
+    margin-top: 9px;
+    width: 75px;
+
+    &.active {
+      background: $active-background;
+    }
+  }
+}

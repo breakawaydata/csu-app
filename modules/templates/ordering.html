@@ -1,0 +1,53 @@
+<div id="{{ id }}" class="ui breadcrumb">
+  <i class="sort icon divider"></i>
+  <a id="reorder-stat-asc"  class="section reorder-stat reorder-list hidden" data-target="stat" data-value="asc">Summary ▲</a>
+  <a id="reorder-stat-desc" class="section reorder-stat reorder-list active" data-target="stat" data-value="desc">Summary ▼</a>
+  <div class="divider"> | </div>
+  <a class="section reorder-list reorder-name hidden" data-target="name" data-value="asc">Name ▲</a>
+  <a class="section reorder-list reorder-name" data-target="name" data-value="desc">Name ▼</a>
+  <script>
+    $(".reorder-list").on("click", function(e) {
+      let reorder_target = $(this)
+
+      if ($(this).hasClass("active")) {
+        reorder_target = $(`[data-target=${$(this).data("target")}]:not(.active)`);
+      }
+
+      trigger_reorder(reorder_target)
+    });
+
+    let trigger_reorder = function(target) {
+      let sort_function;
+
+      $('.reorder-list').removeClass("active");
+      $(target).addClass("active");
+
+      $(`[data-target=${$(target).data("target")}]`).addClass("hidden");
+      $(target).removeClass("hidden");
+
+      // Reset all cards to base alphabetical order before reordering
+      $(".player-card")
+        .sort((a, b) => (String.prototype.localeCompare.call(
+          $(a).data('sorting-name').toLowerCase(),
+          $(b).data('sorting-name').toLowerCase())
+        ))
+        .appendTo('#all-container');
+
+      if ($(target).data("target") == "stat") {
+        let sort_order = ($(target).data("value") == "asc") ? 1 : -1;
+        let active_stat = $('.sidebar-active').attr("id");
+        sort_function = (a, b) => (($(b).data(active_stat)) < ($(a).data(active_stat)) ? sort_order : -sort_order)
+      }
+
+      if ($(target).data("target") == "name") {
+        sort_function = ($(target).data("value") == "asc")
+          ? (a, b) => (String.prototype.localeCompare.call($(a).data('sorting-name').toLowerCase(), $(b).data('sorting-name').toLowerCase()))
+          : (a, b) => (String.prototype.localeCompare.call($(b).data('sorting-name').toLowerCase(), $(a).data('sorting-name').toLowerCase()))
+      }
+
+      $(".player-card")
+        .sort(sort_function)
+        .appendTo('#all-container');
+    }
+  </script>
+</div>

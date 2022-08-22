@@ -1,92 +1,107 @@
-player_id,first,last,suffix,position,position_detailed,number,class,picture,positions,summary,explosion,reach,balance
-CSU_001,Toby,McBride,,DL,,0,R-Sr.,https://csurams.com/images/2020/9/26/McBride_Toby.jpg?width=300,Defensive Line,76,75,0,75
-CSU_002,Scott,Patchan,,DL,,1,Gr.,https://csurams.com/images/2020/9/26/Patchan_Scott.jpg?width=300,Defensive Line,79,75,86,0
-CSU_003,Justice,McCoy,,QB,,2,R-Jr.,https://csurams.com/images/2020/9/26/McCoy_Justice.jpg?width=300,Quarterbacks,89,58,88,60
-CSU_004,E.J.,Scott,,WR,,3,R-Jr.,https://csurams.com/images/2020/9/26/Scott_E_J.jpg?width=300,Wide Receivers,79,67,0,94
-CSU_005,Rashad,Ajayi,,DB,,4,Jr.,https://csurams.com/images/2020/10/11/Ajayi_Rashad.jpg?width=300,Secondary,67,65,0,49
-CSU_006,Dequan,Jackson,,LB,,5,Jr.,https://csurams.com/images/2020/9/26/Jackson_Dequan.jpg?width=300,Linebackers,92,75,83,60
-CSU_007,Ty,McCullouch,,WR,,6,So.,https://csurams.com/images/2020/9/26/McCullouch_Ty.jpg?width=300,Wide Receivers,40,0,0,0
-CSU_008,Todd,Centeio,,QB,,7,R-Jr.,https://csurams.com/images/2020/9/26/Centeio_Todd.jpg?width=300,Quarterbacks,94,80,80,68
-CSU_009,Linwood,Crump,,DB,,7,Gr.,https://brand.colostate.edu/wp-content/uploads/sites/47/2019/01/Ram-Logo-Pantone-357-617-768x768.jpg,Secondary,69,63,0,58
-CSU_010,Logan,Stewart,,DB,,9,R-Sr.,https://csurams.com/images/2020/9/26/Stewart_Logan.jpg?width=300,Secondary,81,89,0,83
-CSU_011,Tywan,Francis,,DB,,10,Jr.,https://csurams.com/images/2020/9/26/Francis_Tywan.jpg?width=300,Secondary,92,79,78,63
-CSU_012,Chance,Harris,,QB,,10,Fr.,https://brand.colostate.edu/wp-content/uploads/sites/47/2019/01/Ram-Logo-Pantone-357-617-768x768.jpg,Quarterbacks,100,88,84,81
-CSU_013,Henry,Blackburn,,DB,,11,Fr.,https://csurams.com/images/2020/9/26/Blackburn_Henry.jpg?width=300,Secondary,74,83,0,57
-CSU_014,Cam'ron,Carter,,LB,,12,Jr.,https://csurams.com/images/2020/9/26/Carter_Cam_Ron.jpg?width=300,Linebackers,93,74,86,63
-CSU_015,Luke,McAllister,,QB,,13,Fr.,https://csurams.com/images/2021/2/27/Luke_McAllister.jpg?width=300,Quarterbacks,81,47,55,72
-CSU_016,Brandon,Guzman,,DB,,14,Fr.,https://csurams.com/images/2020/9/26/Guzman_Brandon.jpg?width=300,Secondary,40,0,0,0
-CSU_017,Brandon,Hickerson-Rooks,,DL,,15,R-Jr.,https://csurams.com/images/2020/9/26/Hickerson_Rooks_Brandon.jpg?width=300,Defensive Line,86,57,70,65
-CSU_018,Jonah,O'Brien,,QB,,15,R-Fr.,https://csurams.com/images/2020/9/26/O_Brien_Jonah.jpg?width=300,Quarterbacks,89,56,78,72
-CSU_019,Cameron,Butler,,TE,,16,Sr.,https://csurams.com/images/2020/9/26/Butler_Cameron.jpg?width=300,Tight Ends,40,0,0,0
-CSU_020,Jack,Howell,,DB,,17,Fr.,https://brand.colostate.edu/wp-content/uploads/sites/47/2019/01/Ram-Logo-Pantone-357-617-768x768.jpg,Secondary,40,0,0,0
-CSU_021,Thomas,Pannunzio,,WR,,18,Jr.,https://csurams.com/images/2020/9/26/Pannunzio_Thomas.jpg?width=300,Wide Receivers,98,72,86,86
-CSU_022,Branden,Coleman,,DB,,19,Fr.,https://brand.colostate.edu/wp-content/uploads/sites/47/2019/01/Ram-Logo-Pantone-357-617-768x768.jpg,Secondary,92,70,91,57
-CSU_023,A'Jon,Vivens,,RB,,20,R-So.,https://csurams.com/images/2020/9/26/Vivens_A_Jon.jpg?width=300,Running Backs,81,53,72,48
-CSU_024,Dante,Wright,,WR,,22,So.,https://csurams.com/images/2020/9/26/Wright_Dante.jpg?width=300,Wide Receivers,40,0,0,0
-CSU_025,Mikell,Harvey,,DB,,23,R-So.,https://csurams.com/images/2020/9/26/Harvey_Mikell.jpg?width=300,Secondary,86,61,68,64
-CSU_026,Kyjuan,Herndon,,RB,,24,Fr.,https://csurams.com/images/2020/9/26/Herndon_Kyjuan.jpg?width=300,Running Backs,83,55,58,68
-CSU_027,Marshaun,Cameron,,DB,,26,R-Sr.,https://csurams.com/images/2020/9/26/Cameron_Marshaun.jpg?width=300,Secondary,94,73,85,68
-CSU_028,Logan,Ludwig,,WR,,26,R-So.,https://csurams.com/images/2020/10/11/Ludwig_Logan.jpg?width=300,Wide Receivers,40,0,0,0
-CSU_029,Jaylen,Thomas,,RB,,27,So.,https://csurams.com/images/2020/9/26/Thomas_Jaylen.jpg?width=300,Running Backs,84,56,60,71
-CSU_030,Christian,Hunter,,RB,,28,So.,https://csurams.com/images/2020/9/26/Hunter_Christian.jpg?width=300,Running Backs,92,71,92,57
-CSU_031,Chase,Wilson,,LB,,30,Fr.,https://csurams.com/images/2020/9/26/Wilson_Chase.jpg?width=300,Linebackers,92,73,81,66
-CSU_032,Tanner,Hollens,,RB,,31,Fr.,https://csurams.com/images/2020/9/26/Hollens_Tanner.jpg?width=300,Running Backs,40,0,0,0
-CSU_033,Marcus,McElroy,Jr.,RB,,32,Sr.,https://csurams.com/images/2020/9/26/McElroy_Marcus.jpg?width=300,Running Backs,90,66,82,62
-CSU_034,Manny,Jones,,DL,,33,Sr.,https://csurams.com/images/2020/9/26/Jones_Manny.jpg?width=300,Defensive Line,91,75,70,71
-CSU_035,Titus,Jones,,DB,,34,R-Fr.,https://brand.colostate.edu/wp-content/uploads/sites/47/2019/01/Ram-Logo-Pantone-357-617-768x768.jpg,Secondary,64,56,0,43
-CSU_036,Joe,DeLine,,SP,,35,R-Sr.,https://csurams.com/images/2020/9/26/Deline_Joe.jpg?width=300,Specialists,96,74,84,79
-CSU_037,Aaron,Moore,,LB,,35,Fr.,https://csurams.com/images/2020/9/26/Moore_Aaron.jpg?width=300,Linebackers,93,81,89,51
-CSU_038,Payton,Polson,,LB,,36,R-Fr.,https://csurams.com/images/2020/10/11/Polson_Payton.jpg?width=300,Linebackers,93,67,86,68
-CSU_039,Blake,Beecher,,LB,,37,R-Fr.,https://brand.colostate.edu/wp-content/uploads/sites/47/2019/01/Ram-Logo-Pantone-357-617-768x768.jpg,Linebackers,70,61,0,65
-CSU_040,Griffin,Vanderwaerdt,,DB,,38,Fr.,https://csurams.com/images/2021/2/27/Vanderwaerdt_Griffin.jpg?width=300,Secondary,79,81,84,0
-CSU_041,Sanjay,Strickland,,LB,,39,Fr.,https://csurams.com/images/2020/10/11/Strickland_Sanjay.jpg?width=300,Linebackers,85,52,64,72
-CSU_042,Dawson,Menegatti,,WR,,40,Fr.,https://csurams.com/images/2021/2/27/Menegatti_Dawson.jpg?width=300,Wide Receivers,97,81,100,60
-CSU_043,Ryan,Stonehouse,,SP,,41,Sr.,https://csurams.com/images/2020/9/26/Stonehouse_Ryan.jpg?width=300,Specialists,93,70,80,73
-CSU_044,Mohamed,Kamara,,LB,,42,So.,https://csurams.com/images/2020/9/26/Kamara_Mohamed.jpg?width=300,Linebackers,40,0,0,0
-CSU_045,Troy,Golden,,LB,,43,R-So.,https://csurams.com/images/2020/9/26/Golden_Troy.jpg?width=300,Linebackers,93,75,82,64
-CSU_046,Bam,Amina,,LB,,45,Fr.,https://csurams.com/images/2020/9/26/Amina_Bam.jpg?width=300,Linebackers,99,91,92,62
-CSU_047,Devon,Edwards,,LB,,46,Fr.,https://csurams.com/images/2020/10/11/Edwards_Devon.jpg?width=300,Linebackers,40,0,0,0
-CSU_048,David,Aggrey,,RB,,47,R-So.,https://csurams.com/images/2020/9/26/Aggrey_David.jpg?width=300,Running Backs,89,54,66,83
-CSU_049,Brandon,Derrow,,DL,,49,R-So.,https://csurams.com/images/2019/6/26/Derrow_Brandon_2019Headshot.jpg?width=300,Defensive Line,92,81,66,73
-CSU_050,Anthony,Koclanakis,,LB,,49,Gr.,https://brand.colostate.edu/wp-content/uploads/sites/47/2019/01/Ram-Logo-Pantone-357-617-768x768.jpg,Linebackers,90,70,74,65
-CSU_051,Cian,Quiroga,,DL,,50,R-Fr.,https://csurams.com/images/2020/9/26/Quiroa_Cian.jpg?width=300,Defensive Line,91,68,81,66
-CSU_052,Owen,Snively,,OL,,50,Fr.,https://csurams.com/images/2020/9/26/Snively_Owen.jpg?width=300,Offensive Line,85,69,59,60
-CSU_053,Aidan,Cullen,,DL,,52,R-Fr.,https://csurams.com/images/2020/9/26/Cullen_Aidan.jpg?width=300,Defensive Line,100,91,88,73
-CSU_054,Adam,Korutz,,OL,,52,Gr.,https://csurams.com/images/2020/9/26/Korutz_Adam.jpg?width=300,Offensive Line,89,66,79,60
-CSU_055,Elijah,Johnson,,OL,,53,R-Jr.,https://csurams.com/images/2020/9/26/Johnson_Elijah.jpg?width=300,Offensive Line,91,77,74,64
-CSU_056,Cade,Plath,,LB,,53,R-Fr.,https://csurams.com/images/2020/9/26/Plath_Cade.jpg?width=300,Linebackers,40,0,0,0
-CSU_057,Mike,Ciaffoni,,DL,,54,R-So.,https://brand.colostate.edu/wp-content/uploads/sites/47/2019/01/Ram-Logo-Pantone-357-617-768x768.jpg,Defensive Line,92,81,66,72
-CSU_058,Tavian,Brown,,LB,,55,R-Fr.,https://csurams.com/images/2020/9/26/Brown_Tavian.jpg?width=300,Linebackers,91,75,76,66
-CSU_059,Cam,Reddy,,OL,,55,R-So.,https://csurams.com/images/2020/9/26/Reddy_Cam.jpg?width=300,Offensive Line,90,66,85,60
-CSU_060,Ches,Jackson,,OL,,56,R-So.,https://csurams.com/images/2020/9/26/Jackson_Ches.jpg?width=300,Offensive Line,74,54,41,48
-CSU_061,Will,Drewes,,LB,,57,R-Fr.,https://csurams.com/images/2021/2/27/Will_Drewes.jpg?width=300,Linebackers,99,87,90,68
-CSU_062,Grant,Stewartson,,DL,,59,Fr.,https://csurams.com/images/2021/2/27/Grant_Stewartson.jpg?width=300,Defensive Line,40,0,0,0
-CSU_063,Florian,McCann,,OL,,60,R-So.,https://csurams.com/images/2018/6/27/McCann_III_Florian_2018Headshot_Web.jpg?width=300,Offensive Line,95,76,70,84
-CSU_064,Alex,Azusenis,,OL,,63,R-Fr.,https://csurams.com/images/2020/10/11/Azusenis_Alex.jpg?width=300,Offensive Line,93,89,80,54
-CSU_065,Tautai,Li'o Marks,,OL,,65,Fr.,https://csurams.com/images/2020/10/11/Li_o_Marks_Tautai.jpg?width=300,Offensive Line,93,70,68,83
-CSU_066,Cameron,Bariteau,,DL,,68,Fr.,https://brand.colostate.edu/wp-content/uploads/sites/47/2019/01/Ram-Logo-Pantone-357-617-768x768.jpg,Defensive Line,89,46,74,86
-CSU_067,Barry,Wesley,,OL,,69,R-Jr.,https://csurams.com/images/2020/10/11/Wesley_Barry.jpg?width=300,Offensive Line,65,60,0,45
-CSU_068,Joctavis,Phillips,,OL,,70,R-Jr.,https://csurams.com/images/2020/9/26/Phillips_Joctavis.jpg?width=300,Offensive Line,88,73,80,48
-CSU_069,Brian,Crespo-Jaquez,,OL,,71,Fr.,https://csurams.com/images/2020/9/26/Crespo_Jaquez_Brian.jpg?width=300,Offensive Line,86,79,70,47
-CSU_070,Dirk,Nelson,,OL,,72,Fr.,https://csurams.com/images/2020/10/11/Nelson_Dirk.jpg?width=300,Offensive Line,79,60,61,42
-CSU_071,Gage,Gaynor,,OL,,73,Fr.,https://csurams.com/images/2020/10/11/Gaynor_Gage.jpg?width=300,Offensive Line,89,59,76,68
-CSU_072,Vincent,Picozzi,,OL,,76,Gr.,https://csurams.com/images/2021/2/27/Vince_Picozzi.jpg?width=300,Offensive Line,94,100,69,60
-CSU_073,Keith,Williams,,OL,,77,R-Sr.,https://csurams.com/images/2020/9/26/Williams_Keith.jpg?width=300,Offensive Line,59,77,0,0
-CSU_074,Tex,Elliott,,OL,,79,Fr.,https://csurams.com/images/2020/10/11/Elliott_Tex.jpg?width=300,Offensive Line,40,0,0,0
-CSU_075,Dane,Olson,,WR,,81,R-Fr.,https://csurams.com/images/2020/9/26/Olson_Dane.jpg?width=300,Wide Receivers,84,58,50,74
-CSU_076,Dylan,Walker,,TE,,82,Fr.,https://brand.colostate.edu/wp-content/uploads/sites/47/2019/01/Ram-Logo-Pantone-357-617-768x768.jpg,Tight Ends,85,51,59,80
-CSU_077,Chris,McEahern,,WR,,83,R-Fr.,https://csurams.com/images/2020/9/26/McEahern_Chris.jpg?width=300,Wide Receivers,93,77,70,75
-CSU_078,Gary,Williams,,TE,,84,R-So.,https://csurams.com/images/2020/9/26/Williams_Gary.jpg?width=300,Tight Ends,40,0,0,0
-CSU_079,Trey,McBride,,TE,,85,Jr.,https://csurams.com/images/2020/9/26/McBride_Trey.jpg?width=300,Tight Ends,78,50,40,70
-CSU_080,Ross,Reiter,,SP,,86,Jr.,https://csurams.com/images/2020/9/26/Reiter_Ross.jpg?width=300,Specialists,86,75,45,71
-CSU_081,Brian,Polendey,,TE,,88,R-Jr.,https://csurams.com/images/2020/9/26/Polendey_Brian.jpg?width=300,Tight Ends,93,69,87,67
-CSU_082,Kyle,Helbig,,TE,,89,R-Fr.,https://csurams.com/images/2020/9/26/Helbig_Kyle.jpg?width=300,Tight Ends,67,67,48,0
-CSU_083,Casey,Irons ,Jr.,DL,,90,Fr.,https://brand.colostate.edu/wp-content/uploads/sites/47/2019/01/Ram-Logo-Pantone-357-617-768x768.jpg,Defensive Line,40,0,0,0
-CSU_084,James,Mitchell,,DL,,91,Fr.,https://csurams.com/images/2020/10/11/Mitchell_James.jpg?width=300,Defensive Line,89,63,64,79
-CSU_085,Mukendi,Wa-Kalonji,,DL,,92,Fr.,https://brand.colostate.edu/wp-content/uploads/sites/47/2019/01/Ram-Logo-Pantone-357-617-768x768.jpg,Defensive Line,71,73,0,60
-CSU_086,Jonathan,Terry,,SP,,93,R-So.,https://csurams.com/images/2020/9/26/Terry_Jonathan.jpg?width=300,Specialists,84,69,60,53
-CSU_087,Devin,Phillips,,DL,,94,Jr.,https://csurams.com/images/2020/9/26/Phillips_Devin.jpg?width=300,Defensive Line,89,86,61,61
-CSU_088,Cayden,Camper,,SP,,95,So.,https://csurams.com/images/2020/9/26/Camper_Cayden.jpg?width=300,Specialists,73,67,0,70
-CSU_089,Robert,Liss,,SP,,96,Fr.,https://csurams.com/images/2020/9/26/Liss_Robert.jpg?width=300,Specialists,52,52,0,0
-CSU_090,Ellison,Hubbard,,DL,,98,Sr.,https://csurams.com/images/2020/9/26/Hubbard_Ellison.jpg?width=300,Defensive Line,81,63,54,58
-CSU_091,Jack,Gabbe,,SP,,99,Fr.,https://csurams.com/images/2020/10/11/Gabbe_Jack.jpg?width=300,Specialists,88,75,53,74
+player_id,first,last,suffix,position,position_detailed,number,class,picture,positions,summary,gps,explosion
+10001,Damian,Sellers,,ILB,,220,R-Sr.,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Inside Linebacker,76,3.1,220
+10003,Dorian,Thompson-Robinson,,QB,,197,Gr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10003.png,Quarterback,79,3.5,197
+10004,Nick,Barr-Mira,,SP,,185,R-Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10004.png,Special Teams,89,,185
+10006,Chase,Artopoeus,,QB,,206,R-Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10006.png,Quarterback,79,6,206
+10007,Stephan,Blaylock,,DB,,196,Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10007.png,Defensive Back,67,2.6,196
+10009,John,Humphrey,,DB,,197,Jr.,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Defensive Back,92,2.9,197
+10010,Martell,Irby,,DB,,212,So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10010.png,Defensive Back,40,1.2,212
+10011,Mo,Osling,,DB,,195,R-Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10011.png,Defensive Back,94,2.6,195
+10012,Colson,Yankoff,,WR,,216,Gr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10012.png,Wide Reciever,69,,216
+10013,Choe,Bryant-Strother,,OLB,,248,R-Sr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10013.png,Outside Linebacker,81,2.4,248
+10015,Joshua,Swift,,DB,,203,Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10015.png,Defensive Back,92,1.6,203
+10016,Chase,Griffin,,QB,,192,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10016.png,Quarterback,100,3,192
+10017,Matt,Sykes,,WR,,207,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10017.png,Wide Reciever,74,3.5,207
+10018,Josiah,Norwood,,WR,,164,Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10018.png,Wide Reciever,93,2.9,164
+10020,Jake,Newman,,DB,,204,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10020.png,Defensive Back,81,2,204
+10021,Parker,Hogan,,DB,,187,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10021.png,Defensive Back,40,,187
+10022,Logan,Loya,,WR,,187,R-Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10022.png,Wide Reciever,86,2.6,187
+10023,Deavyn,Woullard,,NA,,,R-Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10023.png,,89,0,192
+10024,Kazmeir,Allen,,WR,,176,Sr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10024.png,Wide Reciever,40,3.1,176
+10025,Alex,Johnson,,DB,,182,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10025.png,Defensive Back,40,2.5,182
+10026,Kain,Medrano,,ILB,,228,Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10026.png,Inside Linebacker,98,3,228
+10027,Michael,Ezeike,,TE,,251,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10027.png,Tight End,92,2.8,251
+10028,Jonathan,Vaughns,,ILB,,EXC,R-So.,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Inside Linebacker,81,,
+10030,Keegan,Jones,,RB,,175,So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10030.png,Running Back,40,3.3,175
+10034,Brian,Kowall,,RB,,211,R-So.,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Running Back,86,2.7,211
+10036,Ashton,Authement,,WR,,202,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10036.png,Wide Reciever,83,2.8,202
+10037,Patrick,Jolly,,DB,,190,R-Sr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10037.png,Defensive Back,94,1.4,190
+10039,Evan,Thomas,,DB,,171,R-So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10039.png,Defensive Back,40,2.4,171
+10040,Adam,Cohen,,ILB,,231,So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10040.png,Inside Linebacker,84,1.9,231
+10042,Elisha,Guidry,,DB,,192,So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10042.png,Defensive Back,92,2,192
+10044,Christian,Grubb,,RB,,179,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10044.png,Running Back,92,2.2,179
+10045,William,Nimmo,,DB,,205,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10045.png,Defensive Back,40,2.6,205
+10046,Bo,Calvert,Jr.,OLB,,228,Sr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10046.png,Outside Linebacker,90,2,228
+10047,Devanti,Dillard,,WR,,200,Sr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10047.png,Wide Reciever,91,2.6,200
+10048,Carl,Jones,,OLB,,217,R-Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10048.png,Outside Linebacker,64,2.5,217
+10052,Kaleb,Tuliau,,DB,,180,R-Sr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10052.png,Defensive Back,96,1.8,180
+10053,Caleb,Johnson,,ILB,,236,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10053.png,Inside Linebacker,93,2.6,236
+10054,Jelani,Warren,,DB,,200,R-Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10054.png,Defensive Back,93,2.1,200
+10055,James,Dinneen,,OLB,,244,R-Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10055.png,Outside Linebacker,70,2.4,244
+10056,Martin,Andrus,,DL,,299,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10056.png,Defensive Lineman,79,2,299
+10057,Mitchell,Agude,,NA,,,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10057.png,,85,0,250
+10058,Hayden,Harris,,DL,,248,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10058.png,Defensive Lineman,97,,248
+10059,Erich,Osteen,,ILB,,218,Sr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10059.png,Inside Linebacker,93,,218
+10060,Shea,Pitts,,OLB,,199,So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10060.png,Outside Linebacker,40,2.8,199
+10061,Joquarri,Price,,OLB,,214,R-So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10061.png,Outside Linebacker,93,2.2,214
+10062,Tyler,Manoa,,OL,,303,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10062.png,Offensive Lineman,99,1.9,303
+10063,Jack,Landherr,,SP,,225,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10063.png,Special Teams,40,,225
+10065,Jeremiah,Trojan,,ILB,,223,R-So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10065.png,Inside Linebacker,89,2.6,223
+10067,Josh,Carlin,,OL,,315,R-So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10067.png,Offensive Lineman,92,2.2,315
+10070,Kobey,Fitzgerald,,ILB,,201,Gr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10070.png,Inside Linebacker,90,1.5,201
+10071,Atonio,Mafi,,OL,,367,R-Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10071.png,Offensive Lineman,91,2.2,367
+10072,Jon,Gaines,,OL,,312,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10072.png,Offensive Lineman,85,2,312
+10075,Carson,Drake,,DL,,250,R-Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10075.png,Defensive Lineman,100,,250
+10076,Duke,Clemens,,OL,,299,Gr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10076.png,Offensive Lineman,89,2,299
+10077,Bradley,Whitworth,,OL,,298,R-Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10077.png,Offensive Lineman,91,2.2,298
+10078,Sam,Marrazzo,,OL,,TR,R-Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10078.png,Offensive Lineman,40,3.2,
+10079,Justin,Williams,,OL,,264,R-So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10079.png,Offensive Lineman,92,,264
+10083,Bruno,Fina,,OL,,284,R-Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10083.png,Offensive Lineman,91,2.2,284
+10084,Patrick,Selna,,OL,,EXC,R-So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10084.png,Offensive Lineman,90,3.2,
+10087,Hudson,Habermehl,,TE,,248,R-So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10087.png,Tight End,74,2.7,248
+10088,David,Priebe,,TE,,248,R-Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10088.png,Tight End,99,2.5,248
+10090,Bradley,Schlom,,WR,,183,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10090.png,Wide Reciever,40,2.5,183
+10091,Grant,Norberg,,TE,,248,R-So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10091.png,Tight End,95,,248
+10092,Mike,Martinez,,TE,,247,R-Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10092.png,Tight End,93,49.4,247
+10093,Michael,Churich,,TE,,241,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10093.png,Tight End,93,2.1,241
+10096,RJ,Lopez,,SP,,190,Fr.,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Special Teams,89,,190
+10097,Dovid,Magna,,DL,,TR,R-Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10097.png,Defensive Lineman,65,43.2,
+10098,Sitiveni,Kaufusi,,DL,,TR,R-Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10098.png,Defensive Lineman,88,,
+10099,Ari,Libenson,,SP,,175,Fr.,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Special Teams,86,,175
+10100,Odua,Isibor,,DL,,257,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10100.png,Defensive Lineman,79,2.1,257
+10102,Kam,Brown,,WR,,185,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10102.png,Wide Reciever,89,3.2,185
+10103,Ethan,Garbers,,QB,,209,Gr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10103.png,Quarterback,94,2.5,209
+10104,Ale,Kaho,,ILB,,221,R-Sr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10104.png,Inside Linebacker,59,1.7,221
+10105,Josh,Moore,,NA,,,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10105.png,,40,1.2,
+10109,DJ,Justice,,WR,,192,R-Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10109.png,Wide Reciever,84,3.4,192
+10110,Zach,Charbonnet,,RB,,224,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10110.png,Running Back,85,3,224
+10111,Ezavier,Staples,,WR,,200,R-Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10111.png,Wide Reciever,93,,200
+10112,Kenny,Churchwell,,DB,,203,R-So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10112.png,Defensive Back,40,3.5,203
+10113,Deshun,Murrell,,RB,,195,Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10113.png,Running Back,78,3,195
+10114,Isaiah,Newcombe,,DB,,171,Jr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10114.png,Defensive Back,86,2.4,171
+10115,Devin,Aupiu,,OLB,,241,R-Jr.,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Outside Linebacker,93,2.4,241
+10117,Carson,Schwesinger,,ILB,,224,R-Fr.,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Inside Linebacker,67,,224
+10118,Benjamin,Roy,Jr.,OL,,291,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10118.png,Offensive Lineman,40,131.3,291
+10122,Yutaka,Mahe,,OL,,367,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10122.png,Offensive Lineman,89,1.9,367
+10123,Noah,Pulealii,,OL,,334,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10123.png,Offensive Lineman,71,2.2,334
+10124,Garrett,Digiorgio,,OL,,318,R-So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10124.png,Offensive Lineman,84,2.3,318
+10125,Sam,Summa,,TE,,253,Jr.,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Tight End,89,2.1,253
+10128,Devin,Kirkwood,,DB,,185,So.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10128.png,Defensive Back,73,2,185
+10129,Jay,Toia,,DL,,356,Fr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10129.png,Defensive Lineman,52,1.9,356
+10130,Quintin,Somerville,,DL,,243,Sr.,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10130.png,Defensive Lineman,81,1.9,243
+10131,Darius,Muasau,,ILB,,233,Fr.,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Inside Linebacker,88,2.7,233
+10132,Laiatu,Latu,,OLB,,270,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Outside Linebacker,,1.7,270
+10133,Hayden,Nelson,,OLB,,236,,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10133.png,Outside Linebacker,,2,236
+10134,Beau,Gardner,,SP,,247,,https://stacks-dashboard.s3.us-west-2.amazonaws.com/ucla-football/headshots/10134.png,Special Teams,,,247
+10135,Siale,Taupaki,,OL,,325,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Offensive Lineman,,1.7,325
+10136,Justyn,Martin,,QB,,208,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Quarterback,,2.5,208
+10137,Carsen,Ryan,,TE,,242,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Tight End,,2.7,242
+10138,Jake,Bobo,,WR,,210,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Wide Reciever,,3.5,210
+10139,Titus,Mokiao-Atimalala,,WR,,176,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,Wide Reciever,,3.2,176
+10143,Gabriel,Murphy,,NA,,,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,,,,
+10144,Azizi,Hearn,,NA,,,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,,,,
+10145,Jaylin,Davies,,NA,,,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,,,,
+10146,Gary,Smith,,NA,,,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,,,,
+10147,Clint,Stephens,,NA,,,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,,,,
+10148,Grayson,Murphy,,NA,,,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,,,,
+10149,Tomarion,Harden,,NA,,,,https://ba-app.s3.us-west-1.amazonaws.com/core/teams/10112.png,,,,
